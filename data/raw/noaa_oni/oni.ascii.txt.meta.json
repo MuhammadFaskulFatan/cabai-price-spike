@@ -1,0 +1,10 @@
+{
+  "source": "noaa_oni",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt"
+  },
+  "n_rows": 921,
+  "n_bytes": 23050,
+  "sha256": "118c563331335c8649cdc2677e6be7ae89d1259d901345fcddbc2857af280f7f"
+}
