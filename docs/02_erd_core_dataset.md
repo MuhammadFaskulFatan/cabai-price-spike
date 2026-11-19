@@ -1,0 +1,167 @@
+# ERD: Core Dataset
+
+Core dataset disusun sebagai star schema: tabel fakta per jenis variabel (harga, produksi, cuaca, ENSO), dikelilingi tabel dimensi. Grain utama **provinsi × bulan × grup komoditas**. Tabel mingguan terpisah karena hanya dipakai untuk lead-lag analysis.
+
+Dari tabel-tabel ini, pipeline membangun satu tabel lebar `core_province_month` (lihat bagian 3) yang menjadi input analisis.
+
+## 1. Diagram
+
+```mermaid
+erDiagram
+    DIM_PROVINCE ||--o{ FACT_PRICE_MONTHLY : "province_id"
+    DIM_PROVINCE ||--o{ FACT_PRICE_WEEKLY : "province_id"
+    DIM_PROVINCE ||--o{ FACT_PRODUCTION_ANNUAL : "province_id"
+    DIM_PROVINCE ||--o{ FACT_PRODUCTION_MONTHLY : "province_id"
+    DIM_PROVINCE ||--o{ FACT_WEATHER_MONTHLY : "province_id"
+    DIM_PROVINCE ||--o{ DIM_SENTRA_POINT : "province_id"
+
+    DIM_COMMODITY ||--o{ FACT_PRICE_MONTHLY : "commodity_group"
+    DIM_COMMODITY ||--o{ FACT_PRICE_WEEKLY : "commodity_group"
+    DIM_COMMODITY ||--o{ FACT_PRODUCTION_ANNUAL : "commodity_group"
+    DIM_COMMODITY ||--o{ FACT_PRODUCTION_MONTHLY : "commodity_group"
+    DIM_COMMODITY ||--o{ FACT_PRODUCTION_NATIONAL_MONTHLY : "commodity_group"
+    DIM_COMMODITY ||--o{ FACT_WEATHER_MONTHLY : "commodity_group"
+    DIM_COMMODITY ||--o{ DIM_SENTRA_POINT : "commodity_group"
+
+    DIM_PRICE_TYPE ||--o{ FACT_PRICE_MONTHLY : "price_type_id"
+    DIM_PRICE_TYPE ||--o{ FACT_PRICE_WEEKLY : "price_type_id"
+
+    DIM_MONTH ||--o{ FACT_PRICE_MONTHLY : "month_start"
+    DIM_MONTH ||--o{ FACT_PRODUCTION_MONTHLY : "month_start"
+    DIM_MONTH ||--o{ FACT_PRODUCTION_NATIONAL_MONTHLY : "month_start"
+    DIM_MONTH ||--o{ FACT_WEATHER_MONTHLY : "month_start"
+    DIM_MONTH ||--o| FACT_ONI_MONTHLY : "month_start"
+
+    FACT_PRODUCTION_ANNUAL ||--o{ FACT_PRODUCTION_MONTHLY : "benchmark tahunan"
+    FACT_PRODUCTION_NATIONAL_MONTHLY ||--o{ FACT_PRODUCTION_MONTHLY : "indicator series"
+    DIM_SENTRA_POINT ||--o{ FACT_WEATHER_MONTHLY : "bobot produksi"
+
+    DIM_PROVINCE {
+        int province_id PK
+        string province_name
+        string island_group
+        bool in_producer_price_analysis
+    }
+    DIM_COMMODITY {
+        string commodity_group PK
+        string commodity_label
+        string pihps_category_id
+    }
+    DIM_PRICE_TYPE {
+        int price_type_id PK
+        string level_name
+        string supply_chain_stage
+        bool in_core
+    }
+    DIM_MONTH {
+        date month_start PK
+        int year
+        int month
+        bool in_core_period
+        bool is_partial_month
+        bool in_model_period
+        int n_weekdays
+        int n_holiday_days
+        int months_to_idulfitri
+    }
+    DIM_SENTRA_POINT {
+        int point_id PK
+        int province_id FK
+        string commodity_group FK
+        string regency_name
+        float latitude
+        float longitude
+        float production_weight
+        int weight_basis_year
+    }
+    FACT_PRICE_MONTHLY {
+        int province_id PK
+        date month_start PK
+        string commodity_group PK
+        int price_type_id PK
+        float price_idr_per_kg
+        int n_days_observed
+        bool is_imputed
+        string impute_method
+        date source_extract_date
+    }
+    FACT_PRICE_WEEKLY {
+        int province_id PK
+        date week_start PK
+        string commodity_group PK
+        int price_type_id PK
+        float price_idr_per_kg
+        date source_extract_date
+    }
+    FACT_PRODUCTION_ANNUAL {
+        int province_id PK
+        int year PK
+        string commodity_group PK
+        float production_ton
+        float harvested_area_ha
+        date source_extract_date
+    }
+    FACT_PRODUCTION_NATIONAL_MONTHLY {
+        date month_start PK
+        string commodity_group PK
+        float production_ton
+        string status
+        string bulletin_edition
+    }
+    FACT_PRODUCTION_MONTHLY {
+        int province_id PK
+        date month_start PK
+        string commodity_group PK
+        float production_ton_chow_lin
+        float production_ton_denton
+        bool is_imputed
+        string impute_method
+    }
+    FACT_WEATHER_MONTHLY {
+        int province_id PK
+        date month_start PK
+        string commodity_group PK
+        float rain_total_mm
+        float rain_anomaly
+        float rel_humidity_mean
+        date source_extract_date
+    }
+    FACT_ONI_MONTHLY {
+        date month_start PK
+        string season_label
+        float oni_anomaly
+        string enso_phase
+    }
+```
+
+## 2. Keputusan desain yang perlu diketahui pembaca
+
+- **Grup komoditas, bukan varian.** Core memakai dua grup: `cabai_merah` (PIHPS `cat_7`, rata-rata besar dan keriting) dan `cabai_rawit` (`cat_8`). Produksi BDSP untuk cabe besar dan cabe keriting dijumlahkan ke `cabai_merah`. Varian (merah besar, merah keriting, rawit merah, rawit hijau) tidak masuk core, tetapi tetap ditarik ke `data/raw` untuk analisis deskriptif per jenis cabai (US3); lihat D-10 di decision log.
+- **34 provinsi.** Sumber yang sudah memakai 38 provinsi dipetakan ke provinsi induk (Papua Selatan, Papua Tengah, Papua Pegunungan ke Papua; Papua Barat Daya ke Papua Barat). Lihat D-17.
+- **Tipe harga di baris, bukan di kolom**, pada tabel fakta. Dengan begitu `is_imputed` dan `impute_method` melekat pada setiap nilai harga, sesuai aturan wajib di data quality rules. Tipe harga yang masuk core: 1 (eceran), 3 (pedagang besar), 4 (produsen). Tipe 2 (pasar modern) tidak dipakai oleh hipotesis mana pun.
+- **Cuaca dikunci per komoditas.** Bobot production-weighted average berbeda antara cabai merah dan cabai rawit karena sentranya berbeda, jadi `FACT_WEATHER_MONTHLY` punya `commodity_group` di key.
+- **Produksi bulanan provinsi seluruhnya hasil estimasi.** Tidak ada angka bulanan provinsi yang diamati, jadi setiap barisnya `is_imputed = TRUE` dengan `impute_method = chow_lin`. Hasil Denton disimpan di kolom terpisah sebagai pembanding, bukan baris terpisah.
+- **Produksi nasional bulanan boleh kosong.** Bulan yang hanya punya proyeksi dibiarkan `production_ton = NULL` dan `status = 'missing'`. Bulan ber-`status = 'realisasi'` yang dipakai sebagai indicator series.
+- **Produksi 2026.** Angka tahunan 2026 belum terbit, jadi `FACT_PRODUCTION_MONTHLY` kosong untuk 2026. Tabel tidak di-extrapolate.
+- **Periode.** `DIM_MONTH` memuat Januari 2018 sampai November 2026. `in_core_period` bernilai `TRUE` mulai Januari 2019; baris 2018 hanya untuk lagged variables.
+- **Bulan parsial dan periode model.** Data diambil 19 November 2026, jadi November 2026 belum penuh (`is_partial_month = TRUE`). Model dan uji hipotesis hanya memakai bulan dengan `in_model_period = TRUE` (Januari 2019 sampai Oktober 2026); November 2026 hanya untuk deskriptif (D-16).
+- **Cuaca.** `rain_anomaly` dihitung terhadap normal bulan kalender periode 1991-2020 (D-19).
+- **ONI.** Tabel ONI nasional (sama untuk semua provinsi), tanpa key provinsi. Karena ONI baru tersedia sampai ASO 2026 (dipetakan ke September), Oktober dan November 2026 kosong dan tidak di-impute.
+
+## 3. Tabel akhir: `core_province_month`
+
+Pipeline mengubah tabel fakta menjadi satu tabel lebar di `data/final/`, satu baris per **provinsi × bulan × grup komoditas**:
+
+| Kelompok kolom | Isi |
+| --- | --- |
+| Key | `province_id`, `month_start`, `commodity_group` |
+| Harga | `price_retail`, `price_wholesale`, `price_producer` |
+| Produksi | `production_ton` (Chow-Lin), `production_ton_denton` |
+| Cuaca | `rain_total_mm`, `rain_anomaly`, `rel_humidity_mean` |
+| ENSO | `oni_anomaly`, `enso_phase` |
+| Kalender | `n_holiday_days`, `months_to_idulfitri` |
+| Flag | pasangan `<variabel>_is_imputed` dan `<variabel>_impute_method` untuk setiap variabel yang bisa di-impute atau diestimasi |
+
+Aturan: tidak boleh ada nilai kosong tanpa penjelasan. Sel kosong hanya sah kalau sebabnya tercatat (di luar periode, variabel tanpa observed data, NTT harga produsen, produksi 2026, bulan parsial).
+
+Tabel mingguan `FACT_PRICE_WEEKLY` tidak ikut digabung. Ia dipakai langsung oleh analisis lead-lag.
