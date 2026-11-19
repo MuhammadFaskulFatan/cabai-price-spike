@@ -109,7 +109,8 @@ flowchart TD
 | `validate/holdout_production.py` | Realisasi SPH Jan-Mar (2022-2025) vs Denton, flat, profile | MAPE nasional | Dokumentasi keputusan D-42; tidak dijalankan oleh `pipeline.run` |
 | `validate/reconcile_annual.py` | Core dataset + BDSP | Selisih per provinsi × tahun | Total 12 bulan harus sama dengan angka tahunan |
 | `validate/crosscheck_pihps_monthly.py` | Harga bulanan hasil hitung sendiri + angka bulanan PIHPS (`tipe_laporan=3`) | Selisih per provinsi × bulan | Cross-check saja; angka PIHPS bulanan tidak dipakai mengisi nilai (D-18) |
-| `validate/spot_check.py` | Sampel acak dari core dataset | Perbandingan dengan sumber asli | Seed acak dicatat supaya bisa diulang |
+| `validate/spot_check.py` | Sampel acak core dataset (seed 2026) | Perbandingan dengan raw dan sumber live | 30 harga vs raw harian (10 juga vs PIHPS live), 10 provinsi-tahun vs BDSP raw dan live, 5 bulan ONI vs NOAA live; hasil live tidak disimpan ke raw |
+| `validate/report.py` | Semua modul validate | `pipeline/validate/reports/validation_report.md` | Ringkasan lulus/gagal; `--skip-live` untuk melewati request live |
 | `validate/checks_core.py` | Core dataset | Lulus atau gagal | Tidak ada missing yang tidak ter-flag; key unik |
 
 ## 3. Metadata raw

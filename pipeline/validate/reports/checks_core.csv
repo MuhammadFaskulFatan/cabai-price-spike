@@ -1,0 +1,47 @@
+cek,lulus,rincian
+core_province_month: key unik,True,"7,276 baris"
+core_province_month: lengkap 34 provinsi x 107 bulan x 2 grup,True,"34 provinsi, 107 bulan"
+core_province_month: rentang Jan 2018 - Nov 2026,True,2018-01-01 s/d 2026-11-01
+price_retail: semua harga positif dan < Rp500.000/kg,True,"min 12,721, max 173,661"
+price_wholesale: semua harga positif dan < Rp500.000/kg,True,"min 6,320, max 153,198"
+price_producer: semua harga positif dan < Rp500.000/kg,True,"min 3,000, max 153,350"
+price_retail: is_imputed TRUE tepat ketika impute_method terisi,True,0 nilai imputed
+price_retail: impute_method hanya linear_log (D-43),True,[]
+price_retail: tidak ada imputation di seri excluded,True,
+"price_retail: tidak ada imputation di luar periode model (2018 boleh, Nov 2026 tidak)",True,
+price_retail: nilai imputed tidak pernah kosong,True,
+price_retail: tidak ada rangkaian imputed lebih dari 6 bulan,True,0 rangkaian
+price_retail: tidak ada imputation di awal atau akhir seri,True,0 seri
+price_retail: setiap sel kosong di periode model punya alasan,True,tidak ada sel kosong
+price_wholesale: is_imputed TRUE tepat ketika impute_method terisi,True,4 nilai imputed
+price_wholesale: impute_method hanya linear_log (D-43),True,['linear_log']
+price_wholesale: tidak ada imputation di seri excluded,True,
+"price_wholesale: tidak ada imputation di luar periode model (2018 boleh, Nov 2026 tidak)",True,
+price_wholesale: nilai imputed tidak pernah kosong,True,
+price_wholesale: tidak ada rangkaian imputed lebih dari 6 bulan,True,0 rangkaian
+price_wholesale: tidak ada imputation di awal atau akhir seri,True,0 seri
+price_wholesale: setiap sel kosong di periode model punya alasan,True,gap_tengah_lebih_6_bulan 7
+price_producer: is_imputed TRUE tepat ketika impute_method terisi,True,109 nilai imputed
+price_producer: impute_method hanya linear_log (D-43),True,['linear_log']
+price_producer: tidak ada imputation di seri excluded,True,
+"price_producer: tidak ada imputation di luar periode model (2018 boleh, Nov 2026 tidak)",True,
+price_producer: nilai imputed tidak pernah kosong,True,
+price_producer: tidak ada rangkaian imputed lebih dari 6 bulan,True,0 rangkaian
+price_producer: tidak ada imputation di awal atau akhir seri,True,0 seri
+price_producer: setiap sel kosong di periode model punya alasan,True,gap_akhir_seri 68; gap_awal_seri 9; gap_tengah_lebih_6_bulan 9; tier_excluded 282
+NTT harga produsen sejak 2024 tetap kosong (tanpa ekstrapolasi) dan ditandai keluar analisis,True,0 sel terisi
+production_annual_ton sama untuk 12 bulan dalam tahunnya,True,
+production_annual_ton kosong untuk 2026 dan terisi untuk 2018-2025,True,
+production_annual_preliminary hanya 2025,True,
+tidak ada kolom produksi bulanan Denton,True,
+ONI kosong hanya Okt-Nov 2026,True,"2026-10-01, 2026-11-01"
+"enso_phase konsisten dengan ambang +-0,5",True,
+months_to_idulfitri = 0 tepat di bulan 1 Syawal,True,9 bulan
+n_holiday_days = jumlah libur nasional di dim_holiday,True,44 hari
+dim_holiday: source_level hanya official/secondary,True,"{'official': 69, 'secondary': 16}"
+periode model = Jan 2019 - Okt 2026,True,
+core_province_year: key unik dan lengkap 34 x 8 tahun x 2 grup,True,544 baris
+core_province_year: producer_price_n_months di 0-12,True,
+core_province_year: is_preliminary hanya 2025,True,
+core_province_year: is_outlier sesuai aturan 1-30 ton/ha,True,16 baris outlier
+production_annual_ton di core bulanan = production_ton di core tahunan,True,544 provinsi-tahun

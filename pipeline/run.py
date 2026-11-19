@@ -1,4 +1,4 @@
-"""Jalankan pipeline dari awal. Tahap yang sudah ada: extract, audit, transform (validate menyusul di fase 5).
+"""Jalankan pipeline dari awal. Tahap: extract, audit, transform, validate (cuaca menyusul sebagai paket terpisah).
 
     python -m pipeline.run                 # semua tahap yang sudah ada
     python -m pipeline.run --stage extract
@@ -30,6 +30,7 @@ from pipeline.transform import (
     report,
 )
 from pipeline.validate import holdout_imputation
+from pipeline.validate import report as validation_report
 
 EXTRACT_STEPS = [
     ("pihps", pihps),
@@ -54,7 +55,8 @@ TRANSFORM_STEPS = [
     ("report", report),
 ]
 
-STAGES = {"extract": EXTRACT_STEPS, "audit": [("completeness", completeness)], "transform": TRANSFORM_STEPS}
+STAGES = {"extract": EXTRACT_STEPS, "audit": [("completeness", completeness)], "transform": TRANSFORM_STEPS,
+          "validate": [("validation_report", validation_report)]}
 
 
 def run_stage(name, refresh):

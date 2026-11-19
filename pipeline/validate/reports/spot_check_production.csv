@@ -1,0 +1,11 @@
+grup,province_id,tahun,core,raw,live,raw_cocok,live_cocok
+cabai_merah,18,2020,20092.39,20092.39,20092.39,True,True
+cabai_merah,21,2021,8976.63,8976.63,8976.63,True,True
+cabai_merah,9,2024,7774.53,7774.53,7774.53,True,True
+cabai_merah,6,2018,38002.5,38002.5,38002.5,True,True
+cabai_merah,21,2019,11392.0,11392.0,11392.0,True,True
+cabai_rawit,29,2022,19006.22,19006.22,19006.22,True,True
+cabai_rawit,19,2020,10467.9,10467.9,10467.9,True,True
+cabai_rawit,28,2021,22198.53,22198.53,22198.53,True,True
+cabai_rawit,5,2018,1715.7,1715.7,1715.7,True,True
+cabai_rawit,12,2024,163755.89,163755.89,163755.89,True,True
