@@ -64,12 +64,13 @@ Dokumen ini berisi konvensi dan daftar kolom untuk setiap tabel di [ERD](02_erd_
 
 | Kolom | Tipe | Deskripsi | Sumber | Catatan |
 | --- | --- | --- | --- | --- |
-| `point_id` | int | ID titik | - | PK |
-| `province_id` | int | Provinsi titik | - | FK |
-| `commodity_group` | string | Komoditas yang diwakili titik | - | FK |
-| `regency_name` | string | Kabupaten sentra | BDSP level kabupaten | Contoh yang sudah diuji: Garut, Magelang, Kediri, Malang, Brebes |
-| `latitude`, `longitude` | float | Koordinat titik untuk Open-Meteo | TBD | Sumber koordinat dicatat |
-| `production_weight` | float | Bobot produksi titik dalam provinsi, jumlah per provinsi × komoditas = 1 | BDSP | - |
+| `regency_code` | string | Kode kabupaten BDSP | BDSP level kabupaten | PK bersama `commodity_group` |
+| `commodity_group` | string | Komoditas yang diwakili baris | - | PK, FK |
+| `province_id` | int | Provinsi PIHPS induk kabupaten | Pemetaan D-17 | FK |
+| `regency_name` | string | Nama kabupaten sentra | BDSP | Dipilih dari produksi nasional teratas sampai kumulatif sekitar 80% (D-24) |
+| `latitude`, `longitude` | float | Koordinat kabupaten | Nominatim (OpenStreetMap) | Hasil geocoding, titik pusat wilayah administratif |
+| `anchor_id`, `anchor_latitude`, `anchor_longitude` | string, float | Lokasi Open-Meteo yang dipakai; kabupaten berjarak < 10 km memakai anchor yang sama | Disusun sendiri | Nama file cuaca raw mengikuti koordinat anchor |
+| `production_weight` | float | Bobot produksi kabupaten dalam provinsi × komoditas, jumlah per grup = 1 | BDSP | Dihitung di fase transform |
 | `weight_basis_year` | int | Tahun produksi yang jadi dasar bobot | BDSP | Satu tahun tetap atau rata-rata beberapa tahun: TBD fase transform |
 
 ## 3. Tabel fakta
@@ -139,6 +140,7 @@ PK: `province_id`, `month_start`, `commodity_group`. Sumber: Open-Meteo, diagreg
 | `rain_total_mm` | float | Jumlah hujan bulanan | - |
 | `rain_anomaly` | float | Selisih terhadap normal bulan kalender | Normal = rata-rata 1991-2020 (WMO climate normal, D-19) |
 | `rel_humidity_mean` | float | Rata-rata kelembapan relatif | - |
+| `weather_status` | string | `observed` atau `not_applicable` | `not_applicable` untuk provinsi × komoditas tanpa titik sentra (D-25); nilai cuaca `NULL` dan bukan missing |
 | `source_extract_date` | date | Tanggal extraction | - |
 
 Kategori kering/normal/basah untuk H1 diturunkan dari `rain_anomaly` saat analisis, bukan disimpan di sini.
@@ -168,6 +170,7 @@ Definisi kolom sudah ada di [ERD, bagian 3](02_erd_core_dataset.md). Aturan kual
 | --- | --- |
 | Tabel pemetaan nama provinsi PIHPS dan BDSP ke 34 provinsi, kode BPS, dan pemetaan pemekaran ke induk (D-17) | Extract |
 | Satuan asli dan format angka tiap sumber | Extract |
+| Daftar provinsi × komoditas tanpa titik sentra (`weather_status = not_applicable`) | Transform |
 | Hari libur nasional yang kosong di PIHPS (survei sendiri Senin-Jumat, D-18) | Audit |
 | Tahun dasar bobot sentra | Transform |
 | Definisi `months_to_idulfitri` untuk bulan di antara dua Idulfitri | Transform |

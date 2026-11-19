@@ -65,12 +65,15 @@ erDiagram
         int months_to_idulfitri
     }
     DIM_SENTRA_POINT {
-        int point_id PK
+        string regency_code PK
+        string commodity_group PK
         int province_id FK
-        string commodity_group FK
         string regency_name
         float latitude
         float longitude
+        string anchor_id
+        float anchor_latitude
+        float anchor_longitude
         float production_weight
         int weight_basis_year
     }
@@ -124,6 +127,7 @@ erDiagram
         float rain_total_mm
         float rain_anomaly
         float rel_humidity_mean
+        string weather_status
         date source_extract_date
     }
     FACT_ONI_MONTHLY {
@@ -140,6 +144,8 @@ erDiagram
 - **34 provinsi.** Sumber yang sudah memakai 38 provinsi dipetakan ke provinsi induk (Papua Selatan, Papua Tengah, Papua Pegunungan ke Papua; Papua Barat Daya ke Papua Barat). Lihat D-17.
 - **Tipe harga di baris, bukan di kolom**, pada tabel fakta. Dengan begitu `is_imputed` dan `impute_method` melekat pada setiap nilai harga, sesuai aturan wajib di data quality rules. Tipe harga yang masuk core: 1 (eceran), 3 (pedagang besar), 4 (produsen). Tipe 2 (pasar modern) tidak dipakai oleh hipotesis mana pun.
 - **Cuaca dikunci per komoditas.** Bobot production-weighted average berbeda antara cabai merah dan cabai rawit karena sentranya berbeda, jadi `FACT_WEATHER_MONTHLY` punya `commodity_group` di key.
+- **Titik sentra dipilih nasional, bukan per provinsi (D-24).** Kabupaten diambil dari produksi nasional teratas sampai kumulatif sekitar 80% per grup komoditas; kabupaten yang berjarak kurang dari 10 km berbagi satu lokasi cuaca (`anchor_id`). Sebagian provinsi tidak punya titik sentra.
+- **Cuaca not applicable (D-25).** Untuk provinsi × komoditas tanpa titik sentra, baris cuaca tetap ada dengan nilai `NULL` dan `weather_status = 'not_applicable'`. Ini berbeda dari missing: provinsi itu memang bukan sentra, jadi cuaca tidak dipakai dalam uji H1 dan H4. Provinsi bersentra memakai `weather_status = 'observed'`.
 - **Produksi bulanan provinsi seluruhnya hasil estimasi.** Tidak ada angka bulanan provinsi yang diamati, jadi setiap barisnya `is_imputed = TRUE` dengan `impute_method = chow_lin`. Hasil Denton disimpan di kolom terpisah sebagai pembanding, bukan baris terpisah.
 - **Produksi nasional bulanan boleh kosong.** Bulan yang hanya punya proyeksi dibiarkan `production_ton = NULL` dan `status = 'missing'`. Bulan ber-`status = 'realisasi'` yang dipakai sebagai indicator series.
 - **Produksi 2026.** Angka tahunan 2026 belum terbit, jadi `FACT_PRODUCTION_MONTHLY` kosong untuk 2026. Tabel tidak di-extrapolate.
@@ -157,7 +163,7 @@ Pipeline mengubah tabel fakta menjadi satu tabel lebar di `data/final/`, satu ba
 | Key | `province_id`, `month_start`, `commodity_group` |
 | Harga | `price_retail`, `price_wholesale`, `price_producer` |
 | Produksi | `production_ton` (Chow-Lin), `production_ton_denton` |
-| Cuaca | `rain_total_mm`, `rain_anomaly`, `rel_humidity_mean` |
+| Cuaca | `rain_total_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status` |
 | ENSO | `oni_anomaly`, `enso_phase` |
 | Kalender | `n_holiday_days`, `months_to_idulfitri` |
 | Flag | pasangan `<variabel>_is_imputed` dan `<variabel>_impute_method` untuk setiap variabel yang bisa di-impute atau diestimasi |

@@ -89,7 +89,7 @@ flowchart TD
 | Modul | Input | Output | Aturan utama |
 | --- | --- | --- | --- |
 | `extract/pihps.py` | `GetGridDataKomoditas` per kuartal, harian, tipe harga 1/3/4, `cat_7` dan `cat_8` plus empat varian (merah besar, merah keriting, rawit merah, rawit hijau), semua provinsi; tipe laporan mingguan untuk data lead-lag; tipe laporan bulanan (`tipe_laporan=3`) untuk cross-check | JSON/CSV di `data/raw/pihps/` | Request berurutan dengan jeda, tidak paralel; satu kuartal per request; retry saat timeout. Varian hanya untuk analisis deskriptif, tidak masuk core |
-| `extract/open_meteo.py` | Koordinat titik sentra, 1991-01-01 sampai tanggal extraction | Harian per titik di `data/raw/open_meteo/` | Titik sentra dibaca dari hasil BDSP level kabupaten. Mulai 1991 karena baseline normal memakai 1991-2020 (D-19) |
+| `extract/open_meteo.py` | Koordinat titik sentra, 1991-01-01 sampai tanggal extraction | Harian per titik di `data/raw/open_meteo/` | Titik sentra: kabupaten dengan produksi nasional teratas sampai kumulatif sekitar 80% per komoditas, titik berjarak < 10 km digabung (D-24). Mulai 1991 karena baseline normal memakai 1991-2020 (D-19). Satu lokasi 1991-2026 sekitar 187 call; batas 10.000 call/hari, jadi extract bisa makan beberapa hari dan resumable |
 | `extract/noaa_oni.py` | `oni.ascii.txt` | `data/raw/noaa_oni/` | Simpan apa adanya |
 | `extract/bdsp.py` | Form/endpoint BDSP: produksi dan luas panen, level provinsi dan kabupaten | `data/raw/bdsp/` | Angka desimal berkoma disimpan mentah, parsing di transform |
 | `extract/buletin_pusdatin.py` | Semua edisi Semester I dan II yang bisa ditemukan | PDF asli plus tabel hasil ekstraksi di `data/raw/buletin/` | `pdfplumber`/`camelot`; OCR kalau tabel berupa gambar; catatan kaki realisasi/proyeksi ikut disimpan |
@@ -98,7 +98,7 @@ flowchart TD
 | `transform/aggregate_monthly.py` | PIHPS harian | Harga bulanan + `n_days_observed` | Rata-rata hari tersedia (survei Senin-Jumat); kurang dari 10 hari kerja = missing. Provinsi dari sumber 38-provinsi dipetakan ke 34 provinsi induk (D-17) |
 | `transform/impute_price.py` | Harga bulanan | Harga bulanan dengan `is_imputed`, `impute_method` | Gap 1-2 bulan: linear interpolation pada log price. Gap lebih panjang di tengah: Kalman smoothing. Awal series atau hampir kosong: tidak di-impute |
 | `transform/disaggregate_production.py` | BDSP tahunan + buletin bulanan nasional | Produksi bulanan per provinsi | Chow-Lin, total 12 bulan = angka tahunan; Denton sebagai pembanding; 2026 tidak di-extrapolate |
-| `transform/weather_features.py` | Harian Open-Meteo + bobot sentra | Cuaca bulanan per provinsi × komoditas | Production-weighted average titik kabupaten sentra |
+| `transform/weather_features.py` | Harian Open-Meteo + bobot sentra | Cuaca bulanan per provinsi × komoditas | Production-weighted average titik kabupaten sentra. Provinsi × komoditas tanpa titik sentra diberi `weather_status = not_applicable` dengan nilai `NULL`, tidak di-impute (D-25) |
 | `transform/calendar_features.py` | ONI dan kalender | ONI bulanan, jumlah hari libur, jarak ke Idulfitri | Season dipetakan ke bulan tengah (DJF = Januari) |
 | `transform/integrate.py` | Semua tabel di `data/interim/` | `core_province_month` | Grain provinsi × bulan × komoditas |
 | `validate/holdout_imputation.py` | Observed value yang sengaja di-mask | MAPE per metode | Dipanggil dua kali: sebagai alat pemilih metode di fase transform, dan sebagai laporan resmi di fase validate |
