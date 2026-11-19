@@ -38,7 +38,7 @@ flowchart TD
     subgraph TRANSFORM["pipeline/transform"]
         T1["aggregate_monthly.py<br/>harian ke bulanan, min 10 hari kerja"]
         T2["impute_price.py<br/>interpolasi log / Kalman"]
-        T3["disaggregate_production.py<br/>Chow-Lin, Denton pembanding"]
+        T3["disaggregate_production.py<br/>Denton, profil musiman buletin"]
         T4["weather_features.py<br/>production-weighted per provinsi"]
         T5["calendar_features.py<br/>ONI dan hari besar ke bulanan"]
         T6["integrate.py<br/>gabung ke provinsi x bulan"]
@@ -97,10 +97,11 @@ flowchart TD
 | `audit/completeness.py` | `data/raw/` | Laporan di `pipeline/audit/` | Per sumber × provinsi × bulan, termasuk tabel heatmap missing |
 | `transform/aggregate_monthly.py` | PIHPS harian | Harga bulanan + `n_days_observed` | Rata-rata hari tersedia (survei Senin-Jumat); kurang dari 10 hari kerja = missing. Provinsi dari sumber 38-provinsi dipetakan ke 34 provinsi induk (D-17) |
 | `transform/impute_price.py` | Harga bulanan | Harga bulanan dengan `is_imputed`, `impute_method` | Gap 1-2 bulan: linear interpolation pada log price. Gap lebih panjang di tengah: Kalman smoothing. Awal series atau hampir kosong: tidak di-impute |
-| `transform/disaggregate_production.py` | BDSP tahunan + buletin bulanan nasional | Produksi bulanan per provinsi | Chow-Lin, total 12 bulan = angka tahunan; Denton sebagai pembanding; 2026 tidak di-extrapolate |
+| `transform/disaggregate_production.py` | BDSP tahunan + tabel prognosa buletin (profil musiman) | Produksi bulanan per provinsi (deskriptif) | Denton; total 12 bulan = angka tahunan; Jan-Mar realisasi (~15 bulan) sebagai hold-out MAPE; 2026 tidak di-extrapolate (D-26) |
 | `transform/weather_features.py` | Harian Open-Meteo + bobot sentra | Cuaca bulanan per provinsi × komoditas | Production-weighted average titik kabupaten sentra. Provinsi × komoditas tanpa titik sentra diberi `weather_status = not_applicable` dengan nilai `NULL`, tidak di-impute (D-25) |
 | `transform/calendar_features.py` | ONI dan kalender | ONI bulanan, jumlah hari libur, jarak ke Idulfitri | Season dipetakan ke bulan tengah (DJF = Januari) |
 | `transform/integrate.py` | Semua tabel di `data/interim/` | `core_province_month` | Grain provinsi × bulan × komoditas |
+| `transform/aggregate_annual.py` | BDSP tahunan + harga produsen bulanan | `core_province_year` | Rata-rata harga produsen tahunan dengan jumlah bulan terisi; 2025 `is_preliminary` (D-27, D-29) |
 | `validate/holdout_imputation.py` | Observed value yang sengaja di-mask | MAPE per metode | Dipanggil dua kali: sebagai alat pemilih metode di fase transform, dan sebagai laporan resmi di fase validate |
 | `validate/reconcile_annual.py` | Core dataset + BDSP | Selisih per provinsi × tahun | Total 12 bulan harus sama dengan angka tahunan |
 | `validate/crosscheck_pihps_monthly.py` | Harga bulanan hasil hitung sendiri + angka bulanan PIHPS (`tipe_laporan=3`) | Selisih per provinsi × bulan | Cross-check saja; angka PIHPS bulanan tidak dipakai mengisi nilai (D-18) |
@@ -132,10 +133,10 @@ Variabel yang dipakai untuk imputation tidak boleh variabel yang nanti diuji hub
 | Harga produsen | Deret harga produsen itu sendiri (interpolasi, Kalman dengan trend + seasonal) | Harga pedagang besar, harga eceran, cuaca, produksi | H2 menguji transmisi antar level harga |
 | Harga pedagang besar | Deret itu sendiri | Harga produsen, harga eceran, cuaca, produksi | H2, H3 |
 | Harga eceran | Deret itu sendiri | Harga produsen, harga pedagang besar, cuaca, produksi | H2, H3, H4 |
-| Produksi bulanan provinsi | Produksi tahunan BDSP, produksi bulanan nasional | Harga, cuaca | H1 dan H5 menguji hubungan produksi dengan harga dan cuaca |
+| Produksi bulanan provinsi | Produksi tahunan BDSP, profil musiman buletin | Harga, cuaca | Produksi bulanan hanya deskriptif (D-26); H5 diuji di grain tahunan memakai BDSP langsung |
 | Cuaca, ONI, kalender | Tidak di-impute | - | Variabel tanpa observed data tidak diisi |
 
-Satu catatan: produksi bulanan nasional dari buletin dipakai sebagai indicator series untuk Chow-Lin. Pola musimannya ikut menurun ke tiap provinsi. Asumsi ini sudah tercatat di Project Charter (pola musiman provinsi mirip pola nasional), dan Denton menjadi pembandingnya.
+Satu catatan: profil musiman dari tabel prognosa buletin menurun ke tiap provinsi. Asumsi ini sudah tercatat di Project Charter (pola musiman provinsi mirip pola nasional). Karena hanya Januari-Maret yang berstatus realisasi, profil musiman Juli-Desember berasal dari rata-rata tahun sebelumnya, bukan observasi bulanan (D-26).
 
 ## 5. Urutan fase dan hold-out validation
 

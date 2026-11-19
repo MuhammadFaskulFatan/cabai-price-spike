@@ -15,7 +15,7 @@ Dokumen ini berisi konvensi dan daftar kolom untuk setiap tabel di [ERD](02_erd_
 | Kelembapan | Persen, rata-rata harian dalam bulan |
 | Missing | `NULL`. Tidak ada kode angka khusus seperti 0 atau -1 |
 | Flag imputation | `is_imputed` (boolean) dan `impute_method` (string, `NULL` kalau tidak di-impute) untuk setiap nilai yang diimpute atau diestimasi |
-| Nilai `impute_method` | `linear_log`, `kalman`, `chow_lin` |
+| Nilai `impute_method` | `linear_log`, `kalman`, `denton` |
 | Kunci provinsi | `province_id` mengikuti ID PIHPS (`GetRefProvince`); pemetaan ke nama BDSP dibuat di fase extract |
 | Provenance | Setiap tabel fakta membawa `source_extract_date` dari metadata raw |
 
@@ -100,11 +100,12 @@ PK: `province_id`, `week_start`, `commodity_group`, `price_type_id`. Sumber: PIH
 
 ### `fact_production_annual`
 
-PK: `province_id`, `year`, `commodity_group`. Sumber: BDSP, 2018-2025. Dipakai sebagai benchmark Chow-Lin dan Denton, serta untuk reconciliation.
+PK: `province_id`, `year`, `commodity_group`. Sumber: BDSP, 2018-2025. Dipakai sebagai benchmark Denton, bahan `core_province_year`, dan reconciliation. Angka 2025 `is_preliminary` (D-29).
 
 | Kolom | Tipe | Deskripsi | Catatan |
 | --- | --- | --- | --- |
-| `production_ton` | float | Produksi tahunan | `cabai_merah` = cabe besar + cabe keriting |
+| `production_ton` | float | Produksi tahunan | `cabai_merah` = cabe besar saja (D-28). Cabe keriting disimpan terpisah sebagai `cabai_keriting` (referensi), sudah dikonversi dari kuintal ke ton |
+| `is_preliminary` | bool | `TRUE` untuk 2025 | Belum diverifikasi ke rilis BPS; masuk sensitivity check |
 | `harvested_area_ha` | float | Luas panen | Dari indikator LUAS PANEN BDSP |
 | `source_extract_date` | date | Tanggal extraction | - |
 
@@ -124,10 +125,9 @@ PK: `province_id`, `month_start`, `commodity_group`. Hasil disagregasi.
 
 | Kolom | Tipe | Deskripsi | Catatan |
 | --- | --- | --- | --- |
-| `production_ton_chow_lin` | float | Estimasi bulanan, utama | Total 12 bulan = angka tahunan BDSP |
-| `production_ton_denton` | float | Estimasi pembanding | Dipakai di sensitivity check |
+| `production_ton_denton` | float | Estimasi bulanan (deskriptif saja) | Total 12 bulan = angka tahunan BDSP; profil musiman dari tabel prognosa buletin (D-26) |
 | `is_imputed` | bool | Selalu `TRUE` | Semua nilai adalah estimasi |
-| `impute_method` | string | `chow_lin` | - |
+| `impute_method` | string | `denton` | - |
 
 `NULL` untuk 2026 (angka tahunan belum terbit) dan untuk kombinasi yang tidak punya benchmark.
 
@@ -140,7 +140,7 @@ PK: `province_id`, `month_start`, `commodity_group`. Sumber: Open-Meteo, diagreg
 | `rain_total_mm` | float | Jumlah hujan bulanan | - |
 | `rain_anomaly` | float | Selisih terhadap normal bulan kalender | Normal = rata-rata 1991-2020 (WMO climate normal, D-19) |
 | `rel_humidity_mean` | float | Rata-rata kelembapan relatif | - |
-| `weather_status` | string | `observed` atau `not_applicable` | `not_applicable` untuk provinsi × komoditas tanpa titik sentra (D-25); nilai cuaca `NULL` dan bukan missing. Provinsi bertitik: 13 untuk cabai merah, 15 untuk cabai rawit (17 gabungan), mencakup 93,9% (cabai merah) dan 92,4% (cabai rawit) produksi nasional rata-rata BDSP 2019-2025; gabungan 17 provinsi: cabe besar 95,0%, cabe keriting 96,1%, cabe rawit 93,9% |
+| `weather_status` | string | `observed` atau `not_applicable` | `not_applicable` untuk provinsi × komoditas tanpa titik sentra (D-25); nilai cuaca `NULL` dan bukan missing. Provinsi bertitik: 14 untuk cabai merah (mencakup 94,1% produksi nasional rata-rata BDSP 2019-2025) dan 15 untuk cabai rawit (92,4%); gabungan 18 provinsi mencakup 95,7% (cabe besar) dan 94,8% (cabe rawit) |
 | `source_extract_date` | date | Tanggal extraction | - |
 
 Kategori kering/normal/basah untuk H1 diturunkan dari `rain_anomaly` saat analisis, bukan disimpan di sini.
@@ -164,7 +164,19 @@ Definisi kolom sudah ada di [ERD, bagian 3](02_erd_core_dataset.md). Aturan kual
 3. Sel `NULL` hanya sah dengan alasan yang tercatat: di luar periode inti, variabel tanpa observed data, NTT pada harga produsen, produksi 2026, bulan parsial, ONI setelah ASO 2026.
 4. Harga produsen tidak pernah diisi dari harga pedagang besar.
 
-## 5. Yang masih TBD
+## 5. Tabel akhir: `core_province_year`
+
+Key: `province_id`, `year`, `commodity_group`. Dipakai untuk uji H5: luas panen t terhadap harga produsen t-1 (D-27). Struktur kolom ada di [ERD, bagian 4](02_erd_core_dataset.md).
+
+| Kolom | Tipe | Deskripsi | Aturan null |
+| --- | --- | --- | --- |
+| `harvested_area_ha` | float | Luas panen tahunan BDSP | `NULL` untuk 2026 |
+| `production_ton` | float | Produksi tahunan BDSP | `NULL` untuk 2026 |
+| `is_preliminary` | bool | `TRUE` untuk 2025 | Wajib |
+| `producer_price_annual_mean` | float | Rata-rata bulanan harga produsen dalam tahun itu | `NULL` kalau tidak ada bulan terisi; NTT dikeluarkan (D-03) |
+| `producer_price_n_months` | int | Jumlah bulan terisi (observed atau imputed) di tahun itu | Wajib |
+
+## 6. Yang masih TBD
 
 | Item | Dilengkapi di fase |
 | --- | --- |

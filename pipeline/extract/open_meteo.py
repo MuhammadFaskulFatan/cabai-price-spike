@@ -55,10 +55,10 @@ GEOCODE_PAUSE = 1.2  # kebijakan Nominatim: maksimal satu request per detik
 REQUEST_PAUSE = 20  # satu request 35 tahun = ~187 call, batas 600 call/menit
 CALLS_PER_DAY_OF_DATA = 1 / 70  # dua variabel harian, hasil ukur header X-RateLimit-Cost
 
-# berkas BDSP -> (grup komoditas, faktor ke ton). Cabe keriting dilaporkan dalam kuintal.
+# berkas BDSP -> (grup komoditas, faktor ke ton). cabai_merah = cabe besar saja (D-28);
+# cabe keriting tidak dipakai untuk memilih sentra.
 BDSP_FILES = {
     "cabe_besar_produksi": ("cabai_merah", 1.0),
-    "cabe_keriting_produksi": ("cabai_merah", 0.1),
     "cabe_rawit_produksi": ("cabai_rawit", 1.0),
 }
 
