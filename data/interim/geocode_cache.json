@@ -733,5 +733,15 @@
   "lat": -8.3572425,
   "lon": 116.1609208,
   "match": "Lombok Utara, Nusa Tenggara Barat, Indonesia"
+ },
+ "Kab. Langkat|Sumatera Utara": {
+  "lat": 3.7617255,
+  "lon": 98.1769187,
+  "match": "Kabupaten Langkat, Sumatera Utara, Indonesia"
+ },
+ "Kab. Cirebon|Jawa Barat": {
+  "lat": -6.7611892,
+  "lon": 108.4564232,
+  "match": "Kabupaten Cirebon, Jawa Barat, Indonesia"
  }
 }
