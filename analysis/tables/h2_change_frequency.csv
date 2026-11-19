@@ -1,0 +1,202 @@
+province_id,grup,level,minggu,pct_minggu_berubah,provinsi
+1,cabai_merah,eceran,383,98.43342036553526,Aceh
+1,cabai_merah,pedagang besar,408,96.81372549019608,Aceh
+1,cabai_merah,produsen,410,24.390243902439025,Aceh
+1,cabai_rawit,eceran,383,98.17232375979113,Aceh
+1,cabai_rawit,pedagang besar,408,94.36274509803921,Aceh
+1,cabai_rawit,produsen,410,24.634146341463413,Aceh
+2,cabai_merah,eceran,387,99.2248062015504,Sumatera Utara
+2,cabai_merah,pedagang besar,410,98.29268292682927,Sumatera Utara
+2,cabai_merah,produsen,408,25.735294117647058,Sumatera Utara
+2,cabai_rawit,eceran,387,98.96640826873386,Sumatera Utara
+2,cabai_rawit,pedagang besar,410,97.5609756097561,Sumatera Utara
+2,cabai_rawit,produsen,408,24.509803921568626,Sumatera Utara
+3,cabai_merah,eceran,377,99.46949602122017,Sumatera Barat
+3,cabai_merah,pedagang besar,404,97.77227722772277,Sumatera Barat
+3,cabai_merah,produsen,410,22.682926829268293,Sumatera Barat
+3,cabai_rawit,eceran,377,96.81697612732096,Sumatera Barat
+3,cabai_rawit,pedagang besar,404,94.05940594059405,Sumatera Barat
+3,cabai_rawit,produsen,410,22.682926829268293,Sumatera Barat
+4,cabai_merah,eceran,378,98.14814814814815,Riau
+4,cabai_merah,pedagang besar,406,94.82758620689656,Riau
+4,cabai_merah,produsen,398,21.85929648241206,Riau
+4,cabai_rawit,eceran,378,98.67724867724867,Riau
+4,cabai_rawit,pedagang besar,406,94.08866995073892,Riau
+4,cabai_rawit,produsen,398,20.85427135678392,Riau
+5,cabai_merah,eceran,378,99.20634920634922,Kepulauan Riau
+5,cabai_merah,pedagang besar,404,83.9108910891089,Kepulauan Riau
+5,cabai_merah,produsen,378,20.8994708994709,Kepulauan Riau
+5,cabai_rawit,eceran,378,98.94179894179894,Kepulauan Riau
+5,cabai_rawit,pedagang besar,404,85.64356435643565,Kepulauan Riau
+5,cabai_rawit,produsen,378,21.957671957671955,Kepulauan Riau
+6,cabai_merah,eceran,380,99.47368421052632,Jambi
+6,cabai_merah,pedagang besar,408,95.09803921568627,Jambi
+6,cabai_merah,produsen,397,21.41057934508816,Jambi
+6,cabai_rawit,eceran,380,99.21052631578947,Jambi
+6,cabai_rawit,pedagang besar,408,90.44117647058823,Jambi
+7,cabai_merah,eceran,379,98.41688654353563,Bengkulu
+7,cabai_merah,pedagang besar,410,92.92682926829269,Bengkulu
+7,cabai_merah,produsen,372,36.02150537634409,Bengkulu
+7,cabai_rawit,eceran,379,98.94459102902374,Bengkulu
+7,cabai_rawit,pedagang besar,410,90.97560975609757,Bengkulu
+7,cabai_rawit,produsen,349,28.653295128939828,Bengkulu
+8,cabai_merah,eceran,383,97.65013054830287,Sumatera Selatan
+8,cabai_merah,pedagang besar,400,89.0,Sumatera Selatan
+8,cabai_merah,produsen,402,21.641791044776117,Sumatera Selatan
+8,cabai_rawit,eceran,383,98.69451697127938,Sumatera Selatan
+8,cabai_rawit,pedagang besar,400,87.25,Sumatera Selatan
+8,cabai_rawit,produsen,402,21.641791044776117,Sumatera Selatan
+9,cabai_merah,eceran,380,97.36842105263158,Kepulauan Bangka Belitung
+9,cabai_merah,pedagang besar,402,88.30845771144278,Kepulauan Bangka Belitung
+9,cabai_merah,produsen,396,22.474747474747474,Kepulauan Bangka Belitung
+9,cabai_rawit,eceran,380,97.36842105263158,Kepulauan Bangka Belitung
+9,cabai_rawit,pedagang besar,402,88.80597014925374,Kepulauan Bangka Belitung
+9,cabai_rawit,produsen,396,23.232323232323232,Kepulauan Bangka Belitung
+10,cabai_merah,eceran,384,99.21875,Lampung
+10,cabai_merah,pedagang besar,404,85.89108910891089,Lampung
+10,cabai_merah,produsen,410,22.195121951219512,Lampung
+10,cabai_rawit,eceran,384,98.4375,Lampung
+10,cabai_rawit,pedagang besar,404,84.15841584158416,Lampung
+10,cabai_rawit,produsen,410,21.951219512195124,Lampung
+11,cabai_merah,eceran,383,98.9556135770235,Banten
+11,cabai_merah,pedagang besar,410,82.68292682926828,Banten
+11,cabai_merah,produsen,389,20.051413881748072,Banten
+11,cabai_rawit,eceran,383,99.47780678851174,Banten
+11,cabai_rawit,pedagang besar,410,84.8780487804878,Banten
+11,cabai_rawit,produsen,330,14.84848484848485,Banten
+12,cabai_merah,eceran,387,99.2248062015504,Jawa Barat
+12,cabai_merah,pedagang besar,410,97.3170731707317,Jawa Barat
+12,cabai_merah,produsen,410,30.975609756097562,Jawa Barat
+12,cabai_rawit,eceran,387,98.96640826873386,Jawa Barat
+12,cabai_rawit,pedagang besar,410,97.80487804878048,Jawa Barat
+12,cabai_rawit,produsen,410,30.73170731707317,Jawa Barat
+13,cabai_merah,eceran,378,96.29629629629629,DKI Jakarta
+13,cabai_merah,pedagang besar,406,81.2807881773399,DKI Jakarta
+13,cabai_rawit,eceran,378,93.65079365079364,DKI Jakarta
+13,cabai_rawit,pedagang besar,406,86.45320197044335,DKI Jakarta
+14,cabai_merah,eceran,394,98.98477157360406,Jawa Tengah
+14,cabai_merah,pedagang besar,410,98.53658536585365,Jawa Tengah
+14,cabai_merah,produsen,410,25.609756097560975,Jawa Tengah
+14,cabai_rawit,eceran,394,99.23857868020305,Jawa Tengah
+14,cabai_rawit,pedagang besar,410,98.29268292682927,Jawa Tengah
+14,cabai_rawit,produsen,410,25.853658536585368,Jawa Tengah
+15,cabai_merah,eceran,383,96.08355091383812,DI Yogyakarta
+15,cabai_merah,pedagang besar,406,79.55665024630541,DI Yogyakarta
+15,cabai_merah,produsen,406,22.413793103448278,DI Yogyakarta
+15,cabai_rawit,eceran,383,96.8668407310705,DI Yogyakarta
+15,cabai_rawit,pedagang besar,406,83.99014778325123,DI Yogyakarta
+15,cabai_rawit,produsen,406,22.660098522167488,DI Yogyakarta
+16,cabai_merah,eceran,389,98.7146529562982,Jawa Timur
+16,cabai_merah,pedagang besar,410,98.78048780487805,Jawa Timur
+16,cabai_merah,produsen,410,27.80487804878049,Jawa Timur
+16,cabai_rawit,eceran,389,98.45758354755783,Jawa Timur
+16,cabai_rawit,pedagang besar,410,99.02439024390245,Jawa Timur
+16,cabai_rawit,produsen,410,26.82926829268293,Jawa Timur
+17,cabai_merah,eceran,377,98.40848806366049,Bali
+17,cabai_merah,pedagang besar,398,85.42713567839196,Bali
+17,cabai_merah,produsen,404,19.554455445544555,Bali
+17,cabai_rawit,eceran,377,99.46949602122017,Bali
+17,cabai_rawit,pedagang besar,398,85.678391959799,Bali
+17,cabai_rawit,produsen,404,22.02970297029703,Bali
+18,cabai_merah,eceran,385,97.92207792207792,Nusa Tenggara Barat
+18,cabai_merah,pedagang besar,408,92.15686274509804,Nusa Tenggara Barat
+18,cabai_merah,produsen,408,22.30392156862745,Nusa Tenggara Barat
+18,cabai_rawit,eceran,385,98.7012987012987,Nusa Tenggara Barat
+18,cabai_rawit,pedagang besar,408,87.99019607843137,Nusa Tenggara Barat
+18,cabai_rawit,produsen,408,22.30392156862745,Nusa Tenggara Barat
+19,cabai_merah,eceran,378,97.35449735449735,Nusa Tenggara Timur
+19,cabai_merah,pedagang besar,406,84.97536945812809,Nusa Tenggara Timur
+19,cabai_merah,produsen,215,16.27906976744186,Nusa Tenggara Timur
+19,cabai_rawit,eceran,378,93.91534391534393,Nusa Tenggara Timur
+19,cabai_rawit,pedagang besar,406,85.4679802955665,Nusa Tenggara Timur
+19,cabai_rawit,produsen,215,17.209302325581397,Nusa Tenggara Timur
+20,cabai_merah,eceran,374,99.19786096256684,Kalimantan Barat
+20,cabai_merah,pedagang besar,406,91.87192118226602,Kalimantan Barat
+20,cabai_merah,produsen,391,21.73913043478261,Kalimantan Barat
+20,cabai_rawit,eceran,374,98.66310160427807,Kalimantan Barat
+20,cabai_rawit,pedagang besar,404,88.36633663366337,Kalimantan Barat
+20,cabai_rawit,produsen,393,21.374045801526716,Kalimantan Barat
+21,cabai_merah,eceran,383,97.65013054830287,Kalimantan Selatan
+21,cabai_merah,pedagang besar,407,90.9090909090909,Kalimantan Selatan
+21,cabai_merah,produsen,405,22.469135802469136,Kalimantan Selatan
+21,cabai_rawit,eceran,383,98.69451697127938,Kalimantan Selatan
+21,cabai_rawit,pedagang besar,407,93.12039312039312,Kalimantan Selatan
+21,cabai_rawit,produsen,405,21.975308641975307,Kalimantan Selatan
+22,cabai_merah,eceran,379,94.72295514511873,Kalimantan Tengah
+22,cabai_merah,pedagang besar,408,93.13725490196079,Kalimantan Tengah
+22,cabai_merah,produsen,401,20.698254364089774,Kalimantan Tengah
+22,cabai_rawit,eceran,379,96.83377308707124,Kalimantan Tengah
+22,cabai_rawit,pedagang besar,408,94.11764705882352,Kalimantan Tengah
+22,cabai_rawit,produsen,401,21.44638403990025,Kalimantan Tengah
+23,cabai_merah,eceran,386,98.96373056994818,Kalimantan Timur
+23,cabai_merah,pedagang besar,404,94.80198019801979,Kalimantan Timur
+23,cabai_merah,produsen,403,21.588089330024815,Kalimantan Timur
+23,cabai_rawit,eceran,386,98.70466321243524,Kalimantan Timur
+23,cabai_rawit,pedagang besar,404,95.04950495049505,Kalimantan Timur
+23,cabai_rawit,produsen,403,21.09181141439206,Kalimantan Timur
+24,cabai_merah,eceran,375,97.6,Kalimantan Utara
+24,cabai_merah,pedagang besar,406,94.33497536945814,Kalimantan Utara
+24,cabai_merah,produsen,405,14.814814814814813,Kalimantan Utara
+24,cabai_rawit,eceran,375,97.86666666666667,Kalimantan Utara
+24,cabai_rawit,pedagang besar,406,95.32019704433498,Kalimantan Utara
+24,cabai_rawit,produsen,405,14.814814814814813,Kalimantan Utara
+25,cabai_merah,eceran,387,94.31524547803618,Gorontalo
+25,cabai_merah,pedagang besar,401,65.33665835411472,Gorontalo
+25,cabai_merah,produsen,367,19.618528610354225,Gorontalo
+25,cabai_rawit,eceran,387,97.41602067183463,Gorontalo
+25,cabai_rawit,pedagang besar,401,80.79800498753117,Gorontalo
+25,cabai_rawit,produsen,405,22.71604938271605,Gorontalo
+26,cabai_merah,eceran,389,98.97172236503856,Sulawesi Selatan
+26,cabai_merah,pedagang besar,393,92.87531806615776,Sulawesi Selatan
+26,cabai_merah,produsen,410,22.439024390243905,Sulawesi Selatan
+26,cabai_rawit,eceran,389,98.97172236503856,Sulawesi Selatan
+26,cabai_rawit,pedagang besar,393,90.33078880407125,Sulawesi Selatan
+26,cabai_rawit,produsen,410,22.439024390243905,Sulawesi Selatan
+27,cabai_merah,eceran,387,98.44961240310077,Sulawesi Tenggara
+27,cabai_merah,pedagang besar,410,84.8780487804878,Sulawesi Tenggara
+27,cabai_merah,produsen,410,21.951219512195124,Sulawesi Tenggara
+27,cabai_rawit,eceran,387,96.64082687338501,Sulawesi Tenggara
+27,cabai_rawit,pedagang besar,410,78.29268292682927,Sulawesi Tenggara
+27,cabai_rawit,produsen,410,22.195121951219512,Sulawesi Tenggara
+28,cabai_merah,eceran,380,96.05263157894737,Sulawesi Tengah
+28,cabai_merah,pedagang besar,402,94.02985074626866,Sulawesi Tengah
+28,cabai_merah,produsen,406,22.413793103448278,Sulawesi Tengah
+28,cabai_rawit,eceran,380,95.78947368421052,Sulawesi Tengah
+28,cabai_rawit,pedagang besar,402,93.28358208955224,Sulawesi Tengah
+28,cabai_rawit,produsen,408,22.794117647058822,Sulawesi Tengah
+29,cabai_merah,eceran,381,95.8005249343832,Sulawesi Utara
+29,cabai_merah,pedagang besar,406,88.66995073891626,Sulawesi Utara
+29,cabai_merah,produsen,408,21.813725490196077,Sulawesi Utara
+29,cabai_rawit,eceran,381,98.68766404199475,Sulawesi Utara
+29,cabai_rawit,pedagang besar,406,94.08866995073892,Sulawesi Utara
+29,cabai_rawit,produsen,399,21.303258145363408,Sulawesi Utara
+30,cabai_merah,eceran,387,98.19121447028424,Sulawesi Barat
+30,cabai_merah,pedagang besar,407,75.18427518427518,Sulawesi Barat
+30,cabai_merah,produsen,381,20.73490813648294,Sulawesi Barat
+30,cabai_rawit,eceran,387,96.38242894056847,Sulawesi Barat
+30,cabai_rawit,pedagang besar,407,66.83046683046683,Sulawesi Barat
+30,cabai_rawit,produsen,381,20.73490813648294,Sulawesi Barat
+31,cabai_merah,eceran,377,96.81697612732096,Maluku
+31,cabai_merah,pedagang besar,406,90.39408866995073,Maluku
+31,cabai_merah,produsen,384,21.09375,Maluku
+31,cabai_rawit,eceran,377,97.08222811671088,Maluku
+31,cabai_rawit,pedagang besar,406,94.33497536945814,Maluku
+31,cabai_rawit,produsen,384,21.614583333333336,Maluku
+32,cabai_merah,eceran,378,69.31216931216932,Maluku Utara
+32,cabai_merah,pedagang besar,394,49.49238578680203,Maluku Utara
+32,cabai_merah,produsen,385,11.948051948051948,Maluku Utara
+32,cabai_rawit,eceran,378,73.28042328042328,Maluku Utara
+32,cabai_rawit,pedagang besar,349,44.412607449856736,Maluku Utara
+32,cabai_rawit,produsen,379,13.984168865435356,Maluku Utara
+33,cabai_merah,eceran,386,99.22279792746113,Papua
+33,cabai_merah,pedagang besar,398,88.69346733668341,Papua
+33,cabai_merah,produsen,410,22.439024390243905,Papua
+33,cabai_rawit,eceran,386,99.22279792746113,Papua
+33,cabai_rawit,pedagang besar,398,84.92462311557789,Papua
+33,cabai_rawit,produsen,410,21.951219512195124,Papua
+34,cabai_merah,eceran,389,94.60154241645245,Papua Barat
+34,cabai_merah,pedagang besar,410,91.70731707317074,Papua Barat
+34,cabai_merah,produsen,408,22.54901960784314,Papua Barat
+34,cabai_rawit,eceran,389,93.573264781491,Papua Barat
+34,cabai_rawit,pedagang besar,410,88.04878048780488,Papua Barat
+34,cabai_rawit,produsen,408,23.03921568627451,Papua Barat

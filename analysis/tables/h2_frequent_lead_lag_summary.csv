@@ -1,0 +1,7 @@
+grup,hulu,hilir,provinsi,lag_puncak_median,lag_negatif,lag_nol,lag_positif,dua arah,hilir memimpin
+cabai_merah,pedagang besar,eceran,5,-1.0,4,1,0,1,4
+cabai_merah,produsen,eceran,5,-3.0,5,0,0,0,5
+cabai_merah,produsen,pedagang besar,5,-3.0,5,0,0,0,5
+cabai_rawit,pedagang besar,eceran,5,-1.0,3,2,0,2,3
+cabai_rawit,produsen,eceran,5,-3.0,4,1,0,1,4
+cabai_rawit,produsen,pedagang besar,5,-3.0,4,1,0,1,4
