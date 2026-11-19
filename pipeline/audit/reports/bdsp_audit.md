@@ -85,7 +85,7 @@ Cabai umumnya sekitar 5-15 ton/ha; nilai di luar 1-30 ton/ha ditandai untuk dice
 ## 5. Cek subset: cabe keriting vs cabe besar (D-28)
 
 - **produksi**: 172 provinsi-tahun dengan keriting > 0; keriting > besar: 0; nilai identik dengan besar: 8 ['Sumatera Barat 2022', 'Sumatera Barat 2025', 'Kepulauan Bangka Belitung 2024', 'Kepulauan Bangka Belitung 2025', 'Gorontalo 2023', 'Gorontalo 2024', 'Gorontalo 2025', 'Maluku Utara 2023']; besar > 0 tetapi keriting = 0: 102.
-- **luas panen**: 172 provinsi-tahun dengan keriting > 0; keriting > besar: 0; nilai identik dengan besar: 9 ['Sumatera Barat 2022', 'Sumatera Barat 2025', 'Kepulauan Bangka Belitung 2024', 'Kepulauan Bangka Belitung 2025', 'Daerah Khusus Ibukota Jakarta 2025', 'Gorontalo 2023', 'Gorontalo 2024', 'Gorontalo 2025', 'Maluku Utara 2023']; besar > 0 tetapi keriting = 0: 102.
+- **luas panen**: 172 provinsi-tahun dengan keriting > 0; keriting > besar: 0; nilai identik dengan besar: 8 ['Sumatera Barat 2022', 'Sumatera Barat 2025', 'Kepulauan Bangka Belitung 2024', 'Kepulauan Bangka Belitung 2025', 'Gorontalo 2023', 'Gorontalo 2024', 'Gorontalo 2025', 'Maluku Utara 2023']; besar > 0 tetapi keriting = 0: 102.
 
 Total nasional dan rasio:
 
@@ -128,3 +128,84 @@ Jumlah provinsi (dari 34) dengan produksi > 0:
 | cabe besar | 33 | 33 | 33 | 33 | 33 | 34 | 34 | 34 |
 | cabe keriting | 0 | 0 | 0 | 32 | 32 | 33 | 34 | 34 |
 | cabe rawit | 34 | 33 | 33 | 34 | 34 | 34 | 34 | 34 |
+
+## 8. Provinsi pemekaran Papua: sebelum dan sesudah agregasi ke induk (D-17)
+
+`sebelum` = hanya baris provinsi induk di BDSP; `sesudah` = induk + pemekaran (Papua: + Papua Selatan, Papua Tengah, Papua Pegunungan; Papua Barat: + Papua Barat Daya).
+
+### Papua
+
+| komoditas | indikator | versi | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| cabe besar | produksi | sebelum | 3,412 | 3,033 | 1,993 | 3,016 | 2,198 | 2,811 | 463 | 103 |
+| cabe besar | produksi | sesudah | 3,412 | 3,033 | 1,993 | 3,016 | 2,198 | 2,811 | 2,887 | 1,943 |
+| cabe besar | luas panen | sebelum | 529 | 510 | 299 | 333 | 263 | 392 | 225 | 106 |
+| cabe besar | luas panen | sesudah | 529 | 510 | 299 | 333 | 263 | 392 | 513 | 488 |
+| cabe keriting | produksi | sebelum | 0 | 0 | 0 | 23 | 44 | 417 | 51 | 54 |
+| cabe keriting | produksi | sesudah | 0 | 0 | 0 | 23 | 44 | 417 | 644 | 128 |
+| cabe keriting | luas panen | sebelum | 0 | 0 | 0 | 4 | 6 | 54 | 45 | 52 |
+| cabe keriting | luas panen | sesudah | 0 | 0 | 0 | 4 | 6 | 54 | 96 | 96 |
+| cabe rawit | produksi | sebelum | 6,943 | 4,388 | 3,436 | 5,054 | 4,335 | 4,556 | 1,418 | 144 |
+| cabe rawit | produksi | sesudah | 6,943 | 4,388 | 3,436 | 5,054 | 4,335 | 4,556 | 7,003 | 4,339 |
+| cabe rawit | luas panen | sebelum | 1,025 | 821 | 586 | 639 | 544 | 936 | 434 | 92 |
+| cabe rawit | luas panen | sesudah | 1,025 | 821 | 586 | 639 | 544 | 936 | 1,070 | 774 |
+
+### Papua Barat
+
+| komoditas | indikator | versi | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| cabe besar | produksi | sebelum | 251 | 1,168 | 812 | 911 | 1,567 | 1,316 | 149 | 81 |
+| cabe besar | produksi | sesudah | 251 | 1,168 | 812 | 911 | 1,567 | 1,316 | 621 | 620 |
+| cabe besar | luas panen | sebelum | 228 | 326 | 269 | 217 | 195 | 195 | 52 | 243 |
+| cabe besar | luas panen | sesudah | 228 | 326 | 269 | 217 | 195 | 195 | 147 | 310 |
+| cabe keriting | produksi | sebelum | 0 | 0 | 0 | 344 | 497 | 831 | 31 | 33 |
+| cabe keriting | produksi | sesudah | 0 | 0 | 0 | 344 | 497 | 831 | 379 | 429 |
+| cabe keriting | luas panen | sebelum | 0 | 0 | 0 | 55 | 91 | 119 | 11 | 109 |
+| cabe keriting | luas panen | sesudah | 0 | 0 | 0 | 55 | 91 | 119 | 88 | 157 |
+| cabe rawit | produksi | sebelum | 625 | 3,276 | 2,351 | 3,808 | 4,106 | 3,010 | 1,293 | 393 |
+| cabe rawit | produksi | sesudah | 625 | 3,276 | 2,351 | 3,808 | 4,106 | 3,010 | 4,618 | 3,415 |
+| cabe rawit | luas panen | sebelum | 588 | 885 | 677 | 721 | 675 | 578 | 329 | 258 |
+| cabe rawit | luas panen | sesudah | 588 | 885 | 677 | 721 | 675 | 578 | 643 | 535 |
+
+## 9. Flag `is_outlier` (produktivitas di luar 1-30 ton/ha, dihitung setelah agregasi ke 34 provinsi)
+
+21 provinsi-tahun ditandai; nilai tidak diubah. H5 dijalankan dengan dan tanpa outlier (D-37).
+
+| komoditas | province_id | tahun | produksi | luas_panen | yield_ton_per_ha |
+| --- | --- | --- | --- | --- | --- |
+| cabe besar | 6 | 2025 | 214,628.83 | 6,333.40 | 33.89 |
+| cabe besar | 13 | 2023 | 0.19 | 0.66 | 0.29 |
+| cabe besar | 13 | 2025 | 0.10 | 0.25 | 0.40 |
+| cabe besar | 30 | 2021 | 2,465.82 | 4,246.23 | 0.58 |
+| cabe besar | 30 | 2022 | 3,602.45 | 4,653.55 | 0.77 |
+| cabe besar | 30 | 2023 | 4,025.36 | 4,925.18 | 0.82 |
+| cabe besar | 30 | 2024 | 3,159.41 | 4,440.98 | 0.71 |
+| cabe keriting | 6 | 2025 | 213,975.33 | 6,195.30 | 34.54 |
+| cabe keriting | 13 | 2023 | 0.15 | 0.46 | 0.33 |
+| cabe keriting | 13 | 2025 | 0.07 | 0.23 | 0.29 |
+| cabe keriting | 17 | 2024 | 1.70 | 5.00 | 0.34 |
+| cabe keriting | 17 | 2025 | 0.14 | 0.21 | 0.65 |
+| cabe rawit | 6 | 2024 | 43,578.48 | 1,447.56 | 30.10 |
+| cabe rawit | 6 | 2025 | 42,173.88 | 1,363.24 | 30.94 |
+| cabe rawit | 13 | 2018 | 0.40 | 2.00 | 0.20 |
+| cabe rawit | 13 | 2022 | 0.06 | 0.12 | 0.50 |
+| cabe rawit | 13 | 2023 | 1.48 | 2.16 | 0.69 |
+| cabe rawit | 30 | 2021 | 3,335.74 | 4,304.50 | 0.77 |
+| cabe rawit | 30 | 2022 | 3,495.87 | 4,654.75 | 0.75 |
+| cabe rawit | 30 | 2023 | 3,709.93 | 4,902.90 | 0.76 |
+| cabe rawit | 30 | 2024 | 3,275.34 | 4,312.26 | 0.76 |
+
+## 10. Flag `suspect_copy` (nilai cabe keriting persis sama dengan cabe besar)
+
+8 provinsi-tahun. Nilai tidak dikoreksi; flag disimpan sebagai anotasi di `data/raw/bdsp/flags/suspect_copy.csv` tanpa mengubah file raw (D-39).
+
+| bdsp_name | year | indicators_identical |
+| --- | --- | --- |
+| Gorontalo | 2023 | produksi,luas_panen |
+| Gorontalo | 2024 | produksi,luas_panen |
+| Gorontalo | 2025 | produksi,luas_panen |
+| Kepulauan Bangka Belitung | 2024 | produksi,luas_panen |
+| Kepulauan Bangka Belitung | 2025 | produksi,luas_panen |
+| Maluku Utara | 2023 | produksi,luas_panen |
+| Sumatera Barat | 2022 | produksi,luas_panen |
+| Sumatera Barat | 2025 | produksi,luas_panen |

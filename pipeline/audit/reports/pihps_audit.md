@@ -8,101 +8,126 @@ Periode data 2018-01 sampai 2026-11 (November 2026 parsial). Periode inti 2019-0
 
 ## 1. Ringkasan profil gap per tipe harga dan komoditas
 
-Hanya periode inti. `interior pendek` = gap 1-2 bulan (linear interpolation pada log price), `interior panjang` = gap >2 bulan di tengah series (Kalman). `jarang` = bulan valid < 50% (kandidat tidak di-impute; ambang "hampir seluruhnya missing" belum ditetapkan dan perlu keputusan di fase transform).
+Hanya periode inti (Jan 2019 - Okt 2026). Gap tengah: 1-2 bulan linear interpolation pada log price, 3-6 bulan Kalman, lebih dari 6 bulan tetap NULL (D-35). Gap di awal dan akhir seri tidak pernah di-impute.
 
-| price_type | commodity | seri | lengkap | valid_rata2_pct | leading | trailing | interior_pendek | interior_panjang | bulan_linear | bulan_kalman | jarang |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| eceran | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| eceran | cabai_rawit | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| eceran | merah_besar | 35 | 26 | 81.9 | 4 | 4 | 4 | 2 | 5 | 47 | 7 |
-| eceran | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| eceran | rawit_hijau | 35 | 32 | 95.4 | 1 | 2 | 0 | 0 | 0 | 0 | 2 |
-| eceran | rawit_merah | 35 | 32 | 91.7 | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
-| pedagang_besar | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| pedagang_besar | cabai_rawit | 35 | 34 | 99.7 | 0 | 0 | 2 | 1 | 2 | 7 | 0 |
-| pedagang_besar | merah_besar | 35 | 27 | 84.0 | 4 | 3 | 6 | 4 | 7 | 18 | 6 |
-| pedagang_besar | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| pedagang_besar | rawit_hijau | 35 | 30 | 92.8 | 1 | 2 | 3 | 5 | 4 | 54 | 2 |
-| pedagang_besar | rawit_merah | 35 | 29 | 90.5 | 4 | 0 | 2 | 3 | 2 | 31 | 3 |
-| produsen | cabai_merah | 35 | 19 | 94.3 | 4 | 1 | 37 | 2 | 42 | 6 | 1 |
-| produsen | cabai_rawit | 35 | 18 | 91.2 | 5 | 1 | 45 | 2 | 52 | 12 | 2 |
-| produsen | merah_besar | 35 | 14 | 68.7 | 12 | 2 | 28 | 5 | 32 | 23 | 10 |
-| produsen | merah_keriting | 35 | 17 | 88.6 | 6 | 1 | 39 | 4 | 45 | 19 | 3 |
-| produsen | rawit_hijau | 35 | 14 | 69.2 | 11 | 0 | 27 | 7 | 31 | 42 | 10 |
-| produsen | rawit_merah | 35 | 13 | 82.0 | 10 | 3 | 42 | 3 | 49 | 9 | 5 |
+| price_type | commodity | seri | lengkap | valid_rata2_pct | leading | trailing | gap_linear | gap_kalman | gap_tetap_null | bulan_linear | bulan_kalman | bulan_null |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| eceran | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| eceran | cabai_rawit | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| eceran | merah_besar | 35 | 26 | 81.9 | 4 | 4 | 4 | 1 | 1 | 5 | 5 | 42 |
+| eceran | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| eceran | rawit_hijau | 35 | 32 | 95.4 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| eceran | rawit_merah | 35 | 32 | 91.7 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| pedagang_besar | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| pedagang_besar | cabai_rawit | 35 | 34 | 99.7 | 0 | 0 | 2 | 0 | 1 | 2 | 0 | 7 |
+| pedagang_besar | merah_besar | 35 | 27 | 84.0 | 4 | 3 | 6 | 3 | 1 | 7 | 11 | 7 |
+| pedagang_besar | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| pedagang_besar | rawit_hijau | 35 | 30 | 92.8 | 1 | 2 | 3 | 2 | 3 | 4 | 10 | 44 |
+| pedagang_besar | rawit_merah | 35 | 29 | 90.5 | 4 | 0 | 2 | 1 | 2 | 2 | 5 | 26 |
+| produsen | cabai_merah | 35 | 19 | 94.3 | 4 | 1 | 37 | 2 | 0 | 42 | 6 | 0 |
+| produsen | cabai_rawit | 35 | 18 | 91.2 | 5 | 1 | 45 | 1 | 1 | 52 | 3 | 9 |
+| produsen | merah_besar | 35 | 14 | 68.7 | 12 | 2 | 28 | 4 | 1 | 32 | 16 | 7 |
+| produsen | merah_keriting | 35 | 17 | 88.6 | 6 | 1 | 39 | 3 | 1 | 45 | 11 | 8 |
+| produsen | rawit_hijau | 35 | 14 | 69.2 | 11 | 0 | 27 | 5 | 2 | 31 | 25 | 17 |
+| produsen | rawit_merah | 35 | 13 | 82.0 | 10 | 3 | 42 | 3 | 0 | 49 | 9 | 0 |
+
+### Seri per tier (D-35)
+
+`main`: bulan valid >= 80% dan gap tengah terpanjang <= 6 bulan. `descriptive`: bulan valid 50%-80% (atau >= 80% tetapi gap tengah > 6 bulan); di-impute dengan aturan sama, hanya untuk deskriptif dan sensitivity check. `excluded`: < 50%, tidak di-impute dan tidak dipakai di model. Satu baris nasional ikut dihitung per kombinasi.
+
+| price_type | commodity | main | descriptive | excluded |
+| --- | --- | --- | --- | --- |
+| eceran | cabai_merah | 35 | 0 | 0 |
+| eceran | cabai_rawit | 35 | 0 | 0 |
+| eceran | merah_besar | 28 | 0 | 7 |
+| eceran | merah_keriting | 35 | 0 | 0 |
+| eceran | rawit_hijau | 32 | 1 | 2 |
+| eceran | rawit_merah | 32 | 0 | 3 |
+| pedagang_besar | cabai_merah | 35 | 0 | 0 |
+| pedagang_besar | cabai_rawit | 34 | 1 | 0 |
+| pedagang_besar | merah_besar | 28 | 1 | 6 |
+| pedagang_besar | merah_keriting | 35 | 0 | 0 |
+| pedagang_besar | rawit_hijau | 30 | 3 | 2 |
+| pedagang_besar | rawit_merah | 30 | 2 | 3 |
+| produsen | cabai_merah | 33 | 1 | 1 |
+| produsen | cabai_rawit | 31 | 2 | 2 |
+| produsen | merah_besar | 23 | 2 | 10 |
+| produsen | merah_keriting | 30 | 2 | 3 |
+| produsen | rawit_hijau | 23 | 2 | 10 |
+| produsen | rawit_merah | 28 | 2 | 5 |
 
 ## 2. Seri bermasalah (bulan valid < 80% pada periode inti)
 
 66 seri dari 630.
 
-| price_type | commodity | province | valid_months | core_months | first_valid_month | last_valid_month | leading_gap | trailing_gap | longest_interior_gap |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| eceran | merah_besar | Kepulauan Riau | 0 | 94 |  |  | 94 | 0 | 0 |
-| eceran | merah_besar | Sumatera Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| eceran | merah_besar | Sumatera Utara | 0 | 94 |  |  | 94 | 0 | 0 |
-| eceran | merah_besar | Sulawesi Utara | 1 | 94 | 2018-01 | 2019-01 | 0 | 93 | 0 |
-| eceran | merah_besar | Gorontalo | 13 | 94 | 2018-06 | 2020-01 | 0 | 81 | 0 |
-| eceran | merah_besar | Aceh | 16 | 94 | 2018-01 | 2026-11 | 36 | 0 | 42 |
-| eceran | merah_besar | Kepulauan Bangka Belitung | 46 | 94 | 2018-01 | 2022-10 | 0 | 48 | 0 |
-| eceran | rawit_hijau | Papua Barat | 25 | 94 | 2018-01 | 2021-01 | 0 | 69 | 0 |
-| eceran | rawit_hijau | Gorontalo | 44 | 94 | 2018-01 | 2022-08 | 0 | 50 | 0 |
-| eceran | rawit_hijau | Sulawesi Selatan | 62 | 94 | 2021-09 | 2026-11 | 32 | 0 | 0 |
-| eceran | rawit_merah | Aceh | 0 | 94 | 2018-01 | 2018-08 | 94 | 0 | 0 |
-| eceran | rawit_merah | Sumatera Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| eceran | rawit_merah | Kepulauan Riau | 10 | 94 | 2026-01 | 2026-10 | 84 | 0 | 0 |
-| pedagang_besar | merah_besar | Gorontalo | 0 | 94 |  |  | 94 | 0 | 0 |
-| pedagang_besar | merah_besar | Kepulauan Riau | 0 | 94 |  |  | 94 | 0 | 0 |
-| pedagang_besar | merah_besar | Sulawesi Utara | 0 | 94 |  |  | 94 | 0 | 0 |
-| pedagang_besar | merah_besar | Sumatera Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| pedagang_besar | merah_besar | Maluku Utara | 38 | 94 | 2018-01 | 2022-05 | 0 | 53 | 1 |
-| pedagang_besar | merah_besar | Kepulauan Bangka Belitung | 46 | 94 | 2018-01 | 2022-10 | 0 | 48 | 0 |
-| pedagang_besar | merah_besar | Maluku | 54 | 94 | 2018-01 | 2024-11 | 0 | 23 | 7 |
-| pedagang_besar | rawit_hijau | Sulawesi Selatan | 0 | 94 |  |  | 94 | 0 | 0 |
-| pedagang_besar | rawit_hijau | Gorontalo | 13 | 94 | 2018-01 | 2020-01 | 0 | 81 | 0 |
-| pedagang_besar | rawit_hijau | Papua Barat | 67 | 94 | 2018-01 | 2026-11 | 0 | 0 | 27 |
-| pedagang_besar | rawit_hijau | Maluku | 74 | 94 | 2018-01 | 2026-06 | 0 | 4 | 10 |
-| pedagang_besar | rawit_merah | Jambi | 0 | 94 |  |  | 94 | 0 | 0 |
-| pedagang_besar | rawit_merah | Sumatera Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| pedagang_besar | rawit_merah | Kepulauan Riau | 10 | 94 | 2026-01 | 2026-11 | 84 | 0 | 0 |
-| pedagang_besar | rawit_merah | Aceh | 74 | 94 | 2018-01 | 2026-11 | 6 | 0 | 9 |
-| produsen | cabai_merah | DKI Jakarta | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | cabai_merah | Nusa Tenggara Timur | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
-| produsen | cabai_rawit | DKI Jakarta | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | cabai_rawit | Jambi | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | cabai_rawit | Nusa Tenggara Timur | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
-| produsen | merah_besar | Aceh | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | DKI Jakarta | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Gorontalo | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Jambi | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Kepulauan Riau | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Maluku | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Riau | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Sulawesi Utara | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Sumatera Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_besar | Sulawesi Tengah | 2 | 94 | 2018-10 | 2019-02 | 0 | 92 | 0 |
-| produsen | merah_besar | Nusa Tenggara Timur | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
-| produsen | merah_keriting | Bali | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_keriting | DKI Jakarta | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | merah_keriting | Maluku Utara | 20 | 94 | 2024-12 | 2026-11 | 71 | 0 | 2 |
-| produsen | merah_keriting | Nusa Tenggara Timur | 50 | 94 | 2018-11 | 2023-12 | 0 | 34 | 3 |
-| produsen | rawit_hijau | DKI Jakarta | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Gorontalo | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Jambi | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Kalimantan Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Maluku | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Maluku Utara | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Nusa Tenggara Timur | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Papua Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Sulawesi Selatan | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Sulawesi Utara | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_hijau | Bengkulu | 55 | 94 | 2018-09 | 2026-11 | 0 | 0 | 8 |
-| produsen | rawit_merah | DKI Jakarta | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_merah | Jambi | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_merah | Riau | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_merah | Sumatera Barat | 0 | 94 |  |  | 94 | 0 | 0 |
-| produsen | rawit_merah | Aceh | 4 | 94 | 2018-10 | 2019-07 | 0 | 87 | 3 |
-| produsen | rawit_merah | Nusa Tenggara Timur | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
-| produsen | rawit_merah | Banten | 62 | 94 | 2018-10 | 2026-11 | 23 | 0 | 3 |
+| price_type | commodity | province | tier | valid_months | core_months | first_valid_month | last_valid_month | leading_gap | trailing_gap | longest_interior_gap |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| eceran | merah_besar | Kepulauan Riau | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| eceran | merah_besar | Sumatera Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| eceran | merah_besar | Sumatera Utara | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| eceran | merah_besar | Sulawesi Utara | excluded | 1 | 94 | 2018-01 | 2019-01 | 0 | 93 | 0 |
+| eceran | merah_besar | Gorontalo | excluded | 13 | 94 | 2018-06 | 2020-01 | 0 | 81 | 0 |
+| eceran | merah_besar | Aceh | excluded | 16 | 94 | 2018-01 | 2026-11 | 36 | 0 | 42 |
+| eceran | merah_besar | Kepulauan Bangka Belitung | excluded | 46 | 94 | 2018-01 | 2022-10 | 0 | 48 | 0 |
+| eceran | rawit_hijau | Papua Barat | excluded | 25 | 94 | 2018-01 | 2021-01 | 0 | 69 | 0 |
+| eceran | rawit_hijau | Gorontalo | excluded | 44 | 94 | 2018-01 | 2022-08 | 0 | 50 | 0 |
+| eceran | rawit_hijau | Sulawesi Selatan | descriptive | 62 | 94 | 2021-09 | 2026-11 | 32 | 0 | 0 |
+| eceran | rawit_merah | Aceh | excluded | 0 | 94 | 2018-01 | 2018-08 | 94 | 0 | 0 |
+| eceran | rawit_merah | Sumatera Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| eceran | rawit_merah | Kepulauan Riau | excluded | 10 | 94 | 2026-01 | 2026-10 | 84 | 0 | 0 |
+| pedagang_besar | merah_besar | Gorontalo | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| pedagang_besar | merah_besar | Kepulauan Riau | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| pedagang_besar | merah_besar | Sulawesi Utara | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| pedagang_besar | merah_besar | Sumatera Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| pedagang_besar | merah_besar | Maluku Utara | excluded | 38 | 94 | 2018-01 | 2022-05 | 0 | 53 | 1 |
+| pedagang_besar | merah_besar | Kepulauan Bangka Belitung | excluded | 46 | 94 | 2018-01 | 2022-10 | 0 | 48 | 0 |
+| pedagang_besar | merah_besar | Maluku | descriptive | 54 | 94 | 2018-01 | 2024-11 | 0 | 23 | 7 |
+| pedagang_besar | rawit_hijau | Sulawesi Selatan | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| pedagang_besar | rawit_hijau | Gorontalo | excluded | 13 | 94 | 2018-01 | 2020-01 | 0 | 81 | 0 |
+| pedagang_besar | rawit_hijau | Papua Barat | descriptive | 67 | 94 | 2018-01 | 2026-11 | 0 | 0 | 27 |
+| pedagang_besar | rawit_hijau | Maluku | descriptive | 74 | 94 | 2018-01 | 2026-06 | 0 | 4 | 10 |
+| pedagang_besar | rawit_merah | Jambi | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| pedagang_besar | rawit_merah | Sumatera Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| pedagang_besar | rawit_merah | Kepulauan Riau | excluded | 10 | 94 | 2026-01 | 2026-11 | 84 | 0 | 0 |
+| pedagang_besar | rawit_merah | Aceh | descriptive | 74 | 94 | 2018-01 | 2026-11 | 6 | 0 | 9 |
+| produsen | cabai_merah | DKI Jakarta | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | cabai_merah | Nusa Tenggara Timur | descriptive | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
+| produsen | cabai_rawit | DKI Jakarta | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | cabai_rawit | Jambi | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | cabai_rawit | Nusa Tenggara Timur | descriptive | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
+| produsen | merah_besar | Aceh | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | DKI Jakarta | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Gorontalo | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Jambi | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Kepulauan Riau | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Maluku | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Riau | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Sulawesi Utara | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Sumatera Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_besar | Sulawesi Tengah | excluded | 2 | 94 | 2018-10 | 2019-02 | 0 | 92 | 0 |
+| produsen | merah_besar | Nusa Tenggara Timur | descriptive | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
+| produsen | merah_keriting | Bali | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_keriting | DKI Jakarta | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | merah_keriting | Maluku Utara | excluded | 20 | 94 | 2024-12 | 2026-11 | 71 | 0 | 2 |
+| produsen | merah_keriting | Nusa Tenggara Timur | descriptive | 50 | 94 | 2018-11 | 2023-12 | 0 | 34 | 3 |
+| produsen | rawit_hijau | DKI Jakarta | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Gorontalo | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Jambi | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Kalimantan Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Maluku | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Maluku Utara | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Nusa Tenggara Timur | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Papua Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Sulawesi Selatan | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Sulawesi Utara | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_hijau | Bengkulu | descriptive | 55 | 94 | 2018-09 | 2026-11 | 0 | 0 | 8 |
+| produsen | rawit_merah | DKI Jakarta | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_merah | Jambi | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_merah | Riau | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_merah | Sumatera Barat | excluded | 0 | 94 |  |  | 94 | 0 | 0 |
+| produsen | rawit_merah | Aceh | excluded | 4 | 94 | 2018-10 | 2019-07 | 0 | 87 | 3 |
+| produsen | rawit_merah | Nusa Tenggara Timur | descriptive | 50 | 94 | 2018-09 | 2023-12 | 0 | 34 | 3 |
+| produsen | rawit_merah | Banten | descriptive | 62 | 94 | 2018-10 | 2026-11 | 23 | 0 | 3 |
 
 ## 3. Persen bulan valid per provinsi x tahun (periode inti)
 

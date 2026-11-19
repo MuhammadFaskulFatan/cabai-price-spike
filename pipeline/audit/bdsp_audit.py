@@ -12,7 +12,9 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 from pipeline.audit.loaders import RAW, REPORTS, parse_bdsp_number, to_markdown, write_report
+from pipeline.extract.common import save_raw
 from pipeline.provinces import BPS_TO_PIHPS
+from pipeline.rules import YIELD_MAX, YIELD_MIN
 
 YEARS = list(range(2018, 2026))
 COMMODITIES = {"cabe_besar": "cabe besar", "cabe_keriting": "cabe keriting", "cabe_rawit": "cabe rawit"}
@@ -154,8 +156,8 @@ def run():
     for indicator in INDICATORS:
         besar, keriting = pair(indicator)
         positive = keriting[keriting > 0].index
-        greater = [(k, besar[k], keriting[k]) for k in positive if keriting[k] > besar[k] + max(0.02, 1e-6 * besar[k])]
-        identical = [(k, round(besar[k], 2)) for k in positive if abs(keriting[k] - besar[k]) <= max(0.02, 1e-6 * besar[k])]
+        greater = [(k, besar[k], keriting[k]) for k in positive if keriting[k] > besar[k] + 0.005 + 1e-9 * besar[k]]
+        identical = [(k, round(besar[k], 2)) for k in positive if abs(keriting[k] - besar[k]) <= 0.005 + 1e-9 * besar[k]]
         lines += [f"- **{INDICATORS[indicator]}**: {len(positive)} provinsi-tahun dengan keriting > 0; keriting > besar: {len(greater)}; "
                   f"nilai identik dengan besar: {len(identical)} {[f'{n} {y}' for (n, y), _ in identical]}; besar > 0 tetapi keriting = 0: {int(((besar > 0) & (keriting == 0)).sum())}."]
     lines.append("")
@@ -189,6 +191,50 @@ def run():
         part = parent[parent["commodity"] == commodity]
         parent_rows.append({"komoditas": COMMODITIES[commodity], **{str(y): int((part[part["year"] == y]["value"] > 0).sum()) for y in YEARS}})
     lines += ["Jumlah provinsi (dari 34) dengan produksi > 0:", "", to_markdown(pd.DataFrame(parent_rows)), ""]
+
+
+    # 8. Papua sebelum dan sesudah agregasi (D-17)
+    lines += ["## 8. Provinsi pemekaran Papua: sebelum dan sesudah agregasi ke induk (D-17)", "",
+              "`sebelum` = hanya baris provinsi induk di BDSP; `sesudah` = induk + pemekaran (Papua: + Papua Selatan, Papua Tengah, Papua Pegunungan; Papua Barat: + Papua Barat Daya).", ""]
+    for parent_id, parent_name, parent_code in ((33, "Papua", "94"), (34, "Papua Barat", "91")):
+        rows = []
+        for commodity in COMMODITIES:
+            for indicator in INDICATORS:
+                part = frame[(frame["commodity"] == commodity) & (frame["indicator"] == indicator)]
+                before = part[part["bps_code"] == parent_code].set_index("year")["value"]
+                after = part[part["province_id"] == parent_id].groupby("year")["value"].sum()
+                rows.append({"komoditas": COMMODITIES[commodity], "indikator": INDICATORS[indicator], "versi": "sebelum", **{str(y): before.get(y, np.nan) for y in YEARS}})
+                rows.append({"komoditas": COMMODITIES[commodity], "indikator": INDICATORS[indicator], "versi": "sesudah", **{str(y): after.get(y, np.nan) for y in YEARS}})
+        lines += [f"### {parent_name}", "", to_markdown(pd.DataFrame(rows), floatfmt="{:,.0f}"), ""]
+
+    # 9. Flag produktivitas dan suspect_copy
+    parent = frame.groupby(["commodity", "indicator", "province_id", "year"])["value"].sum().unstack("indicator").reset_index()
+    parent["yield_ton_per_ha"] = parent["produksi"] / parent["luas_panen"].replace(0, np.nan)
+    parent["is_outlier"] = (parent["produksi"] > 0) & ~parent["yield_ton_per_ha"].between(YIELD_MIN, YIELD_MAX)
+    outliers = parent[parent["is_outlier"]].copy()
+    lines += ["## 9. Flag `is_outlier` (produktivitas di luar %g-%g ton/ha, dihitung setelah agregasi ke 34 provinsi)" % (YIELD_MIN, YIELD_MAX), "",
+              f"{len(outliers)} provinsi-tahun ditandai; nilai tidak diubah. H5 dijalankan dengan dan tanpa outlier (D-37).", "",
+              to_markdown(outliers.assign(komoditas=outliers["commodity"].map(COMMODITIES), tahun=outliers["year"].astype(str))[["komoditas", "province_id", "tahun", "produksi", "luas_panen", "yield_ton_per_ha"]], floatfmt="{:,.2f}"), ""]
+
+    besar = frame[(frame["commodity"] == "cabe_besar")].set_index(["indicator", "bdsp_name", "year"])["value"]
+    keriting = frame[(frame["commodity"] == "cabe_keriting")].set_index(["indicator", "bdsp_name", "year"])["value"]
+    copies = [key for key in keriting.index if keriting[key] > 0 and abs(keriting[key] - besar[key]) <= 0.005 + 1e-9 * besar[key]]
+    copy_rows = pd.DataFrame(
+        sorted({(name, year) for _, name, year in copies}), columns=["bdsp_name", "year"]
+    )
+    copy_rows["bps_code"] = copy_rows["bdsp_name"].map(dict(zip(frame["bdsp_name"], frame["bps_code"])))
+    copy_rows["province_id"] = copy_rows["bps_code"].map(lambda code: BPS_TO_PIHPS[code][0])
+    copy_rows["indicators_identical"] = [
+        ",".join(indicator for indicator in INDICATORS if (indicator, row.bdsp_name, row.year) in set(copies)) for row in copy_rows.itertuples()
+    ]
+    copy_rows["flag"] = "suspect_copy"
+    lines += ["## 10. Flag `suspect_copy` (nilai cabe keriting persis sama dengan cabe besar)", "",
+              f"{len(copy_rows)} provinsi-tahun. Nilai tidak dikoreksi; flag disimpan sebagai anotasi di `data/raw/bdsp/flags/suspect_copy.csv` tanpa mengubah file raw (D-39).", "",
+              to_markdown(copy_rows[["bdsp_name", "year", "indicators_identical"]].astype({"year": str})), ""]
+    save_raw(RAW / "bdsp" / "flags" / "suspect_copy.csv", copy_rows.to_csv(index=False), "bdsp_audit",
+             {"derived_from": "data/raw/bdsp/provinsi", "rule": "keriting == besar, selisih <= 0.005"}, n_rows=len(copy_rows),
+             notes="Anotasi hasil audit, bukan hasil extract. Kolom 'flag' berlaku untuk nilai cabe keriting.")
+    outliers.assign(flag="is_outlier").to_csv(REPORTS / "bdsp_outliers.csv", index=False)
 
     write_report("bdsp_audit.md", "\n".join(lines))
     REPORTS.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,9 @@
+bdsp_name,year,bps_code,province_id,indicators_identical,flag
+Gorontalo,2023,75,25,"produksi,luas_panen",suspect_copy
+Gorontalo,2024,75,25,"produksi,luas_panen",suspect_copy
+Gorontalo,2025,75,25,"produksi,luas_panen",suspect_copy
+Kepulauan Bangka Belitung,2024,19,9,"produksi,luas_panen",suspect_copy
+Kepulauan Bangka Belitung,2025,19,9,"produksi,luas_panen",suspect_copy
+Maluku Utara,2023,82,32,"produksi,luas_panen",suspect_copy
+Sumatera Barat,2022,13,3,"produksi,luas_panen",suspect_copy
+Sumatera Barat,2025,13,3,"produksi,luas_panen",suspect_copy

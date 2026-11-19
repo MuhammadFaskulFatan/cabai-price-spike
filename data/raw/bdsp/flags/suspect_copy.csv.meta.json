@@ -1,0 +1,12 @@
+{
+  "source": "bdsp_audit",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "derived_from": "data/raw/bdsp/provinsi",
+    "rule": "keriting == besar, selisih <= 0.005"
+  },
+  "n_rows": 8,
+  "n_bytes": 560,
+  "sha256": "215fc088541fc2fe81b85aa1eec2b61f6a80c30a79b7f01171daf74ecff3f89a",
+  "notes": "Anotasi hasil audit, bukan hasil extract. Kolom 'flag' berlaku untuk nilai cabe keriting."
+}

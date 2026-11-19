@@ -10,6 +10,7 @@ Output (pipeline/audit/reports/):
 import numpy as np
 import pandas as pd
 
+from pipeline.rules import MAX_FILL_GAP, TIER_DESCRIPTIVE_MIN_SHARE, TIER_MAIN_MIN_SHARE, assign_tier, gap_profile
 from pipeline.audit.loaders import (
     COMMODITY_LABELS,
     CORE_START,
@@ -29,7 +30,6 @@ from pipeline.audit.loaders import (
 )
 
 NATIONAL = "Semua Provinsi"
-SPARSE_SHARE = 0.5  # seri dengan bulan valid di bawah ini ditandai jarang (kandidat tidak di-impute)
 HEATMAP_COMMODITIES = ["cat_7", "cat_8"]
 
 
@@ -48,29 +48,6 @@ def monthly_coverage(daily, province_names):
     coverage["n_weekdays"] = coverage["month"].map(weekdays_per_month())
     coverage["is_valid"] = coverage["n_days_observed"] >= MIN_VALID_DAYS
     return coverage
-
-
-def gap_profile(valid):
-    """Profil gap pada periode inti: leading, trailing, gap interior pendek (1-2 bulan) dan panjang."""
-    valid = np.asarray(valid, dtype=bool)
-    size = len(valid)
-    positions = np.flatnonzero(valid)
-    if positions.size == 0:
-        return {"leading_gap": size, "trailing_gap": 0, "interior_short_gaps": 0, "interior_long_gaps": 0,
-                "longest_interior_gap": 0, "months_linear_log": 0, "months_kalman": 0}
-    interior = []
-    for before, after in zip(positions[:-1], positions[1:]):
-        if after - before > 1:
-            interior.append(after - before - 1)
-    return {
-        "leading_gap": int(positions[0]),
-        "trailing_gap": int(size - 1 - positions[-1]),
-        "interior_short_gaps": sum(1 for gap in interior if gap <= 2),
-        "interior_long_gaps": sum(1 for gap in interior if gap > 2),
-        "longest_interior_gap": max(interior, default=0),
-        "months_linear_log": sum(gap for gap in interior if gap <= 2),
-        "months_kalman": sum(gap for gap in interior if gap > 2),
-    }
 
 
 def series_summary(coverage):
@@ -93,7 +70,7 @@ def series_summary(coverage):
                 "last_valid_month": str(valid_months.max()) if len(valid_months) else "",
                 "nov_2026_days": int(everything[everything["month"] == LAST_MONTH]["n_days_observed"].iloc[0]),
                 **profile,
-                "is_sparse": group["is_valid"].mean() < SPARSE_SHARE,
+                "tier": assign_tier(group["is_valid"].mean(), profile["longest_interior_gap"]),
             }
         )
     return pd.DataFrame(rows)
@@ -184,23 +161,33 @@ def run():
         "",
         "## 1. Ringkasan profil gap per tipe harga dan komoditas",
         "",
-        "Hanya periode inti. `interior pendek` = gap 1-2 bulan (linear interpolation pada log price), `interior panjang` = gap >2 bulan di tengah series (Kalman). `jarang` = bulan valid < "
-        f"{SPARSE_SHARE:.0%} (kandidat tidak di-impute; ambang \"hampir seluruhnya missing\" belum ditetapkan dan perlu keputusan di fase transform).",
+        "Hanya periode inti (Jan 2019 - Okt 2026). Gap tengah: 1-2 bulan linear interpolation pada log price, 3-6 bulan Kalman, lebih dari 6 bulan tetap NULL (D-35). "
+        "Gap di awal dan akhir seri tidak pernah di-impute.",
         "",
     ]
     overview = (
         summary.groupby(["price_type", "commodity"])
         .agg(seri=("province", "size"), lengkap=("valid_share", lambda s: int((s == 1).sum())), valid_rata2_pct=("valid_share", lambda s: s.mean() * 100),
              leading=("leading_gap", lambda s: int((s > 0).sum())), trailing=("trailing_gap", lambda s: int((s > 0).sum())),
-             interior_pendek=("interior_short_gaps", "sum"), interior_panjang=("interior_long_gaps", "sum"),
-             bulan_linear=("months_linear_log", "sum"), bulan_kalman=("months_kalman", "sum"), jarang=("is_sparse", "sum"))
+             gap_linear=("linear_gaps", "sum"), gap_kalman=("kalman_gaps", "sum"), gap_tetap_null=("null_gaps", "sum"),
+             bulan_linear=("months_linear_log", "sum"), bulan_kalman=("months_kalman", "sum"), bulan_null=("months_left_null", "sum"))
         .reset_index()
     )
     lines += [to_markdown(overview), ""]
+    tiers = summary.pivot_table(index=["price_type", "commodity"], columns="tier", values="province", aggfunc="count", fill_value=0).reset_index()
+    for tier_name in ("main", "descriptive", "excluded"):
+        if tier_name not in tiers.columns:
+            tiers[tier_name] = 0
+    tiers = tiers[["price_type", "commodity", "main", "descriptive", "excluded"]]
+    lines += [f"### Seri per tier (D-35)", "",
+              f"`main`: bulan valid >= {TIER_MAIN_MIN_SHARE:.0%} dan gap tengah terpanjang <= {MAX_FILL_GAP} bulan. `descriptive`: bulan valid {TIER_DESCRIPTIVE_MIN_SHARE:.0%}-{TIER_MAIN_MIN_SHARE:.0%} "
+              f"(atau >= {TIER_MAIN_MIN_SHARE:.0%} tetapi gap tengah > {MAX_FILL_GAP} bulan); di-impute dengan aturan sama, hanya untuk deskriptif dan sensitivity check. "
+              f"`excluded`: < {TIER_DESCRIPTIVE_MIN_SHARE:.0%}, tidak di-impute dan tidak dipakai di model. Satu baris nasional ikut dihitung per kombinasi.", "",
+              to_markdown(tiers), ""]
 
     lines += ["## 2. Seri bermasalah (bulan valid < 80% pada periode inti)", ""]
     weak = summary[summary["valid_share"] < 0.8].sort_values(["price_type", "commodity", "valid_share"])
-    weak_view = weak[["price_type", "commodity", "province", "valid_months", "core_months", "first_valid_month", "last_valid_month", "leading_gap", "trailing_gap", "longest_interior_gap"]].copy()
+    weak_view = weak[["price_type", "commodity", "province", "tier", "valid_months", "core_months", "first_valid_month", "last_valid_month", "leading_gap", "trailing_gap", "longest_interior_gap"]].copy()
     lines += [f"{len(weak)} seri dari {len(summary)}.", "", to_markdown(weak_view) if len(weak) else "Tidak ada.", ""]
 
     lines += ["## 3. Persen bulan valid per provinsi x tahun (periode inti)", "", "Tabel lengkap semua komoditas ada di `pihps_year_coverage.csv`; di sini cabai_merah dan cabai_rawit.", ""]

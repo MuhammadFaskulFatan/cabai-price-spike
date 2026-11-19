@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 from pipeline.extract.common import EXTRACTION_DATE
+from pipeline.rules import MIN_VALID_DAYS  # noqa: F401  (diekspor ke modul audit)
 
 RAW = Path(__file__).resolve().parents[2] / "data" / "raw"
 REPORTS = Path(__file__).resolve().parent / "reports"
@@ -16,7 +17,6 @@ FIRST_MONTH = pd.Period("2018-01", "M")
 LAST_MONTH = pd.Period(EXTRACTION_DATE, "M")  # November 2026, bulan parsial
 CORE_START = pd.Period("2019-01", "M")
 MODEL_END = pd.Period("2026-10", "M")
-MIN_VALID_DAYS = 10  # aturan: minimal 10 hari kerja terisi, kurang dari itu = missing
 
 COMMODITY_LABELS = {
     "cat_7": "cabai_merah",
