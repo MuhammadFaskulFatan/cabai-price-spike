@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.6894175",
+      "longitude": "110.3812904",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Sleman"
+  },
+  "n_rows": 13102,
+  "n_bytes": 279140,
+  "sha256": "ca1449aeecfe346cb3056d2ff96e7cf0b3b9c5da55d75b63dda18d09c645a882"
+}

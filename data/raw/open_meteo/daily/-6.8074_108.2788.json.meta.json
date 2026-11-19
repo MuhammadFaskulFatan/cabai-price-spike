@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-6.8073627",
+      "longitude": "108.278786",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Majalengka"
+  },
+  "n_rows": 13102,
+  "n_bytes": 279412,
+  "sha256": "702031ee1ced24fab261dc222c308fe2ec9430fea82f518758cbec10b8ae962f"
+}

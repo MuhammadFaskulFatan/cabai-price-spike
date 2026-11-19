@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-6.897754",
+      "longitude": "107.4124294",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Bandung Barat"
+  },
+  "n_rows": 13102,
+  "n_bytes": 280193,
+  "sha256": "bf4ef3e87c9fb01ba7002c6dfa7463ebde1e21cb8f5a90836b99e66b34d48ed6"
+}

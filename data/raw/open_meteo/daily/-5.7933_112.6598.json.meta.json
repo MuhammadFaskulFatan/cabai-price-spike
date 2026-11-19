@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-5.7933465",
+      "longitude": "112.6598223",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Gresik"
+  },
+  "n_rows": 13102,
+  "n_bytes": 278118,
+  "sha256": "6fff97bd099b3d59555252ef42c23bd8a61448a63a111ce25418449228eef29a"
+}
