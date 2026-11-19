@@ -25,6 +25,7 @@ Semua keputusan di bawah sudah dikonfirmasi Fatan pada 19 Nov 2026.
 | D-17 | 19 Nov 2026 | Provinsi dibakukan ke 34 provinsi sesuai PIHPS. Sumber yang sudah 38 provinsi dipetakan ke provinsi induk: Papua Selatan, Papua Tengah, Papua Pegunungan menjadi Papua; Papua Barat Daya menjadi Papua Barat | PIHPS menjadi sumber utama dan tetap memakai 34 provinsi. Pemetaan dicatat di tabel terpisah supaya bisa diaudit |
 | D-18 | 19 Nov 2026 | Survei pasar tradisional PIHPS dilakukan Senin-Jumat, jadi aturan minimal 10 hari kerja tetap. Rata-rata bulanan dihitung sendiri dari data harian; angka bulanan PIHPS (`tipe_laporan=3`) dipakai sebagai cross-check, bukan sumber | Rata-rata dari harian memungkinkan aturan minimal hari dan kolom `n_days_observed` ditegakkan |
 | D-19 | 19 Nov 2026 | Baseline kondisi normal cuaca memakai periode 1991-2020 (WMO climate normal). Open-Meteo ditarik sejak 1991-01-01, bukan 2010 | Periode normal standar internasional, dan berakhir 2020 sehingga episode 2022-2026 yang diuji tidak ikut membentuk baseline |
+| D-20 | 19 Nov 2026 | Alur git: satu branch per fase, merge ke `main` dan push di akhir fase yang sudah disetujui. Identitas git diset di level repo. Keputusan yang disetujui di decision log langsung disinkronkan ke panduan kerja proyek | Riwayat per fase rapi, dan panduan kerja proyek tidak tertinggal dari keputusan terbaru |
 
 ## Catatan dampak
 
