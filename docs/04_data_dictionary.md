@@ -57,7 +57,9 @@ Dokumen ini berisi konvensi dan daftar kolom untuk setiap tabel di [ERD](02_erd_
 | `is_partial_month` | bool | `TRUE` untuk bulan yang belum penuh saat extraction | Nov 2026 |
 | `in_model_period` | bool | `TRUE` untuk Jan 2019 sampai Okt 2026 | Model dan uji hipotesis hanya memakai bulan ini (D-16). Nov 2026 hanya deskriptif |
 | `n_weekdays` | int | Jumlah hari Senin-Jumat | Dasar aturan minimal 10 hari kerja. Survei pasar tradisional PIHPS dilakukan Senin-Jumat (D-18); hari libur nasional yang kosong dicek di fase audit |
-| `n_holiday_days` | int | Jumlah hari libur nasional dan cuti bersama dalam bulan | Dari kalender hari besar |
+| `n_holiday_days` | int | Jumlah hari libur nasional (Idulfitri, Iduladha, Natal, Tahun Baru) dalam bulan | Dari `holidays.csv`; cuti bersama tidak dihitung di sini |
+| `n_cuti_bersama_days` | int | Jumlah hari cuti bersama dalam bulan | Dari `cuti_bersama.csv` (`is_cuti_bersama`); 2020 dan sebagian Natal kosong karena belum terverifikasi (D-38), jadi dihitung 0 dan ditandai oleh `cuti_bersama_verified` |
+| `cuti_bersama_verified` | bool | `TRUE` kalau semua cuti bersama di bulan itu terlihat di situs pemerintah | `FALSE` untuk bulan dengan cuti yang hanya sekunder atau belum terverifikasi |
 | `months_to_idulfitri` | int | Jarak bulan ke Idulfitri terdekat; negatif = sebelum, positif = sesudah | Definisi "terdekat" ditetapkan di fase transform dan dicatat |
 
 ### `dim_sentra_point`
@@ -84,6 +86,7 @@ PK: `province_id`, `month_start`, `commodity_group`, `price_type_id`.
 | `price_idr_per_kg` | float | Rata-rata harga bulan itu | `NULL` kalau hari terisi < 10 hari kerja dan tidak lolos aturan imputation |
 | `n_days_observed` | int | Jumlah hari kerja terisi dari data harian | 0 kalau tidak ada data |
 | `is_imputed` | bool | `TRUE` kalau nilai bukan hasil rata-rata observed | Wajib terisi |
+| `tier` | string | `main`, `descriptive`, atau `excluded` (D-35); sama untuk semua bulan satu seri | Wajib. `excluded` tidak di-impute dan tidak dipakai di model |
 | `impute_method` | string | `linear_log` atau `kalman` | `NULL` kalau `is_imputed = FALSE` |
 | `source_extract_date` | date | Tanggal extraction | Wajib |
 
@@ -105,7 +108,9 @@ PK: `province_id`, `year`, `commodity_group`. Sumber: BDSP, 2018-2025. Dipakai s
 | Kolom | Tipe | Deskripsi | Catatan |
 | --- | --- | --- | --- |
 | `production_ton` | float | Produksi tahunan | `cabai_merah` = cabe besar saja (D-28). Cabe keriting disimpan terpisah sebagai `cabai_keriting` (referensi), sudah dikonversi dari kuintal ke ton |
-| `is_preliminary` | bool | `TRUE` untuk 2025 | Belum diverifikasi ke rilis BPS; masuk sensitivity check |
+| `is_preliminary` | bool | `TRUE` untuk 2025 | Belum diverifikasi ke rilis BPS; tetap di analisis utama, sensitivity check tanpa 2025 (D-40) |
+| `is_outlier` | bool | `TRUE` kalau produktivitas (produksi / luas panen) di luar 1-30 ton/ha, dihitung setelah agregasi ke 34 provinsi | Nilai tidak diubah (D-37) |
+| `suspect_copy` | bool | `TRUE` kalau nilai cabe keriting persis sama dengan cabe besar | Hanya berlaku untuk baris `cabai_keriting`; dari `data/raw/bdsp/flags/suspect_copy.csv` (D-39) |
 | `harvested_area_ha` | float | Luas panen | Dari indikator LUAS PANEN BDSP |
 | `source_extract_date` | date | Tanggal extraction | - |
 

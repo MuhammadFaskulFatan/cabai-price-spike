@@ -66,6 +66,8 @@ erDiagram
         bool in_model_period
         int n_weekdays
         int n_holiday_days
+        int n_cuti_bersama_days
+        bool cuti_bersama_verified
         int months_to_idulfitri
     }
     DIM_SENTRA_POINT {
@@ -90,6 +92,7 @@ erDiagram
         int n_days_observed
         bool is_imputed
         string impute_method
+        string tier
         date source_extract_date
     }
     FACT_PRICE_WEEKLY {
@@ -116,6 +119,8 @@ erDiagram
         float harvested_area_ha
         float production_ton
         bool is_preliminary
+        bool is_outlier
+        bool suspect_copy
         float producer_price_annual_mean
         int producer_price_n_months
     }
