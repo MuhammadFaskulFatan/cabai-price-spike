@@ -1,0 +1,13 @@
+spesifikasi,grup,pasangan,provinsi,porsi_naik_cepat_turun_lambat,panel_selisih,panel_p
+utama (tier main),cabai_merah,pedagang besar -> eceran,34,0.29411764705882354,0.01531401099554952,0.6962131492799013
+utama (tier main),cabai_merah,produsen -> pedagang besar,32,0.15625,0.2660949758072083,2.5130123463237624e-05
+utama (tier main),cabai_rawit,pedagang besar -> eceran,33,0.09090909090909091,0.017698643408323056,0.36668437461998404
+utama (tier main),cabai_rawit,produsen -> pedagang besar,29,0.27586206896551724,0.2797422764016406,3.907687840105821e-05
+tanpa bulan imputasi (D-44),cabai_merah,pedagang besar -> eceran,34,0.29411764705882354,0.01531401099554952,0.6962131492799013
+tanpa bulan imputasi (D-44),cabai_merah,produsen -> pedagang besar,32,0.15625,0.27546294921314307,2.4613557052636647e-05
+tanpa bulan imputasi (D-44),cabai_rawit,pedagang besar -> eceran,33,0.09090909090909091,0.017698643408323056,0.36668437461998404
+tanpa bulan imputasi (D-44),cabai_rawit,produsen -> pedagang besar,29,0.20689655172413793,0.2930705622220491,2.745638344441926e-05
+tier main + descriptive,cabai_merah,pedagang besar -> eceran,34,0.29411764705882354,0.01531401099554952,0.6962131492799013
+tier main + descriptive,cabai_merah,produsen -> pedagang besar,32,0.15625,0.2660949758072083,2.5130123463237624e-05
+tier main + descriptive,cabai_rawit,pedagang besar -> eceran,34,0.11764705882352941,0.014226196165069371,0.4648663633450013
+tier main + descriptive,cabai_rawit,produsen -> pedagang besar,31,0.25806451612903225,0.28499062623044635,1.8902679158299962e-05
