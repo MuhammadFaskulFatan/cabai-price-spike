@@ -1,0 +1,5 @@
+price_type_id,level_name,supply_chain_stage,in_core
+1,Pasar Tradisional,eceran,True
+2,Pasar Modern,eceran modern,False
+3,Pedagang Besar,pedagang besar,True
+4,Produsen,produsen (farm-gate),True

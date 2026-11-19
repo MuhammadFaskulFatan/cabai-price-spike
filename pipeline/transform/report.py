@@ -86,6 +86,12 @@ def run():
              "Satu seri = satu provinsi (atau baris nasional). Tier dihitung pada Jan 2019 - Okt 2026.", "",
              to_markdown(tier_table(prices)), ""]
 
+    holdout_price = ROOT / "pipeline" / "validate" / "reports" / "holdout_imputation.md"
+    if holdout_price.exists():
+        text = holdout_price.read_text(encoding="utf-8")
+        verdict = text.split("## 1. Apakah aturan gap cocok dengan hasil hold-out?")[1].split("## 2.")[0].strip()
+        lines += ["### Hold-out validation metode imputation (D-09)", "", verdict, "", "Rincian di `pipeline/validate/reports/holdout_imputation.md`.", ""]
+
     lines += ["## 2. Nilai yang di-impute", "", to_markdown(imputation_table(prices)), "",
              f"Total {int(prices['is_imputed'].sum())} nilai dari {int(prices['price_idr_per_kg'].notna().sum()):,} bulan berharga. Gap > 6 bulan, gap awal/akhir, dan seri excluded tidak diisi.", ""]
 

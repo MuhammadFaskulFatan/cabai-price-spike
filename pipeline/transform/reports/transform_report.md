@@ -27,6 +27,17 @@ Satu seri = satu provinsi (atau baris nasional). Tier dihitung pada Jan 2019 - O
 | produsen | rawit_hijau | 23 | 2 | 10 |
 | produsen | rawit_merah | 28 | 2 | 5 |
 
+### Hold-out validation metode imputation (D-09)
+
+Aturan (panduan kerja): gap 1-2 bulan linear interpolation pada log price, 3-6 bulan Kalman. Success criterion charter: setiap metode lebih akurat dari linear interpolation.
+
+| bucket | metode_aturan | metode_mape_terendah | sesuai_aturan | mape_linear_pct | mape_kalman_pct | mape_locf_pct |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1-2 bulan | linear_log | linear_log | True | 17.01 | 17.20 | 24.47 |
+| 3-6 bulan | kalman | linear_log | False | 24.55 | 24.80 | 32.25 |
+
+Rincian di `pipeline/validate/reports/holdout_imputation.md`.
+
 ## 2. Nilai yang di-impute
 
 | price_type | commodity | linear_log | kalman | total_imputed |

@@ -224,3 +224,6 @@ __marimo__/
 
 # Extract: file sementara yang belum lengkap
 *.part
+
+# Interim: parquet hasil transform bisa dibuat ulang dari raw (python -m pipeline.run --stage transform)
+data/interim/*.parquet

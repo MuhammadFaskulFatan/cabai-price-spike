@@ -58,9 +58,10 @@ Dokumen ini berisi konvensi dan daftar kolom untuk setiap tabel di [ERD](02_erd_
 | `in_model_period` | bool | `TRUE` untuk Jan 2019 sampai Okt 2026 | Model dan uji hipotesis hanya memakai bulan ini (D-16). Nov 2026 hanya deskriptif |
 | `n_weekdays` | int | Jumlah hari Senin-Jumat | Dasar aturan minimal 10 hari kerja. Survei pasar tradisional PIHPS dilakukan Senin-Jumat (D-18); hari libur nasional yang kosong dicek di fase audit |
 | `n_holiday_days` | int | Jumlah hari libur nasional (Idulfitri, Iduladha, Natal, Tahun Baru) dalam bulan | Dari `holidays.csv`; cuti bersama tidak dihitung di sini |
+| `n_holiday_weekdays` | int | Jumlah libur nasional yang jatuh di Senin-Jumat | Relevan untuk jumlah hari kerja PIHPS |
 | `n_cuti_bersama_days` | int | Jumlah hari cuti bersama dalam bulan | Dari `cuti_bersama.csv` (`is_cuti_bersama`); 2020 dan sebagian Natal kosong karena belum terverifikasi (D-38), jadi dihitung 0 dan ditandai oleh `cuti_bersama_verified` |
-| `cuti_bersama_verified` | bool | `TRUE` kalau semua cuti bersama di bulan itu terlihat di situs pemerintah | `FALSE` untuk bulan dengan cuti yang hanya sekunder atau belum terverifikasi |
-| `months_to_idulfitri` | int | Jarak bulan ke Idulfitri terdekat; negatif = sebelum, positif = sesudah | Definisi "terdekat" ditetapkan di fase transform dan dicatat |
+| `cuti_bersama_verified` | bool | `TRUE` kalau semua cuti bersama di bulan itu terlihat di situs pemerintah dan bulan itu tidak termasuk bulan yang cutinya belum terverifikasi | `FALSE` untuk seluruh 2020, Agustus 2018 dan 2019, Juli 2021 dan 2022, Desember 2018, 2019, 2022 (cuti belum terverifikasi), serta April dan Juni 2025 (hanya sekunder) (D-41) |
+| `months_to_idulfitri` | int | Selisih bulan terhadap bulan 1 Syawal terdekat; negatif = sebelum, 0 = bulan Idulfitri, positif = sesudah | Kalau dua Idulfitri berjarak sama (6 bulan) dipilih yang akan datang. Bulan akhir 2026 memakai Idulfitri 2027 (10-11 Maret 2027 menurut SKB 2027, menunggu sidang isbat), hanya sebagai jangkar dan tidak masuk kalender raw (D-41) |
 
 ### `dim_sentra_point`
 

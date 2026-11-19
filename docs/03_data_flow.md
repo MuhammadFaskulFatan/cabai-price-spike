@@ -101,8 +101,12 @@ flowchart TD
 | `transform/weather_features.py` | Harian Open-Meteo + bobot sentra | Cuaca bulanan per provinsi × komoditas | Production-weighted average titik kabupaten sentra. Provinsi × komoditas tanpa titik sentra diberi `weather_status = not_applicable` dengan nilai `NULL`, tidak di-impute (D-25) |
 | `transform/calendar_features.py` | ONI dan kalender | ONI bulanan, jumlah hari libur, jarak ke Idulfitri | Season dipetakan ke bulan tengah (DJF = Januari) |
 | `transform/integrate.py` | Semua tabel di `data/interim/` | `core_province_month` | Grain provinsi × bulan × komoditas |
-| `transform/aggregate_annual.py` | BDSP tahunan + harga produsen bulanan | `core_province_year` | Rata-rata harga produsen tahunan dengan jumlah bulan terisi; 2025 `is_preliminary` (D-27, D-29) |
+| `transform/integrate.py` (bagian tahunan) | BDSP tahunan + harga produsen bulanan | `core_province_year` | Rata-rata harga produsen tahunan dengan jumlah bulan terisi dan imputed; 2025 `is_preliminary` (D-27, D-29) |
+| `transform/aggregate_weekly.py` | PIHPS mingguan | `fact_price_weekly` | Tanpa imputation (D-12); baris "Dum" dibuang |
+| `transform/calendar_features.py` | Kalender, cuti bersama, ONI | `dim_month`, `fact_oni_monthly` | Lihat D-38, D-41 |
+| `transform/report.py` | Semua hasil transform | `pipeline/transform/reports/transform_report.md` | Tier, imputasi, sel kosong beralasan, hold-out |
 | `validate/holdout_imputation.py` | Observed value yang sengaja di-mask | MAPE per metode | Dipanggil dua kali: sebagai alat pemilih metode di fase transform, dan sebagai laporan resmi di fase validate |
+| `validate/holdout_production.py` | Realisasi SPH Jan-Mar (2022-2025) vs Denton, flat, profile | MAPE nasional | Leave-one-year-out pada pola musiman (D-26) |
 | `validate/reconcile_annual.py` | Core dataset + BDSP | Selisih per provinsi × tahun | Total 12 bulan harus sama dengan angka tahunan |
 | `validate/crosscheck_pihps_monthly.py` | Harga bulanan hasil hitung sendiri + angka bulanan PIHPS (`tipe_laporan=3`) | Selisih per provinsi × bulan | Cross-check saja; angka PIHPS bulanan tidak dipakai mengisi nilai (D-18) |
 | `validate/spot_check.py` | Sampel acak dari core dataset | Perbandingan dengan sumber asli | Seed acak dicatat supaya bisa diulang |

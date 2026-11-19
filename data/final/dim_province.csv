@@ -1,0 +1,35 @@
+province_id,province_name,island_group,in_producer_price_analysis
+1,Aceh,Sumatera,True
+2,Sumatera Utara,Sumatera,True
+3,Sumatera Barat,Sumatera,True
+4,Riau,Sumatera,True
+5,Kepulauan Riau,Sumatera,True
+6,Jambi,Sumatera,True
+7,Bengkulu,Sumatera,True
+8,Sumatera Selatan,Sumatera,True
+9,Kepulauan Bangka Belitung,Sumatera,True
+10,Lampung,Sumatera,True
+11,Banten,Jawa,True
+12,Jawa Barat,Jawa,True
+13,DKI Jakarta,Jawa,True
+14,Jawa Tengah,Jawa,True
+15,DI Yogyakarta,Jawa,True
+16,Jawa Timur,Jawa,True
+17,Bali,Bali dan Nusa Tenggara,True
+18,Nusa Tenggara Barat,Bali dan Nusa Tenggara,True
+19,Nusa Tenggara Timur,Bali dan Nusa Tenggara,False
+20,Kalimantan Barat,Kalimantan,True
+21,Kalimantan Selatan,Kalimantan,True
+22,Kalimantan Tengah,Kalimantan,True
+23,Kalimantan Timur,Kalimantan,True
+24,Kalimantan Utara,Kalimantan,True
+25,Gorontalo,Sulawesi,True
+26,Sulawesi Selatan,Sulawesi,True
+27,Sulawesi Tenggara,Sulawesi,True
+28,Sulawesi Tengah,Sulawesi,True
+29,Sulawesi Utara,Sulawesi,True
+30,Sulawesi Barat,Sulawesi,True
+31,Maluku,Maluku,True
+32,Maluku Utara,Maluku,True
+33,Papua,Papua,True
+34,Papua Barat,Papua,True

@@ -66,6 +66,7 @@ erDiagram
         bool in_model_period
         int n_weekdays
         int n_holiday_days
+        int n_holiday_weekdays
         int n_cuti_bersama_days
         bool cuti_bersama_verified
         int months_to_idulfitri
@@ -136,6 +137,7 @@ erDiagram
         date month_start PK
         string commodity_group PK
         float production_ton_denton
+        bool is_preliminary_year
         bool is_imputed
         string impute_method
     }
@@ -186,8 +188,8 @@ Pipeline mengubah tabel fakta menjadi satu tabel lebar di `data/final/`, satu ba
 | Produksi | `production_ton_denton` (deskriptif saja) |
 | Cuaca | `rain_total_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status` |
 | ENSO | `oni_anomaly`, `enso_phase` |
-| Kalender | `n_holiday_days`, `months_to_idulfitri` |
-| Flag | pasangan `<variabel>_is_imputed` dan `<variabel>_impute_method` untuk setiap variabel yang bisa di-impute atau diestimasi |
+| Kalender | `n_weekdays`, `n_holiday_days`, `n_holiday_weekdays`, `n_cuti_bersama_days`, `cuti_bersama_verified`, `months_to_idulfitri` |
+| Flag | untuk tiap harga: `<variabel>_is_imputed`, `<variabel>_impute_method`, `<variabel>_tier`, `<variabel>_n_days`; produksi: `production_is_imputed`, `production_impute_method`, `production_year_preliminary`; periode: `in_core_period`, `in_model_period`, `is_partial_month`, `in_producer_price_analysis` |
 
 Aturan: tidak boleh ada nilai kosong tanpa penjelasan. Sel kosong hanya sah kalau sebabnya tercatat (di luar periode, variabel tanpa observed data, NTT harga produsen, produksi 2026, bulan parsial).
 
