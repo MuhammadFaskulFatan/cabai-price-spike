@@ -1,0 +1,31 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/lokasi/result",
+    "method": "POST",
+    "body": {
+      "subsektor": "04",
+      "subsektorcd": "04",
+      "subsektornm": "Hortikultura",
+      "level": "03",
+      "levelnm": "Kabupaten",
+      "prov": "34",
+      "provnm": "Daerah Istimewa Yogyakarta",
+      "sts_angka": "6",
+      "sts_angkanm": "Angka Tetap",
+      "sumb_data": "00",
+      "sumb_datanm": "-- Pilih Sumber Data --",
+      "tahunAwal": 2018,
+      "tahunAkhir": 2025,
+      "satuannm": "Ton",
+      "komoditas": "01132",
+      "komoditasnm": "CABE RAWIT",
+      "indikator": "0404",
+      "indikatornm": "PRODUKSI"
+    }
+  },
+  "n_rows": 7,
+  "n_bytes": 5405,
+  "sha256": "e147f5ca854164fee5cbc91d9d5e6b6f2d9d7169f8ebc9bb14eb10251462c107"
+}

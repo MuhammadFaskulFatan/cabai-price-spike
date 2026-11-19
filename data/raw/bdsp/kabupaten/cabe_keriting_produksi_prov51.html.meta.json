@@ -1,0 +1,31 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/lokasi/result",
+    "method": "POST",
+    "body": {
+      "subsektor": "04",
+      "subsektorcd": "04",
+      "subsektornm": "Hortikultura",
+      "level": "03",
+      "levelnm": "Kabupaten",
+      "prov": "51",
+      "provnm": "Bali",
+      "sts_angka": "6",
+      "sts_angkanm": "Angka Tetap",
+      "sumb_data": "00",
+      "sumb_datanm": "-- Pilih Sumber Data --",
+      "tahunAwal": 2018,
+      "tahunAkhir": 2025,
+      "satuannm": "Kuintal",
+      "komoditas": "01194",
+      "komoditasnm": "CABE KERITING",
+      "indikator": "0404",
+      "indikatornm": "PRODUKSI"
+    }
+  },
+  "n_rows": 11,
+  "n_bytes": 6551,
+  "sha256": "107dd27edeeed0128ee2d146ca11b202c11a309a64508106a3b84485b52c3bc5"
+}

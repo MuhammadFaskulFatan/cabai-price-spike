@@ -1,0 +1,31 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/lokasi/result",
+    "method": "POST",
+    "body": {
+      "subsektor": "04",
+      "subsektorcd": "04",
+      "subsektornm": "Hortikultura",
+      "level": "03",
+      "levelnm": "Kabupaten",
+      "prov": "75",
+      "provnm": "Gorontalo",
+      "sts_angka": "6",
+      "sts_angkanm": "Angka Tetap",
+      "sumb_data": "00",
+      "sumb_datanm": "-- Pilih Sumber Data --",
+      "tahunAwal": 2018,
+      "tahunAkhir": 2025,
+      "satuannm": "Ton",
+      "komoditas": "01133",
+      "komoditasnm": "CABE BESAR",
+      "indikator": "0404",
+      "indikatornm": "PRODUKSI"
+    }
+  },
+  "n_rows": 8,
+  "n_bytes": 5649,
+  "sha256": "7eacbbe756a4593fe70be10b04067500e040c693edbce623bad5580f1f633c65"
+}

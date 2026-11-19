@@ -1,0 +1,31 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/lokasi/result",
+    "method": "POST",
+    "body": {
+      "subsektor": "04",
+      "subsektorcd": "04",
+      "subsektornm": "Hortikultura",
+      "level": "03",
+      "levelnm": "Kabupaten",
+      "prov": "16",
+      "provnm": "Sumatera Selatan",
+      "sts_angka": "6",
+      "sts_angkanm": "Angka Tetap",
+      "sumb_data": "00",
+      "sumb_datanm": "-- Pilih Sumber Data --",
+      "tahunAwal": 2018,
+      "tahunAkhir": 2025,
+      "satuannm": "Ha",
+      "komoditas": "01194",
+      "komoditasnm": "CABE KERITING",
+      "indikator": "0403",
+      "indikatornm": "LUAS PANEN"
+    }
+  },
+  "n_rows": 19,
+  "n_bytes": 9360,
+  "sha256": "fd047c0bd6e7b5233fe1d1856539a4496177af9e2c363c650c0e0136e8cbb5d6"
+}

@@ -1,0 +1,31 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/lokasi/result",
+    "method": "POST",
+    "body": {
+      "subsektor": "04",
+      "subsektorcd": "04",
+      "subsektornm": "Hortikultura",
+      "level": "03",
+      "levelnm": "Kabupaten",
+      "prov": "71",
+      "provnm": "Sulawesi Utara",
+      "sts_angka": "6",
+      "sts_angkanm": "Angka Tetap",
+      "sumb_data": "00",
+      "sumb_datanm": "-- Pilih Sumber Data --",
+      "tahunAwal": 2018,
+      "tahunAkhir": 2025,
+      "satuannm": "Ton",
+      "komoditas": "01132",
+      "komoditasnm": "CABE RAWIT",
+      "indikator": "0404",
+      "indikatornm": "PRODUKSI"
+    }
+  },
+  "n_rows": 17,
+  "n_bytes": 8887,
+  "sha256": "732f960cb997715b0c07026cb046440be84299927f5110b1f5a7e76bc219a8ab"
+}

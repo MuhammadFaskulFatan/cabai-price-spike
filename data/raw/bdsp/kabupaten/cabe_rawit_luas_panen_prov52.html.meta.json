@@ -1,0 +1,31 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/lokasi/result",
+    "method": "POST",
+    "body": {
+      "subsektor": "04",
+      "subsektorcd": "04",
+      "subsektornm": "Hortikultura",
+      "level": "03",
+      "levelnm": "Kabupaten",
+      "prov": "52",
+      "provnm": "Nusa Tenggara Barat",
+      "sts_angka": "6",
+      "sts_angkanm": "Angka Tetap",
+      "sumb_data": "00",
+      "sumb_datanm": "-- Pilih Sumber Data --",
+      "tahunAwal": 2018,
+      "tahunAkhir": 2025,
+      "satuannm": "Ha",
+      "komoditas": "01132",
+      "komoditasnm": "CABE RAWIT",
+      "indikator": "0403",
+      "indikatornm": "LUAS PANEN"
+    }
+  },
+  "n_rows": 12,
+  "n_bytes": 7046,
+  "sha256": "57dfe0b73e1660e45a3b29511633d24bf2ddfa902f98a0f8a1ecca88eb5b8303"
+}

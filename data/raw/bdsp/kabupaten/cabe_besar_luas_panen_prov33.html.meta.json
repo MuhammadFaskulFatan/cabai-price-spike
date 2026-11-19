@@ -1,0 +1,31 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/lokasi/result",
+    "method": "POST",
+    "body": {
+      "subsektor": "04",
+      "subsektorcd": "04",
+      "subsektornm": "Hortikultura",
+      "level": "03",
+      "levelnm": "Kabupaten",
+      "prov": "33",
+      "provnm": "Jawa Tengah",
+      "sts_angka": "6",
+      "sts_angkanm": "Angka Tetap",
+      "sumb_data": "00",
+      "sumb_datanm": "-- Pilih Sumber Data --",
+      "tahunAwal": 2018,
+      "tahunAkhir": 2025,
+      "satuannm": "Ha",
+      "komoditas": "01133",
+      "komoditasnm": "CABE BESAR",
+      "indikator": "0403",
+      "indikatornm": "LUAS PANEN"
+    }
+  },
+  "n_rows": 37,
+  "n_bytes": 15485,
+  "sha256": "48d9d41bb8e23ea9d99b06c14bd6d8a4480b05428c0544a46b70e5d7d6c3432f"
+}

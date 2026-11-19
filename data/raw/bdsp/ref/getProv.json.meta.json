@@ -1,0 +1,11 @@
+{
+  "source": "bdsp",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://bdsp2.pertanian.go.id/bdsp/id/",
+    "name": "getProv"
+  },
+  "n_rows": 38,
+  "n_bytes": 1986,
+  "sha256": "25058335844109d8af5c295fe9910f944e544b573278683433e9233b5c943429"
+}
