@@ -11,7 +11,7 @@ Ini portfolio project: dari problem framing sampai findings, dengan setiap langk
 | Fase | Isi | Status |
 | --- | --- | --- |
 | 1 | Design (`docs/`) | Selesai |
-| 2 | Extract | Berjalan (tes koneksi) |
+| 2 | Extract | Selesai kecuali cuaca (Open-Meteo berjalan, lanjut besok) |
 | 3 | Audit completeness | Belum |
 | 4 | Transform dan integrasi | Belum |
 | 5 | Validate | Belum |

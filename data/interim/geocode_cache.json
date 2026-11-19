@@ -1,0 +1,737 @@
+{
+ "Kab. Aceh Tengah|Aceh": {
+  "lat": 4.564267,
+  "lon": 96.9618926,
+  "match": "Aceh Tengah, Aceh, Indonesia"
+ },
+ "Kab. Bener Meriah|Aceh": {
+  "lat": 4.7738799,
+  "lon": 96.9780036,
+  "match": "Bener Meriah, Aceh, Indonesia"
+ },
+ "Kab. Aceh Besar|Aceh": {
+  "lat": 5.3542491,
+  "lon": 95.4961508,
+  "match": "Aceh Besar, Aceh, Indonesia"
+ },
+ "Kab. Karo|Sumatera Utara": {
+  "lat": 3.0803886,
+  "lon": 98.3327524,
+  "match": "Kabupaten Karo, Sumatera Utara, Indonesia"
+ },
+ "Kab. Simalungun|Sumatera Utara": {
+  "lat": 2.9507078,
+  "lon": 98.784316,
+  "match": "Simalungun, Sumatera Utara, Indonesia"
+ },
+ "Kab. Batubara|Sumatera Utara": {
+  "lat": 3.1718937,
+  "lon": 99.4210577,
+  "match": "Kantor Bupati Kabupaten Batubara, Jalan Juanda, Lima Puluh Kota, Lima Puluh, Batu Bara, Sumatera Utara, Indonesia"
+ },
+ "Kab. Dairi|Sumatera Utara": {
+  "lat": 2.8289604,
+  "lon": 98.3122779,
+  "match": "Kabupaten Dairi, Sumatera Utara, Indonesia"
+ },
+ "Kab. Agam|Sumatera Barat": {
+  "lat": -0.2547205,
+  "lon": 100.1700311,
+  "match": "Agam, Sumatera Barat, Indonesia"
+ },
+ "Kab. Solok|Sumatera Barat": {
+  "lat": -0.93103,
+  "lon": 100.804328,
+  "match": "Solok, Sumatera Barat, 27365, Indonesia"
+ },
+ "Kab. Tanah Datar|Sumatera Barat": {
+  "lat": -0.468996,
+  "lon": 100.6361603,
+  "match": "Tanah Datar, Sumatera Barat, Indonesia"
+ },
+ "Kab. Solok Selatan|Sumatera Barat": {
+  "lat": -1.5573292,
+  "lon": 101.239478,
+  "match": "Solok Selatan, Sumatera Barat, Indonesia"
+ },
+ "Kab. Lima Puluh Kota|Sumatera Barat": {
+  "lat": 0.027855,
+  "lon": 100.5913082,
+  "match": "Lima Puluh Kota, Sumatera Barat, Indonesia"
+ },
+ "Kab. Siak|Riau": {
+  "lat": 0.8275337,
+  "lon": 101.8461936,
+  "match": "Siak, Riau, Indonesia"
+ },
+ "Kab. Kampar|Riau": {
+  "lat": 0.3199733,
+  "lon": 101.0617123,
+  "match": "Kampar, Riau, Indonesia"
+ },
+ "Kab. Rokan Hulu|Riau": {
+  "lat": 0.9043104,
+  "lon": 100.4573683,
+  "match": "Rokan Hulu, Riau, Indonesia"
+ },
+ "Kota Batam|Kepulauan Riau": {
+  "lat": 1.1030815,
+  "lon": 104.0383696,
+  "match": "Batam, Kepulauan Riau, Indonesia"
+ },
+ "Kab. Bintan|Kepulauan Riau": {
+  "lat": 1.0196577,
+  "lon": 104.5698189,
+  "match": "Bintan, Kepulauan Riau, Indonesia"
+ },
+ "Kab. Kerinci|Jambi": {
+  "lat": -2.0633382,
+  "lon": 101.6001052,
+  "match": "Kerinci, Jambi, Indonesia"
+ },
+ "Kab. Merangin|Jambi": {
+  "lat": -2.2084472,
+  "lon": 102.1171064,
+  "match": "Merangin, Jambi, Indonesia"
+ },
+ "Kab. Rejang Lebong|Bengkulu": {
+  "lat": -3.4389041,
+  "lon": 102.6984853,
+  "match": "Rejang Lebong, Bengkulu, Indonesia"
+ },
+ "Kab. Kepahiang|Bengkulu": {
+  "lat": -3.6479363,
+  "lon": 102.6661393,
+  "match": "Kepahiang, Bengkulu, 39372, Indonesia"
+ },
+ "Kab. Ogan Komering Ilir|Sumatera Selatan": {
+  "lat": -3.3288538,
+  "lon": 105.3997866,
+  "match": "Ogan Komering Ilir, Sumatera Selatan, Indonesia"
+ },
+ "Kab. Muara Enim|Sumatera Selatan": {
+  "lat": -3.8467067,
+  "lon": 103.9615719,
+  "match": "Muara Enim, Sumatera Selatan, Indonesia"
+ },
+ "Kab. OKU Timur|Sumatera Selatan": {
+  "lat": -4.1286439,
+  "lon": 104.1706231,
+  "match": "Rumah Kabupaten OKU, Jalan Jendral Ahmad Yani, Baturaja, Baturaja Timur, Ogan Komering Ulu, Sumatera Selatan, 32125, Indonesia"
+ },
+ "Kota Pagaralam|Sumatera Selatan": {
+  "lat": -4.0391959,
+  "lon": 103.1970033,
+  "match": "Kantor wali Kota Pagaralam, Jalan Laskar Wanita Mentarjo, Pagar Alam Selatan, Pagar Alam, Sumatera Selatan, Indonesia"
+ },
+ "Kab. Bangka Tengah|Kepulauan Bangka Belitung": {
+  "lat": -2.4305155,
+  "lon": 106.1001553,
+  "match": "Bangka Tengah, Kepulauan Bangka Belitung, Indonesia"
+ },
+ "Kab. Bangka|Kepulauan Bangka Belitung": {
+  "lat": -1.9250896,
+  "lon": 105.9365208,
+  "match": "Bangka, Kepulauan Bangka Belitung, Indonesia"
+ },
+ "Kab. Belitung|Kepulauan Bangka Belitung": {
+  "lat": -2.8842812,
+  "lon": 107.6631596,
+  "match": "Belitung, Kepulauan Bangka Belitung, Indonesia"
+ },
+ "Kab. Lampung Selatan|Lampung": {
+  "lat": -5.5414886,
+  "lon": 105.5110009,
+  "match": "Lampung Selatan, Lampung, Indonesia"
+ },
+ "Kab. Lampung Barat|Lampung": {
+  "lat": -5.111704,
+  "lon": 104.3057867,
+  "match": "Lampung Barat, Lampung, Indonesia"
+ },
+ "Kab. Pringsewu|Lampung": {
+  "lat": -5.3666892,
+  "lon": 104.9722121,
+  "match": "Pringsewu, Lampung, 35373, Indonesia"
+ },
+ "Kab. Pandeglang|Banten": {
+  "lat": -6.5473765,
+  "lon": 105.7994879,
+  "match": "Pandeglang, Banten, Indonesia"
+ },
+ "Kab. Serang|Banten": {
+  "lat": -6.1057256,
+  "lon": 105.9884196,
+  "match": "Kab Serang, Banten, Indonesia"
+ },
+ "Kab. Lebak|Banten": {
+  "lat": -6.6432471,
+  "lon": 106.1868837,
+  "match": "Lebak, Banten, Indonesia"
+ },
+ "Kab. Garut|Jawa Barat": {
+  "lat": -7.2162774,
+  "lon": 107.9014912,
+  "match": "Garut, Jawa Barat, Indonesia"
+ },
+ "Kab. Bandung|Jawa Barat": {
+  "lat": -7.0613423,
+  "lon": 107.6342883,
+  "match": "Kabupaten Bandung, Jawa Barat, Indonesia"
+ },
+ "Kab. Cianjur|Jawa Barat": {
+  "lat": -7.0539936,
+  "lon": 107.0692399,
+  "match": "Cianjur, Jawa Barat, Indonesia"
+ },
+ "Kota Jakarta Timur|Daerah Khusus Ibukota Jakarta": {
+  "lat": -6.2628908,
+  "lon": 106.8822289,
+  "match": "Jakarta Timur, Daerah Khusus Ibukota Jakarta, Indonesia"
+ },
+ "Kota Jakarta Barat|Daerah Khusus Ibukota Jakarta": {
+  "lat": -6.161569,
+  "lon": 106.7438905,
+  "match": "Jakarta Barat, Daerah Khusus Ibukota Jakarta, Indonesia"
+ },
+ "Kab. Magelang|Jawa Tengah": {
+  "lat": -7.5136144,
+  "lon": 110.2145133,
+  "match": "Magelang, Jawa Tengah, Indonesia"
+ },
+ "Kab. Temanggung|Jawa Tengah": {
+  "lat": -7.2397576,
+  "lon": 110.1216648,
+  "match": "Temanggung, Jawa Tengah, Indonesia"
+ },
+ "Kab. Wonosobo|Jawa Tengah": {
+  "lat": -7.3997999,
+  "lon": 109.9209645,
+  "match": "Wonosobo, Jawa Tengah, Indonesia"
+ },
+ "Kab. Brebes|Jawa Tengah": {
+  "lat": -7.0520711,
+  "lon": 108.888136,
+  "match": "Brebes, Jawa Tengah, Indonesia"
+ },
+ "Kab. Kulon Progo|Daerah Istimewa Yogyakarta": {
+  "lat": -7.8123076,
+  "lon": 110.1479828,
+  "match": "Kulonprogo, Daerah Istimewa Yogyakarta, Indonesia"
+ },
+ "Kab. Sleman|Daerah Istimewa Yogyakarta": {
+  "lat": -7.6894175,
+  "lon": 110.3812904,
+  "match": "Sleman, Daerah Istimewa Yogyakarta, Indonesia"
+ },
+ "Kab. Malang|Jawa Timur": {
+  "lat": -8.1047981,
+  "lon": 112.6879872,
+  "match": "Kabupaten Malang, Jawa Timur, Indonesia"
+ },
+ "Kab. Blitar|Jawa Timur": {
+  "lat": -8.1311983,
+  "lon": 112.3115572,
+  "match": "Blitar, Jawa Timur, Indonesia"
+ },
+ "Kab. Tuban|Jawa Timur": {
+  "lat": -6.9596385,
+  "lon": 111.8932266,
+  "match": "Tuban, Jawa Timur, Indonesia"
+ },
+ "Kab. Kediri|Jawa Timur": {
+  "lat": -7.8026253,
+  "lon": 112.1686315,
+  "match": "Kabupaten Kediri, Jawa Timur, Indonesia"
+ },
+ "Kab. Bangli|Bali": {
+  "lat": -8.3336175,
+  "lon": 115.368046,
+  "match": "Bangli, Bali, Indonesia"
+ },
+ "Kab. Karang Asem|Bali": {
+  "lat": -6.4911678,
+  "lon": 106.8793384,
+  "match": "SMP Tahfidz Indonesia, Jalan Raya Sirkuit Sentul, Citeureup, Kab Bogor, Jawa Barat, 16810, Indonesia"
+ },
+ "Kab. Buleleng|Bali": {
+  "lat": -8.2222492,
+  "lon": 114.9950437,
+  "match": "Buleleng, Bali, Indonesia"
+ },
+ "Kab. Lombok Timur|Nusa Tenggara Barat": {
+  "lat": -8.6330934,
+  "lon": 116.5587704,
+  "match": "Lombok Timur, Nusa Tenggara Barat, Indonesia"
+ },
+ "Kab. Lombok Tengah|Nusa Tenggara Barat": {
+  "lat": -8.703071,
+  "lon": 116.2899373,
+  "match": "Lombok Tengah, Nusa Tenggara Barat, Indonesia"
+ },
+ "Kab. Kupang|Nusa Tenggara Timur": {
+  "lat": -9.8475696,
+  "lon": 123.8780846,
+  "match": "Kupang, Nusa Tenggara Timur, 85362, Indonesia"
+ },
+ "Kab. Manggarai Barat|Nusa Tenggara Timur": {
+  "lat": -8.5741281,
+  "lon": 120.0611252,
+  "match": "Manggarai Barat, Nusa Tenggara Timur, Indonesia"
+ },
+ "Kab. Belu|Nusa Tenggara Timur": {
+  "lat": -9.175972,
+  "lon": 124.9163537,
+  "match": "Belu, Nusa Tenggara Timur, Indonesia"
+ },
+ "Kab. Rote Ndao|Nusa Tenggara Timur": {
+  "lat": -10.6870292,
+  "lon": 123.208435,
+  "match": "Rote Ndao, Nusa Tenggara Timur, 85371, Indonesia"
+ },
+ "Kab. Malaka|Nusa Tenggara Timur": {
+  "lat": -9.5460166,
+  "lon": 124.8763532,
+  "match": "Malaka, Nusa Tenggara Timur, 85763, Indonesia"
+ },
+ "Kab. Bengkayang|Kalimantan Barat": {
+  "lat": 1.0157755,
+  "lon": 109.7080333,
+  "match": "Bengkayang, Kalimantan Barat, Indonesia"
+ },
+ "Kab. Kubu Raya|Kalimantan Barat": {
+  "lat": -0.3694841,
+  "lon": 109.5123558,
+  "match": "Kubu Raya, Kalimantan Barat, Indonesia"
+ },
+ "Kab. Sintang|Kalimantan Barat": {
+  "lat": 0.0635957,
+  "lon": 111.4866203,
+  "match": "Sintang, Kalimantan Barat, Indonesia"
+ },
+ "Kab. Ketapang|Kalimantan Barat": {
+  "lat": -1.8446652,
+  "lon": 109.9784067,
+  "match": "Ketapang, Kalimantan Barat, Indonesia"
+ },
+ "Kab. Hulu Sungai Selatan|Kalimantan Selatan": {
+  "lat": -2.7125808,
+  "lon": 115.1587771,
+  "match": "Hulu Sungai Selatan, Kalimantan Selatan, Indonesia"
+ },
+ "Kab. Hulu Sungai Tengah|Kalimantan Selatan": {
+  "lat": -2.6187577,
+  "lon": 115.4292997,
+  "match": "Hulu Sungai Tengah, Kalimantan Selatan, Indonesia"
+ },
+ "Kab. Tabalong|Kalimantan Selatan": {
+  "lat": -1.8363209,
+  "lon": 115.5155337,
+  "match": "Tabalong, Kalimantan Selatan, Indonesia"
+ },
+ "Kab. Tapin|Kalimantan Selatan": {
+  "lat": -2.862273,
+  "lon": 115.010964,
+  "match": "Tapin, Kalimantan Selatan, Indonesia"
+ },
+ "Kab. Tanah Laut|Kalimantan Selatan": {
+  "lat": -3.8440385,
+  "lon": 114.9888593,
+  "match": "Tanah Laut, Kalimantan Selatan, Indonesia"
+ },
+ "Kab. Kota Waringin Barat|Kalimantan Tengah": {
+  "lat": -2.6908757,
+  "lon": 111.6329532,
+  "match": "PMI Kabupaten Kotawaringin Barat, Jalan Sutan Syahrir, Madurejo, Kotawaringin Barat, Kalimantan Tengah, 74181, Indonesia"
+ },
+ "Kab. Kapuas|Kalimantan Tengah": {
+  "lat": -1.9228793,
+  "lon": 114.3363619,
+  "match": "Kapuas, Kalimantan Tengah, Indonesia"
+ },
+ "Kab. Kota Waringin Timur|Kalimantan Tengah": {
+  "lat": -2.5023139,
+  "lon": 112.975406,
+  "match": "Airnav Indonesia KCP Sampit, Samekto, Baamang Hulu, Kotawaringin Timur, Kalimantan Tengah, 74313, Indonesia"
+ },
+ "Kab. Lamandau|Kalimantan Tengah": {
+  "lat": -1.7788744,
+  "lon": 111.4173165,
+  "match": "Lamandau, Kalimantan Tengah, Indonesia"
+ },
+ "Kota Balikpapan|Kalimantan Timur": {
+  "lat": -1.2398711,
+  "lon": 116.8593379,
+  "match": "Balikpapan, Kalimantan Timur, Indonesia"
+ },
+ "Kab. Penajam Paser Utara|Kalimantan Timur": {
+  "lat": -1.1973862,
+  "lon": 116.5673033,
+  "match": "Penajam Paser Utara, Kalimantan Timur, Indonesia"
+ },
+ "Kota Tarakan|Kalimantan Utara": {
+  "lat": 3.3000169,
+  "lon": 117.6330159,
+  "match": "Tarakan, Kalimantan Utara, Indonesia"
+ },
+ "Kab. Bulungan|Kalimantan Utara": {
+  "lat": 2.7620341,
+  "lon": 117.0743468,
+  "match": "Bulungan, Kalimantan Utara, Indonesia"
+ },
+ "Kab Nunukan|Kalimantan Utara": {
+  "lat": 4.0963404,
+  "lon": 117.7062328,
+  "match": "Kantor Gabungan Dinas-dinas Kab. Nunukan, Nunukan Selatan, Nunukan, Kalimantan Utara, Indonesia"
+ },
+ "Kab. Gorontalo|Gorontalo": {
+  "lat": 0.7011802,
+  "lon": 122.7233095,
+  "match": "Gorontalo, Indonesia"
+ },
+ "Kab. Pohuwato|Gorontalo": {
+  "lat": 0.701821,
+  "lon": 121.6470746,
+  "match": "Pohuwato, Gorontalo, Indonesia"
+ },
+ "Kab. Gorontalo Utara|Gorontalo": {
+  "lat": 0.8661976,
+  "lon": 123.0495286,
+  "match": "Gorontalo Utara, Gorontalo, Indonesia"
+ },
+ "Kab. Enrekang|Sulawesi Selatan": {
+  "lat": -3.4880125,
+  "lon": 119.8658463,
+  "match": "Enrekang, Sulawesi Selatan, Indonesia"
+ },
+ "Kab. Gowa|Sulawesi Selatan": {
+  "lat": -5.3290868,
+  "lon": 119.7660277,
+  "match": "Gowa, Sulawesi Selatan, Indonesia"
+ },
+ "Kab. Bantaeng|Sulawesi Selatan": {
+  "lat": -5.4709449,
+  "lon": 119.9871679,
+  "match": "Bantaeng, Sulawesi Selatan, Indonesia"
+ },
+ "Kab. Wajo|Sulawesi Selatan": {
+  "lat": -3.9655767,
+  "lon": 120.1279377,
+  "match": "Wajo, Sulawesi Selatan, Indonesia"
+ },
+ "Kab. Konawe|Sulawesi Tenggara": {
+  "lat": -3.5116689,
+  "lon": 121.6523287,
+  "match": "Konawe, Sulawesi Tenggara, Indonesia"
+ },
+ "Kab. Konawe Selatan|Sulawesi Tenggara": {
+  "lat": -4.2599185,
+  "lon": 122.4498522,
+  "match": "Konawe Selatan, Sulawesi Tenggara, Indonesia"
+ },
+ "Kab. Konawe Utara|Sulawesi Tenggara": {
+  "lat": -3.4549579,
+  "lon": 121.976257,
+  "match": "Konawe Utara, Sulawesi Tenggara, 93355, Indonesia"
+ },
+ "Kab. Muna|Sulawesi Tenggara": {
+  "lat": -4.9191496,
+  "lon": 122.6918339,
+  "match": "Muna, Sulawesi Tenggara, Indonesia"
+ },
+ "Kab. Poso|Sulawesi Tengah": {
+  "lat": -1.6568513,
+  "lon": 120.5421575,
+  "match": "Poso, Sulawesi Tengah, Indonesia"
+ },
+ "Kab. Parigi Moutong|Sulawesi Tengah": {
+  "lat": -0.2383605,
+  "lon": 119.9599311,
+  "match": "Parigi Moutong, Sulawesi Tengah, Indonesia"
+ },
+ "Kab. Sigi|Sulawesi Tengah": {
+  "lat": -1.3211588,
+  "lon": 119.9987265,
+  "match": "Sigi, Sulawesi Tengah, Indonesia"
+ },
+ "Kab. Tojo Una-una|Sulawesi Tengah": {
+  "lat": -1.2131378,
+  "lon": 121.6196075,
+  "match": "Tojo Una-Una, Sulawesi Tengah, Indonesia"
+ },
+ "Kab. Minahasa|Sulawesi Utara": {
+  "lat": 1.2151679,
+  "lon": 124.7978881,
+  "match": "Minahasa, Sulawesi Utara, Indonesia"
+ },
+ "Kab. Minahasa Selatan|Sulawesi Utara": {
+  "lat": 1.07031,
+  "lon": 124.4361622,
+  "match": "Minahasa Selatan, Sulawesi Utara, Indonesia"
+ },
+ "Kota Tomohon|Sulawesi Utara": {
+  "lat": 1.3255914,
+  "lon": 124.838605,
+  "match": "Tomohon, Sulawesi Utara, Indonesia"
+ },
+ "Kab. Mamuju|Sulawesi Barat": {
+  "lat": -2.5394187,
+  "lon": 119.3889455,
+  "match": "Mamuju, Sulawesi Barat, Indonesia"
+ },
+ "Kab. Majene|Sulawesi Barat": {
+  "lat": -3.2429956,
+  "lon": 118.8733445,
+  "match": "Majene, Sulawesi Barat, 91412, Indonesia"
+ },
+ "Kab. Buru|Maluku": {
+  "lat": -3.3539094,
+  "lon": 126.6489184,
+  "match": "Buru, Maluku, Indonesia"
+ },
+ "Kab. Maluku Tengah|Maluku": {
+  "lat": -3.1214456,
+  "lon": 129.4599922,
+  "match": "Maluku Tengah, Maluku, Indonesia"
+ },
+ "Kab. Seram Bagian Timur|Maluku": {
+  "lat": -3.4231586,
+  "lon": 130.3910924,
+  "match": "Seram Bagian Timur, Maluku, 97555, Indonesia"
+ },
+ "Kab. Seram Bagian Barat|Maluku": {
+  "lat": -3.1642057,
+  "lon": 128.4836558,
+  "match": "Seram Bagian Barat, Maluku, Indonesia"
+ },
+ "Kab. Halmahera Barat|Maluku Utara": {
+  "lat": 1.3631055,
+  "lon": 127.5737958,
+  "match": "Halmahera Barat, Maluku Utara, 97752, Indonesia"
+ },
+ "Kab. Halmahera Utara|Maluku Utara": {
+  "lat": 1.6178705,
+  "lon": 127.8584679,
+  "match": "Halmahera Utara, Maluku Utara, Indonesia"
+ },
+ "Kab. Pulau Morotai|Maluku Utara": {
+  "lat": 2.3129234,
+  "lon": 128.4418556,
+  "match": "Pulau Morotai, Maluku Utara, Indonesia"
+ },
+ "Kab. Halmahera Timur|Maluku Utara": {
+  "lat": 1.0027852,
+  "lon": 128.2487936,
+  "match": "Halmahera Timur, Maluku Utara, Indonesia"
+ },
+ "Kab.Nabire|Papua": {
+  "lat": -3.3697331,
+  "lon": 135.5069686,
+  "match": "Dinas Pekerjaan Umum Kab. Nabire, Jalan Merdeka, Nabire, Kabupaten Nabire, Papua Tengah, 98811, Indonesia"
+ },
+ "Kab. Merauke|Papua": {
+  "lat": -8.4902766,
+  "lon": 140.395582,
+  "match": "Merauke, Semangga, Papua Selatan, Indonesia"
+ },
+ "Kota Jayapura|Papua": {
+  "lat": -2.5387539,
+  "lon": 140.7037389,
+  "match": "Jayapura, Papua, Indonesia"
+ },
+ "Kab. Sorong Selatan|Papua Barat": {
+  "lat": -1.6430519,
+  "lon": 132.2549526,
+  "match": "Sorong Selatan, Papua Barat Daya, 98454, Indonesia"
+ },
+ "Kab. Sorong|Papua Barat": {
+  "lat": -1.154763,
+  "lon": 131.5336145,
+  "match": "Sorong, Papua Barat Daya, 98414, Indonesia"
+ },
+ "Kab. Manokwari|Papua Barat": {
+  "lat": -0.9776762,
+  "lon": 133.7538039,
+  "match": "Manokwari, Papua Barat, Indonesia"
+ },
+ "Kab. Raja Ampat|Papua Barat Daya": {
+  "lat": -0.7125553,
+  "lon": 130.3034473,
+  "match": "Raja Ampat, Papua Barat Daya, Indonesia"
+ },
+ "Kab. Kutai Kertanegara|Kalimantan Timur": {
+  "lat": 0.195633,
+  "lon": 116.2004167,
+  "match": "Kutai Kartanegara, Kalimantan Timur, Indonesia"
+ },
+ "Kab. Mamuju Utara/Kab. Pasangkayu|Sulawesi Barat": {
+  "lat": -1.3447436,
+  "lon": 119.3795112,
+  "match": "Pasangkayu, Sulawesi Barat, 91571, Indonesia"
+ },
+ "Kab. Sukabumi|Jawa Barat": {
+  "lat": -7.0764508,
+  "lon": 106.7346608,
+  "match": "Kab Sukabumi, Jawa Barat, Indonesia"
+ },
+ "Kab. Banjarnegara|Jawa Tengah": {
+  "lat": -7.3558733,
+  "lon": 109.6600728,
+  "match": "Banjarnegara, Jawa Tengah, Indonesia"
+ },
+ "Kab. Semarang|Jawa Tengah": {
+  "lat": -7.2876561,
+  "lon": 110.4019427,
+  "match": "Kabupaten Semarang, Jawa Tengah, Indonesia"
+ },
+ "Kab. Bandung Barat|Jawa Barat": {
+  "lat": -6.897754,
+  "lon": 107.4124294,
+  "match": "Bandung Barat, Jawa Barat, Indonesia"
+ },
+ "Kab. Boyolali|Jawa Tengah": {
+  "lat": -7.3872118,
+  "lon": 110.7038691,
+  "match": "Boyolali, Jawa Tengah, Indonesia"
+ },
+ "Kab. Tapanuli Utara|Sumatera Utara": {
+  "lat": 1.9983286,
+  "lon": 99.060534,
+  "match": "Kabupaten Tapanuli Utara, Sumatera Utara, Indonesia"
+ },
+ "Kab. Bogor|Jawa Barat": {
+  "lat": -6.5453875,
+  "lon": 107.001782,
+  "match": "Kab Bogor, Jawa Barat, Indonesia"
+ },
+ "Kab. Majalengka|Jawa Barat": {
+  "lat": -6.8073627,
+  "lon": 108.278786,
+  "match": "Majalengka, Jawa Barat, Indonesia"
+ },
+ "Kab. Tasikmalaya|Jawa Barat": {
+  "lat": -7.4271707,
+  "lon": 108.0684231,
+  "match": "Tasikmalaya, Jawa Barat, Indonesia"
+ },
+ "Kab. Grobogan|Jawa Tengah": {
+  "lat": -7.0964605,
+  "lon": 110.8948834,
+  "match": "Grobogan, Jawa Tengah, Indonesia"
+ },
+ "Kab. Sumedang|Jawa Barat": {
+  "lat": -6.8597179,
+  "lon": 107.9207066,
+  "match": "Sumedang, Jawa Barat, Indonesia"
+ },
+ "Kab. Deli Serdang|Sumatera Utara": {
+  "lat": 3.4744538,
+  "lon": 98.7158975,
+  "match": "Kabupaten Deli Serdang, Sumatera Utara, Indonesia"
+ },
+ "Kab. Blora|Jawa Tengah": {
+  "lat": -7.110613,
+  "lon": 111.4204319,
+  "match": "Blora, Jawa Tengah, 58211 - 58219, Indonesia"
+ },
+ "Kab. Pasaman Barat|Sumatera Barat": {
+  "lat": 0.1875382,
+  "lon": 99.6935157,
+  "match": "Pasaman Barat, Sumatera Barat, Indonesia"
+ },
+ "Kab. Cilacap|Jawa Tengah": {
+  "lat": -7.461671,
+  "lon": 108.8046146,
+  "match": "Cilacap, Jawa Tengah, Indonesia"
+ },
+ "Kab. Banyuwangi|Jawa Timur": {
+  "lat": -8.3325711,
+  "lon": 114.141579,
+  "match": "Banyuwangi, Jawa Timur, Indonesia"
+ },
+ "Kab. Humbang Hasundutan|Sumatera Utara": {
+  "lat": 2.2376995,
+  "lon": 98.6006721,
+  "match": "Kabupaten Humbang Hasundutan, Sumatera Utara, Indonesia"
+ },
+ "Kab. Pesisir Selatan|Sumatera Barat": {
+  "lat": -1.7185793,
+  "lon": 100.9270249,
+  "match": "Pesisir Selatan, Sumatera Barat, Indonesia"
+ },
+ "Kab. Sampang|Jawa Timur": {
+  "lat": -7.0578157,
+  "lon": 113.2540541,
+  "match": "Sampang, Jawa Timur, Indonesia"
+ },
+ "Kab. Probolinggo|Jawa Timur": {
+  "lat": -7.86316,
+  "lon": 113.3051053,
+  "match": "Probolinggo, Jawa Timur, Indonesia"
+ },
+ "Kab. Lamongan|Jawa Timur": {
+  "lat": -7.1229318,
+  "lon": 112.3281935,
+  "match": "Lamongan, Jawa Timur, Indonesia"
+ },
+ "Kab. Gresik|Jawa Timur": {
+  "lat": -5.7933465,
+  "lon": 112.6598223,
+  "match": "Gresik, Jawa Timur, Indonesia"
+ },
+ "Kab. Jember|Jawa Timur": {
+  "lat": -8.2633237,
+  "lon": 113.6278541,
+  "match": "Jember, Jawa Timur, Indonesia"
+ },
+ "Kab. Situbondo|Jawa Timur": {
+  "lat": -7.7986089,
+  "lon": 114.264743,
+  "match": "Situbondo, Jawa Timur, Indonesia"
+ },
+ "Kab. Lumajang|Jawa Timur": {
+  "lat": -8.1237818,
+  "lon": 113.1436747,
+  "match": "Lumajang, Jawa Timur, Indonesia"
+ },
+ "Kab. Sumenep|Jawa Timur": {
+  "lat": -6.9991798,
+  "lon": 113.8376708,
+  "match": "Sumenep, Jawa Timur, Indonesia"
+ },
+ "Kab. Rembang|Jawa Tengah": {
+  "lat": -6.7698635,
+  "lon": 111.4556709,
+  "match": "Rembang, Jawa Tengah, Indonesia"
+ },
+ "Kab. Pamekasan|Jawa Timur": {
+  "lat": -7.0708133,
+  "lon": 113.5003939,
+  "match": "Pamekasan, Jawa Timur, Indonesia"
+ },
+ "Kab. Jombang|Jawa Timur": {
+  "lat": -7.561464,
+  "lon": 112.2413044,
+  "match": "Jombang, Jawa Timur, Indonesia"
+ },
+ "Kab. Bondowoso|Jawa Timur": {
+  "lat": -7.9451279,
+  "lon": 113.882059,
+  "match": "Bondowoso, Jawa Timur, Indonesia"
+ },
+ "Kab. Nganjuk|Jawa Timur": {
+  "lat": -7.6150161,
+  "lon": 111.9465075,
+  "match": "Nganjuk, Jawa Timur, Indonesia"
+ },
+ "Kab. Mojokerto|Jawa Timur": {
+  "lat": -7.5413377,
+  "lon": 112.5094975,
+  "match": "Mojokerto, Jawa Timur, Indonesia"
+ },
+ "Kab. Lombok Utara|Nusa Tenggara Barat": {
+  "lat": -8.3572425,
+  "lon": 116.1609208,
+  "match": "Lombok Utara, Nusa Tenggara Barat, Indonesia"
+ }
+}
