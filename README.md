@@ -12,7 +12,7 @@ Ini portfolio project: dari problem framing sampai findings, dengan setiap langk
 | --- | --- | --- |
 | 1 | Design (`docs/`) | Selesai |
 | 2 | Extract | Selesai kecuali cuaca (Open-Meteo berjalan, lanjut besok) |
-| 3 | Audit completeness | Belum |
+| 3 | Audit completeness | Selesai kecuali cuaca (menunggu data Open-Meteo lengkap) |
 | 4 | Transform dan integrasi | Belum |
 | 5 | Validate | Belum |
 | Setelahnya | Analisis dan findings | Belum; baru mulai setelah core dataset lolos validasi |

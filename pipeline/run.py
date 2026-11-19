@@ -10,6 +10,7 @@ dari data produksi kabupaten.
 import argparse
 import sys
 
+from pipeline.audit import completeness
 from pipeline.extract import (
     bdsp,
     buletin_pusdatin,
@@ -30,13 +31,13 @@ EXTRACT_STEPS = [
     ("open_meteo", open_meteo),
 ]
 
-STAGES = {"extract": EXTRACT_STEPS}
+STAGES = {"extract": EXTRACT_STEPS, "audit": [("completeness", completeness)]}
 
 
 def run_stage(name, refresh):
     for step_name, module in STAGES[name]:
         print(f"\n=== {name}: {step_name} ===")
-        sys.argv = [step_name] + (["--refresh"] if refresh else [])
+        sys.argv = [step_name] + (["--refresh"] if refresh and name == "extract" else [])
         module.main()
 
 
