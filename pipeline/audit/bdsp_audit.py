@@ -4,56 +4,14 @@ Output (pipeline/audit/reports/): bdsp_province_year.csv dan bdsp_audit.md.
 Yang diperiksa: nol vs terisi per provinsi x tahun, konsistensi total, konsistensi kabupaten vs provinsi,
 produktivitas (ton/ha), cek apakah cabe keriting subset dari cabe besar (D-28), dan perubahan tahunan nasional.
 """
-import json
-import re
-
 import numpy as np
 import pandas as pd
-from bs4 import BeautifulSoup
 
-from pipeline.audit.loaders import RAW, REPORTS, parse_bdsp_number, to_markdown, write_report
+from pipeline.audit.loaders import REPORTS, to_markdown, write_report
 from pipeline.extract.common import save_raw
 from pipeline.provinces import BPS_TO_PIHPS
+from pipeline.readers import COMMODITIES, INDICATORS, RAW, TO_BASE_UNIT, YEARS, load_province_tables, read_table, unit_of
 from pipeline.rules import YIELD_MAX, YIELD_MIN
-
-YEARS = list(range(2018, 2026))
-COMMODITIES = {"cabe_besar": "cabe besar", "cabe_keriting": "cabe keriting", "cabe_rawit": "cabe rawit"}
-INDICATORS = {"produksi": "produksi", "luas_panen": "luas panen"}
-TO_BASE_UNIT = {"Ton": 1.0, "Kuintal": 0.1, "Ha": 1.0}  # produksi dalam ton
-
-
-def read_table(path):
-    soup = BeautifulSoup(path.read_text(encoding="utf-8"), "lxml")
-    rows = {}
-    for tr in soup.find_all("tr"):
-        cells = [cell.get_text(strip=True) for cell in tr.find_all(["th", "td"])]
-        if len(cells) >= 10 and re.match(r"^\d{2,4} - ", cells[1]):
-            rows[cells[1]] = [parse_bdsp_number(value) for value in cells[2:10]]
-        elif cells and cells[0] == "TOTAL":
-            rows["TOTAL"] = [parse_bdsp_number(value) for value in cells[1:9]]
-    return rows
-
-
-def unit_of(path):
-    meta = json.loads(path.with_name(path.name + ".meta.json").read_text(encoding="utf-8"))
-    return meta["request"]["body"]["satuannm"]
-
-
-def load_province_tables():
-    """Tabel panjang: commodity, indicator, bps_code, bdsp_name, parent_id, year, value (ton atau ha)."""
-    records, units = [], {}
-    for commodity in COMMODITIES:
-        for indicator in INDICATORS:
-            path = RAW / "bdsp" / "provinsi" / f"{commodity}_{indicator}.html"
-            unit = unit_of(path)
-            units[(commodity, indicator)] = unit
-            for label, values in read_table(path).items():
-                if label == "TOTAL":
-                    continue
-                code, name = label.split(" - ", 1)
-                for year, value in zip(YEARS, values):
-                    records.append((commodity, indicator, code, name, BPS_TO_PIHPS[code][0], year, value * TO_BASE_UNIT[unit]))
-    return pd.DataFrame(records, columns=["commodity", "indicator", "bps_code", "bdsp_name", "province_id", "year", "value"]), units
 
 
 def total_row_check():
