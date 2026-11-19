@@ -1,0 +1,41 @@
+date,holiday,is_cuti_bersama,verification,source
+2018-06-11,idulfitri,TRUE,official,"menpan.go.id, kemnaker.go.id: 4 hari awal + 3 hari tambahan (revisi April 2018)"
+2018-06-12,idulfitri,TRUE,official,"menpan.go.id, kemnaker.go.id: 4 hari awal + 3 hari tambahan (revisi April 2018)"
+2018-06-13,idulfitri,TRUE,official,"menpan.go.id, kemnaker.go.id: 4 hari awal + 3 hari tambahan (revisi April 2018)"
+2018-06-14,idulfitri,TRUE,official,"menpan.go.id, kemnaker.go.id: 4 hari awal + 3 hari tambahan (revisi April 2018)"
+2018-06-18,idulfitri,TRUE,official,"menpan.go.id, kemnaker.go.id: 4 hari awal + 3 hari tambahan (revisi April 2018)"
+2018-06-19,idulfitri,TRUE,official,"menpan.go.id, kemnaker.go.id: 4 hari awal + 3 hari tambahan (revisi April 2018)"
+2018-06-20,idulfitri,TRUE,official,"menpan.go.id, kemnaker.go.id: 4 hari awal + 3 hari tambahan (revisi April 2018)"
+2019-06-03,idulfitri,TRUE,official,"kemenag.go.id, menpan.go.id"
+2019-06-04,idulfitri,TRUE,official,"kemenag.go.id, menpan.go.id"
+2019-06-07,idulfitri,TRUE,official,"kemenag.go.id, menpan.go.id"
+2021-05-12,idulfitri,TRUE,official,kemenag.go.id: revisi Februari 2021 memangkas 17-19 Mei
+2022-04-29,idulfitri,TRUE,official,menpan.go.id: perubahan SKB 7 April 2022
+2022-05-04,idulfitri,TRUE,official,menpan.go.id: perubahan SKB 7 April 2022
+2022-05-05,idulfitri,TRUE,official,menpan.go.id: perubahan SKB 7 April 2022
+2022-05-06,idulfitri,TRUE,official,menpan.go.id: perubahan SKB 7 April 2022
+2023-04-19,idulfitri,TRUE,official,"kemnaker.go.id, menpan.go.id: perubahan SKB Maret 2023"
+2023-04-20,idulfitri,TRUE,official,"kemnaker.go.id, menpan.go.id: perubahan SKB Maret 2023"
+2023-04-21,idulfitri,TRUE,official,"kemnaker.go.id, menpan.go.id: perubahan SKB Maret 2023"
+2023-04-24,idulfitri,TRUE,official,"kemnaker.go.id, menpan.go.id: perubahan SKB Maret 2023"
+2023-04-25,idulfitri,TRUE,official,"kemnaker.go.id, menpan.go.id: perubahan SKB Maret 2023"
+2023-06-28,iduladha,TRUE,official,menpan.go.id: perubahan kedua SKB 2023
+2023-06-30,iduladha,TRUE,official,menpan.go.id: perubahan kedua SKB 2023
+2023-12-26,natal,TRUE,official,"menpan.go.id, kemnaker.go.id"
+2024-04-08,idulfitri,TRUE,official,"kemenag.go.id, menpan.go.id"
+2024-04-09,idulfitri,TRUE,official,"kemenag.go.id, menpan.go.id"
+2024-04-12,idulfitri,TRUE,official,"kemenag.go.id, menpan.go.id"
+2024-04-15,idulfitri,TRUE,official,"kemenag.go.id, menpan.go.id"
+2024-06-18,iduladha,TRUE,official,"kemenag.go.id, menpan.go.id"
+2024-12-26,natal,TRUE,official,"kemenag.go.id, menpan.go.id"
+2025-04-02,idulfitri,TRUE,secondary,timeanddate.com; halaman kemnaker hanya memuat total hari
+2025-04-03,idulfitri,TRUE,secondary,timeanddate.com; halaman kemnaker hanya memuat total hari
+2025-04-04,idulfitri,TRUE,secondary,timeanddate.com; halaman kemnaker hanya memuat total hari
+2025-04-07,idulfitri,TRUE,secondary,timeanddate.com; halaman kemnaker hanya memuat total hari
+2025-06-09,iduladha,TRUE,secondary,timeanddate.com
+2025-12-26,natal,TRUE,official,menpan.go.id
+2026-03-20,idulfitri,TRUE,official,setneg.go.id SKB 2026
+2026-03-23,idulfitri,TRUE,official,setneg.go.id SKB 2026
+2026-03-24,idulfitri,TRUE,official,setneg.go.id SKB 2026
+2026-05-28,iduladha,TRUE,official,setneg.go.id SKB 2026
+2026-12-24,natal,TRUE,official,setneg.go.id SKB 2026

@@ -1,0 +1,11 @@
+{
+  "source": "calendar_manual",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "basis": "SKB 3 Menteri pasca-revisi, dicek ke situs pemerintah dan timeanddate.com pada 19 Nov 2026"
+  },
+  "n_rows": 40,
+  "n_bytes": 3262,
+  "sha256": "ad91e038328ea3acbb27e6fe4ed353707bdc5a8645dce487c335bf107cb5af38",
+  "notes": "Belum terverifikasi dan dikosongkan: seluruh cuti bersama 2020, cuti Natal 2018, 2019, 2021 (dihapus di revisi Juni 2021), 2022, dan cuti Idulfitri/Iduladha 2018-2022 selain yang tercantum."
+}
