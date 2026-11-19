@@ -105,8 +105,8 @@ Catatan urutan: perbandingan dengan efek cuaca membutuhkan H1. Karena H6 dijalan
 | Elemen | Isi |
 | --- | --- |
 | Pertanyaan bisnis | Bisakah price spike eceran dideteksi 1-2 bulan lebih awal, dan berapa lead time-nya? |
-| Data | Target: onset episode besar (spike eceran provinsi yang bertahan >= 2 bulan) pada t+1 dan t+2. Fitur pada t: perubahan harga produsen dan pedagang besar (1 dan 3 bulan), rasio produsen terhadap median 12 bulan, `rain_anomaly` sentra (setelah paket cuaca), `oni_anomaly`, `months_to_idulfitri` |
-| Metode | (a) Logistic regression sederhana dan (b) aturan sederhana (misalnya harga produsen >= 1,20 x median 12 bulan). **Rolling-origin backtest**: latih pada data sampai t, prediksi t+1/t+2, origin bergeser per bulan sepanjang 2023-2026. Ambang probabilitas dipilih di data latih saja |
+| Data | Target: onset episode besar (spike eceran provinsi yang bertahan >= 2 bulan) pada t+1 dan t+2. Sinyal pada t (D-55): perubahan harga **pedagang besar** (1 dan 3 bulan), rasio pedagang besar terhadap median 12 bulan, `rain_anomaly` sentra (setelah paket cuaca), `oni_anomaly`, `months_to_idulfitri`. **Harga produsen tidak dipakai** (H2: hanya berubah di sekitar 22% minggu) |
+| Metode | (a) Logistic regression sederhana dan (b) aturan sederhana (misalnya harga pedagang besar >= 1,20 x median 12 bulan). **Rolling-origin backtest**: latih pada data sampai t, prediksi t+1/t+2, origin bergeser per bulan sepanjang 2023-2026. Ambang probabilitas dipilih di data latih saja |
 | Baseline | Baseline musiman naif (spike diprediksi kalau bulan yang sama tahun lalu spike) dan baseline charter "harga eceran naik bulan lalu" |
 | Metrik | Recall, precision, false alarm rate, lead time (bulan antara peringatan pertama dan awal episode) per episode |
 | Aturan keputusan | **Didukung** kalau signal mengalahkan **baseline yang lebih kuat** dari keduanya: lead time lebih panjang atau false alarm rate lebih rendah pada recall yang setara, dan US1 terpenuhi (lead time >= 1 bulan pada mayoritas episode). **Dibantah** kalau tidak lebih baik dari baseline (charter) |

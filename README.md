@@ -15,7 +15,7 @@ Ini portfolio project: dari problem framing sampai findings, dengan setiap langk
 | 3 | Audit completeness | Selesai kecuali cuaca (menunggu data Open-Meteo lengkap) |
 | 4 | Transform dan integrasi | Selesai kecuali cuaca |
 | 5 | Validate | Selesai kecuali cuaca |
-| 6 | Analisis | Perencanaan: rencana, RTM, dan EDA deskriptif selesai; uji hipotesis menunggu persetujuan |
+| 6 | Analisis | H2, H3, H5 selesai; H6 sementara; H1 dan H4 menunggu paket cuaca (lihat docs/STATUS.md) |
 
 ## Dokumen
 
@@ -24,6 +24,7 @@ Ini portfolio project: dari problem framing sampai findings, dengan setiap langk
 - [ERD core dataset](docs/02_erd_core_dataset.md)
 - [Data flow diagram pipeline](docs/03_data_flow.md)
 - [Data dictionary](docs/04_data_dictionary.md)
+- [Status terakhir dan langkah berikutnya](docs/STATUS.md)
 - [Rencana analisis](docs/05_analysis_plan.md)
 - [Requirements traceability matrix](docs/06_requirements_traceability_matrix.md)
 - [EDA deskriptif](analysis/01_eda_report.md)
