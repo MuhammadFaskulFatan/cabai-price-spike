@@ -1,0 +1,1825 @@
+commodity,indicator,bps_code,bdsp_name,province_id,year,value
+cabe_besar,produksi,11,Aceh,1,2018,68151.3
+cabe_besar,produksi,11,Aceh,1,2019,63595.2
+cabe_besar,produksi,11,Aceh,1,2020,73443.7
+cabe_besar,produksi,11,Aceh,1,2021,58381.75
+cabe_besar,produksi,11,Aceh,1,2022,98084.64
+cabe_besar,produksi,11,Aceh,1,2023,97914.91
+cabe_besar,produksi,11,Aceh,1,2024,69423.51
+cabe_besar,produksi,11,Aceh,1,2025,184224.27
+cabe_besar,produksi,12,Sumatera Utara,2,2018,155834.6
+cabe_besar,produksi,12,Sumatera Utara,2,2019,154008.3
+cabe_besar,produksi,12,Sumatera Utara,2,2020,193861.69
+cabe_besar,produksi,12,Sumatera Utara,2,2021,210219.82
+cabe_besar,produksi,12,Sumatera Utara,2,2022,211746.69
+cabe_besar,produksi,12,Sumatera Utara,2,2023,217917.27
+cabe_besar,produksi,12,Sumatera Utara,2,2024,194593.04
+cabe_besar,produksi,12,Sumatera Utara,2,2025,214873.86
+cabe_besar,produksi,13,Sumatera Barat,3,2018,106061.0
+cabe_besar,produksi,13,Sumatera Barat,3,2019,139993.6
+cabe_besar,produksi,13,Sumatera Barat,3,2020,133189.78
+cabe_besar,produksi,13,Sumatera Barat,3,2021,115765.98
+cabe_besar,produksi,13,Sumatera Barat,3,2022,123503.52
+cabe_besar,produksi,13,Sumatera Barat,3,2023,127450.52
+cabe_besar,produksi,13,Sumatera Barat,3,2024,114169.78
+cabe_besar,produksi,13,Sumatera Barat,3,2025,121757.29
+cabe_besar,produksi,14,Riau,4,2018,17323.9
+cabe_besar,produksi,14,Riau,4,2019,17512.9
+cabe_besar,produksi,14,Riau,4,2020,16735.12
+cabe_besar,produksi,14,Riau,4,2021,14097.24
+cabe_besar,produksi,14,Riau,4,2022,13104.55
+cabe_besar,produksi,14,Riau,4,2023,9878.83
+cabe_besar,produksi,14,Riau,4,2024,9046.71
+cabe_besar,produksi,14,Riau,4,2025,7996.17
+cabe_besar,produksi,15,Jambi,6,2018,38002.5
+cabe_besar,produksi,15,Jambi,6,2019,42697.61
+cabe_besar,produksi,15,Jambi,6,2020,47133.08
+cabe_besar,produksi,15,Jambi,6,2021,59854.84
+cabe_besar,produksi,15,Jambi,6,2022,98158.54
+cabe_besar,produksi,15,Jambi,6,2023,157856.45
+cabe_besar,produksi,15,Jambi,6,2024,171457.07
+cabe_besar,produksi,15,Jambi,6,2025,214628.83
+cabe_besar,produksi,16,Sumatera Selatan,8,2018,41814.0
+cabe_besar,produksi,16,Sumatera Selatan,8,2019,40478.6
+cabe_besar,produksi,16,Sumatera Selatan,8,2020,28496.89
+cabe_besar,produksi,16,Sumatera Selatan,8,2021,23555.63
+cabe_besar,produksi,16,Sumatera Selatan,8,2022,25497.33
+cabe_besar,produksi,16,Sumatera Selatan,8,2023,15270.21
+cabe_besar,produksi,16,Sumatera Selatan,8,2024,17588.46
+cabe_besar,produksi,16,Sumatera Selatan,8,2025,24535.14
+cabe_besar,produksi,17,Bengkulu,7,2018,39793.6
+cabe_besar,produksi,17,Bengkulu,7,2019,37811.8
+cabe_besar,produksi,17,Bengkulu,7,2020,39637.74
+cabe_besar,produksi,17,Bengkulu,7,2021,48777.9
+cabe_besar,produksi,17,Bengkulu,7,2022,58769.27
+cabe_besar,produksi,17,Bengkulu,7,2023,55875.5
+cabe_besar,produksi,17,Bengkulu,7,2024,46576.49
+cabe_besar,produksi,17,Bengkulu,7,2025,35309.23
+cabe_besar,produksi,18,Lampung,10,2018,45380.2
+cabe_besar,produksi,18,Lampung,10,2019,40101.0
+cabe_besar,produksi,18,Lampung,10,2020,37986.56
+cabe_besar,produksi,18,Lampung,10,2021,34549.67
+cabe_besar,produksi,18,Lampung,10,2022,29634.75
+cabe_besar,produksi,18,Lampung,10,2023,29017.53
+cabe_besar,produksi,18,Lampung,10,2024,27218.02
+cabe_besar,produksi,18,Lampung,10,2025,24038.56
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2018,2500.7
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2019,2467.7
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2020,6954.61
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2021,5059.47
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2022,6056.11
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2023,7270.03
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2024,7774.53
+cabe_besar,produksi,19,Kepulauan Bangka Belitung,9,2025,4916.42
+cabe_besar,produksi,21,Kepulauan Riau,5,2018,2922.8
+cabe_besar,produksi,21,Kepulauan Riau,5,2019,4351.2
+cabe_besar,produksi,21,Kepulauan Riau,5,2020,4181.5
+cabe_besar,produksi,21,Kepulauan Riau,5,2021,2966.77
+cabe_besar,produksi,21,Kepulauan Riau,5,2022,3555.12
+cabe_besar,produksi,21,Kepulauan Riau,5,2023,3428.99
+cabe_besar,produksi,21,Kepulauan Riau,5,2024,4508.45
+cabe_besar,produksi,21,Kepulauan Riau,5,2025,3500.61
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2018,0.0
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2019,0.0
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2020,0.0
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2021,0.0
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2022,0.0
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2023,0.19
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2024,12.18
+cabe_besar,produksi,31,Daerah Khusus Ibukota Jakarta,13,2025,0.1
+cabe_besar,produksi,32,Jawa Barat,12,2018,274037.4
+cabe_besar,produksi,32,Jawa Barat,12,2019,263949.2
+cabe_besar,produksi,32,Jawa Barat,12,2020,266066.63
+cabe_besar,produksi,32,Jawa Barat,12,2021,343066.76
+cabe_besar,produksi,32,Jawa Barat,12,2022,357695.45
+cabe_besar,produksi,32,Jawa Barat,12,2023,324968.43
+cabe_besar,produksi,32,Jawa Barat,12,2024,324228.51
+cabe_besar,produksi,32,Jawa Barat,12,2025,358949.89
+cabe_besar,produksi,33,Jawa Tengah,14,2018,171796.0
+cabe_besar,produksi,33,Jawa Tengah,14,2019,164905.6
+cabe_besar,produksi,33,Jawa Tengah,14,2020,166259.5
+cabe_besar,produksi,33,Jawa Tengah,14,2021,169282.41
+cabe_besar,produksi,33,Jawa Tengah,14,2022,186721.9
+cabe_besar,produksi,33,Jawa Tengah,14,2023,236920.53
+cabe_besar,produksi,33,Jawa Tengah,14,2024,201806.08
+cabe_besar,produksi,33,Jawa Tengah,14,2025,217521.13
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2018,34443.3
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2019,32932.6
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2020,44520.96
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2021,38377.87
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2022,35384.47
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2023,46622.17
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2024,48397.5
+cabe_besar,produksi,34,Daerah Istimewa Yogyakarta,15,2025,47979.29
+cabe_besar,produksi,35,Jawa Timur,16,2018,91965.4
+cabe_besar,produksi,35,Jawa Timur,16,2019,104677.0
+cabe_besar,produksi,35,Jawa Timur,16,2020,99109.87
+cabe_besar,produksi,35,Jawa Timur,16,2021,127429.02
+cabe_besar,produksi,35,Jawa Timur,16,2022,116175.24
+cabe_besar,produksi,35,Jawa Timur,16,2023,114652.58
+cabe_besar,produksi,35,Jawa Timur,16,2024,118561.6
+cabe_besar,produksi,35,Jawa Timur,16,2025,140200.31
+cabe_besar,produksi,36,Banten,11,2018,6712.2
+cabe_besar,produksi,36,Banten,11,2019,7103.5
+cabe_besar,produksi,36,Banten,11,2020,6946.92
+cabe_besar,produksi,36,Banten,11,2021,6405.69
+cabe_besar,produksi,36,Banten,11,2022,6763.33
+cabe_besar,produksi,36,Banten,11,2023,5129.72
+cabe_besar,produksi,36,Banten,11,2024,3380.71
+cabe_besar,produksi,36,Banten,11,2025,7842.9
+cabe_besar,produksi,51,Bali,17,2018,13500.8
+cabe_besar,produksi,51,Bali,17,2019,10188.5
+cabe_besar,produksi,51,Bali,17,2020,8049.05
+cabe_besar,produksi,51,Bali,17,2021,11746.8
+cabe_besar,produksi,51,Bali,17,2022,6629.91
+cabe_besar,produksi,51,Bali,17,2023,7082.64
+cabe_besar,produksi,51,Bali,17,2024,7616.26
+cabe_besar,produksi,51,Bali,17,2025,5544.72
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2018,23997.8
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2019,17679.2
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2020,20092.39
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2021,16085.64
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2022,21659.4
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2023,15945.31
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2024,16147.91
+cabe_besar,produksi,52,Nusa Tenggara Barat,18,2025,14331.25
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2018,1863.6
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2019,2920.1
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2020,3349.68
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2021,3217.73
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2022,3682.74
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2023,3192.99
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2024,2695.58
+cabe_besar,produksi,53,Nusa Tenggara Timur,19,2025,3082.21
+cabe_besar,produksi,61,Kalimantan Barat,20,2018,886.2
+cabe_besar,produksi,61,Kalimantan Barat,20,2019,1613.4
+cabe_besar,produksi,61,Kalimantan Barat,20,2020,2021.59
+cabe_besar,produksi,61,Kalimantan Barat,20,2021,2791.24
+cabe_besar,produksi,61,Kalimantan Barat,20,2022,3323.6
+cabe_besar,produksi,61,Kalimantan Barat,20,2023,3082.59
+cabe_besar,produksi,61,Kalimantan Barat,20,2024,3110.36
+cabe_besar,produksi,61,Kalimantan Barat,20,2025,3795.36
+cabe_besar,produksi,62,Kalimantan Tengah,22,2018,1049.1
+cabe_besar,produksi,62,Kalimantan Tengah,22,2019,1283.22
+cabe_besar,produksi,62,Kalimantan Tengah,22,2020,1379.91
+cabe_besar,produksi,62,Kalimantan Tengah,22,2021,1711.31
+cabe_besar,produksi,62,Kalimantan Tengah,22,2022,1289.93
+cabe_besar,produksi,62,Kalimantan Tengah,22,2023,999.46
+cabe_besar,produksi,62,Kalimantan Tengah,22,2024,1009.11
+cabe_besar,produksi,62,Kalimantan Tengah,22,2025,935.81
+cabe_besar,produksi,63,Kalimantan Selatan,21,2018,11162.1
+cabe_besar,produksi,63,Kalimantan Selatan,21,2019,11392.0
+cabe_besar,produksi,63,Kalimantan Selatan,21,2020,12654.6
+cabe_besar,produksi,63,Kalimantan Selatan,21,2021,8976.63
+cabe_besar,produksi,63,Kalimantan Selatan,21,2022,8416.66
+cabe_besar,produksi,63,Kalimantan Selatan,21,2023,8763.34
+cabe_besar,produksi,63,Kalimantan Selatan,21,2024,11083.06
+cabe_besar,produksi,63,Kalimantan Selatan,21,2025,11719.43
+cabe_besar,produksi,64,Kalimantan Timur,23,2018,4166.7
+cabe_besar,produksi,64,Kalimantan Timur,23,2019,4614.1
+cabe_besar,produksi,64,Kalimantan Timur,23,2020,4290.06
+cabe_besar,produksi,64,Kalimantan Timur,23,2021,5916.38
+cabe_besar,produksi,64,Kalimantan Timur,23,2022,5732.38
+cabe_besar,produksi,64,Kalimantan Timur,23,2023,4830.05
+cabe_besar,produksi,64,Kalimantan Timur,23,2024,4786.38
+cabe_besar,produksi,64,Kalimantan Timur,23,2025,4423.97
+cabe_besar,produksi,65,Kalimantan Utara,24,2018,1841.7
+cabe_besar,produksi,65,Kalimantan Utara,24,2019,2119.8
+cabe_besar,produksi,65,Kalimantan Utara,24,2020,1778.05
+cabe_besar,produksi,65,Kalimantan Utara,24,2021,4160.55
+cabe_besar,produksi,65,Kalimantan Utara,24,2022,5852.33
+cabe_besar,produksi,65,Kalimantan Utara,24,2023,6628.75
+cabe_besar,produksi,65,Kalimantan Utara,24,2024,8207.01
+cabe_besar,produksi,65,Kalimantan Utara,24,2025,8760.79
+cabe_besar,produksi,71,Sulawesi Utara,29,2018,6267.7
+cabe_besar,produksi,71,Sulawesi Utara,29,2019,5537.2
+cabe_besar,produksi,71,Sulawesi Utara,29,2020,8673.54
+cabe_besar,produksi,71,Sulawesi Utara,29,2021,9041.87
+cabe_besar,produksi,71,Sulawesi Utara,29,2022,7183.47
+cabe_besar,produksi,71,Sulawesi Utara,29,2023,8027.18
+cabe_besar,produksi,71,Sulawesi Utara,29,2024,4884.21
+cabe_besar,produksi,71,Sulawesi Utara,29,2025,5881.85
+cabe_besar,produksi,72,Sulawesi Tengah,28,2018,7947.2
+cabe_besar,produksi,72,Sulawesi Tengah,28,2019,5341.6
+cabe_besar,produksi,72,Sulawesi Tengah,28,2020,7238.4
+cabe_besar,produksi,72,Sulawesi Tengah,28,2021,6528.06
+cabe_besar,produksi,72,Sulawesi Tengah,28,2022,6152.26
+cabe_besar,produksi,72,Sulawesi Tengah,28,2023,9129.95
+cabe_besar,produksi,72,Sulawesi Tengah,28,2024,9488.0
+cabe_besar,produksi,72,Sulawesi Tengah,28,2025,5362.21
+cabe_besar,produksi,73,Sulawesi Selatan,26,2018,26944.0
+cabe_besar,produksi,73,Sulawesi Selatan,26,2019,21054.6
+cabe_besar,produksi,73,Sulawesi Selatan,26,2020,17549.19
+cabe_besar,produksi,73,Sulawesi Selatan,26,2021,17821.7
+cabe_besar,produksi,73,Sulawesi Selatan,26,2022,16670.82
+cabe_besar,produksi,73,Sulawesi Selatan,26,2023,16511.61
+cabe_besar,produksi,73,Sulawesi Selatan,26,2024,23254.21
+cabe_besar,produksi,73,Sulawesi Selatan,26,2025,25342.73
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2018,1106.8
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2019,1408.4
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2020,1962.5
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2021,2411.15
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2022,2540.25
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2023,3449.01
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2024,3332.25
+cabe_besar,produksi,74,Sulawesi Tenggara,27,2025,2755.49
+cabe_besar,produksi,75,Gorontalo,25,2018,257.1
+cabe_besar,produksi,75,Gorontalo,25,2019,262.1
+cabe_besar,produksi,75,Gorontalo,25,2020,334.1
+cabe_besar,produksi,75,Gorontalo,25,2021,908.7
+cabe_besar,produksi,75,Gorontalo,25,2022,1593.45
+cabe_besar,produksi,75,Gorontalo,25,2023,1246.93
+cabe_besar,produksi,75,Gorontalo,25,2024,577.05
+cabe_besar,produksi,75,Gorontalo,25,2025,469.42
+cabe_besar,produksi,76,Sulawesi Barat,30,2018,2266.4
+cabe_besar,produksi,76,Sulawesi Barat,30,2019,2198.0
+cabe_besar,produksi,76,Sulawesi Barat,30,2020,1281.7
+cabe_besar,produksi,76,Sulawesi Barat,30,2021,2465.82
+cabe_besar,produksi,76,Sulawesi Barat,30,2022,3602.45
+cabe_besar,produksi,76,Sulawesi Barat,30,2023,4025.36
+cabe_besar,produksi,76,Sulawesi Barat,30,2024,3159.41
+cabe_besar,produksi,76,Sulawesi Barat,30,2025,2735.73
+cabe_besar,produksi,81,Maluku,31,2018,1862.6
+cabe_besar,produksi,81,Maluku,31,2019,1469.9
+cabe_besar,produksi,81,Maluku,31,2020,2035.06
+cabe_besar,produksi,81,Maluku,31,2021,2029.39
+cabe_besar,produksi,81,Maluku,31,2022,3148.13
+cabe_besar,produksi,81,Maluku,31,2023,1861.58
+cabe_besar,produksi,81,Maluku,31,2024,2143.3
+cabe_besar,produksi,81,Maluku,31,2025,1976.63
+cabe_besar,produksi,82,Maluku Utara,32,2018,1215.3
+cabe_besar,produksi,82,Maluku Utara,32,2019,4548.1
+cabe_besar,produksi,82,Maluku Utara,32,2020,4169.56
+cabe_besar,produksi,82,Maluku Utara,32,2021,3040.27
+cabe_besar,produksi,82,Maluku Utara,32,2022,3726.89
+cabe_besar,produksi,82,Maluku Utara,32,2023,5420.33
+cabe_besar,produksi,82,Maluku Utara,32,2024,5580.79
+cabe_besar,produksi,82,Maluku Utara,32,2025,7074.34
+cabe_besar,produksi,91,Papua Barat,34,2018,251.3
+cabe_besar,produksi,91,Papua Barat,34,2019,1168.2
+cabe_besar,produksi,91,Papua Barat,34,2020,812.29
+cabe_besar,produksi,91,Papua Barat,34,2021,911.3
+cabe_besar,produksi,91,Papua Barat,34,2022,1567.35
+cabe_besar,produksi,91,Papua Barat,34,2023,1316.25
+cabe_besar,produksi,91,Papua Barat,34,2024,149.18
+cabe_besar,produksi,91,Papua Barat,34,2025,80.99
+cabe_besar,produksi,92,Papua Barat Daya,34,2018,0.0
+cabe_besar,produksi,92,Papua Barat Daya,34,2019,0.0
+cabe_besar,produksi,92,Papua Barat Daya,34,2020,0.0
+cabe_besar,produksi,92,Papua Barat Daya,34,2021,0.0
+cabe_besar,produksi,92,Papua Barat Daya,34,2022,0.0
+cabe_besar,produksi,92,Papua Barat Daya,34,2023,0.0
+cabe_besar,produksi,92,Papua Barat Daya,34,2024,471.78
+cabe_besar,produksi,92,Papua Barat Daya,34,2025,539.37
+cabe_besar,produksi,94,Papua,33,2018,3412.0
+cabe_besar,produksi,94,Papua,33,2019,3033.36
+cabe_besar,produksi,94,Papua,33,2020,1993.39
+cabe_besar,produksi,94,Papua,33,2021,3015.78
+cabe_besar,produksi,94,Papua,33,2022,2198.33
+cabe_besar,produksi,94,Papua,33,2023,2811.16
+cabe_besar,produksi,94,Papua,33,2024,462.98
+cabe_besar,produksi,94,Papua,33,2025,102.64
+cabe_besar,produksi,95,Papua Selatan,33,2018,0.0
+cabe_besar,produksi,95,Papua Selatan,33,2019,0.0
+cabe_besar,produksi,95,Papua Selatan,33,2020,0.0
+cabe_besar,produksi,95,Papua Selatan,33,2021,0.0
+cabe_besar,produksi,95,Papua Selatan,33,2022,0.0
+cabe_besar,produksi,95,Papua Selatan,33,2023,0.0
+cabe_besar,produksi,95,Papua Selatan,33,2024,247.96
+cabe_besar,produksi,95,Papua Selatan,33,2025,786.31
+cabe_besar,produksi,96,Papua Tengah,33,2018,0.0
+cabe_besar,produksi,96,Papua Tengah,33,2019,0.0
+cabe_besar,produksi,96,Papua Tengah,33,2020,0.0
+cabe_besar,produksi,96,Papua Tengah,33,2021,0.0
+cabe_besar,produksi,96,Papua Tengah,33,2022,0.0
+cabe_besar,produksi,96,Papua Tengah,33,2023,0.0
+cabe_besar,produksi,96,Papua Tengah,33,2024,2175.7
+cabe_besar,produksi,96,Papua Tengah,33,2025,1044.6
+cabe_besar,produksi,97,Papua Pegunungan,33,2018,0.0
+cabe_besar,produksi,97,Papua Pegunungan,33,2019,0.0
+cabe_besar,produksi,97,Papua Pegunungan,33,2020,0.0
+cabe_besar,produksi,97,Papua Pegunungan,33,2021,0.0
+cabe_besar,produksi,97,Papua Pegunungan,33,2022,0.0
+cabe_besar,produksi,97,Papua Pegunungan,33,2023,0.0
+cabe_besar,produksi,97,Papua Pegunungan,33,2024,0.0
+cabe_besar,produksi,97,Papua Pegunungan,33,2025,9.37
+cabe_besar,luas_panen,11,Aceh,1,2018,4900.0
+cabe_besar,luas_panen,11,Aceh,1,2019,4857.0
+cabe_besar,luas_panen,11,Aceh,1,2020,5743.46
+cabe_besar,luas_panen,11,Aceh,1,2021,5063.01
+cabe_besar,luas_panen,11,Aceh,1,2022,7014.78
+cabe_besar,luas_panen,11,Aceh,1,2023,8237.88
+cabe_besar,luas_panen,11,Aceh,1,2024,7418.76
+cabe_besar,luas_panen,11,Aceh,1,2025,10334.76
+cabe_besar,luas_panen,12,Sumatera Utara,2,2018,15905.0
+cabe_besar,luas_panen,12,Sumatera Utara,2,2019,16075.6
+cabe_besar,luas_panen,12,Sumatera Utara,2,2020,18522.53
+cabe_besar,luas_panen,12,Sumatera Utara,2,2021,17215.78
+cabe_besar,luas_panen,12,Sumatera Utara,2,2022,17464.67
+cabe_besar,luas_panen,12,Sumatera Utara,2,2023,17656.55
+cabe_besar,luas_panen,12,Sumatera Utara,2,2024,16666.64
+cabe_besar,luas_panen,12,Sumatera Utara,2,2025,16371.82
+cabe_besar,luas_panen,13,Sumatera Barat,3,2018,9642.0
+cabe_besar,luas_panen,13,Sumatera Barat,3,2019,13227.0
+cabe_besar,luas_panen,13,Sumatera Barat,3,2020,11931.25
+cabe_besar,luas_panen,13,Sumatera Barat,3,2021,11364.12
+cabe_besar,luas_panen,13,Sumatera Barat,3,2022,12283.21
+cabe_besar,luas_panen,13,Sumatera Barat,3,2023,11246.49
+cabe_besar,luas_panen,13,Sumatera Barat,3,2024,9367.27
+cabe_besar,luas_panen,13,Sumatera Barat,3,2025,9411.4
+cabe_besar,luas_panen,14,Riau,4,2018,2325.0
+cabe_besar,luas_panen,14,Riau,4,2019,2090.7
+cabe_besar,luas_panen,14,Riau,4,2020,1993.44
+cabe_besar,luas_panen,14,Riau,4,2021,1746.33
+cabe_besar,luas_panen,14,Riau,4,2022,1627.03
+cabe_besar,luas_panen,14,Riau,4,2023,1473.97
+cabe_besar,luas_panen,14,Riau,4,2024,1315.81
+cabe_besar,luas_panen,14,Riau,4,2025,1071.62
+cabe_besar,luas_panen,15,Jambi,6,2018,6018.0
+cabe_besar,luas_panen,15,Jambi,6,2019,5434.0
+cabe_besar,luas_panen,15,Jambi,6,2020,4374.51
+cabe_besar,luas_panen,15,Jambi,6,2021,5068.2
+cabe_besar,luas_panen,15,Jambi,6,2022,6409.55
+cabe_besar,luas_panen,15,Jambi,6,2023,7672.42
+cabe_besar,luas_panen,15,Jambi,6,2024,6300.52
+cabe_besar,luas_panen,15,Jambi,6,2025,6333.4
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2018,6048.0
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2019,5185.0
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2020,4202.82
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2021,4875.84
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2022,4492.28
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2023,3728.12
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2024,4000.96
+cabe_besar,luas_panen,16,Sumatera Selatan,8,2025,3527.62
+cabe_besar,luas_panen,17,Bengkulu,7,2018,6569.0
+cabe_besar,luas_panen,17,Bengkulu,7,2019,6489.0
+cabe_besar,luas_panen,17,Bengkulu,7,2020,6509.7
+cabe_besar,luas_panen,17,Bengkulu,7,2021,6878.99
+cabe_besar,luas_panen,17,Bengkulu,7,2022,6817.94
+cabe_besar,luas_panen,17,Bengkulu,7,2023,6380.47
+cabe_besar,luas_panen,17,Bengkulu,7,2024,5396.25
+cabe_besar,luas_panen,17,Bengkulu,7,2025,2215.78
+cabe_besar,luas_panen,18,Lampung,10,2018,6886.0
+cabe_besar,luas_panen,18,Lampung,10,2019,6434.0
+cabe_besar,luas_panen,18,Lampung,10,2020,6041.0
+cabe_besar,luas_panen,18,Lampung,10,2021,5588.9
+cabe_besar,luas_panen,18,Lampung,10,2022,4668.12
+cabe_besar,luas_panen,18,Lampung,10,2023,3575.37
+cabe_besar,luas_panen,18,Lampung,10,2024,3825.92
+cabe_besar,luas_panen,18,Lampung,10,2025,3547.51
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2018,388.0
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2019,367.0
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2020,509.07
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2021,408.6
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2022,470.01
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2023,558.94
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2024,542.86
+cabe_besar,luas_panen,19,Kepulauan Bangka Belitung,9,2025,505.22
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2018,415.0
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2019,369.0
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2020,313.18
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2021,252.56
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2022,262.85
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2023,341.15
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2024,308.29
+cabe_besar,luas_panen,21,Kepulauan Riau,5,2025,272.77
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2018,0.0
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2019,0.0
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2020,0.0
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2021,0.0
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2022,0.0
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2023,0.66
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2024,3.3
+cabe_besar,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2025,0.25
+cabe_besar,luas_panen,32,Jawa Barat,12,2018,20678.0
+cabe_besar,luas_panen,32,Jawa Barat,12,2019,19315.5
+cabe_besar,luas_panen,32,Jawa Barat,12,2020,18266.78
+cabe_besar,luas_panen,32,Jawa Barat,12,2021,23120.25
+cabe_besar,luas_panen,32,Jawa Barat,12,2022,25400.26
+cabe_besar,luas_panen,32,Jawa Barat,12,2023,23098.48
+cabe_besar,luas_panen,32,Jawa Barat,12,2024,24608.28
+cabe_besar,luas_panen,32,Jawa Barat,12,2025,23706.83
+cabe_besar,luas_panen,33,Jawa Tengah,14,2018,25048.0
+cabe_besar,luas_panen,33,Jawa Tengah,14,2019,21956.0
+cabe_besar,luas_panen,33,Jawa Tengah,14,2020,22589.55
+cabe_besar,luas_panen,33,Jawa Tengah,14,2021,22682.55
+cabe_besar,luas_panen,33,Jawa Tengah,14,2022,22348.46
+cabe_besar,luas_panen,33,Jawa Tengah,14,2023,24953.92
+cabe_besar,luas_panen,33,Jawa Tengah,14,2024,22394.05
+cabe_besar,luas_panen,33,Jawa Tengah,14,2025,24892.4
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2018,3777.0
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2019,3917.5
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2020,4587.36
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2021,4344.95
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2022,3819.23
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2023,3922.74
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2024,3708.21
+cabe_besar,luas_panen,34,Daerah Istimewa Yogyakarta,15,2025,3246.53
+cabe_besar,luas_panen,35,Jawa Timur,16,2018,12289.0
+cabe_besar,luas_panen,35,Jawa Timur,16,2019,12190.0
+cabe_besar,luas_panen,35,Jawa Timur,16,2020,12078.35
+cabe_besar,luas_panen,35,Jawa Timur,16,2021,15725.64
+cabe_besar,luas_panen,35,Jawa Timur,16,2022,12856.59
+cabe_besar,luas_panen,35,Jawa Timur,16,2023,12935.0
+cabe_besar,luas_panen,35,Jawa Timur,16,2024,13481.86
+cabe_besar,luas_panen,35,Jawa Timur,16,2025,14200.76
+cabe_besar,luas_panen,36,Banten,11,2018,903.0
+cabe_besar,luas_panen,36,Banten,11,2019,851.0
+cabe_besar,luas_panen,36,Banten,11,2020,717.25
+cabe_besar,luas_panen,36,Banten,11,2021,746.1
+cabe_besar,luas_panen,36,Banten,11,2022,812.85
+cabe_besar,luas_panen,36,Banten,11,2023,579.2
+cabe_besar,luas_panen,36,Banten,11,2024,495.4
+cabe_besar,luas_panen,36,Banten,11,2025,891.18
+cabe_besar,luas_panen,51,Bali,17,2018,1087.0
+cabe_besar,luas_panen,51,Bali,17,2019,869.0
+cabe_besar,luas_panen,51,Bali,17,2020,690.55
+cabe_besar,luas_panen,51,Bali,17,2021,767.55
+cabe_besar,luas_panen,51,Bali,17,2022,626.7
+cabe_besar,luas_panen,51,Bali,17,2023,446.92
+cabe_besar,luas_panen,51,Bali,17,2024,484.39
+cabe_besar,luas_panen,51,Bali,17,2025,428.82
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2018,1573.0
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2019,1691.0
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2020,2143.65
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2021,1491.09
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2022,1606.3
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2023,1763.96
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2024,1628.43
+cabe_besar,luas_panen,52,Nusa Tenggara Barat,18,2025,1383.34
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2018,537.0
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2019,674.0
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2020,649.38
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2021,635.42
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2022,736.14
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2023,763.03
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2024,723.64
+cabe_besar,luas_panen,53,Nusa Tenggara Timur,19,2025,573.7
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2018,603.0
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2019,708.0
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2020,785.8
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2021,898.15
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2022,936.69
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2023,946.72
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2024,853.85
+cabe_besar,luas_panen,61,Kalimantan Barat,20,2025,827.57
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2018,357.0
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2019,327.7
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2020,301.8
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2021,304.6
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2022,238.34
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2023,209.03
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2024,223.74
+cabe_besar,luas_panen,62,Kalimantan Tengah,22,2025,216.21
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2018,1535.0
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2019,1638.0
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2020,1476.0
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2021,1199.0
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2022,1186.47
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2023,1122.54
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2024,1392.63
+cabe_besar,luas_panen,63,Kalimantan Selatan,21,2025,1408.4
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2018,814.0
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2019,772.0
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2020,710.26
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2021,834.42
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2022,789.39
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2023,819.74
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2024,839.91
+cabe_besar,luas_panen,64,Kalimantan Timur,23,2025,678.58
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2018,264.0
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2019,269.0
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2020,262.6
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2021,293.25
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2022,308.03
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2023,317.76
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2024,371.43
+cabe_besar,luas_panen,65,Kalimantan Utara,24,2025,381.94
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2018,1191.0
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2019,883.0
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2020,1025.65
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2021,888.65
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2022,824.46
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2023,875.8
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2024,746.01
+cabe_besar,luas_panen,71,Sulawesi Utara,29,2025,795.35
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2018,1429.0
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2019,854.0
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2020,973.7
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2021,1109.48
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2022,1130.78
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2023,1147.8
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2024,940.37
+cabe_besar,luas_panen,72,Sulawesi Tengah,28,2025,899.12
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2018,3306.0
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2019,2607.0
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2020,2548.55
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2021,2463.11
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2022,2435.98
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2023,2489.54
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2024,2820.04
+cabe_besar,luas_panen,73,Sulawesi Selatan,26,2025,3196.86
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2018,433.0
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2019,539.0
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2020,660.15
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2021,678.26
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2022,841.63
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2023,1003.12
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2024,908.15
+cabe_besar,luas_panen,74,Sulawesi Tenggara,27,2025,744.73
+cabe_besar,luas_panen,75,Gorontalo,25,2018,78.0
+cabe_besar,luas_panen,75,Gorontalo,25,2019,43.0
+cabe_besar,luas_panen,75,Gorontalo,25,2020,75.0
+cabe_besar,luas_panen,75,Gorontalo,25,2021,128.0
+cabe_besar,luas_panen,75,Gorontalo,25,2022,203.5
+cabe_besar,luas_panen,75,Gorontalo,25,2023,156.0
+cabe_besar,luas_panen,75,Gorontalo,25,2024,107.75
+cabe_besar,luas_panen,75,Gorontalo,25,2025,89.5
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2018,588.0
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2019,480.0
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2020,1019.0
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2021,4246.23
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2022,4653.55
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2023,4925.18
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2024,4440.98
+cabe_besar,luas_panen,76,Sulawesi Barat,30,2025,2363.95
+cabe_besar,luas_panen,81,Maluku,31,2018,434.0
+cabe_besar,luas_panen,81,Maluku,31,2019,443.0
+cabe_besar,luas_panen,81,Maluku,31,2020,433.5
+cabe_besar,luas_panen,81,Maluku,31,2021,416.0
+cabe_besar,luas_panen,81,Maluku,31,2022,565.18
+cabe_besar,luas_panen,81,Maluku,31,2023,527.94
+cabe_besar,luas_panen,81,Maluku,31,2024,573.45
+cabe_besar,luas_panen,81,Maluku,31,2025,493.19
+cabe_besar,luas_panen,82,Maluku Utara,32,2018,819.0
+cabe_besar,luas_panen,82,Maluku Utara,32,2019,1042.0
+cabe_besar,luas_panen,82,Maluku Utara,32,2020,1025.0
+cabe_besar,luas_panen,82,Maluku Utara,32,2021,632.5
+cabe_besar,luas_panen,82,Maluku Utara,32,2022,988.06
+cabe_besar,luas_panen,82,Maluku Utara,32,2023,748.66
+cabe_besar,luas_panen,82,Maluku Utara,32,2024,784.92
+cabe_besar,luas_panen,82,Maluku Utara,32,2025,1026.54
+cabe_besar,luas_panen,91,Papua Barat,34,2018,228.0
+cabe_besar,luas_panen,91,Papua Barat,34,2019,326.0
+cabe_besar,luas_panen,91,Papua Barat,34,2020,269.25
+cabe_besar,luas_panen,91,Papua Barat,34,2021,217.15
+cabe_besar,luas_panen,91,Papua Barat,34,2022,195.1
+cabe_besar,luas_panen,91,Papua Barat,34,2023,195.04
+cabe_besar,luas_panen,91,Papua Barat,34,2024,51.77
+cabe_besar,luas_panen,91,Papua Barat,34,2025,243.02
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2018,0.0
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2019,0.0
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2020,0.0
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2021,0.0
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2022,0.0
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2023,0.0
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2024,95.52
+cabe_besar,luas_panen,92,Papua Barat Daya,34,2025,67.3
+cabe_besar,luas_panen,94,Papua,33,2018,529.0
+cabe_besar,luas_panen,94,Papua,33,2019,510.08
+cabe_besar,luas_panen,94,Papua,33,2020,299.1
+cabe_besar,luas_panen,94,Papua,33,2021,332.95
+cabe_besar,luas_panen,94,Papua,33,2022,263.35
+cabe_besar,luas_panen,94,Papua,33,2023,392.22
+cabe_besar,luas_panen,94,Papua,33,2024,224.8
+cabe_besar,luas_panen,94,Papua,33,2025,106.38
+cabe_besar,luas_panen,95,Papua Selatan,33,2018,0.0
+cabe_besar,luas_panen,95,Papua Selatan,33,2019,0.0
+cabe_besar,luas_panen,95,Papua Selatan,33,2020,0.0
+cabe_besar,luas_panen,95,Papua Selatan,33,2021,0.0
+cabe_besar,luas_panen,95,Papua Selatan,33,2022,0.0
+cabe_besar,luas_panen,95,Papua Selatan,33,2023,0.0
+cabe_besar,luas_panen,95,Papua Selatan,33,2024,33.03
+cabe_besar,luas_panen,95,Papua Selatan,33,2025,78.37
+cabe_besar,luas_panen,96,Papua Tengah,33,2018,0.0
+cabe_besar,luas_panen,96,Papua Tengah,33,2019,0.0
+cabe_besar,luas_panen,96,Papua Tengah,33,2020,0.0
+cabe_besar,luas_panen,96,Papua Tengah,33,2021,0.0
+cabe_besar,luas_panen,96,Papua Tengah,33,2022,0.0
+cabe_besar,luas_panen,96,Papua Tengah,33,2023,0.0
+cabe_besar,luas_panen,96,Papua Tengah,33,2024,255.0
+cabe_besar,luas_panen,96,Papua Tengah,33,2025,268.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2018,0.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2019,0.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2020,0.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2021,0.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2022,0.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2023,0.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2024,0.0
+cabe_besar,luas_panen,97,Papua Pegunungan,33,2025,35.5
+cabe_keriting,produksi,11,Aceh,1,2018,0.0
+cabe_keriting,produksi,11,Aceh,1,2019,0.0
+cabe_keriting,produksi,11,Aceh,1,2020,0.0
+cabe_keriting,produksi,11,Aceh,1,2021,54071.155000000006
+cabe_keriting,produksi,11,Aceh,1,2022,96641.735
+cabe_keriting,produksi,11,Aceh,1,2023,97643.357
+cabe_keriting,produksi,11,Aceh,1,2024,65996.90500000001
+cabe_keriting,produksi,11,Aceh,1,2025,184095.024
+cabe_keriting,produksi,12,Sumatera Utara,2,2018,0.0
+cabe_keriting,produksi,12,Sumatera Utara,2,2019,0.0
+cabe_keriting,produksi,12,Sumatera Utara,2,2020,0.0
+cabe_keriting,produksi,12,Sumatera Utara,2,2021,202755.766
+cabe_keriting,produksi,12,Sumatera Utara,2,2022,185339.24
+cabe_keriting,produksi,12,Sumatera Utara,2,2023,205247.477
+cabe_keriting,produksi,12,Sumatera Utara,2,2024,191663.62
+cabe_keriting,produksi,12,Sumatera Utara,2,2025,211900.30800000002
+cabe_keriting,produksi,13,Sumatera Barat,3,2018,0.0
+cabe_keriting,produksi,13,Sumatera Barat,3,2019,0.0
+cabe_keriting,produksi,13,Sumatera Barat,3,2020,0.0
+cabe_keriting,produksi,13,Sumatera Barat,3,2021,115726.42700000001
+cabe_keriting,produksi,13,Sumatera Barat,3,2022,123503.518
+cabe_keriting,produksi,13,Sumatera Barat,3,2023,127449.876
+cabe_keriting,produksi,13,Sumatera Barat,3,2024,114169.55500000001
+cabe_keriting,produksi,13,Sumatera Barat,3,2025,121757.291
+cabe_keriting,produksi,14,Riau,4,2018,0.0
+cabe_keriting,produksi,14,Riau,4,2019,0.0
+cabe_keriting,produksi,14,Riau,4,2020,0.0
+cabe_keriting,produksi,14,Riau,4,2021,12558.087
+cabe_keriting,produksi,14,Riau,4,2022,10789.199
+cabe_keriting,produksi,14,Riau,4,2023,8639.678
+cabe_keriting,produksi,14,Riau,4,2024,7907.1
+cabe_keriting,produksi,14,Riau,4,2025,6787.94
+cabe_keriting,produksi,15,Jambi,6,2018,0.0
+cabe_keriting,produksi,15,Jambi,6,2019,0.0
+cabe_keriting,produksi,15,Jambi,6,2020,0.0
+cabe_keriting,produksi,15,Jambi,6,2021,43733.25200000001
+cabe_keriting,produksi,15,Jambi,6,2022,93689.06800000001
+cabe_keriting,produksi,15,Jambi,6,2023,156636.85400000002
+cabe_keriting,produksi,15,Jambi,6,2024,170341.468
+cabe_keriting,produksi,15,Jambi,6,2025,213975.32700000002
+cabe_keriting,produksi,16,Sumatera Selatan,8,2018,0.0
+cabe_keriting,produksi,16,Sumatera Selatan,8,2019,0.0
+cabe_keriting,produksi,16,Sumatera Selatan,8,2020,0.0
+cabe_keriting,produksi,16,Sumatera Selatan,8,2021,15821.353000000001
+cabe_keriting,produksi,16,Sumatera Selatan,8,2022,13629.223000000002
+cabe_keriting,produksi,16,Sumatera Selatan,8,2023,12258.585000000001
+cabe_keriting,produksi,16,Sumatera Selatan,8,2024,10984.674
+cabe_keriting,produksi,16,Sumatera Selatan,8,2025,19049.656
+cabe_keriting,produksi,17,Bengkulu,7,2018,0.0
+cabe_keriting,produksi,17,Bengkulu,7,2019,0.0
+cabe_keriting,produksi,17,Bengkulu,7,2020,0.0
+cabe_keriting,produksi,17,Bengkulu,7,2021,14229.562
+cabe_keriting,produksi,17,Bengkulu,7,2022,21519.964000000004
+cabe_keriting,produksi,17,Bengkulu,7,2023,21618.36
+cabe_keriting,produksi,17,Bengkulu,7,2024,16923.309
+cabe_keriting,produksi,17,Bengkulu,7,2025,15893.857000000002
+cabe_keriting,produksi,18,Lampung,10,2018,0.0
+cabe_keriting,produksi,18,Lampung,10,2019,0.0
+cabe_keriting,produksi,18,Lampung,10,2020,0.0
+cabe_keriting,produksi,18,Lampung,10,2021,21531.928
+cabe_keriting,produksi,18,Lampung,10,2022,22720.197
+cabe_keriting,produksi,18,Lampung,10,2023,21878.29
+cabe_keriting,produksi,18,Lampung,10,2024,21232.205
+cabe_keriting,produksi,18,Lampung,10,2025,19442.353
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2018,0.0
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2019,0.0
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2020,0.0
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2021,4010.032
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2022,5246.103
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2023,6313.934
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2024,7774.534
+cabe_keriting,produksi,19,Kepulauan Bangka Belitung,9,2025,4916.416000000001
+cabe_keriting,produksi,21,Kepulauan Riau,5,2018,0.0
+cabe_keriting,produksi,21,Kepulauan Riau,5,2019,0.0
+cabe_keriting,produksi,21,Kepulauan Riau,5,2020,0.0
+cabe_keriting,produksi,21,Kepulauan Riau,5,2021,2169.9590000000003
+cabe_keriting,produksi,21,Kepulauan Riau,5,2022,2508.6800000000003
+cabe_keriting,produksi,21,Kepulauan Riau,5,2023,2885.3340000000003
+cabe_keriting,produksi,21,Kepulauan Riau,5,2024,4058.768
+cabe_keriting,produksi,21,Kepulauan Riau,5,2025,3157.494
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2018,0.0
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2019,0.0
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2020,0.0
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2021,0.0
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2022,0.0
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2023,0.15000000000000002
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2024,12.06
+cabe_keriting,produksi,31,Daerah Khusus Ibukota Jakarta,13,2025,0.066
+cabe_keriting,produksi,32,Jawa Barat,12,2018,0.0
+cabe_keriting,produksi,32,Jawa Barat,12,2019,0.0
+cabe_keriting,produksi,32,Jawa Barat,12,2020,0.0
+cabe_keriting,produksi,32,Jawa Barat,12,2021,169174.119
+cabe_keriting,produksi,32,Jawa Barat,12,2022,195696.75600000002
+cabe_keriting,produksi,32,Jawa Barat,12,2023,186297.46600000001
+cabe_keriting,produksi,32,Jawa Barat,12,2024,180094.46600000001
+cabe_keriting,produksi,32,Jawa Barat,12,2025,221733.071
+cabe_keriting,produksi,33,Jawa Tengah,14,2018,0.0
+cabe_keriting,produksi,33,Jawa Tengah,14,2019,0.0
+cabe_keriting,produksi,33,Jawa Tengah,14,2020,0.0
+cabe_keriting,produksi,33,Jawa Tengah,14,2021,102368.057
+cabe_keriting,produksi,33,Jawa Tengah,14,2022,136438.138
+cabe_keriting,produksi,33,Jawa Tengah,14,2023,188310.608
+cabe_keriting,produksi,33,Jawa Tengah,14,2024,161036.095
+cabe_keriting,produksi,33,Jawa Tengah,14,2025,167398.271
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2018,0.0
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2019,0.0
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2020,0.0
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2021,35840.215000000004
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2022,33665.074
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2023,44198.512
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2024,45398.074
+cabe_keriting,produksi,34,Daerah Istimewa Yogyakarta,15,2025,45171.772
+cabe_keriting,produksi,35,Jawa Timur,16,2018,0.0
+cabe_keriting,produksi,35,Jawa Timur,16,2019,0.0
+cabe_keriting,produksi,35,Jawa Timur,16,2020,0.0
+cabe_keriting,produksi,35,Jawa Timur,16,2021,29744.202000000005
+cabe_keriting,produksi,35,Jawa Timur,16,2022,30731.693
+cabe_keriting,produksi,35,Jawa Timur,16,2023,29940.662
+cabe_keriting,produksi,35,Jawa Timur,16,2024,37135.090000000004
+cabe_keriting,produksi,35,Jawa Timur,16,2025,35664.668
+cabe_keriting,produksi,36,Banten,11,2018,0.0
+cabe_keriting,produksi,36,Banten,11,2019,0.0
+cabe_keriting,produksi,36,Banten,11,2020,0.0
+cabe_keriting,produksi,36,Banten,11,2021,4291.955000000001
+cabe_keriting,produksi,36,Banten,11,2022,5310.791000000001
+cabe_keriting,produksi,36,Banten,11,2023,4047.3940000000002
+cabe_keriting,produksi,36,Banten,11,2024,3096.517
+cabe_keriting,produksi,36,Banten,11,2025,7521.563000000001
+cabe_keriting,produksi,51,Bali,17,2018,0.0
+cabe_keriting,produksi,51,Bali,17,2019,0.0
+cabe_keriting,produksi,51,Bali,17,2020,0.0
+cabe_keriting,produksi,51,Bali,17,2021,0.0
+cabe_keriting,produksi,51,Bali,17,2022,0.0
+cabe_keriting,produksi,51,Bali,17,2023,0.0
+cabe_keriting,produksi,51,Bali,17,2024,1.7000000000000002
+cabe_keriting,produksi,51,Bali,17,2025,0.137
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2018,0.0
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2019,0.0
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2020,0.0
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2021,5372.283
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2022,6022.354
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2023,5116.485000000001
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2024,5703.372
+cabe_keriting,produksi,52,Nusa Tenggara Barat,18,2025,4260.787
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2018,0.0
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2019,0.0
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2020,0.0
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2021,1373.2510000000002
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2022,2167.946
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2023,1889.075
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2024,1412.6350000000002
+cabe_keriting,produksi,53,Nusa Tenggara Timur,19,2025,1725.5650000000003
+cabe_keriting,produksi,61,Kalimantan Barat,20,2018,0.0
+cabe_keriting,produksi,61,Kalimantan Barat,20,2019,0.0
+cabe_keriting,produksi,61,Kalimantan Barat,20,2020,0.0
+cabe_keriting,produksi,61,Kalimantan Barat,20,2021,233.23800000000003
+cabe_keriting,produksi,61,Kalimantan Barat,20,2022,825.96
+cabe_keriting,produksi,61,Kalimantan Barat,20,2023,540.6600000000001
+cabe_keriting,produksi,61,Kalimantan Barat,20,2024,669.6210000000001
+cabe_keriting,produksi,61,Kalimantan Barat,20,2025,945.8200000000002
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2018,0.0
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2019,0.0
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2020,0.0
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2021,420.39
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2022,352.826
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2023,378.20900000000006
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2024,229.71
+cabe_keriting,produksi,62,Kalimantan Tengah,22,2025,322.116
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2018,0.0
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2019,0.0
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2020,0.0
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2021,1175.55
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2022,2282.936
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2023,2287.335
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2024,2890.0200000000004
+cabe_keriting,produksi,63,Kalimantan Selatan,21,2025,3883.425
+cabe_keriting,produksi,64,Kalimantan Timur,23,2018,0.0
+cabe_keriting,produksi,64,Kalimantan Timur,23,2019,0.0
+cabe_keriting,produksi,64,Kalimantan Timur,23,2020,0.0
+cabe_keriting,produksi,64,Kalimantan Timur,23,2021,2760.3520000000003
+cabe_keriting,produksi,64,Kalimantan Timur,23,2022,3649.759
+cabe_keriting,produksi,64,Kalimantan Timur,23,2023,3647.339
+cabe_keriting,produksi,64,Kalimantan Timur,23,2024,3779.0290000000005
+cabe_keriting,produksi,64,Kalimantan Timur,23,2025,3321.352
+cabe_keriting,produksi,65,Kalimantan Utara,24,2018,0.0
+cabe_keriting,produksi,65,Kalimantan Utara,24,2019,0.0
+cabe_keriting,produksi,65,Kalimantan Utara,24,2020,0.0
+cabe_keriting,produksi,65,Kalimantan Utara,24,2021,237.05
+cabe_keriting,produksi,65,Kalimantan Utara,24,2022,811.423
+cabe_keriting,produksi,65,Kalimantan Utara,24,2023,1299.1670000000001
+cabe_keriting,produksi,65,Kalimantan Utara,24,2024,2634.1270000000004
+cabe_keriting,produksi,65,Kalimantan Utara,24,2025,3379.5280000000002
+cabe_keriting,produksi,71,Sulawesi Utara,29,2018,0.0
+cabe_keriting,produksi,71,Sulawesi Utara,29,2019,0.0
+cabe_keriting,produksi,71,Sulawesi Utara,29,2020,0.0
+cabe_keriting,produksi,71,Sulawesi Utara,29,2021,8882.334
+cabe_keriting,produksi,71,Sulawesi Utara,29,2022,7056.964
+cabe_keriting,produksi,71,Sulawesi Utara,29,2023,8011.478999999999
+cabe_keriting,produksi,71,Sulawesi Utara,29,2024,4861.356
+cabe_keriting,produksi,71,Sulawesi Utara,29,2025,5875.196
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2018,0.0
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2019,0.0
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2020,0.0
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2021,3576.446
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2022,4716.673000000001
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2023,6517.116000000001
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2024,6911.509
+cabe_keriting,produksi,72,Sulawesi Tengah,28,2025,4038.6300000000006
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2018,0.0
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2019,0.0
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2020,0.0
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2021,1890.3060000000003
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2022,3274.312
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2023,4163.055
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2024,7028.707000000001
+cabe_keriting,produksi,73,Sulawesi Selatan,26,2025,9462.59
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2018,0.0
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2019,0.0
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2020,0.0
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2021,735.6600000000001
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2022,1065.881
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2023,1685.344
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2024,1709.218
+cabe_keriting,produksi,74,Sulawesi Tenggara,27,2025,1616.7430000000002
+cabe_keriting,produksi,75,Gorontalo,25,2018,0.0
+cabe_keriting,produksi,75,Gorontalo,25,2019,0.0
+cabe_keriting,produksi,75,Gorontalo,25,2020,0.0
+cabe_keriting,produksi,75,Gorontalo,25,2021,238.9
+cabe_keriting,produksi,75,Gorontalo,25,2022,44.550000000000004
+cabe_keriting,produksi,75,Gorontalo,25,2023,1246.9250000000002
+cabe_keriting,produksi,75,Gorontalo,25,2024,577.047
+cabe_keriting,produksi,75,Gorontalo,25,2025,469.42
+cabe_keriting,produksi,76,Sulawesi Barat,30,2018,0.0
+cabe_keriting,produksi,76,Sulawesi Barat,30,2019,0.0
+cabe_keriting,produksi,76,Sulawesi Barat,30,2020,0.0
+cabe_keriting,produksi,76,Sulawesi Barat,30,2021,844.23
+cabe_keriting,produksi,76,Sulawesi Barat,30,2022,1084.0200000000002
+cabe_keriting,produksi,76,Sulawesi Barat,30,2023,1166.08
+cabe_keriting,produksi,76,Sulawesi Barat,30,2024,808.712
+cabe_keriting,produksi,76,Sulawesi Barat,30,2025,713.5920000000001
+cabe_keriting,produksi,81,Maluku,31,2018,0.0
+cabe_keriting,produksi,81,Maluku,31,2019,0.0
+cabe_keriting,produksi,81,Maluku,31,2020,0.0
+cabe_keriting,produksi,81,Maluku,31,2021,1240.44
+cabe_keriting,produksi,81,Maluku,31,2022,2347.107
+cabe_keriting,produksi,81,Maluku,31,2023,1474.044
+cabe_keriting,produksi,81,Maluku,31,2024,1705.9099999999999
+cabe_keriting,produksi,81,Maluku,31,2025,1850.496
+cabe_keriting,produksi,82,Maluku Utara,32,2018,0.0
+cabe_keriting,produksi,82,Maluku Utara,32,2019,0.0
+cabe_keriting,produksi,82,Maluku Utara,32,2020,0.0
+cabe_keriting,produksi,82,Maluku Utara,32,2021,2811.687
+cabe_keriting,produksi,82,Maluku Utara,32,2022,3708.4410000000007
+cabe_keriting,produksi,82,Maluku Utara,32,2023,5420.334
+cabe_keriting,produksi,82,Maluku Utara,32,2024,5550.292
+cabe_keriting,produksi,82,Maluku Utara,32,2025,7024.972000000001
+cabe_keriting,produksi,91,Papua Barat,34,2018,0.0
+cabe_keriting,produksi,91,Papua Barat,34,2019,0.0
+cabe_keriting,produksi,91,Papua Barat,34,2020,0.0
+cabe_keriting,produksi,91,Papua Barat,34,2021,344.02
+cabe_keriting,produksi,91,Papua Barat,34,2022,497.362
+cabe_keriting,produksi,91,Papua Barat,34,2023,831.1690000000001
+cabe_keriting,produksi,91,Papua Barat,34,2024,30.673000000000002
+cabe_keriting,produksi,91,Papua Barat,34,2025,32.694
+cabe_keriting,produksi,92,Papua Barat Daya,34,2018,0.0
+cabe_keriting,produksi,92,Papua Barat Daya,34,2019,0.0
+cabe_keriting,produksi,92,Papua Barat Daya,34,2020,0.0
+cabe_keriting,produksi,92,Papua Barat Daya,34,2021,0.0
+cabe_keriting,produksi,92,Papua Barat Daya,34,2022,0.0
+cabe_keriting,produksi,92,Papua Barat Daya,34,2023,0.0
+cabe_keriting,produksi,92,Papua Barat Daya,34,2024,348.49600000000004
+cabe_keriting,produksi,92,Papua Barat Daya,34,2025,396.72
+cabe_keriting,produksi,94,Papua,33,2018,0.0
+cabe_keriting,produksi,94,Papua,33,2019,0.0
+cabe_keriting,produksi,94,Papua,33,2020,0.0
+cabe_keriting,produksi,94,Papua,33,2021,22.86
+cabe_keriting,produksi,94,Papua,33,2022,43.95
+cabe_keriting,produksi,94,Papua,33,2023,417.20000000000005
+cabe_keriting,produksi,94,Papua,33,2024,50.61000000000001
+cabe_keriting,produksi,94,Papua,33,2025,53.5
+cabe_keriting,produksi,95,Papua Selatan,33,2018,0.0
+cabe_keriting,produksi,95,Papua Selatan,33,2019,0.0
+cabe_keriting,produksi,95,Papua Selatan,33,2020,0.0
+cabe_keriting,produksi,95,Papua Selatan,33,2021,0.0
+cabe_keriting,produksi,95,Papua Selatan,33,2022,0.0
+cabe_keriting,produksi,95,Papua Selatan,33,2023,0.0
+cabe_keriting,produksi,95,Papua Selatan,33,2024,0.48
+cabe_keriting,produksi,95,Papua Selatan,33,2025,0.004
+cabe_keriting,produksi,96,Papua Tengah,33,2018,0.0
+cabe_keriting,produksi,96,Papua Tengah,33,2019,0.0
+cabe_keriting,produksi,96,Papua Tengah,33,2020,0.0
+cabe_keriting,produksi,96,Papua Tengah,33,2021,0.0
+cabe_keriting,produksi,96,Papua Tengah,33,2022,0.0
+cabe_keriting,produksi,96,Papua Tengah,33,2023,0.0
+cabe_keriting,produksi,96,Papua Tengah,33,2024,593.4
+cabe_keriting,produksi,96,Papua Tengah,33,2025,66.3
+cabe_keriting,produksi,97,Papua Pegunungan,33,2018,0.0
+cabe_keriting,produksi,97,Papua Pegunungan,33,2019,0.0
+cabe_keriting,produksi,97,Papua Pegunungan,33,2020,0.0
+cabe_keriting,produksi,97,Papua Pegunungan,33,2021,0.0
+cabe_keriting,produksi,97,Papua Pegunungan,33,2022,0.0
+cabe_keriting,produksi,97,Papua Pegunungan,33,2023,0.0
+cabe_keriting,produksi,97,Papua Pegunungan,33,2024,0.0
+cabe_keriting,produksi,97,Papua Pegunungan,33,2025,8.07
+cabe_keriting,luas_panen,11,Aceh,1,2018,0.0
+cabe_keriting,luas_panen,11,Aceh,1,2019,0.0
+cabe_keriting,luas_panen,11,Aceh,1,2020,0.0
+cabe_keriting,luas_panen,11,Aceh,1,2021,4335.13
+cabe_keriting,luas_panen,11,Aceh,1,2022,6760.03
+cabe_keriting,luas_panen,11,Aceh,1,2023,8110.88
+cabe_keriting,luas_panen,11,Aceh,1,2024,7243.76
+cabe_keriting,luas_panen,11,Aceh,1,2025,10286.94
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2018,0.0
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2019,0.0
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2020,0.0
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2021,16458.85
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2022,16181.77
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2023,16990.5
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2024,16436.81
+cabe_keriting,luas_panen,12,Sumatera Utara,2,2025,16169.1
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2018,0.0
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2019,0.0
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2020,0.0
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2021,11338.92
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2022,12283.21
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2023,11245.17
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2024,9366.14
+cabe_keriting,luas_panen,13,Sumatera Barat,3,2025,9411.4
+cabe_keriting,luas_panen,14,Riau,4,2018,0.0
+cabe_keriting,luas_panen,14,Riau,4,2019,0.0
+cabe_keriting,luas_panen,14,Riau,4,2020,0.0
+cabe_keriting,luas_panen,14,Riau,4,2021,1298.57
+cabe_keriting,luas_panen,14,Riau,4,2022,1269.71
+cabe_keriting,luas_panen,14,Riau,4,2023,1202.51
+cabe_keriting,luas_panen,14,Riau,4,2024,1119.56
+cabe_keriting,luas_panen,14,Riau,4,2025,895.9
+cabe_keriting,luas_panen,15,Jambi,6,2018,0.0
+cabe_keriting,luas_panen,15,Jambi,6,2019,0.0
+cabe_keriting,luas_panen,15,Jambi,6,2020,0.0
+cabe_keriting,luas_panen,15,Jambi,6,2021,3233.7
+cabe_keriting,luas_panen,15,Jambi,6,2022,5615.95
+cabe_keriting,luas_panen,15,Jambi,6,2023,7459.77
+cabe_keriting,luas_panen,15,Jambi,6,2024,6159.82
+cabe_keriting,luas_panen,15,Jambi,6,2025,6195.3
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2018,0.0
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2019,0.0
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2020,0.0
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2021,3287.79
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2022,3401.32
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2023,2900.66
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2024,2440.49
+cabe_keriting,luas_panen,16,Sumatera Selatan,8,2025,2710.15
+cabe_keriting,luas_panen,17,Bengkulu,7,2018,0.0
+cabe_keriting,luas_panen,17,Bengkulu,7,2019,0.0
+cabe_keriting,luas_panen,17,Bengkulu,7,2020,0.0
+cabe_keriting,luas_panen,17,Bengkulu,7,2021,1517.19
+cabe_keriting,luas_panen,17,Bengkulu,7,2022,1501.96
+cabe_keriting,luas_panen,17,Bengkulu,7,2023,1555.95
+cabe_keriting,luas_panen,17,Bengkulu,7,2024,1211.97
+cabe_keriting,luas_panen,17,Bengkulu,7,2025,1037.98
+cabe_keriting,luas_panen,18,Lampung,10,2018,0.0
+cabe_keriting,luas_panen,18,Lampung,10,2019,0.0
+cabe_keriting,luas_panen,18,Lampung,10,2020,0.0
+cabe_keriting,luas_panen,18,Lampung,10,2021,3144.05
+cabe_keriting,luas_panen,18,Lampung,10,2022,3153.14
+cabe_keriting,luas_panen,18,Lampung,10,2023,2447.58
+cabe_keriting,luas_panen,18,Lampung,10,2024,2859.71
+cabe_keriting,luas_panen,18,Lampung,10,2025,2815.21
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2018,0.0
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2019,0.0
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2020,0.0
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2021,318.43
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2022,380.38
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2023,511.54
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2024,542.86
+cabe_keriting,luas_panen,19,Kepulauan Bangka Belitung,9,2025,505.22
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2018,0.0
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2019,0.0
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2020,0.0
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2021,168.95
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2022,208.05
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2023,298.14
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2024,278.67
+cabe_keriting,luas_panen,21,Kepulauan Riau,5,2025,251.47
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2018,0.0
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2019,0.0
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2020,0.0
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2021,0.0
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2022,0.0
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2023,0.46
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2024,3.1
+cabe_keriting,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2025,0.23
+cabe_keriting,luas_panen,32,Jawa Barat,12,2018,0.0
+cabe_keriting,luas_panen,32,Jawa Barat,12,2019,0.0
+cabe_keriting,luas_panen,32,Jawa Barat,12,2020,0.0
+cabe_keriting,luas_panen,32,Jawa Barat,12,2021,10872.6
+cabe_keriting,luas_panen,32,Jawa Barat,12,2022,13785.05
+cabe_keriting,luas_panen,32,Jawa Barat,12,2023,13219.15
+cabe_keriting,luas_panen,32,Jawa Barat,12,2024,13935.38
+cabe_keriting,luas_panen,32,Jawa Barat,12,2025,14166.62
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2018,0.0
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2019,0.0
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2020,0.0
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2021,13334.11
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2022,16266.9
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2023,19504.15
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2024,17307.54
+cabe_keriting,luas_panen,33,Jawa Tengah,14,2025,19237.74
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2018,0.0
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2019,0.0
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2020,0.0
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2021,3832.39
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2022,3530.75
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2023,3504.14
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2024,3232.21
+cabe_keriting,luas_panen,34,Daerah Istimewa Yogyakarta,15,2025,2925.53
+cabe_keriting,luas_panen,35,Jawa Timur,16,2018,0.0
+cabe_keriting,luas_panen,35,Jawa Timur,16,2019,0.0
+cabe_keriting,luas_panen,35,Jawa Timur,16,2020,0.0
+cabe_keriting,luas_panen,35,Jawa Timur,16,2021,4752.2
+cabe_keriting,luas_panen,35,Jawa Timur,16,2022,4455.81
+cabe_keriting,luas_panen,35,Jawa Timur,16,2023,4477.99
+cabe_keriting,luas_panen,35,Jawa Timur,16,2024,5095.63
+cabe_keriting,luas_panen,35,Jawa Timur,16,2025,4204.83
+cabe_keriting,luas_panen,36,Banten,11,2018,0.0
+cabe_keriting,luas_panen,36,Banten,11,2019,0.0
+cabe_keriting,luas_panen,36,Banten,11,2020,0.0
+cabe_keriting,luas_panen,36,Banten,11,2021,508.8
+cabe_keriting,luas_panen,36,Banten,11,2022,633.2
+cabe_keriting,luas_panen,36,Banten,11,2023,467.28
+cabe_keriting,luas_panen,36,Banten,11,2024,425.05
+cabe_keriting,luas_panen,36,Banten,11,2025,823.2
+cabe_keriting,luas_panen,51,Bali,17,2018,0.0
+cabe_keriting,luas_panen,51,Bali,17,2019,0.0
+cabe_keriting,luas_panen,51,Bali,17,2020,0.0
+cabe_keriting,luas_panen,51,Bali,17,2021,0.0
+cabe_keriting,luas_panen,51,Bali,17,2022,0.0
+cabe_keriting,luas_panen,51,Bali,17,2023,0.0
+cabe_keriting,luas_panen,51,Bali,17,2024,5.0
+cabe_keriting,luas_panen,51,Bali,17,2025,0.21
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2018,0.0
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2019,0.0
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2020,0.0
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2021,504.99
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2022,450.25
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2023,581.48
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2024,520.29
+cabe_keriting,luas_panen,52,Nusa Tenggara Barat,18,2025,382.42
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2018,0.0
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2019,0.0
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2020,0.0
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2021,270.23
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2022,430.29
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2023,434.1
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2024,390.33
+cabe_keriting,luas_panen,53,Nusa Tenggara Timur,19,2025,340.49
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2018,0.0
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2019,0.0
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2020,0.0
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2021,99.55
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2022,224.5
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2023,265.2
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2024,292.1
+cabe_keriting,luas_panen,61,Kalimantan Barat,20,2025,259.6
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2018,0.0
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2019,0.0
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2020,0.0
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2021,51.05
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2022,46.34
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2023,64.48
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2024,72.09
+cabe_keriting,luas_panen,62,Kalimantan Tengah,22,2025,84.26
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2018,0.0
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2019,0.0
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2020,0.0
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2021,150.65
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2022,282.62
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2023,289.52
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2024,356.45
+cabe_keriting,luas_panen,63,Kalimantan Selatan,21,2025,493.4
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2018,0.0
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2019,0.0
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2020,0.0
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2021,332.9
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2022,480.48
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2023,563.46
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2024,609.08
+cabe_keriting,luas_panen,64,Kalimantan Timur,23,2025,477.08
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2018,0.0
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2019,0.0
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2020,0.0
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2021,26.55
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2022,55.77
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2023,82.01
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2024,140.58
+cabe_keriting,luas_panen,65,Kalimantan Utara,24,2025,142.13
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2018,0.0
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2019,0.0
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2020,0.0
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2021,830.6
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2022,775.36
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2023,858.8
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2024,737.01
+cabe_keriting,luas_panen,71,Sulawesi Utara,29,2025,784.35
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2018,0.0
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2019,0.0
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2020,0.0
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2021,648.7
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2022,837.29
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2023,783.7
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2024,662.71
+cabe_keriting,luas_panen,72,Sulawesi Tengah,28,2025,672.65
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2018,0.0
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2019,0.0
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2020,0.0
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2021,322.55
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2022,566.35
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2023,692.37
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2024,808.62
+cabe_keriting,luas_panen,73,Sulawesi Selatan,26,2025,1036.4
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2018,0.0
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2019,0.0
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2020,0.0
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2021,170.2
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2022,289.54
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2023,473.23
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2024,451.66
+cabe_keriting,luas_panen,74,Sulawesi Tenggara,27,2025,413.38
+cabe_keriting,luas_panen,75,Gorontalo,25,2018,0.0
+cabe_keriting,luas_panen,75,Gorontalo,25,2019,0.0
+cabe_keriting,luas_panen,75,Gorontalo,25,2020,0.0
+cabe_keriting,luas_panen,75,Gorontalo,25,2021,33.0
+cabe_keriting,luas_panen,75,Gorontalo,25,2022,17.5
+cabe_keriting,luas_panen,75,Gorontalo,25,2023,156.0
+cabe_keriting,luas_panen,75,Gorontalo,25,2024,107.75
+cabe_keriting,luas_panen,75,Gorontalo,25,2025,89.5
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2018,0.0
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2019,0.0
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2020,0.0
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2021,155.5
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2022,230.65
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2023,218.93
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2024,212.62
+cabe_keriting,luas_panen,76,Sulawesi Barat,30,2025,170.11
+cabe_keriting,luas_panen,81,Maluku,31,2018,0.0
+cabe_keriting,luas_panen,81,Maluku,31,2019,0.0
+cabe_keriting,luas_panen,81,Maluku,31,2020,0.0
+cabe_keriting,luas_panen,81,Maluku,31,2021,232.5
+cabe_keriting,luas_panen,81,Maluku,31,2022,369.68
+cabe_keriting,luas_panen,81,Maluku,31,2023,390.5
+cabe_keriting,luas_panen,81,Maluku,31,2024,401.05
+cabe_keriting,luas_panen,81,Maluku,31,2025,432.95
+cabe_keriting,luas_panen,82,Maluku Utara,32,2018,0.0
+cabe_keriting,luas_panen,82,Maluku Utara,32,2019,0.0
+cabe_keriting,luas_panen,82,Maluku Utara,32,2020,0.0
+cabe_keriting,luas_panen,82,Maluku Utara,32,2021,514.0
+cabe_keriting,luas_panen,82,Maluku Utara,32,2022,982.81
+cabe_keriting,luas_panen,82,Maluku Utara,32,2023,748.66
+cabe_keriting,luas_panen,82,Maluku Utara,32,2024,781.32
+cabe_keriting,luas_panen,82,Maluku Utara,32,2025,982.52
+cabe_keriting,luas_panen,91,Papua Barat,34,2018,0.0
+cabe_keriting,luas_panen,91,Papua Barat,34,2019,0.0
+cabe_keriting,luas_panen,91,Papua Barat,34,2020,0.0
+cabe_keriting,luas_panen,91,Papua Barat,34,2021,55.25
+cabe_keriting,luas_panen,91,Papua Barat,34,2022,91.06
+cabe_keriting,luas_panen,91,Papua Barat,34,2023,118.57
+cabe_keriting,luas_panen,91,Papua Barat,34,2024,10.81
+cabe_keriting,luas_panen,91,Papua Barat,34,2025,108.9
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2018,0.0
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2019,0.0
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2020,0.0
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2021,0.0
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2022,0.0
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2023,0.0
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2024,76.77
+cabe_keriting,luas_panen,92,Papua Barat Daya,34,2025,48.3
+cabe_keriting,luas_panen,94,Papua,33,2018,0.0
+cabe_keriting,luas_panen,94,Papua,33,2019,0.0
+cabe_keriting,luas_panen,94,Papua,33,2020,0.0
+cabe_keriting,luas_panen,94,Papua,33,2021,4.0
+cabe_keriting,luas_panen,94,Papua,33,2022,6.5
+cabe_keriting,luas_panen,94,Papua,33,2023,54.4
+cabe_keriting,luas_panen,94,Papua,33,2024,44.83
+cabe_keriting,luas_panen,94,Papua,33,2025,52.0
+cabe_keriting,luas_panen,95,Papua Selatan,33,2018,0.0
+cabe_keriting,luas_panen,95,Papua Selatan,33,2019,0.0
+cabe_keriting,luas_panen,95,Papua Selatan,33,2020,0.0
+cabe_keriting,luas_panen,95,Papua Selatan,33,2021,0.0
+cabe_keriting,luas_panen,95,Papua Selatan,33,2022,0.0
+cabe_keriting,luas_panen,95,Papua Selatan,33,2023,0.0
+cabe_keriting,luas_panen,95,Papua Selatan,33,2024,0.2
+cabe_keriting,luas_panen,95,Papua Selatan,33,2025,0.02
+cabe_keriting,luas_panen,96,Papua Tengah,33,2018,0.0
+cabe_keriting,luas_panen,96,Papua Tengah,33,2019,0.0
+cabe_keriting,luas_panen,96,Papua Tengah,33,2020,0.0
+cabe_keriting,luas_panen,96,Papua Tengah,33,2021,0.0
+cabe_keriting,luas_panen,96,Papua Tengah,33,2022,0.0
+cabe_keriting,luas_panen,96,Papua Tengah,33,2023,0.0
+cabe_keriting,luas_panen,96,Papua Tengah,33,2024,51.0
+cabe_keriting,luas_panen,96,Papua Tengah,33,2025,14.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2018,0.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2019,0.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2020,0.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2021,0.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2022,0.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2023,0.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2024,0.0
+cabe_keriting,luas_panen,97,Papua Pegunungan,33,2025,29.7
+cabe_rawit,produksi,11,Aceh,1,2018,62167.1
+cabe_rawit,produksi,11,Aceh,1,2019,61886.6
+cabe_rawit,produksi,11,Aceh,1,2020,64781.6
+cabe_rawit,produksi,11,Aceh,1,2021,51686.25
+cabe_rawit,produksi,11,Aceh,1,2022,65308.21
+cabe_rawit,produksi,11,Aceh,1,2023,72920.18
+cabe_rawit,produksi,11,Aceh,1,2024,64493.92
+cabe_rawit,produksi,11,Aceh,1,2025,112302.14
+cabe_rawit,produksi,12,Sumatera Utara,2,2018,39825.9
+cabe_rawit,produksi,12,Sumatera Utara,2,2019,49246.2
+cabe_rawit,produksi,12,Sumatera Utara,2,2020,61160.11
+cabe_rawit,produksi,12,Sumatera Utara,2,2021,78662.97
+cabe_rawit,produksi,12,Sumatera Utara,2,2022,87012.17
+cabe_rawit,produksi,12,Sumatera Utara,2,2023,86880.23
+cabe_rawit,produksi,12,Sumatera Utara,2,2024,84118.03
+cabe_rawit,produksi,12,Sumatera Utara,2,2025,109052.51
+cabe_rawit,produksi,13,Sumatera Barat,3,2018,25178.7
+cabe_rawit,produksi,13,Sumatera Barat,3,2019,31782.4
+cabe_rawit,produksi,13,Sumatera Barat,3,2020,33355.93
+cabe_rawit,produksi,13,Sumatera Barat,3,2021,35117.92
+cabe_rawit,produksi,13,Sumatera Barat,3,2022,26655.78
+cabe_rawit,produksi,13,Sumatera Barat,3,2023,25081.23
+cabe_rawit,produksi,13,Sumatera Barat,3,2024,27716.37
+cabe_rawit,produksi,13,Sumatera Barat,3,2025,31490.73
+cabe_rawit,produksi,14,Riau,4,2018,12691.1
+cabe_rawit,produksi,14,Riau,4,2019,8120.12
+cabe_rawit,produksi,14,Riau,4,2020,8626.96
+cabe_rawit,produksi,14,Riau,4,2021,6693.87
+cabe_rawit,produksi,14,Riau,4,2022,7428.76
+cabe_rawit,produksi,14,Riau,4,2023,6606.77
+cabe_rawit,produksi,14,Riau,4,2024,6285.64
+cabe_rawit,produksi,14,Riau,4,2025,6682.47
+cabe_rawit,produksi,15,Jambi,6,2018,8271.7
+cabe_rawit,produksi,15,Jambi,6,2019,9879.5
+cabe_rawit,produksi,15,Jambi,6,2020,13587.98
+cabe_rawit,produksi,15,Jambi,6,2021,11526.13
+cabe_rawit,produksi,15,Jambi,6,2022,12428.87
+cabe_rawit,produksi,15,Jambi,6,2023,16086.76
+cabe_rawit,produksi,15,Jambi,6,2024,43578.48
+cabe_rawit,produksi,15,Jambi,6,2025,42173.88
+cabe_rawit,produksi,16,Sumatera Selatan,8,2018,13450.6
+cabe_rawit,produksi,16,Sumatera Selatan,8,2019,11013.5
+cabe_rawit,produksi,16,Sumatera Selatan,8,2020,11644.96
+cabe_rawit,produksi,16,Sumatera Selatan,8,2021,11562.44
+cabe_rawit,produksi,16,Sumatera Selatan,8,2022,9460.65
+cabe_rawit,produksi,16,Sumatera Selatan,8,2023,7765.54
+cabe_rawit,produksi,16,Sumatera Selatan,8,2024,8951.96
+cabe_rawit,produksi,16,Sumatera Selatan,8,2025,14010.02
+cabe_rawit,produksi,17,Bengkulu,7,2018,11353.1
+cabe_rawit,produksi,17,Bengkulu,7,2019,11118.3
+cabe_rawit,produksi,17,Bengkulu,7,2020,11475.7
+cabe_rawit,produksi,17,Bengkulu,7,2021,16278.13
+cabe_rawit,produksi,17,Bengkulu,7,2022,21426.62
+cabe_rawit,produksi,17,Bengkulu,7,2023,22546.16
+cabe_rawit,produksi,17,Bengkulu,7,2024,24207.91
+cabe_rawit,produksi,17,Bengkulu,7,2025,24032.02
+cabe_rawit,produksi,18,Lampung,10,2018,14648.1
+cabe_rawit,produksi,18,Lampung,10,2019,12795.8
+cabe_rawit,produksi,18,Lampung,10,2020,10558.12
+cabe_rawit,produksi,18,Lampung,10,2021,10921.29
+cabe_rawit,produksi,18,Lampung,10,2022,11193.35
+cabe_rawit,produksi,18,Lampung,10,2023,14070.11
+cabe_rawit,produksi,18,Lampung,10,2024,11333.38
+cabe_rawit,produksi,18,Lampung,10,2025,13255.63
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2018,2034.7
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2019,2001.9
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2020,3385.92
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2021,3954.1
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2022,3709.82
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2023,5507.95
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2024,6009.28
+cabe_rawit,produksi,19,Kepulauan Bangka Belitung,9,2025,6249.53
+cabe_rawit,produksi,21,Kepulauan Riau,5,2018,1715.7
+cabe_rawit,produksi,21,Kepulauan Riau,5,2019,2338.9
+cabe_rawit,produksi,21,Kepulauan Riau,5,2020,2230.12
+cabe_rawit,produksi,21,Kepulauan Riau,5,2021,1626.96
+cabe_rawit,produksi,21,Kepulauan Riau,5,2022,1772.88
+cabe_rawit,produksi,21,Kepulauan Riau,5,2023,1244.88
+cabe_rawit,produksi,21,Kepulauan Riau,5,2024,1487.79
+cabe_rawit,produksi,21,Kepulauan Riau,5,2025,1454.98
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2018,0.4
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2019,0.0
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2020,0.0
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2021,0.6
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2022,0.06
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2023,1.48
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2024,40.42
+cabe_rawit,produksi,31,Daerah Khusus Ibukota Jakarta,13,2025,42.19
+cabe_rawit,produksi,32,Jawa Barat,12,2018,131418.2
+cabe_rawit,produksi,32,Jawa Barat,12,2019,128494.1
+cabe_rawit,produksi,32,Jawa Barat,12,2020,130838.47
+cabe_rawit,produksi,32,Jawa Barat,12,2021,137456.25
+cabe_rawit,produksi,32,Jawa Barat,12,2022,149053.15
+cabe_rawit,produksi,32,Jawa Barat,12,2023,163989.07
+cabe_rawit,produksi,32,Jawa Barat,12,2024,163755.89
+cabe_rawit,produksi,32,Jawa Barat,12,2025,198791.66
+cabe_rawit,produksi,33,Jawa Tengah,14,2018,141770.5
+cabe_rawit,produksi,33,Jawa Tengah,14,2019,148750.0
+cabe_rawit,produksi,33,Jawa Tengah,14,2020,159098.91
+cabe_rawit,produksi,33,Jawa Tengah,14,2021,179286.91
+cabe_rawit,produksi,33,Jawa Tengah,14,2022,242303.18
+cabe_rawit,produksi,33,Jawa Tengah,14,2023,249207.69
+cabe_rawit,produksi,33,Jawa Tengah,14,2024,248067.02
+cabe_rawit,produksi,33,Jawa Tengah,14,2025,266305.06
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2018,10146.8
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2019,10039.8
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2020,15052.32
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2021,15933.22
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2022,15197.7
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2023,21383.6
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2024,29084.41
+cabe_rawit,produksi,34,Daerah Istimewa Yogyakarta,15,2025,25029.91
+cabe_rawit,produksi,35,Jawa Timur,16,2018,453338.0
+cabe_rawit,produksi,35,Jawa Timur,16,2019,536097.7
+cabe_rawit,produksi,35,Jawa Timur,16,2020,684942.94
+cabe_rawit,produksi,35,Jawa Timur,16,2021,578883.0
+cabe_rawit,produksi,35,Jawa Timur,16,2022,646740.21
+cabe_rawit,produksi,35,Jawa Timur,16,2023,562816.15
+cabe_rawit,produksi,35,Jawa Timur,16,2024,568997.9
+cabe_rawit,produksi,35,Jawa Timur,16,2025,603717.83
+cabe_rawit,produksi,36,Banten,11,2018,5224.6
+cabe_rawit,produksi,36,Banten,11,2019,5019.4
+cabe_rawit,produksi,36,Banten,11,2020,5861.0
+cabe_rawit,produksi,36,Banten,11,2021,3993.26
+cabe_rawit,produksi,36,Banten,11,2022,3909.76
+cabe_rawit,produksi,36,Banten,11,2023,3226.92
+cabe_rawit,produksi,36,Banten,11,2024,2705.13
+cabe_rawit,produksi,36,Banten,11,2025,7621.34
+cabe_rawit,produksi,51,Bali,17,2018,31653.9
+cabe_rawit,produksi,51,Bali,17,2019,28655.9
+cabe_rawit,produksi,51,Bali,17,2020,35331.32
+cabe_rawit,produksi,51,Bali,17,2021,29174.92
+cabe_rawit,produksi,51,Bali,17,2022,28318.17
+cabe_rawit,produksi,51,Bali,17,2023,20523.05
+cabe_rawit,produksi,51,Bali,17,2024,23190.71
+cabe_rawit,produksi,51,Bali,17,2025,27280.98
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2018,210530.3
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2019,164772.6
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2020,98941.4
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2021,62538.86
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2022,50078.37
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2023,67963.09
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2024,94155.23
+cabe_rawit,produksi,52,Nusa Tenggara Barat,18,2025,90558.71
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2018,5247.4
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2019,8816.0
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2020,10467.9
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2021,9075.94
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2022,19881.22
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2023,9073.58
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2024,11289.12
+cabe_rawit,produksi,53,Nusa Tenggara Timur,19,2025,10943.71
+cabe_rawit,produksi,61,Kalimantan Barat,20,2018,4164.7
+cabe_rawit,produksi,61,Kalimantan Barat,20,2019,5730.6
+cabe_rawit,produksi,61,Kalimantan Barat,20,2020,6132.54
+cabe_rawit,produksi,61,Kalimantan Barat,20,2021,6331.79
+cabe_rawit,produksi,61,Kalimantan Barat,20,2022,6192.63
+cabe_rawit,produksi,61,Kalimantan Barat,20,2023,8278.3
+cabe_rawit,produksi,61,Kalimantan Barat,20,2024,9467.99
+cabe_rawit,produksi,61,Kalimantan Barat,20,2025,8419.01
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2018,3638.1
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2019,5864.48
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2020,6124.11
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2021,6961.43
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2022,5419.07
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2023,6968.69
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2024,3979.5
+cabe_rawit,produksi,62,Kalimantan Tengah,22,2025,5635.33
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2018,12670.6
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2019,13768.0
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2020,15615.78
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2021,11757.72
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2022,11763.63
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2023,13255.07
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2024,12575.37
+cabe_rawit,produksi,63,Kalimantan Selatan,21,2025,14259.26
+cabe_rawit,produksi,64,Kalimantan Timur,23,2018,6795.8
+cabe_rawit,produksi,64,Kalimantan Timur,23,2019,8029.3
+cabe_rawit,produksi,64,Kalimantan Timur,23,2020,9080.98
+cabe_rawit,produksi,64,Kalimantan Timur,23,2021,8367.13
+cabe_rawit,produksi,64,Kalimantan Timur,23,2022,7777.86
+cabe_rawit,produksi,64,Kalimantan Timur,23,2023,7470.45
+cabe_rawit,produksi,64,Kalimantan Timur,23,2024,6467.57
+cabe_rawit,produksi,64,Kalimantan Timur,23,2025,7235.81
+cabe_rawit,produksi,65,Kalimantan Utara,24,2018,3298.3
+cabe_rawit,produksi,65,Kalimantan Utara,24,2019,3821.1
+cabe_rawit,produksi,65,Kalimantan Utara,24,2020,3330.41
+cabe_rawit,produksi,65,Kalimantan Utara,24,2021,5818.88
+cabe_rawit,produksi,65,Kalimantan Utara,24,2022,5875.07
+cabe_rawit,produksi,65,Kalimantan Utara,24,2023,6371.21
+cabe_rawit,produksi,65,Kalimantan Utara,24,2024,6951.63
+cabe_rawit,produksi,65,Kalimantan Utara,24,2025,8517.78
+cabe_rawit,produksi,71,Sulawesi Utara,29,2018,16469.7
+cabe_rawit,produksi,71,Sulawesi Utara,29,2019,14760.2
+cabe_rawit,produksi,71,Sulawesi Utara,29,2020,22414.49
+cabe_rawit,produksi,71,Sulawesi Utara,29,2021,17370.63
+cabe_rawit,produksi,71,Sulawesi Utara,29,2022,19006.22
+cabe_rawit,produksi,71,Sulawesi Utara,29,2023,17978.41
+cabe_rawit,produksi,71,Sulawesi Utara,29,2024,13295.58
+cabe_rawit,produksi,71,Sulawesi Utara,29,2025,12666.96
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2018,26090.1
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2019,22631.6
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2020,25041.74
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2021,22198.53
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2022,25388.7
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2023,21552.15
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2024,22956.76
+cabe_rawit,produksi,72,Sulawesi Tengah,28,2025,16623.16
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2018,36568.5
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2019,26114.7
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2020,24051.58
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2021,26423.23
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2022,23761.44
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2023,28417.71
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2024,36457.13
+cabe_rawit,produksi,73,Sulawesi Selatan,26,2025,44240.87
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2018,4484.2
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2019,3668.6
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2020,3801.35
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2021,4286.7
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2022,3914.52
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2023,4528.96
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2024,3891.56
+cabe_rawit,produksi,74,Sulawesi Tenggara,27,2025,4205.84
+cabe_rawit,produksi,75,Gorontalo,25,2018,25694.6
+cabe_rawit,produksi,75,Gorontalo,25,2019,20579.8
+cabe_rawit,produksi,75,Gorontalo,25,2020,14729.22
+cabe_rawit,produksi,75,Gorontalo,25,2021,13031.76
+cabe_rawit,produksi,75,Gorontalo,25,2022,14805.48
+cabe_rawit,produksi,75,Gorontalo,25,2023,15522.55
+cabe_rawit,produksi,75,Gorontalo,25,2024,10372.04
+cabe_rawit,produksi,75,Gorontalo,25,2025,11039.74
+cabe_rawit,produksi,76,Sulawesi Barat,30,2018,2658.1
+cabe_rawit,produksi,76,Sulawesi Barat,30,2019,2663.0
+cabe_rawit,produksi,76,Sulawesi Barat,30,2020,1398.65
+cabe_rawit,produksi,76,Sulawesi Barat,30,2021,3335.74
+cabe_rawit,produksi,76,Sulawesi Barat,30,2022,3495.87
+cabe_rawit,produksi,76,Sulawesi Barat,30,2023,3709.93
+cabe_rawit,produksi,76,Sulawesi Barat,30,2024,3275.34
+cabe_rawit,produksi,76,Sulawesi Barat,30,2025,2814.92
+cabe_rawit,produksi,81,Maluku,31,2018,3732.3
+cabe_rawit,produksi,81,Maluku,31,2019,3440.4
+cabe_rawit,produksi,81,Maluku,31,2020,5027.25
+cabe_rawit,produksi,81,Maluku,31,2021,3596.23
+cabe_rawit,produksi,81,Maluku,31,2022,3846.54
+cabe_rawit,produksi,81,Maluku,31,2023,4530.74
+cabe_rawit,produksi,81,Maluku,31,2024,3940.32
+cabe_rawit,produksi,81,Maluku,31,2025,3021.66
+cabe_rawit,produksi,82,Maluku Utara,32,2018,1095.6
+cabe_rawit,produksi,82,Maluku Utara,32,2019,4649.7
+cabe_rawit,produksi,82,Maluku Utara,32,2020,4527.48
+cabe_rawit,produksi,82,Maluku Utara,32,2021,3732.51
+cabe_rawit,produksi,82,Maluku Utara,32,2022,2872.92
+cabe_rawit,produksi,82,Maluku Utara,32,2023,3717.4
+cabe_rawit,produksi,82,Maluku Utara,32,2024,4037.51
+cabe_rawit,produksi,82,Maluku Utara,32,2025,5695.98
+cabe_rawit,produksi,91,Papua Barat,34,2018,624.8
+cabe_rawit,produksi,91,Papua Barat,34,2019,3276.5
+cabe_rawit,produksi,91,Papua Barat,34,2020,2350.52
+cabe_rawit,produksi,91,Papua Barat,34,2021,3807.59
+cabe_rawit,produksi,91,Papua Barat,34,2022,4106.5
+cabe_rawit,produksi,91,Papua Barat,34,2023,3010.28
+cabe_rawit,produksi,91,Papua Barat,34,2024,1292.63
+cabe_rawit,produksi,91,Papua Barat,34,2025,393.25
+cabe_rawit,produksi,92,Papua Barat Daya,34,2018,0.0
+cabe_rawit,produksi,92,Papua Barat Daya,34,2019,0.0
+cabe_rawit,produksi,92,Papua Barat Daya,34,2020,0.0
+cabe_rawit,produksi,92,Papua Barat Daya,34,2021,0.0
+cabe_rawit,produksi,92,Papua Barat Daya,34,2022,0.0
+cabe_rawit,produksi,92,Papua Barat Daya,34,2023,0.0
+cabe_rawit,produksi,92,Papua Barat Daya,34,2024,3324.98
+cabe_rawit,produksi,92,Papua Barat Daya,34,2025,3021.56
+cabe_rawit,produksi,94,Papua,33,2018,6943.1
+cabe_rawit,produksi,94,Papua,33,2019,4388.27
+cabe_rawit,produksi,94,Papua,33,2020,3436.42
+cabe_rawit,produksi,94,Papua,33,2021,5054.05
+cabe_rawit,produksi,94,Papua,33,2022,4335.49
+cabe_rawit,produksi,94,Papua,33,2023,4555.85
+cabe_rawit,produksi,94,Papua,33,2024,1418.44
+cabe_rawit,produksi,94,Papua,33,2025,144.2
+cabe_rawit,produksi,95,Papua Selatan,33,2018,0.0
+cabe_rawit,produksi,95,Papua Selatan,33,2019,0.0
+cabe_rawit,produksi,95,Papua Selatan,33,2020,0.0
+cabe_rawit,produksi,95,Papua Selatan,33,2021,0.0
+cabe_rawit,produksi,95,Papua Selatan,33,2022,0.0
+cabe_rawit,produksi,95,Papua Selatan,33,2023,0.0
+cabe_rawit,produksi,95,Papua Selatan,33,2024,1560.74
+cabe_rawit,produksi,95,Papua Selatan,33,2025,1528.76
+cabe_rawit,produksi,96,Papua Tengah,33,2018,0.0
+cabe_rawit,produksi,96,Papua Tengah,33,2019,0.0
+cabe_rawit,produksi,96,Papua Tengah,33,2020,0.0
+cabe_rawit,produksi,96,Papua Tengah,33,2021,0.0
+cabe_rawit,produksi,96,Papua Tengah,33,2022,0.0
+cabe_rawit,produksi,96,Papua Tengah,33,2023,0.0
+cabe_rawit,produksi,96,Papua Tengah,33,2024,4023.34
+cabe_rawit,produksi,96,Papua Tengah,33,2025,2640.7
+cabe_rawit,produksi,97,Papua Pegunungan,33,2018,0.0
+cabe_rawit,produksi,97,Papua Pegunungan,33,2019,0.0
+cabe_rawit,produksi,97,Papua Pegunungan,33,2020,0.0
+cabe_rawit,produksi,97,Papua Pegunungan,33,2021,0.0
+cabe_rawit,produksi,97,Papua Pegunungan,33,2022,0.0
+cabe_rawit,produksi,97,Papua Pegunungan,33,2023,0.0
+cabe_rawit,produksi,97,Papua Pegunungan,33,2024,0.0
+cabe_rawit,produksi,97,Papua Pegunungan,33,2025,25.36
+cabe_rawit,luas_panen,11,Aceh,1,2018,3951.0
+cabe_rawit,luas_panen,11,Aceh,1,2019,4046.0
+cabe_rawit,luas_panen,11,Aceh,1,2020,4497.69
+cabe_rawit,luas_panen,11,Aceh,1,2021,4092.34
+cabe_rawit,luas_panen,11,Aceh,1,2022,4639.07
+cabe_rawit,luas_panen,11,Aceh,1,2023,5368.32
+cabe_rawit,luas_panen,11,Aceh,1,2024,5393.64
+cabe_rawit,luas_panen,11,Aceh,1,2025,7165.87
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2018,4811.0
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2019,5067.92
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2020,6938.48
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2021,6169.4
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2022,6484.23
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2023,6714.73
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2024,6873.02
+cabe_rawit,luas_panen,12,Sumatera Utara,2,2025,9886.21
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2018,2808.0
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2019,2952.0
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2020,3035.6
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2021,3031.34
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2022,3248.34
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2023,3145.22
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2024,3169.38
+cabe_rawit,luas_panen,13,Sumatera Barat,3,2025,3526.2
+cabe_rawit,luas_panen,14,Riau,4,2018,1626.0
+cabe_rawit,luas_panen,14,Riau,4,2019,1324.3
+cabe_rawit,luas_panen,14,Riau,4,2020,1381.62
+cabe_rawit,luas_panen,14,Riau,4,2021,1128.32
+cabe_rawit,luas_panen,14,Riau,4,2022,1188.04
+cabe_rawit,luas_panen,14,Riau,4,2023,1158.62
+cabe_rawit,luas_panen,14,Riau,4,2024,1060.57
+cabe_rawit,luas_panen,14,Riau,4,2025,1039.26
+cabe_rawit,luas_panen,15,Jambi,6,2018,1621.0
+cabe_rawit,luas_panen,15,Jambi,6,2019,1442.0
+cabe_rawit,luas_panen,15,Jambi,6,2020,1579.66
+cabe_rawit,luas_panen,15,Jambi,6,2021,1334.73
+cabe_rawit,luas_panen,15,Jambi,6,2022,1668.35
+cabe_rawit,luas_panen,15,Jambi,6,2023,1740.95
+cabe_rawit,luas_panen,15,Jambi,6,2024,1447.56
+cabe_rawit,luas_panen,15,Jambi,6,2025,1363.24
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2018,1576.0
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2019,1289.0
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2020,1635.0
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2021,1862.93
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2022,1763.68
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2023,1781.6
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2024,1852.76
+cabe_rawit,luas_panen,16,Sumatera Selatan,8,2025,1827.18
+cabe_rawit,luas_panen,17,Bengkulu,7,2018,2297.0
+cabe_rawit,luas_panen,17,Bengkulu,7,2019,2461.0
+cabe_rawit,luas_panen,17,Bengkulu,7,2020,2686.85
+cabe_rawit,luas_panen,17,Bengkulu,7,2021,2889.79
+cabe_rawit,luas_panen,17,Bengkulu,7,2022,3048.02
+cabe_rawit,luas_panen,17,Bengkulu,7,2023,3048.86
+cabe_rawit,luas_panen,17,Bengkulu,7,2024,3032.65
+cabe_rawit,luas_panen,17,Bengkulu,7,2025,1570.38
+cabe_rawit,luas_panen,18,Lampung,10,2018,2265.0
+cabe_rawit,luas_panen,18,Lampung,10,2019,2010.0
+cabe_rawit,luas_panen,18,Lampung,10,2020,1907.2
+cabe_rawit,luas_panen,18,Lampung,10,2021,1924.55
+cabe_rawit,luas_panen,18,Lampung,10,2022,2008.92
+cabe_rawit,luas_panen,18,Lampung,10,2023,1992.25
+cabe_rawit,luas_panen,18,Lampung,10,2024,2156.07
+cabe_rawit,luas_panen,18,Lampung,10,2025,2267.39
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2018,522.0
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2019,453.0
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2020,503.92
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2021,508.37
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2022,528.53
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2023,675.78
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2024,651.68
+cabe_rawit,luas_panen,19,Kepulauan Bangka Belitung,9,2025,715.73
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2018,359.0
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2019,295.25
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2020,309.18
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2021,246.29
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2022,222.39
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2023,242.81
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2024,202.06
+cabe_rawit,luas_panen,21,Kepulauan Riau,5,2025,212.42
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2018,2.0
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2019,0.0
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2020,0.0
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2021,0.5
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2022,0.12
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2023,2.16
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2024,11.48
+cabe_rawit,luas_panen,31,Daerah Khusus Ibukota Jakarta,13,2025,17.94
+cabe_rawit,luas_panen,32,Jawa Barat,12,2018,11038.0
+cabe_rawit,luas_panen,32,Jawa Barat,12,2019,10555.0
+cabe_rawit,luas_panen,32,Jawa Barat,12,2020,9927.9
+cabe_rawit,luas_panen,32,Jawa Barat,12,2021,10627.94
+cabe_rawit,luas_panen,32,Jawa Barat,12,2022,11446.51
+cabe_rawit,luas_panen,32,Jawa Barat,12,2023,11892.65
+cabe_rawit,luas_panen,32,Jawa Barat,12,2024,13479.57
+cabe_rawit,luas_panen,32,Jawa Barat,12,2025,13718.08
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2018,24185.0
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2019,23892.0
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2020,22104.24
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2021,21083.05
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2022,24456.17
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2023,27383.99
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2024,26759.59
+cabe_rawit,luas_panen,33,Jawa Tengah,14,2025,30270.65
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2018,1375.0
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2019,1540.0
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2020,2006.15
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2021,1991.39
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2022,2086.2
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2023,2243.91
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2024,2379.89
+cabe_rawit,luas_panen,34,Daerah Istimewa Yogyakarta,15,2025,2329.38
+cabe_rawit,luas_panen,35,Jawa Timur,16,2018,70493.0
+cabe_rawit,luas_panen,35,Jawa Timur,16,2019,67767.0
+cabe_rawit,luas_panen,35,Jawa Timur,16,2020,78765.35
+cabe_rawit,luas_panen,35,Jawa Timur,16,2021,78955.94
+cabe_rawit,luas_panen,35,Jawa Timur,16,2022,80607.41
+cabe_rawit,luas_panen,35,Jawa Timur,16,2023,80006.07
+cabe_rawit,luas_panen,35,Jawa Timur,16,2024,78667.77
+cabe_rawit,luas_panen,35,Jawa Timur,16,2025,85759.0
+cabe_rawit,luas_panen,36,Banten,11,2018,583.0
+cabe_rawit,luas_panen,36,Banten,11,2019,544.0
+cabe_rawit,luas_panen,36,Banten,11,2020,528.0
+cabe_rawit,luas_panen,36,Banten,11,2021,456.22
+cabe_rawit,luas_panen,36,Banten,11,2022,515.07
+cabe_rawit,luas_panen,36,Banten,11,2023,370.61
+cabe_rawit,luas_panen,36,Banten,11,2024,349.67
+cabe_rawit,luas_panen,36,Banten,11,2025,830.19
+cabe_rawit,luas_panen,51,Bali,17,2018,3871.0
+cabe_rawit,luas_panen,51,Bali,17,2019,3704.0
+cabe_rawit,luas_panen,51,Bali,17,2020,3746.28
+cabe_rawit,luas_panen,51,Bali,17,2021,3499.43
+cabe_rawit,luas_panen,51,Bali,17,2022,3559.04
+cabe_rawit,luas_panen,51,Bali,17,2023,3011.59
+cabe_rawit,luas_panen,51,Bali,17,2024,2417.37
+cabe_rawit,luas_panen,51,Bali,17,2025,2386.96
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2018,8297.0
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2019,7986.0
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2020,8679.5
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2021,8069.69
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2022,6495.28
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2023,7573.41
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2024,8330.63
+cabe_rawit,luas_panen,52,Nusa Tenggara Barat,18,2025,7767.31
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2018,1492.0
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2019,1712.0
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2020,1643.07
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2021,1392.05
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2022,3026.92
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2023,1431.07
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2024,1715.44
+cabe_rawit,luas_panen,53,Nusa Tenggara Timur,19,2025,1400.79
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2018,2099.0
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2019,2077.0
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2020,2374.3
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2021,2346.54
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2022,2308.82
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2023,2838.22
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2024,2766.31
+cabe_rawit,luas_panen,61,Kalimantan Barat,20,2025,2327.27
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2018,1172.0
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2019,1211.68
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2020,1145.31
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2021,979.5
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2022,848.72
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2023,915.36
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2024,827.65
+cabe_rawit,luas_panen,62,Kalimantan Tengah,22,2025,901.74
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2018,2462.0
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2019,2428.0
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2020,2328.5
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2021,2069.65
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2022,2111.42
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2023,2167.34
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2024,2347.21
+cabe_rawit,luas_panen,63,Kalimantan Selatan,21,2025,2316.81
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2018,1328.0
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2019,1177.0
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2020,1476.72
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2021,1455.5
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2022,1216.0
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2023,1314.37
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2024,1218.7
+cabe_rawit,luas_panen,64,Kalimantan Timur,23,2025,1152.87
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2018,563.0
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2019,536.0
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2020,510.51
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2021,521.15
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2022,468.95
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2023,444.47
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2024,434.4
+cabe_rawit,luas_panen,65,Kalimantan Utara,24,2025,426.61
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2018,4160.0
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2019,3375.0
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2020,4075.2
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2021,3220.95
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2022,4443.49
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2023,4429.48
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2024,3826.72
+cabe_rawit,luas_panen,71,Sulawesi Utara,29,2025,3276.12
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2018,3985.0
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2019,3664.0
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2020,4113.1
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2021,4126.29
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2022,3763.97
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2023,3335.05
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2024,2714.93
+cabe_rawit,luas_panen,72,Sulawesi Tengah,28,2025,2718.24
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2018,5743.0
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2019,5146.0
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2020,5229.2
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2021,4781.7
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2022,5265.12
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2023,5726.09
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2024,6333.82
+cabe_rawit,luas_panen,73,Sulawesi Selatan,26,2025,6601.77
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2018,1400.0
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2019,1320.0
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2020,1439.15
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2021,1265.66
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2022,1420.12
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2023,1592.79
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2024,1349.75
+cabe_rawit,luas_panen,74,Sulawesi Tenggara,27,2025,1140.4
+cabe_rawit,luas_panen,75,Gorontalo,25,2018,2785.0
+cabe_rawit,luas_panen,75,Gorontalo,25,2019,2610.0
+cabe_rawit,luas_panen,75,Gorontalo,25,2020,1997.0
+cabe_rawit,luas_panen,75,Gorontalo,25,2021,2142.0
+cabe_rawit,luas_panen,75,Gorontalo,25,2022,2689.35
+cabe_rawit,luas_panen,75,Gorontalo,25,2023,2458.08
+cabe_rawit,luas_panen,75,Gorontalo,25,2024,2094.9
+cabe_rawit,luas_panen,75,Gorontalo,25,2025,1784.95
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2018,686.0
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2019,600.0
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2020,1128.0
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2021,4304.5
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2022,4654.75
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2023,4902.9
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2024,4312.26
+cabe_rawit,luas_panen,76,Sulawesi Barat,30,2025,2397.91
+cabe_rawit,luas_panen,81,Maluku,31,2018,878.0
+cabe_rawit,luas_panen,81,Maluku,31,2019,933.0
+cabe_rawit,luas_panen,81,Maluku,31,2020,893.5
+cabe_rawit,luas_panen,81,Maluku,31,2021,754.98
+cabe_rawit,luas_panen,81,Maluku,31,2022,820.29
+cabe_rawit,luas_panen,81,Maluku,31,2023,1088.78
+cabe_rawit,luas_panen,81,Maluku,31,2024,1140.28
+cabe_rawit,luas_panen,81,Maluku,31,2025,936.92
+cabe_rawit,luas_panen,82,Maluku Utara,32,2018,801.0
+cabe_rawit,luas_panen,82,Maluku Utara,32,2019,1119.0
+cabe_rawit,luas_panen,82,Maluku Utara,32,2020,1194.0
+cabe_rawit,luas_panen,82,Maluku Utara,32,2021,712.69
+cabe_rawit,luas_panen,82,Maluku Utara,32,2022,1045.0
+cabe_rawit,luas_panen,82,Maluku Utara,32,2023,911.78
+cabe_rawit,luas_panen,82,Maluku Utara,32,2024,853.9
+cabe_rawit,luas_panen,82,Maluku Utara,32,2025,1125.72
+cabe_rawit,luas_panen,91,Papua Barat,34,2018,588.0
+cabe_rawit,luas_panen,91,Papua Barat,34,2019,885.0
+cabe_rawit,luas_panen,91,Papua Barat,34,2020,676.82
+cabe_rawit,luas_panen,91,Papua Barat,34,2021,720.9
+cabe_rawit,luas_panen,91,Papua Barat,34,2022,675.04
+cabe_rawit,luas_panen,91,Papua Barat,34,2023,578.02
+cabe_rawit,luas_panen,91,Papua Barat,34,2024,328.88
+cabe_rawit,luas_panen,91,Papua Barat,34,2025,257.84
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2018,0.0
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2019,0.0
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2020,0.0
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2021,0.0
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2022,0.0
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2023,0.0
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2024,313.83
+cabe_rawit,luas_panen,92,Papua Barat Daya,34,2025,277.32
+cabe_rawit,luas_panen,94,Papua,33,2018,1025.0
+cabe_rawit,luas_panen,94,Papua,33,2019,821.2
+cabe_rawit,luas_panen,94,Papua,33,2020,586.15
+cabe_rawit,luas_panen,94,Papua,33,2021,639.4
+cabe_rawit,luas_panen,94,Papua,33,2022,544.09
+cabe_rawit,luas_panen,94,Papua,33,2023,936.02
+cabe_rawit,luas_panen,94,Papua,33,2024,434.14
+cabe_rawit,luas_panen,94,Papua,33,2025,91.6
+cabe_rawit,luas_panen,95,Papua Selatan,33,2018,0.0
+cabe_rawit,luas_panen,95,Papua Selatan,33,2019,0.0
+cabe_rawit,luas_panen,95,Papua Selatan,33,2020,0.0
+cabe_rawit,luas_panen,95,Papua Selatan,33,2021,0.0
+cabe_rawit,luas_panen,95,Papua Selatan,33,2022,0.0
+cabe_rawit,luas_panen,95,Papua Selatan,33,2023,0.0
+cabe_rawit,luas_panen,95,Papua Selatan,33,2024,198.11
+cabe_rawit,luas_panen,95,Papua Selatan,33,2025,134.57
+cabe_rawit,luas_panen,96,Papua Tengah,33,2018,0.0
+cabe_rawit,luas_panen,96,Papua Tengah,33,2019,0.0
+cabe_rawit,luas_panen,96,Papua Tengah,33,2020,0.0
+cabe_rawit,luas_panen,96,Papua Tengah,33,2021,0.0
+cabe_rawit,luas_panen,96,Papua Tengah,33,2022,0.0
+cabe_rawit,luas_panen,96,Papua Tengah,33,2023,0.0
+cabe_rawit,luas_panen,96,Papua Tengah,33,2024,437.7
+cabe_rawit,luas_panen,96,Papua Tengah,33,2025,456.5
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2018,0.0
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2019,0.0
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2020,0.0
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2021,0.0
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2022,0.0
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2023,0.0
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2024,0.0
+cabe_rawit,luas_panen,97,Papua Pegunungan,33,2025,91.0
