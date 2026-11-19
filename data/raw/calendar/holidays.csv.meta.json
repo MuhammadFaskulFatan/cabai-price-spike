@@ -1,0 +1,11 @@
+{
+  "source": "calendar_manual",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "basis": "SKB 3 Menteri; 2026 dicek ke setneg.go.id, 2018-2025 belum dicek ulang"
+  },
+  "n_rows": 45,
+  "n_bytes": 922,
+  "sha256": "c6e9a542f65e28126c03098a75231c999b684c1b81723951d0f1f9163fce01cc",
+  "notes": "Hanya libur nasional; cuti bersama tidak dimasukkan."
+}
