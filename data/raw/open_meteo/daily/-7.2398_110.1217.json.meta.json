@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.2397576",
+      "longitude": "110.1216648",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Temanggung"
+  },
+  "n_rows": 13102,
+  "n_bytes": 280445,
+  "sha256": "34be27090aa8c3d65ad87c684286d6b3f08eb2b342a79a1cde45871def4291ac"
+}

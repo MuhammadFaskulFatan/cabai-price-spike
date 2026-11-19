@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-0.468996",
+      "longitude": "100.6361603",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Tanah Datar"
+  },
+  "n_rows": 13102,
+  "n_bytes": 278467,
+  "sha256": "fd2a8057a6b63acd47cc2297b3adc724c320e3606fe8b499f990a9334af04b0b"
+}

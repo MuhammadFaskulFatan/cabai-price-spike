@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-0.93103",
+      "longitude": "100.804328",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Solok"
+  },
+  "n_rows": 13102,
+  "n_bytes": 281189,
+  "sha256": "77ecbeb891cd8a07c5b6240dab2499afa5014c5783aff6eb9e7ed2a738e8b206"
+}

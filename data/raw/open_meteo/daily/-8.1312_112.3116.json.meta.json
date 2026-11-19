@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-8.1311983",
+      "longitude": "112.3115572",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Blitar"
+  },
+  "n_rows": 13102,
+  "n_bytes": 278080,
+  "sha256": "a16e4a22d0cd40c5fbbc0412ec1f0b89cf7246ccee0c4e9944935e2e429448d2"
+}

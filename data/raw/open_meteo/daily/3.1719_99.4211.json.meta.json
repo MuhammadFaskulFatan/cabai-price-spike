@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "3.1718937",
+      "longitude": "99.4210577",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Batubara"
+  },
+  "n_rows": 13102,
+  "n_bytes": 279831,
+  "sha256": "94af207b312dec3439510ad5fc6870fb16c64814248857f372e6ba941fc5726c"
+}

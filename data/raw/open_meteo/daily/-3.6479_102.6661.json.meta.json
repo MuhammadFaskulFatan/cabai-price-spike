@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-3.6479363",
+      "longitude": "102.6661393",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Kepahiang"
+  },
+  "n_rows": 13102,
+  "n_bytes": 279026,
+  "sha256": "af6467ca9e7d3132dc299c5d8a5f6b785f4afa66b1839f2b51a8564995b4f6ca"
+}

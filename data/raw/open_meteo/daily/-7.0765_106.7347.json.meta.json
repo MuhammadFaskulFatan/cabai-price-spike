@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.0764508",
+      "longitude": "106.7346608",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Sukabumi"
+  },
+  "n_rows": 13102,
+  "n_bytes": 279799,
+  "sha256": "fd217c048dd62d429bd7e732b88fe93eb79addc15e52ba64baf1c86b41e7de9a"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-0.2547205",
+      "longitude": "100.1700311",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Agam"
+  },
+  "n_rows": 13102,
+  "n_bytes": 281333,
+  "sha256": "f4ebc223245e0a20bbff57d64d10639549240a745f6dcf7fcd3cf45b9eaf8064"
+}

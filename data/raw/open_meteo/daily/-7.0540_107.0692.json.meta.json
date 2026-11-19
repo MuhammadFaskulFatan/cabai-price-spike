@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.0539936",
+      "longitude": "107.0692399",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Cianjur"
+  },
+  "n_rows": 13102,
+  "n_bytes": 279314,
+  "sha256": "59fad65af599fffdd99bbd39af1337ba8f6dbed6d65b1ec72afcdd37fc2f032a"
+}

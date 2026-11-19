@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-6.9596385",
+      "longitude": "111.8932266",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Tuban"
+  },
+  "n_rows": 13102,
+  "n_bytes": 278510,
+  "sha256": "d525c628f5258d566bbf4d69ad98ba172b3fadcc1da9931e301df2b973c57fe5"
+}

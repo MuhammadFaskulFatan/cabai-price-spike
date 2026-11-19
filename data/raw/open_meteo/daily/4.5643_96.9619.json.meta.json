@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "4.564267",
+      "longitude": "96.9618926",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-14",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Aceh Tengah"
+  },
+  "n_rows": 13102,
+  "n_bytes": 278578,
+  "sha256": "d44a78fbefe47039908cf063de34d863e0502aef53c9d8a14a9d71d053722b5a"
+}
