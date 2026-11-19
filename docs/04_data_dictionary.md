@@ -140,7 +140,7 @@ PK: `province_id`, `month_start`, `commodity_group`. Sumber: Open-Meteo, diagreg
 | `rain_total_mm` | float | Jumlah hujan bulanan | - |
 | `rain_anomaly` | float | Selisih terhadap normal bulan kalender | Normal = rata-rata 1991-2020 (WMO climate normal, D-19) |
 | `rel_humidity_mean` | float | Rata-rata kelembapan relatif | - |
-| `weather_status` | string | `observed` atau `not_applicable` | `not_applicable` untuk provinsi × komoditas tanpa titik sentra (D-25); nilai cuaca `NULL` dan bukan missing |
+| `weather_status` | string | `observed` atau `not_applicable` | `not_applicable` untuk provinsi × komoditas tanpa titik sentra (D-25); nilai cuaca `NULL` dan bukan missing. Provinsi bertitik: 13 untuk cabai merah, 15 untuk cabai rawit (17 gabungan), mencakup 93,9% (cabai merah) dan 92,4% (cabai rawit) produksi nasional rata-rata BDSP 2019-2025; gabungan 17 provinsi: cabe besar 95,0%, cabe keriting 96,1%, cabe rawit 93,9% |
 | `source_extract_date` | date | Tanggal extraction | - |
 
 Kategori kering/normal/basah untuk H1 diturunkan dari `rain_anomaly` saat analisis, bukan disimpan di sini.
