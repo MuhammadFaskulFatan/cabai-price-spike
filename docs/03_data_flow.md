@@ -37,8 +37,8 @@ flowchart TD
 
     subgraph TRANSFORM["pipeline/transform"]
         T1["aggregate_monthly.py<br/>harian ke bulanan, min 10 hari kerja"]
-        T2["impute_price.py<br/>interpolasi log / Kalman"]
-        T3["disaggregate_production.py<br/>Denton, profil musiman buletin"]
+        T2["impute_price.py<br/>interpolasi linear pada log price"]
+        T3["production.py<br/>produksi tahunan + flag"]
         T4["weather_features.py<br/>production-weighted per provinsi"]
         T5["calendar_features.py<br/>ONI dan hari besar ke bulanan"]
         T6["integrate.py<br/>gabung ke provinsi x bulan"]
@@ -96,8 +96,8 @@ flowchart TD
 | `extract/calendar_holidays.py` | Daftar hari besar 2018-2026 yang ditulis di kode | `data/raw/calendar/` | Disusun manual, dicatat sumber tanggalnya |
 | `audit/completeness.py` | `data/raw/` | Laporan di `pipeline/audit/` | Per sumber × provinsi × bulan, termasuk tabel heatmap missing |
 | `transform/aggregate_monthly.py` | PIHPS harian | Harga bulanan + `n_days_observed` | Rata-rata hari tersedia (survei Senin-Jumat); kurang dari 10 hari kerja = missing. Provinsi dari sumber 38-provinsi dipetakan ke 34 provinsi induk (D-17) |
-| `transform/impute_price.py` | Harga bulanan | Harga bulanan dengan `is_imputed`, `impute_method` | Gap 1-2 bulan: linear interpolation pada log price. Gap lebih panjang di tengah: Kalman smoothing. Awal series atau hampir kosong: tidak di-impute |
-| `transform/disaggregate_production.py` | BDSP tahunan + tabel prognosa buletin (profil musiman) | Produksi bulanan per provinsi (deskriptif) | Denton; total 12 bulan = angka tahunan; Jan-Mar realisasi (~15 bulan) sebagai hold-out MAPE; 2026 tidak di-extrapolate (D-26) |
+| `transform/impute_price.py` | Harga bulanan | Harga bulanan dengan `is_imputed`, `impute_method`, `tier` | Gap tengah 1-6 bulan: linear interpolation pada log price (Kalman dibatalkan, D-43). Gap > 6 bulan, gap awal/akhir, dan seri excluded: tidak di-impute |
+| `transform/production.py` | BDSP tahunan + tabel prognosa buletin | Produksi tahunan per provinsi (flag preliminary, outlier, suspect_copy) dan bulanan nasional (realisasi) | Tanpa disagregasi bulanan (Denton dibatalkan, D-42); 2026 tidak di-extrapolate |
 | `transform/weather_features.py` | Harian Open-Meteo + bobot sentra | Cuaca bulanan per provinsi × komoditas | Production-weighted average titik kabupaten sentra. Provinsi × komoditas tanpa titik sentra diberi `weather_status = not_applicable` dengan nilai `NULL`, tidak di-impute (D-25) |
 | `transform/calendar_features.py` | ONI dan kalender | ONI bulanan, jumlah hari libur, jarak ke Idulfitri | Season dipetakan ke bulan tengah (DJF = Januari) |
 | `transform/integrate.py` | Semua tabel di `data/interim/` | `core_province_month` | Grain provinsi × bulan × komoditas |
@@ -106,7 +106,7 @@ flowchart TD
 | `transform/calendar_features.py` | Kalender, cuti bersama, ONI | `dim_month`, `fact_oni_monthly` | Lihat D-38, D-41 |
 | `transform/report.py` | Semua hasil transform | `pipeline/transform/reports/transform_report.md` | Tier, imputasi, sel kosong beralasan, hold-out |
 | `validate/holdout_imputation.py` | Observed value yang sengaja di-mask | MAPE per metode | Dipanggil dua kali: sebagai alat pemilih metode di fase transform, dan sebagai laporan resmi di fase validate |
-| `validate/holdout_production.py` | Realisasi SPH Jan-Mar (2022-2025) vs Denton, flat, profile | MAPE nasional | Leave-one-year-out pada pola musiman (D-26) |
+| `validate/holdout_production.py` | Realisasi SPH Jan-Mar (2022-2025) vs Denton, flat, profile | MAPE nasional | Dokumentasi keputusan D-42; tidak dijalankan oleh `pipeline.run` |
 | `validate/reconcile_annual.py` | Core dataset + BDSP | Selisih per provinsi × tahun | Total 12 bulan harus sama dengan angka tahunan |
 | `validate/crosscheck_pihps_monthly.py` | Harga bulanan hasil hitung sendiri + angka bulanan PIHPS (`tipe_laporan=3`) | Selisih per provinsi × bulan | Cross-check saja; angka PIHPS bulanan tidak dipakai mengisi nilai (D-18) |
 | `validate/spot_check.py` | Sampel acak dari core dataset | Perbandingan dengan sumber asli | Seed acak dicatat supaya bisa diulang |
@@ -134,13 +134,13 @@ Variabel yang dipakai untuk imputation tidak boleh variabel yang nanti diuji hub
 
 | Variabel yang di-impute | Boleh memakai | Dilarang memakai | Alasan |
 | --- | --- | --- | --- |
-| Harga produsen | Deret harga produsen itu sendiri (interpolasi, Kalman dengan trend + seasonal) | Harga pedagang besar, harga eceran, cuaca, produksi | H2 menguji transmisi antar level harga |
+| Harga produsen | Deret harga produsen itu sendiri (linear interpolation pada log price) | Harga pedagang besar, harga eceran, cuaca, produksi | H2 menguji transmisi antar level harga |
 | Harga pedagang besar | Deret itu sendiri | Harga produsen, harga eceran, cuaca, produksi | H2, H3 |
 | Harga eceran | Deret itu sendiri | Harga produsen, harga pedagang besar, cuaca, produksi | H2, H3, H4 |
-| Produksi bulanan provinsi | Produksi tahunan BDSP, profil musiman buletin | Harga, cuaca | Produksi bulanan hanya deskriptif (D-26); H5 diuji di grain tahunan memakai BDSP langsung |
+| Produksi | Tidak di-impute; core memakai angka tahunan BDSP (D-42) | - | H5 diuji di grain tahunan memakai BDSP langsung |
 | Cuaca, ONI, kalender | Tidak di-impute | - | Variabel tanpa observed data tidak diisi |
 
-Satu catatan: profil musiman dari tabel prognosa buletin menurun ke tiap provinsi. Asumsi ini sudah tercatat di Project Charter (pola musiman provinsi mirip pola nasional). Karena hanya Januari-Maret yang berstatus realisasi, profil musiman Juli-Desember berasal dari rata-rata tahun sebelumnya, bukan observasi bulanan (D-26).
+Produksi bulanan per provinsi tidak dibuat (D-42), sehingga tidak ada lagi asumsi pola musiman provinsi mirip pola nasional. Hold-out Denton yang mendasari keputusan itu terdokumentasi di `pipeline/validate/reports/holdout_production.md`.
 
 ## 5. Urutan fase dan hold-out validation
 

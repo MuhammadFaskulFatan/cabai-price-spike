@@ -34,6 +34,20 @@ IDULADHA = {
 }
 FIRST_YEAR, LAST_YEAR = 2018, 2026
 
+# source_level tanggal libur Idulfitri/Iduladha: official = terlihat di halaman situs pemerintah (menpan, kemenag,
+# kemnaker, setneg); selain itu secondary (cocok dengan timeanddate.com). Tahun Baru dan Natal bertanggal tetap
+# (Keppres hari libur), jadi official. Dicek 19 Nov 2026 (D-38).
+OFFICIAL_CONFIRMED = {
+    ("idulfitri", 2019), ("idulfitri", 2021), ("idulfitri", 2022), ("idulfitri", 2023), ("idulfitri", 2024), ("idulfitri", 2026),
+    ("iduladha", 2022), ("iduladha", 2023), ("iduladha", 2024), ("iduladha", 2026),
+}
+
+
+def holiday_source_level(holiday, year):
+    if holiday in ("tahun_baru", "natal") or (holiday, year) in OFFICIAL_CONFIRMED:
+        return "official"
+    return "secondary"
+
 # cuti bersama pasca-revisi. verification: official = tercantum di halaman situs pemerintah (setneg, menpan,
 # kemenag, kemnaker); secondary = hanya dari timeanddate.com. Dicek 19 Nov 2026.
 CUTI_BERSAMA = {

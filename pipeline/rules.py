@@ -7,9 +7,9 @@ import numpy as np
 
 MIN_VALID_DAYS = 10  # hari kerja terisi minimal agar rata-rata bulanan dianggap valid
 
-# gap di tengah series (dalam bulan)
-LINEAR_MAX_GAP = 2  # 1-2 bulan: linear interpolation pada log price
-MAX_FILL_GAP = 6  # 3-6 bulan: Kalman smoothing; lebih dari 6 tetap NULL tanpa pengecualian
+# gap di tengah series (dalam bulan): 1-6 bulan linear interpolation pada log price, lebih dari 6 tetap NULL.
+# Kalman dibatalkan (D-43): di hold-out tidak lebih akurat dari baseline linear, jadi baseline yang dipakai.
+MAX_FILL_GAP = 6
 
 # tier seri harga, dihitung pada Jan 2019 - Okt 2026
 TIER_MAIN_MIN_SHARE = 0.80  # bulan valid minimal, dan gap tengah terpanjang <= MAX_FILL_GAP
@@ -31,23 +31,21 @@ def assign_tier(valid_share, longest_interior_gap):
 def gap_profile(valid):
     """Profil gap satu seri (array boolean bulan valid pada periode inti).
 
-    leading/trailing tidak pernah di-impute. Gap tengah: 1-2 bulan linear, 3-6 Kalman, lebih dari 6 tetap NULL.
+    leading/trailing tidak pernah di-impute. Gap tengah 1-6 bulan linear, lebih dari 6 tetap NULL.
     """
     valid = np.asarray(valid, dtype=bool)
     size = len(valid)
     positions = np.flatnonzero(valid)
     if positions.size == 0:
-        return {"leading_gap": size, "trailing_gap": 0, "linear_gaps": 0, "kalman_gaps": 0, "null_gaps": 0,
-                "longest_interior_gap": 0, "months_linear_log": 0, "months_kalman": 0, "months_left_null": 0}
+        return {"leading_gap": size, "trailing_gap": 0, "filled_gaps": 0, "null_gaps": 0,
+                "longest_interior_gap": 0, "months_linear_log": 0, "months_left_null": 0}
     interior = [int(after - before - 1) for before, after in zip(positions[:-1], positions[1:]) if after - before > 1]
     return {
         "leading_gap": int(positions[0]),
         "trailing_gap": int(size - 1 - positions[-1]),
-        "linear_gaps": sum(1 for gap in interior if gap <= LINEAR_MAX_GAP),
-        "kalman_gaps": sum(1 for gap in interior if LINEAR_MAX_GAP < gap <= MAX_FILL_GAP),
+        "filled_gaps": sum(1 for gap in interior if gap <= MAX_FILL_GAP),
         "null_gaps": sum(1 for gap in interior if gap > MAX_FILL_GAP),
         "longest_interior_gap": max(interior, default=0),
-        "months_linear_log": sum(gap for gap in interior if gap <= LINEAR_MAX_GAP),
-        "months_kalman": sum(gap for gap in interior if LINEAR_MAX_GAP < gap <= MAX_FILL_GAP),
+        "months_linear_log": sum(gap for gap in interior if gap <= MAX_FILL_GAP),
         "months_left_null": sum(gap for gap in interior if gap > MAX_FILL_GAP),
     }

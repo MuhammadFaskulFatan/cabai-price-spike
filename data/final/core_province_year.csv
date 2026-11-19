@@ -99,8 +99,8 @@ province_id,year,commodity_group,harvested_area_ha,production_ton,is_preliminary
 7,2019,cabai_merah,6489.0,37811.8,False,False,False,26013.4963,12,2,main,True
 7,2020,cabai_merah,6509.7,39637.74,False,False,False,20408.875,12,0,main,True
 7,2021,cabai_merah,6878.99,48777.9,False,False,False,24333.1594,12,0,main,True
-7,2022,cabai_merah,6817.94,58769.27,False,False,False,36968.6175,12,1,main,True
-7,2023,cabai_merah,6380.47,55875.5,False,False,False,28518.0152,12,2,main,True
+7,2022,cabai_merah,6817.94,58769.27,False,False,False,36717.4793,12,1,main,True
+7,2023,cabai_merah,6380.47,55875.5,False,False,False,28391.7466,12,2,main,True
 7,2024,cabai_merah,5396.25,46576.49,False,False,False,35652.9735,12,2,main,True
 7,2025,cabai_merah,2215.78,35309.23,True,False,False,33136.0717,12,0,main,True
 7,2018,cabai_rawit,2297.0,11353.1,False,False,False,13359.0827,4,0,main,True
@@ -291,7 +291,7 @@ province_id,year,commodity_group,harvested_area_ha,production_ton,is_preliminary
 19,2019,cabai_merah,674.0,2920.1,False,False,False,21549.7522,12,0,descriptive,False
 19,2020,cabai_merah,649.38,3349.68,False,False,False,22580.4238,12,0,descriptive,False
 19,2021,cabai_merah,635.42,3217.73,False,False,False,30638.9282,12,1,descriptive,False
-19,2022,cabai_merah,736.14,3682.74,False,False,False,40989.4669,12,5,descriptive,False
+19,2022,cabai_merah,736.14,3682.74,False,False,False,40954.266,12,5,descriptive,False
 19,2023,cabai_merah,763.03,3192.99,False,False,False,35109.7362,12,4,descriptive,False
 19,2024,cabai_merah,723.64,2695.58,False,False,False,,0,0,descriptive,False
 19,2025,cabai_merah,573.7,3082.21,True,False,False,,0,0,descriptive,False
@@ -299,7 +299,7 @@ province_id,year,commodity_group,harvested_area_ha,production_ton,is_preliminary
 19,2019,cabai_rawit,1712.0,8816.0,False,False,False,33026.7363,12,0,descriptive,False
 19,2020,cabai_rawit,1643.07,10467.9,False,False,False,20341.1754,12,0,descriptive,False
 19,2021,cabai_rawit,1392.05,9075.94,False,False,False,33515.7606,12,1,descriptive,False
-19,2022,cabai_rawit,3026.92,19881.22,False,False,False,32613.7949,12,5,descriptive,False
+19,2022,cabai_rawit,3026.92,19881.22,False,False,False,30883.6559,12,5,descriptive,False
 19,2023,cabai_rawit,1431.07,9073.58,False,False,False,34632.969,12,4,descriptive,False
 19,2024,cabai_rawit,1715.44,11289.12,False,False,False,,0,0,descriptive,False
 19,2025,cabai_rawit,1400.79,10943.71,True,False,False,,0,0,descriptive,False

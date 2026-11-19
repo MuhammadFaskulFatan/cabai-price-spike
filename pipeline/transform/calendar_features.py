@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 
 from pipeline.audit.oni_audit import load_oni
+from pipeline.extract.calendar_holidays import holiday_source_level
 from pipeline.readers import CORE_START, FIRST_MONTH, LAST_MONTH, MODEL_END, RAW, ROOT, months, weekdays_per_month
 
 OUT = ROOT / "data" / "interim"
@@ -63,6 +64,20 @@ def build_dim_month():
     return frame
 
 
+def build_dim_holiday():
+    """Tabel libur: libur nasional dan cuti bersama, dengan source_level official/secondary (D-46).
+
+    Cuti bersama yang belum terverifikasi tidak ada di tabel (dibiarkan kosong, D-38)."""
+    holidays = pd.read_csv(RAW / "calendar" / "holidays.csv", parse_dates=["date"])
+    holidays["is_cuti_bersama"] = False
+    holidays["source_level"] = [holiday_source_level(h, d.year) for h, d in zip(holidays["holiday"], holidays["date"])]
+    cuti = pd.read_csv(RAW / "calendar" / "cuti_bersama.csv", parse_dates=["date"])
+    cuti = cuti.assign(is_cuti_bersama=True, source_level=cuti["verification"])[["date", "holiday", "is_cuti_bersama", "source_level"]]
+    table = pd.concat([holidays, cuti], ignore_index=True).sort_values(["date", "is_cuti_bersama"]).reset_index(drop=True)
+    table["date"] = table["date"].dt.date
+    return table
+
+
 def build_oni():
     oni = load_oni().set_index("month")
     frame = pd.DataFrame({"month": months()})
@@ -81,9 +96,11 @@ def run():
     OUT.mkdir(parents=True, exist_ok=True)
     dim_month = build_dim_month()
     oni = build_oni()
+    dim_holiday = build_dim_holiday()
+    dim_holiday.to_parquet(OUT / "dim_holiday.parquet", index=False)
     dim_month.assign(month=dim_month["month"].astype(str)).to_parquet(OUT / "dim_month.parquet", index=False)
     oni.assign(month=oni["month"].astype(str)).to_parquet(OUT / "fact_oni_monthly.parquet", index=False)
-    print(f"dim_month {len(dim_month)} bulan | ONI terisi {int(oni['oni_anomaly'].notna().sum())} dari {len(oni)} bulan")
+    print(f"dim_holiday {len(dim_holiday)} hari (official {int((dim_holiday['source_level'] == 'official').sum())}) | dim_month {len(dim_month)} bulan | ONI terisi {int(oni['oni_anomaly'].notna().sum())} dari {len(oni)} bulan")
     return dim_month, oni
 
 

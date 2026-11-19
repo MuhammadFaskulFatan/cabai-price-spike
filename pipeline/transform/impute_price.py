@@ -3,8 +3,7 @@
 Per seri (tipe harga x komoditas x provinsi), pada jendela model Jan 2018 - Okt 2026:
   - tier dihitung pada Jan 2019 - Okt 2026: main, descriptive, atau excluded
   - excluded: tidak di-impute
-  - gap tengah 1-2 bulan: linear interpolation pada log price
-  - gap tengah 3-6 bulan: Kalman smoothing (trend + seasonal) pada log price
+  - gap tengah 1-6 bulan: linear interpolation pada log price (Kalman dibatalkan, D-43)
   - gap tengah > 6 bulan: tetap NULL
   - gap di awal dan di akhir seri: tidak pernah di-impute
 November 2026 (bulan parsial) tidak ikut diimputasi; nilai observed-nya dibawa apa adanya dengan flag.
@@ -16,8 +15,8 @@ import numpy as np
 import pandas as pd
 
 from pipeline.readers import CORE_START, MODEL_END, ROOT, months
-from pipeline.rules import LINEAR_MAX_GAP, MAX_FILL_GAP, assign_tier, gap_profile
-from pipeline.transform.impute_methods import kalman, linear_log
+from pipeline.rules import MAX_FILL_GAP, assign_tier, gap_profile
+from pipeline.transform.impute_methods import linear_log
 
 OUT = ROOT / "data" / "interim"
 MODEL_MONTHS = months(months()[0], MODEL_END)
@@ -43,21 +42,13 @@ def impute_series(observed):
     if tier == "excluded" or not valid.any():
         return price, is_imputed, method, tier
 
-    runs = interior_runs(valid)
-    linear_runs = [r for r in runs if r[1] - r[0] <= LINEAR_MAX_GAP]
-    kalman_runs = [r for r in runs if LINEAR_MAX_GAP < r[1] - r[0] <= MAX_FILL_GAP]
-    if linear_runs:
-        filled = linear_log(observed)
-        for start, end in linear_runs:
-            price.iloc[start:end] = filled.reindex(observed.index).iloc[start:end]
+    fill_runs = [r for r in interior_runs(valid) if r[1] - r[0] <= MAX_FILL_GAP]
+    if fill_runs:
+        filled = linear_log(observed).reindex(observed.index)
+        for start, end in fill_runs:
+            price.iloc[start:end] = filled.iloc[start:end]
             is_imputed.iloc[start:end] = True
             method.iloc[start:end] = "linear_log"
-    if kalman_runs:
-        smoothed = kalman(observed)
-        for start, end in kalman_runs:
-            price.iloc[start:end] = smoothed.reindex(observed.index).iloc[start:end]
-            is_imputed.iloc[start:end] = True
-            method.iloc[start:end] = "kalman"
     return price, is_imputed, method, tier
 
 
@@ -88,7 +79,7 @@ def run():
 
     imputed = result[result["is_imputed"]]
     print(f"fact_price_monthly: {len(result):,} baris; imputed {len(imputed):,} "
-          f"(linear_log {int((imputed['impute_method'] == 'linear_log').sum())}, kalman {int((imputed['impute_method'] == 'kalman').sum())})")
+          f"(semua linear_log: {bool((imputed['impute_method'] == 'linear_log').all())})")
     return result
 
 

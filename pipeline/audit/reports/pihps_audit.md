@@ -8,28 +8,28 @@ Periode data 2018-01 sampai 2026-11 (November 2026 parsial). Periode inti 2019-0
 
 ## 1. Ringkasan profil gap per tipe harga dan komoditas
 
-Hanya periode inti (Jan 2019 - Okt 2026). Gap tengah: 1-2 bulan linear interpolation pada log price, 3-6 bulan Kalman, lebih dari 6 bulan tetap NULL (D-35). Gap di awal dan akhir seri tidak pernah di-impute.
+Hanya periode inti (Jan 2019 - Okt 2026). Gap tengah 1-6 bulan linear interpolation pada log price (D-43), lebih dari 6 bulan tetap NULL (D-35). Gap di awal dan akhir seri tidak pernah di-impute.
 
-| price_type | commodity | seri | lengkap | valid_rata2_pct | leading | trailing | gap_linear | gap_kalman | gap_tetap_null | bulan_linear | bulan_kalman | bulan_null |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| eceran | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| eceran | cabai_rawit | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| eceran | merah_besar | 35 | 26 | 81.9 | 4 | 4 | 4 | 1 | 1 | 5 | 5 | 42 |
-| eceran | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| eceran | rawit_hijau | 35 | 32 | 95.4 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| eceran | rawit_merah | 35 | 32 | 91.7 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| pedagang_besar | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| pedagang_besar | cabai_rawit | 35 | 34 | 99.7 | 0 | 0 | 2 | 0 | 1 | 2 | 0 | 7 |
-| pedagang_besar | merah_besar | 35 | 27 | 84.0 | 4 | 3 | 6 | 3 | 1 | 7 | 11 | 7 |
-| pedagang_besar | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| pedagang_besar | rawit_hijau | 35 | 30 | 92.8 | 1 | 2 | 3 | 2 | 3 | 4 | 10 | 44 |
-| pedagang_besar | rawit_merah | 35 | 29 | 90.5 | 4 | 0 | 2 | 1 | 2 | 2 | 5 | 26 |
-| produsen | cabai_merah | 35 | 19 | 94.3 | 4 | 1 | 37 | 2 | 0 | 42 | 6 | 0 |
-| produsen | cabai_rawit | 35 | 18 | 91.2 | 5 | 1 | 45 | 1 | 1 | 52 | 3 | 9 |
-| produsen | merah_besar | 35 | 14 | 68.7 | 12 | 2 | 28 | 4 | 1 | 32 | 16 | 7 |
-| produsen | merah_keriting | 35 | 17 | 88.6 | 6 | 1 | 39 | 3 | 1 | 45 | 11 | 8 |
-| produsen | rawit_hijau | 35 | 14 | 69.2 | 11 | 0 | 27 | 5 | 2 | 31 | 25 | 17 |
-| produsen | rawit_merah | 35 | 13 | 82.0 | 10 | 3 | 42 | 3 | 0 | 49 | 9 | 0 |
+| price_type | commodity | seri | lengkap | valid_rata2_pct | leading | trailing | gap_diisi | gap_tetap_null | bulan_linear | bulan_null |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| eceran | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| eceran | cabai_rawit | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| eceran | merah_besar | 35 | 26 | 81.9 | 4 | 4 | 5 | 1 | 10 | 42 |
+| eceran | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| eceran | rawit_hijau | 35 | 32 | 95.4 | 1 | 2 | 0 | 0 | 0 | 0 |
+| eceran | rawit_merah | 35 | 32 | 91.7 | 3 | 0 | 0 | 0 | 0 | 0 |
+| pedagang_besar | cabai_merah | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| pedagang_besar | cabai_rawit | 35 | 34 | 99.7 | 0 | 0 | 2 | 1 | 2 | 7 |
+| pedagang_besar | merah_besar | 35 | 27 | 84.0 | 4 | 3 | 9 | 1 | 18 | 7 |
+| pedagang_besar | merah_keriting | 35 | 35 | 100.0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| pedagang_besar | rawit_hijau | 35 | 30 | 92.8 | 1 | 2 | 5 | 3 | 14 | 44 |
+| pedagang_besar | rawit_merah | 35 | 29 | 90.5 | 4 | 0 | 3 | 2 | 7 | 26 |
+| produsen | cabai_merah | 35 | 19 | 94.3 | 4 | 1 | 39 | 0 | 48 | 0 |
+| produsen | cabai_rawit | 35 | 18 | 91.2 | 5 | 1 | 46 | 1 | 55 | 9 |
+| produsen | merah_besar | 35 | 14 | 68.7 | 12 | 2 | 32 | 1 | 48 | 7 |
+| produsen | merah_keriting | 35 | 17 | 88.6 | 6 | 1 | 42 | 1 | 56 | 8 |
+| produsen | rawit_hijau | 35 | 14 | 69.2 | 11 | 0 | 32 | 2 | 56 | 17 |
+| produsen | rawit_merah | 35 | 13 | 82.0 | 10 | 3 | 45 | 0 | 58 | 0 |
 
 ### Seri per tier (D-35)
 

@@ -1,5 +1,8 @@
-"""Produksi cabai: tahunan BDSP per provinsi (34 provinsi PIHPS), bulanan nasional dari Buletin, dan
-disagregasi bulanan per provinsi dengan Denton (D-26).
+"""Produksi cabai: tahunan BDSP per provinsi (34 provinsi PIHPS) dan bulanan nasional dari Buletin.
+
+Disagregasi bulanan per provinsi (Denton) dibatalkan (D-42): core dataset memakai angka tahunan BDSP untuk ke-12
+bulan dalam tahunnya (`production_annual_ton`). Hasil hold-out Denton tetap terdokumentasi di
+pipeline/validate/holdout_production.py dan transform_report.md.
 
 Definisi (D-28): cabai_merah = cabe besar BDSP saja; cabe keriting disimpan terpisah sebagai cabai_keriting
 (referensi, tidak masuk core). Provinsi pemekaran Papua dijumlahkan ke induknya (D-17, D-36).
@@ -7,7 +10,6 @@ Definisi (D-28): cabai_merah = cabe besar BDSP saja; cabe keriting disimpan terp
 Output di data/interim/:
   fact_production_annual.parquet            provinsi x tahun x grup, produksi (ton), luas panen (ha), flag
   fact_production_national_monthly.parquet  produksi bulanan nasional, hanya bulan realisasi SPH-BPS
-  fact_production_monthly.parquet           estimasi Denton per provinsi x bulan (deskriptif saja, flag estimated)
 Produksi 2026 tidak di-extrapolate: angka tahunan BDSP 2026 belum ada.
 """
 import numpy as np
@@ -15,7 +17,6 @@ import pandas as pd
 
 from pipeline.readers import RAW, ROOT, YEARS, load_pihps_provinces, load_province_tables, read_prognosa
 from pipeline.rules import YIELD_MAX, YIELD_MIN
-from pipeline.transform.denton import denton_pfd
 
 OUT = ROOT / "data" / "interim"
 GROUP_OF = {"cabe_besar": "cabai_merah", "cabe_rawit": "cabai_rawit", "cabe_keriting": "cabai_keriting"}
@@ -60,63 +61,6 @@ def prognosa_tables():
     return table, values, realised
 
 
-def mean_share_profile(values, group, exclude_year=None):
-    """Rata-rata pola musiman (porsi tiap bulan terhadap total tahun) dari edisi yang ada, tanpa exclude_year."""
-    shares = [v / v.sum() for (g, y), v in values.items() if g == group and y != exclude_year]
-    return np.mean(shares, axis=0)
-
-
-def national_indicator(values, group, national_totals, years, exclude_year=None):
-    """Indikator bulanan nasional 2018-2025: tabel prognosa kalau ada, selain itu pola rata-rata x total tahunan BDSP."""
-    profile = mean_share_profile(values, group, exclude_year)
-    pieces = []
-    for year in years:
-        if (group, year) in values and year != exclude_year:
-            pieces.append(values[(group, year)])
-        else:
-            pieces.append(profile * national_totals[year])
-    return np.concatenate(pieces)
-
-
-def denton_with_zero_years(indicator, annual):
-    """Denton per segmen tahun berurutan yang benchmark-nya positif; tahun dengan benchmark 0 diisi 0."""
-    result = np.zeros_like(indicator, dtype=float)
-    positive = annual > 0
-    start = None
-    for year in range(len(annual) + 1):
-        if year < len(annual) and positive[year]:
-            start = year if start is None else start
-        elif start is not None:
-            sl = slice(start * 12, year * 12)
-            result[sl] = denton_pfd(indicator[sl], annual[start:year])
-            start = None
-    return result
-
-
-def monthly_production(annual, values):
-    years = YEARS
-    rows = []
-    for group in MONTHLY_GROUPS:
-        part = annual[annual["commodity_group"] == group]
-        totals = part.groupby("year")["production_ton"].sum()
-        indicator = national_indicator(values, group, totals, years)
-        for province_id, province_rows in part.groupby("province_id"):
-            benchmark = province_rows.set_index("year")["production_ton"].reindex(years).fillna(0).to_numpy()
-            estimate = denton_with_zero_years(indicator, benchmark)
-            for index, month in enumerate(pd.period_range(f"{years[0]}-01", f"{years[-1]}-12", freq="M")):
-                rows.append((province_id, month.to_timestamp().date(), group, estimate[index], month.year == years[-1]))
-    frame = pd.DataFrame(rows, columns=["province_id", "month_start", "commodity_group", "production_ton_denton", "is_preliminary_year"])
-    frame["is_imputed"] = True
-    frame["impute_method"] = "denton"
-    # 2026: angka tahunan belum ada, tidak di-extrapolate (baris tetap ada dengan nilai NULL)
-    extra = pd.DataFrame(
-        [(p, m.to_timestamp().date(), g, np.nan, False, True, "denton")
-         for g in MONTHLY_GROUPS for p in sorted(load_pihps_provinces().values()) for m in pd.period_range("2026-01", "2026-11", freq="M")],
-        columns=frame.columns,
-    )
-    return pd.concat([frame, extra], ignore_index=True)
-
-
 def national_monthly(table):
     """Produksi bulanan nasional: hanya bulan realisasi SPH-BPS; proyeksi dan bulan tanpa tabel = missing."""
     rows = []
@@ -133,19 +77,17 @@ def national_monthly(table):
 
 def run():
     annual = annual_production()
-    table, values, _ = prognosa_tables()
-    monthly = monthly_production(annual, values)
+    table, _, _ = prognosa_tables()
     national = national_monthly(table)
 
     OUT.mkdir(parents=True, exist_ok=True)
     annual.to_parquet(OUT / "fact_production_annual.parquet", index=False)
-    monthly.to_parquet(OUT / "fact_production_monthly.parquet", index=False)
     national.to_parquet(OUT / "fact_production_national_monthly.parquet", index=False)
-
-    estimated = monthly.dropna(subset=["production_ton_denton"])
-    print(f"annual {len(annual):,} baris | monthly {len(monthly):,} baris ({len(estimated):,} berisi nilai, "
-          f"negatif: {(estimated['production_ton_denton'] < 0).sum()}) | national realisasi: {(national['status'] == 'realisasi').sum()} bulan")
-    return annual, monthly, national
+    stale = OUT / "fact_production_monthly.parquet"  # keluaran Denton lama (D-42)
+    if stale.exists():
+        stale.unlink()
+    print(f"annual {len(annual):,} baris | national realisasi: {(national['status'] == 'realisasi').sum()} bulan")
+    return annual, national
 
 
 if __name__ == "__main__":

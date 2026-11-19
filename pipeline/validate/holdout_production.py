@@ -1,5 +1,7 @@
 """Hold-out validation disagregasi produksi (D-26): Denton vs dua pembanding sederhana.
 
+Disimpan sebagai dokumentasi: hasil ini membuat Denton dibatalkan (D-42); tidak lagi dijalankan oleh pipeline.run.
+
 Realisasi SPH-BPS Januari-Maret dari tabel prognosa Buletin (2022-2025, 12 bulan per komoditas; 2026 tidak bisa
 diuji karena angka tahunan BDSP 2026 belum ada) dipakai sebagai kebenaran. Untuk tiap tahun uji, pola musiman
 tahun itu dilepas dari indikator (leave-one-year-out): diganti rata-rata pola tahun edisi lain. Lalu diukur
@@ -16,10 +18,28 @@ import pandas as pd
 from pipeline.audit.loaders import to_markdown
 from pipeline.readers import ROOT, YEARS
 from pipeline.transform.denton import denton_pfd
-from pipeline.transform.disaggregate_production import MONTHLY_GROUPS, mean_share_profile, national_indicator, prognosa_tables
+from pipeline.transform.production import MONTHLY_GROUPS, prognosa_tables
 
 REPORTS = ROOT / "pipeline" / "validate" / "reports"
 TEST_YEARS = [2022, 2023, 2024, 2025]
+
+
+def mean_share_profile(values, group, exclude_year=None):
+    """Rata-rata pola musiman (porsi tiap bulan terhadap total tahun) dari edisi yang ada, tanpa exclude_year."""
+    shares = [v / v.sum() for (g, y), v in values.items() if g == group and y != exclude_year]
+    return np.mean(shares, axis=0)
+
+
+def national_indicator(values, group, national_totals, years, exclude_year=None):
+    """Indikator bulanan nasional 2018-2025: tabel prognosa kalau ada, selain itu pola rata-rata x total tahunan BDSP."""
+    profile = mean_share_profile(values, group, exclude_year)
+    pieces = []
+    for year in years:
+        if (group, year) in values and year != exclude_year:
+            pieces.append(values[(group, year)])
+        else:
+            pieces.append(profile * national_totals[year])
+    return np.concatenate(pieces)
 
 
 def run():

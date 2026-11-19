@@ -8,6 +8,7 @@ Cuti bersama dibaca dari data/raw/calendar/cuti_bersama.csv beserta status verif
 import pandas as pd
 
 from pipeline.audit.loaders import RAW, to_markdown, write_report
+from pipeline.extract.calendar_holidays import holiday_source_level
 
 # tanggal libur nasional menurut timeanddate.com (2018-2025) dan setneg.go.id (2026)
 REFERENCE = {
@@ -22,13 +23,6 @@ REFERENCE = {
     2026: {"idulfitri": ["2026-03-21", "2026-03-22"], "iduladha": ["2026-05-27"]},
 }
 
-# tanggal libur yang juga terlihat di halaman situs pemerintah (menpan, kemenag, kemnaker, setneg)
-OFFICIAL_CONFIRMED = {
-    ("idulfitri", 2019), ("idulfitri", 2021), ("idulfitri", 2022), ("idulfitri", 2023), ("idulfitri", 2024), ("idulfitri", 2026),
-    ("iduladha", 2022), ("iduladha", 2023), ("iduladha", 2024), ("iduladha", 2026),
-}
-
-
 def run():
     raw = pd.read_csv(RAW / "calendar" / "holidays.csv", parse_dates=["date"])
     cuti = pd.read_csv(RAW / "calendar" / "cuti_bersama.csv", parse_dates=["date"])
@@ -37,7 +31,7 @@ def run():
     for year, reference in REFERENCE.items():
         for holiday in ("idulfitri", "iduladha"):
             ours = sorted(raw[(raw["holiday"] == holiday) & (raw["date"].dt.year == year)]["date"].dt.strftime("%Y-%m-%d"))
-            status = "resmi (situs pemerintah)" if (holiday, year) in OFFICIAL_CONFIRMED else "sekunder (timeanddate)"
+            status = "resmi (situs pemerintah)" if holiday_source_level(holiday, year) == "official" else "sekunder (timeanddate)"
             rows.append({"tahun": str(year), "perayaan": holiday, "kalender_raw": ", ".join(ours), "pembanding": ", ".join(reference[holiday]),
                          "cocok": ours == reference[holiday], "verifikasi": status})
     result = pd.DataFrame(rows)

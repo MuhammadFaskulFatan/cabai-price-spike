@@ -2,8 +2,8 @@
 dan hanya mengembalikan nilai untuk posisi di antara observasi pertama dan terakhir: gap di awal dan akhir
 tidak pernah diisi (tanpa ekstrapolasi).
 
-Dipakai oleh impute_price.py dan oleh harness hold-out di pipeline/validate/holdout_imputation.py,
-sehingga kode yang diuji sama dengan kode yang dipakai.
+impute_price.py hanya memakai linear_log (D-43). kalman dan locf tetap di sini sebagai kandidat dan pembanding
+di harness hold-out (pipeline/validate/holdout_imputation.py), supaya keputusan membatalkan Kalman bisa diulang.
 """
 import warnings
 

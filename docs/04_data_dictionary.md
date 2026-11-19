@@ -15,7 +15,7 @@ Dokumen ini berisi konvensi dan daftar kolom untuk setiap tabel di [ERD](02_erd_
 | Kelembapan | Persen, rata-rata harian dalam bulan |
 | Missing | `NULL`. Tidak ada kode angka khusus seperti 0 atau -1 |
 | Flag imputation | `is_imputed` (boolean) dan `impute_method` (string, `NULL` kalau tidak di-impute) untuk setiap nilai yang diimpute atau diestimasi |
-| Nilai `impute_method` | `linear_log`, `kalman`, `denton` |
+| Nilai `impute_method` | `linear_log` (satu-satunya metode; Kalman dan Denton dibatalkan, D-42, D-43) |
 | Kunci provinsi | `province_id` mengikuti ID PIHPS (`GetRefProvince`); pemetaan ke nama BDSP dibuat di fase extract |
 | Provenance | Setiap tabel fakta membawa `source_extract_date` dari metadata raw |
 
@@ -88,7 +88,7 @@ PK: `province_id`, `month_start`, `commodity_group`, `price_type_id`.
 | `n_days_observed` | int | Jumlah hari kerja terisi dari data harian | 0 kalau tidak ada data |
 | `is_imputed` | bool | `TRUE` kalau nilai bukan hasil rata-rata observed | Wajib terisi |
 | `tier` | string | `main`, `descriptive`, atau `excluded` (D-35); sama untuk semua bulan satu seri | Wajib. `excluded` tidak di-impute dan tidak dipakai di model |
-| `impute_method` | string | `linear_log` atau `kalman` | `NULL` kalau `is_imputed = FALSE` |
+| `impute_method` | string | `linear_log` | `NULL` kalau `is_imputed = FALSE` |
 | `source_extract_date` | date | Tanggal extraction | Wajib |
 
 Sumber: PIHPS, `price_type_id` 1/3/4. Hipotesis: H1-H4.
@@ -104,7 +104,7 @@ PK: `province_id`, `week_start`, `commodity_group`, `price_type_id`. Sumber: PIH
 
 ### `fact_production_annual`
 
-PK: `province_id`, `year`, `commodity_group`. Sumber: BDSP, 2018-2025. Dipakai sebagai benchmark Denton, bahan `core_province_year`, dan reconciliation. Angka 2025 `is_preliminary` (D-29).
+PK: `province_id`, `year`, `commodity_group`. Sumber: BDSP, 2018-2025. Dipakai untuk `production_annual_ton` di `core_province_month`, bahan `core_province_year`, dan reconciliation. Angka 2025 `is_preliminary` (D-29).
 
 | Kolom | Tipe | Deskripsi | Catatan |
 | --- | --- | --- | --- |
@@ -125,17 +125,20 @@ PK: `month_start`, `commodity_group`. Sumber: Buletin Konsumsi Pangan.
 | `status` | string | `realisasi` atau `missing` | Wajib. Hanya realisasi SPH-BPS dari edisi terbaru yang dihitung sebagai `realisasi` |
 | `bulletin_edition` | string | Edisi buletin asal angka, misalnya `2025-S1` | `NULL` kalau `status = missing` |
 
-### `fact_production_monthly`
+### `fact_production_monthly` (dibatalkan)
 
-PK: `province_id`, `month_start`, `commodity_group`. Hasil disagregasi.
+Tidak dibuat lagi (D-42). Estimasi Denton tidak lebih akurat dari flat pada hold-out; core memakai angka tahunan.
+
+### `dim_holiday`
+
+Satu baris per hari libur nasional atau cuti bersama, 2018-2026 (D-46).
 
 | Kolom | Tipe | Deskripsi | Catatan |
 | --- | --- | --- | --- |
-| `production_ton_denton` | float | Estimasi bulanan (deskriptif saja) | Total 12 bulan = angka tahunan BDSP; profil musiman dari tabel prognosa buletin (D-26) |
-| `is_imputed` | bool | Selalu `TRUE` | Semua nilai adalah estimasi |
-| `impute_method` | string | `denton` | - |
-
-`NULL` untuk 2026 (angka tahunan belum terbit) dan untuk kombinasi yang tidak punya benchmark.
+| `date` | date | Tanggal | PK bersama `is_cuti_bersama` |
+| `holiday` | string | `idulfitri`, `iduladha`, `natal`, `tahun_baru` | Perayaan yang terkait |
+| `is_cuti_bersama` | bool | `TRUE` = cuti bersama, `FALSE` = libur nasional | - |
+| `source_level` | string | `official` atau `secondary` | official = terlihat di situs pemerintah (atau tanggal tetap); secondary = hanya timeanddate.com. Cuti yang belum terverifikasi tidak ada di tabel |
 
 ### `fact_weather_monthly`
 
@@ -162,6 +165,8 @@ PK: `month_start`. Sumber: NOAA ONI, nasional.
 | `enso_phase` | string | `el_nino` (>= 0.5), `la_nina` (<= -0.5), `neutral` | Ambang standar NOAA |
 
 ## 4. Tabel akhir: `core_province_month`
+
+Kolom produksi: `production_annual_ton` (ton, angka tahunan BDSP diulang untuk 12 bulan dalam tahunnya, 2026 NULL) dan `production_annual_preliminary` (`TRUE` untuk 2025) (D-42).
 
 Definisi kolom sudah ada di [ERD, bagian 3](02_erd_core_dataset.md). Aturan kualitasnya:
 

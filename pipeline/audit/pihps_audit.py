@@ -161,7 +161,7 @@ def run():
         "",
         "## 1. Ringkasan profil gap per tipe harga dan komoditas",
         "",
-        "Hanya periode inti (Jan 2019 - Okt 2026). Gap tengah: 1-2 bulan linear interpolation pada log price, 3-6 bulan Kalman, lebih dari 6 bulan tetap NULL (D-35). "
+        "Hanya periode inti (Jan 2019 - Okt 2026). Gap tengah 1-6 bulan linear interpolation pada log price (D-43), lebih dari 6 bulan tetap NULL (D-35). "
         "Gap di awal dan akhir seri tidak pernah di-impute.",
         "",
     ]
@@ -169,8 +169,8 @@ def run():
         summary.groupby(["price_type", "commodity"])
         .agg(seri=("province", "size"), lengkap=("valid_share", lambda s: int((s == 1).sum())), valid_rata2_pct=("valid_share", lambda s: s.mean() * 100),
              leading=("leading_gap", lambda s: int((s > 0).sum())), trailing=("trailing_gap", lambda s: int((s > 0).sum())),
-             gap_linear=("linear_gaps", "sum"), gap_kalman=("kalman_gaps", "sum"), gap_tetap_null=("null_gaps", "sum"),
-             bulan_linear=("months_linear_log", "sum"), bulan_kalman=("months_kalman", "sum"), bulan_null=("months_left_null", "sum"))
+             gap_diisi=("filled_gaps", "sum"), gap_tetap_null=("null_gaps", "sum"),
+             bulan_linear=("months_linear_log", "sum"), bulan_null=("months_left_null", "sum"))
         .reset_index()
     )
     lines += [to_markdown(overview), ""]

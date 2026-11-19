@@ -24,12 +24,12 @@ from pipeline.transform import (
     aggregate_monthly,
     aggregate_weekly,
     calendar_features,
-    disaggregate_production,
     impute_price,
     integrate,
+    production,
     report,
 )
-from pipeline.validate import holdout_imputation, holdout_production
+from pipeline.validate import holdout_imputation
 
 EXTRACT_STEPS = [
     ("pihps", pihps),
@@ -41,14 +41,14 @@ EXTRACT_STEPS = [
     ("open_meteo", open_meteo),
 ]
 
-# hold-out harga dijalankan sebelum imputation karena memilih metode (D-09); hold-out produksi setelah disagregasi
+# hold-out harga dijalankan sebelum imputation karena memilih metode (D-09). Hold-out produksi (Denton) hanya
+# dokumentasi keputusan D-42: jalankan manual dengan python -m pipeline.validate.holdout_production
 TRANSFORM_STEPS = [
     ("aggregate_monthly", aggregate_monthly),
     ("aggregate_weekly", aggregate_weekly),
     ("holdout_imputation", holdout_imputation),
     ("impute_price", impute_price),
-    ("disaggregate_production", disaggregate_production),
-    ("holdout_production", holdout_production),
+    ("production", production),
     ("calendar_features", calendar_features),
     ("integrate", integrate),
     ("report", report),

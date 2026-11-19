@@ -11,14 +11,12 @@ erDiagram
     DIM_PROVINCE ||--o{ FACT_PRICE_MONTHLY : "province_id"
     DIM_PROVINCE ||--o{ FACT_PRICE_WEEKLY : "province_id"
     DIM_PROVINCE ||--o{ FACT_PRODUCTION_ANNUAL : "province_id"
-    DIM_PROVINCE ||--o{ FACT_PRODUCTION_MONTHLY : "province_id"
     DIM_PROVINCE ||--o{ FACT_WEATHER_MONTHLY : "province_id"
     DIM_PROVINCE ||--o{ DIM_SENTRA_POINT : "province_id"
 
     DIM_COMMODITY ||--o{ FACT_PRICE_MONTHLY : "commodity_group"
     DIM_COMMODITY ||--o{ FACT_PRICE_WEEKLY : "commodity_group"
     DIM_COMMODITY ||--o{ FACT_PRODUCTION_ANNUAL : "commodity_group"
-    DIM_COMMODITY ||--o{ FACT_PRODUCTION_MONTHLY : "commodity_group"
     DIM_COMMODITY ||--o{ FACT_PRODUCTION_NATIONAL_MONTHLY : "commodity_group"
     DIM_COMMODITY ||--o{ FACT_WEATHER_MONTHLY : "commodity_group"
     DIM_COMMODITY ||--o{ DIM_SENTRA_POINT : "commodity_group"
@@ -27,13 +25,10 @@ erDiagram
     DIM_PRICE_TYPE ||--o{ FACT_PRICE_WEEKLY : "price_type_id"
 
     DIM_MONTH ||--o{ FACT_PRICE_MONTHLY : "month_start"
-    DIM_MONTH ||--o{ FACT_PRODUCTION_MONTHLY : "month_start"
     DIM_MONTH ||--o{ FACT_PRODUCTION_NATIONAL_MONTHLY : "month_start"
     DIM_MONTH ||--o{ FACT_WEATHER_MONTHLY : "month_start"
     DIM_MONTH ||--o| FACT_ONI_MONTHLY : "month_start"
 
-    FACT_PRODUCTION_ANNUAL ||--o{ FACT_PRODUCTION_MONTHLY : "benchmark tahunan"
-    FACT_PRODUCTION_NATIONAL_MONTHLY ||--o{ FACT_PRODUCTION_MONTHLY : "profil musiman (Denton)"
     FACT_PRODUCTION_ANNUAL ||--o| CORE_PROVINCE_YEAR : "luas panen dan produksi"
     DIM_PROVINCE ||--o{ CORE_PROVINCE_YEAR : "province_id"
     DIM_COMMODITY ||--o{ CORE_PROVINCE_YEAR : "commodity_group"
@@ -132,15 +127,6 @@ erDiagram
         string status
         string bulletin_edition
     }
-    FACT_PRODUCTION_MONTHLY {
-        int province_id PK
-        date month_start PK
-        string commodity_group PK
-        float production_ton_denton
-        bool is_preliminary_year
-        bool is_imputed
-        string impute_method
-    }
     FACT_WEATHER_MONTHLY {
         int province_id PK
         date month_start PK
@@ -167,11 +153,11 @@ erDiagram
 - **Cuaca dikunci per komoditas.** Bobot production-weighted average berbeda antara cabai merah dan cabai rawit karena sentranya berbeda, jadi `FACT_WEATHER_MONTHLY` punya `commodity_group` di key.
 - **Titik sentra dipilih nasional, bukan per provinsi (D-24).** Kabupaten diambil dari produksi nasional teratas sampai kumulatif sekitar 80% per grup komoditas; kabupaten yang berjarak kurang dari 10 km berbagi satu lokasi cuaca (`anchor_id`). Sebagian provinsi tidak punya titik sentra.
 - **Cuaca not applicable (D-25).** Untuk provinsi × komoditas tanpa titik sentra, baris cuaca tetap ada dengan nilai `NULL` dan `weather_status = 'not_applicable'`. Ini berbeda dari missing: provinsi itu memang bukan sentra, jadi cuaca tidak dipakai dalam uji H1 dan H4. Provinsi bersentra memakai `weather_status = 'observed'`.
-- **Produksi bulanan provinsi seluruhnya hasil estimasi.** Tidak ada angka bulanan provinsi yang diamati, jadi setiap barisnya `is_imputed = TRUE` dengan `impute_method = denton`. Disagregasi memakai Denton dengan profil musiman dari tabel prognosa Buletin (D-26). Produksi bulanan hanya untuk deskriptif dan tidak menjadi driver di model bulanan.
-- **Produksi nasional bulanan boleh kosong.** Bulan yang hanya punya proyeksi dibiarkan `production_ton = NULL` dan `status = 'missing'`. Bulan ber-`status = 'realisasi'` (Januari-Maret, sekitar 15 bulan) dipakai sebagai hold-out untuk mengukur MAPE Denton; baris Juli-Desember pada tabel prognosa menjadi dasar profil musiman.
+- **Produksi di core memakai angka tahunan (D-42).** Disagregasi bulanan (Chow-Lin, lalu Denton) dibatalkan karena hold-out tidak menunjukkan keunggulan atas flat. `core_province_month.production_annual_ton` = angka tahunan BDSP yang sama untuk 12 bulan dalam tahunnya.
+- **Produksi nasional bulanan boleh kosong.** Bulan yang hanya punya proyeksi dibiarkan `production_ton = NULL` dan `status = 'missing'`. Bulan realisasi (Januari-Maret 2022-2026) hanya untuk deskriptif.
 - **Uji H5 di grain provinsi × tahun (D-27).** `CORE_PROVINCE_YEAR` memuat luas panen dan produksi tahunan BDSP serta rata-rata harga produsen tahunan, untuk menguji luas panen t terhadap harga produsen t-1.
 - **BDSP 2025 preliminary (D-29).** Angka 2025 belum bisa diverifikasi ke rilis BPS, jadi `is_preliminary = TRUE` dan masuk daftar sensitivity check bersama 2026.
-- **Produksi 2026.** Angka tahunan 2026 belum terbit, jadi `FACT_PRODUCTION_MONTHLY` kosong untuk 2026. Tabel tidak di-extrapolate.
+- **Produksi 2026.** Angka tahunan 2026 belum terbit, jadi `production_annual_ton` kosong untuk 2026. Tidak di-extrapolate.
 - **Periode.** `DIM_MONTH` memuat Januari 2018 sampai November 2026. `in_core_period` bernilai `TRUE` mulai Januari 2019; baris 2018 hanya untuk lagged variables.
 - **Bulan parsial dan periode model.** Data diambil 19 November 2026, jadi November 2026 belum penuh (`is_partial_month = TRUE`). Model dan uji hipotesis hanya memakai bulan dengan `in_model_period = TRUE` (Januari 2019 sampai Oktober 2026); November 2026 hanya untuk deskriptif (D-16).
 - **Cuaca.** `rain_anomaly` dihitung terhadap normal bulan kalender periode 1991-2020 (D-19).
@@ -185,11 +171,11 @@ Pipeline mengubah tabel fakta menjadi satu tabel lebar di `data/final/`, satu ba
 | --- | --- |
 | Key | `province_id`, `month_start`, `commodity_group` |
 | Harga | `price_retail`, `price_wholesale`, `price_producer` |
-| Produksi | `production_ton_denton` (deskriptif saja) |
+| Produksi | `production_annual_ton`, `production_annual_preliminary` |
 | Cuaca | `rain_total_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status` |
 | ENSO | `oni_anomaly`, `enso_phase` |
 | Kalender | `n_weekdays`, `n_holiday_days`, `n_holiday_weekdays`, `n_cuti_bersama_days`, `cuti_bersama_verified`, `months_to_idulfitri` |
-| Flag | untuk tiap harga: `<variabel>_is_imputed`, `<variabel>_impute_method`, `<variabel>_tier`, `<variabel>_n_days`; produksi: `production_is_imputed`, `production_impute_method`, `production_year_preliminary`; periode: `in_core_period`, `in_model_period`, `is_partial_month`, `in_producer_price_analysis` |
+| Flag | untuk tiap harga: `<variabel>_is_imputed`, `<variabel>_impute_method`, `<variabel>_tier`, `<variabel>_n_days`; periode: `in_core_period`, `in_model_period`, `is_partial_month`, `in_producer_price_analysis` |
 
 Aturan: tidak boleh ada nilai kosong tanpa penjelasan. Sel kosong hanya sah kalau sebabnya tercatat (di luar periode, variabel tanpa observed data, NTT harga produsen, produksi 2026, bulan parsial).
 

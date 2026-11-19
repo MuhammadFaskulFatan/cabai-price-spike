@@ -1,631 +1,631 @@
-price_type,commodity,province,core_months,valid_months,valid_share,first_valid_month,last_valid_month,nov_2026_days,leading_gap,trailing_gap,linear_gaps,kalman_gaps,null_gaps,longest_interior_gap,months_linear_log,months_kalman,months_left_null,tier
-eceran,cabai_merah,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,cabai_rawit,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Aceh,94,16,0.1702127659574468,2018-01,2026-11,14,36,0,0,0,1,42,0,0,42,excluded
-eceran,merah_besar,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Gorontalo,94,13,0.13829787234042554,2018-06,2020-01,0,0,81,0,0,0,0,0,0,0,excluded
-eceran,merah_besar,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Kepulauan Bangka Belitung,94,46,0.48936170212765956,2018-01,2022-10,0,0,48,0,0,0,0,0,0,0,excluded
-eceran,merah_besar,Kepulauan Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-eceran,merah_besar,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Maluku,94,86,0.9148936170212766,2018-01,2026-07,0,0,3,0,1,0,5,0,5,0,main
-eceran,merah_besar,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Sulawesi Tengah,94,89,0.9468085106382979,2018-01,2026-11,14,0,0,4,0,0,2,5,0,0,main
-eceran,merah_besar,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Sulawesi Utara,94,1,0.010638297872340425,2018-01,2019-01,0,0,93,0,0,0,0,0,0,0,excluded
-eceran,merah_besar,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-eceran,merah_besar,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_besar,Sumatera Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-eceran,merah_keriting,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Maluku Utara,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,merah_keriting,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Gorontalo,94,44,0.46808510638297873,2018-01,2022-08,0,0,50,0,0,0,0,0,0,0,excluded
-eceran,rawit_hijau,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Papua Barat,94,25,0.26595744680851063,2018-01,2021-01,0,0,69,0,0,0,0,0,0,0,excluded
-eceran,rawit_hijau,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Sulawesi Selatan,94,62,0.6595744680851063,2021-09,2026-11,14,32,0,0,0,0,0,0,0,0,descriptive
-eceran,rawit_hijau,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_hijau,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Aceh,94,0,0.0,2018-01,2018-08,0,94,0,0,0,0,0,0,0,0,excluded
-eceran,rawit_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Kepulauan Riau,94,10,0.10638297872340426,2026-01,2026-10,6,84,0,0,0,0,0,0,0,0,excluded
-eceran,rawit_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Maluku Utara,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-eceran,rawit_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-eceran,rawit_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Maluku Utara,94,85,0.9042553191489362,2018-01,2026-11,14,0,0,2,0,1,7,2,0,7,descriptive
-pedagang_besar,cabai_rawit,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,cabai_rawit,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Gorontalo,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,merah_besar,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Kepulauan Bangka Belitung,94,46,0.48936170212765956,2018-01,2022-10,0,0,48,0,0,0,0,0,0,0,excluded
-pedagang_besar,merah_besar,Kepulauan Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,merah_besar,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Maluku,94,54,0.574468085106383,2018-01,2024-11,0,0,23,1,2,1,7,2,8,7,descriptive
-pedagang_besar,merah_besar,Maluku Utara,94,38,0.40425531914893614,2018-01,2022-05,0,0,53,3,0,0,1,3,0,0,excluded
-pedagang_besar,merah_besar,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Sulawesi Tengah,94,89,0.9468085106382979,2018-01,2026-11,14,0,0,2,1,0,3,2,3,0,main
-pedagang_besar,merah_besar,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Sulawesi Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,merah_besar,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,merah_besar,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_besar,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Maluku Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,merah_keriting,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Gorontalo,94,13,0.13829787234042554,2018-01,2020-01,0,0,81,0,0,0,0,0,0,0,excluded
-pedagang_besar,rawit_hijau,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Maluku,94,74,0.7872340425531915,2018-01,2026-06,0,0,4,1,1,1,10,2,4,10,descriptive
-pedagang_besar,rawit_hijau,Maluku Utara,94,79,0.8404255319148937,2018-10,2026-11,14,0,0,2,1,1,7,2,6,7,descriptive
-pedagang_besar,rawit_hijau,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Papua Barat,94,67,0.7127659574468085,2018-01,2026-11,14,0,0,0,0,1,27,0,0,27,descriptive
-pedagang_besar,rawit_hijau,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Sulawesi Selatan,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,rawit_hijau,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_hijau,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Aceh,94,74,0.7872340425531915,2018-01,2026-11,14,6,0,0,1,1,9,0,5,9,descriptive
-pedagang_besar,rawit_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,rawit_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Kepulauan Riau,94,10,0.10638297872340426,2026-01,2026-11,13,84,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,rawit_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Maluku Utara,94,76,0.8085106382978723,2018-01,2026-11,14,0,0,1,0,1,17,1,0,17,descriptive
-pedagang_besar,rawit_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Riau,94,93,0.9893617021276596,2018-01,2026-11,14,0,0,1,0,0,1,1,0,0,main
-pedagang_besar,rawit_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-pedagang_besar,rawit_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-pedagang_besar,rawit_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Aceh,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Banten,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,0,1,4,0,0,main
-produsen,cabai_merah,Bengkulu,94,87,0.925531914893617,2018-09,2026-11,14,0,0,3,1,0,3,4,3,0,main
-produsen,cabai_merah,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,cabai_merah,Gorontalo,94,84,0.8936170212765957,2019-10,2026-11,14,9,0,1,0,0,1,1,0,0,main
-produsen,cabai_merah,Jambi,94,92,0.9787234042553191,2018-09,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,cabai_merah,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Kalimantan Barat,94,91,0.9680851063829787,2018-10,2026-11,14,0,0,3,0,0,1,3,0,0,main
-produsen,cabai_merah,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,cabai_merah,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,cabai_merah,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,cabai_merah,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,cabai_merah,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,0,2,2,0,0,main
-produsen,cabai_merah,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,0,1,4,0,0,main
-produsen,cabai_merah,Maluku Utara,94,89,0.9468085106382979,2018-10,2026-11,14,1,0,3,0,0,2,4,0,0,main
-produsen,cabai_merah,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,5,1,0,3,7,3,0,descriptive
-produsen,cabai_merah,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,cabai_merah,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,0,1,4,0,0,main
-produsen,cabai_merah,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Sulawesi Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_merah,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Aceh,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Banten,94,77,0.8191489361702128,2018-10,2026-11,14,0,0,7,0,1,9,8,0,9,descriptive
-produsen,cabai_rawit,Bengkulu,94,84,0.8936170212765957,2018-09,2026-11,14,0,0,8,0,0,2,10,0,0,main
-produsen,cabai_rawit,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,cabai_rawit,Gorontalo,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,cabai_rawit,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,cabai_rawit,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Kalimantan Barat,94,91,0.9680851063829787,2018-12,2026-11,14,0,0,3,0,0,1,3,0,0,main
-produsen,cabai_rawit,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,cabai_rawit,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,cabai_rawit,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,cabai_rawit,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,cabai_rawit,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,0,2,2,0,0,main
-produsen,cabai_rawit,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,0,1,4,0,0,main
-produsen,cabai_rawit,Maluku Utara,94,88,0.9361702127659575,2018-10,2026-11,14,1,0,4,0,0,2,5,0,0,main
-produsen,cabai_rawit,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,5,1,0,3,7,3,0,descriptive
-produsen,cabai_rawit,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,cabai_rawit,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,0,1,4,0,0,main
-produsen,cabai_rawit,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Sulawesi Utara,94,92,0.9787234042553191,2018-10,2026-11,14,1,0,1,0,0,1,1,0,0,main
-produsen,cabai_rawit,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,cabai_rawit,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Aceh,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Banten,94,77,0.8191489361702128,2018-10,2026-11,14,1,0,3,1,1,7,3,6,7,descriptive
-produsen,merah_besar,Bengkulu,94,82,0.8723404255319149,2018-10,2026-11,14,0,0,4,2,0,4,5,7,0,main
-produsen,merah_besar,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Gorontalo,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Kalimantan Barat,94,91,0.9680851063829787,2018-10,2026-11,14,0,0,3,0,0,1,3,0,0,main
-produsen,merah_besar,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,merah_besar,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,merah_besar,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,merah_besar,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,merah_besar,Kepulauan Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Maluku,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Maluku Utara,94,89,0.9468085106382979,2018-10,2026-11,14,1,0,3,0,0,2,4,0,0,main
-produsen,merah_besar,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,5,1,0,3,7,3,0,descriptive
-produsen,merah_besar,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,0,1,4,0,0,main
-produsen,merah_besar,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Sulawesi Tengah,94,2,0.02127659574468085,2018-10,2019-02,0,0,92,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Sulawesi Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_besar,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_besar,Sumatera Utara,94,93,0.9893617021276596,2018-08,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,merah_keriting,Aceh,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Bali,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_keriting,Banten,94,87,0.925531914893617,2018-10,2026-11,14,0,0,6,0,0,2,7,0,0,main
-produsen,merah_keriting,Bengkulu,94,87,0.925531914893617,2018-09,2026-11,14,0,0,3,1,0,3,4,3,0,main
-produsen,merah_keriting,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,merah_keriting,Gorontalo,94,84,0.8936170212765957,2019-10,2026-11,14,9,0,1,0,0,1,1,0,0,main
-produsen,merah_keriting,Jambi,94,92,0.9787234042553191,2018-09,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,merah_keriting,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Jawa Timur,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Kalimantan Barat,94,91,0.9680851063829787,2018-12,2026-11,14,0,0,3,0,0,1,3,0,0,main
-produsen,merah_keriting,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,merah_keriting,Kalimantan Tengah,94,76,0.8085106382978723,2019-09,2026-11,14,8,0,2,0,1,8,2,0,8,descriptive
-produsen,merah_keriting,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,merah_keriting,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,merah_keriting,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,0,2,2,0,0,main
-produsen,merah_keriting,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,0,1,4,0,0,main
-produsen,merah_keriting,Maluku Utara,94,20,0.2127659574468085,2024-12,2026-11,14,71,0,2,0,0,2,3,0,0,excluded
-produsen,merah_keriting,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-11,2023-12,0,0,34,5,1,0,3,7,3,0,descriptive
-produsen,merah_keriting,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,merah_keriting,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,0,1,4,0,0,main
-produsen,merah_keriting,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Sulawesi Tenggara,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Sulawesi Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,merah_keriting,Sumatera Selatan,94,89,0.9468085106382979,2018-11,2026-11,14,0,0,0,1,0,5,0,5,0,main
-produsen,merah_keriting,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Aceh,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Banten,94,77,0.8191489361702128,2018-10,2026-11,14,0,0,7,0,1,9,8,0,9,descriptive
-produsen,rawit_hijau,Bengkulu,94,55,0.5851063829787234,2018-09,2026-11,14,0,0,5,5,1,8,6,25,8,descriptive
-produsen,rawit_hijau,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Gorontalo,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Kalimantan Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_hijau,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_hijau,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_hijau,Kalimantan Utara,94,92,0.9787234042553191,2018-10,2026-11,14,0,0,1,0,0,2,2,0,0,main
-produsen,rawit_hijau,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,rawit_hijau,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,0,2,2,0,0,main
-produsen,rawit_hijau,Lampung,94,92,0.9787234042553191,2018-10,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,rawit_hijau,Maluku,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Maluku Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Nusa Tenggara Timur,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Papua Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,rawit_hijau,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,0,1,4,0,0,main
-produsen,rawit_hijau,Sulawesi Selatan,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Sulawesi Tengah,94,94,1.0,2018-10,2026-10,0,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Sulawesi Tenggara,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Sulawesi Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_hijau,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_hijau,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Aceh,94,4,0.0425531914893617,2018-10,2019-07,0,0,87,0,1,0,3,0,3,0,excluded
-produsen,rawit_merah,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Banten,94,62,0.6595744680851063,2018-10,2026-11,14,23,0,5,1,0,3,6,3,0,descriptive
-produsen,rawit_merah,Bengkulu,94,76,0.8085106382978723,2019-10,2026-11,14,9,0,7,0,0,2,9,0,0,main
-produsen,rawit_merah,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_merah,Gorontalo,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_merah,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_merah,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Kalimantan Barat,94,91,0.9680851063829787,2018-12,2026-11,14,0,0,3,0,0,1,3,0,0,main
-produsen,rawit_merah,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_merah,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_merah,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_merah,Kalimantan Utara,94,92,0.9787234042553191,2018-10,2026-11,14,2,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,0,1,2,0,0,main
-produsen,rawit_merah,Kepulauan Riau,94,91,0.9680851063829787,2018-10,2026-09,0,0,1,1,0,0,2,2,0,0,main
-produsen,rawit_merah,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,0,1,4,0,0,main
-produsen,rawit_merah,Maluku Utara,94,88,0.9361702127659575,2018-10,2026-11,14,1,0,4,0,0,2,5,0,0,main
-produsen,rawit_merah,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,5,1,0,3,7,3,0,descriptive
-produsen,rawit_merah,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_merah,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,0,1,4,0,0,main
-produsen,rawit_merah,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,0,0,main
-produsen,rawit_merah,Sulawesi Utara,94,92,0.9787234042553191,2018-10,2026-11,14,1,0,1,0,0,1,1,0,0,main
-produsen,rawit_merah,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,0,0,excluded
-produsen,rawit_merah,Sumatera Selatan,94,93,0.9893617021276596,2018-11,2026-11,14,0,0,1,0,0,1,1,0,0,main
-produsen,rawit_merah,Sumatera Utara,94,93,0.9893617021276596,2018-08,2026-11,14,0,0,1,0,0,1,1,0,0,main
+price_type,commodity,province,core_months,valid_months,valid_share,first_valid_month,last_valid_month,nov_2026_days,leading_gap,trailing_gap,filled_gaps,null_gaps,longest_interior_gap,months_linear_log,months_left_null,tier
+eceran,cabai_merah,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,cabai_rawit,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Aceh,94,16,0.1702127659574468,2018-01,2026-11,14,36,0,0,1,42,0,42,excluded
+eceran,merah_besar,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Gorontalo,94,13,0.13829787234042554,2018-06,2020-01,0,0,81,0,0,0,0,0,excluded
+eceran,merah_besar,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,merah_besar,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,merah_besar,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Kepulauan Bangka Belitung,94,46,0.48936170212765956,2018-01,2022-10,0,0,48,0,0,0,0,0,excluded
+eceran,merah_besar,Kepulauan Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+eceran,merah_besar,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Maluku,94,86,0.9148936170212766,2018-01,2026-07,0,0,3,1,0,5,5,0,main
+eceran,merah_besar,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,merah_besar,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Sulawesi Tengah,94,89,0.9468085106382979,2018-01,2026-11,14,0,0,4,0,2,5,0,main
+eceran,merah_besar,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Sulawesi Utara,94,1,0.010638297872340425,2018-01,2019-01,0,0,93,0,0,0,0,0,excluded
+eceran,merah_besar,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+eceran,merah_besar,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_besar,Sumatera Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+eceran,merah_keriting,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Maluku Utara,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,merah_keriting,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Gorontalo,94,44,0.46808510638297873,2018-01,2022-08,0,0,50,0,0,0,0,0,excluded
+eceran,rawit_hijau,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Kepulauan Riau,94,94,1.0,2018-01,2026-10,6,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Papua Barat,94,25,0.26595744680851063,2018-01,2021-01,0,0,69,0,0,0,0,0,excluded
+eceran,rawit_hijau,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Sulawesi Selatan,94,62,0.6595744680851063,2021-09,2026-11,14,32,0,0,0,0,0,0,descriptive
+eceran,rawit_hijau,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_hijau,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Aceh,94,0,0.0,2018-01,2018-08,0,94,0,0,0,0,0,0,excluded
+eceran,rawit_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Kepulauan Riau,94,10,0.10638297872340426,2026-01,2026-10,6,84,0,0,0,0,0,0,excluded
+eceran,rawit_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Maluku Utara,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+eceran,rawit_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+eceran,rawit_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Maluku Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Maluku Utara,94,85,0.9042553191489362,2018-01,2026-11,14,0,0,2,1,7,2,7,descriptive
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,cabai_rawit,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Gorontalo,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+pedagang_besar,merah_besar,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Kepulauan Bangka Belitung,94,46,0.48936170212765956,2018-01,2022-10,0,0,48,0,0,0,0,0,excluded
+pedagang_besar,merah_besar,Kepulauan Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+pedagang_besar,merah_besar,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Maluku,94,54,0.574468085106383,2018-01,2024-11,0,0,23,3,1,7,10,7,descriptive
+pedagang_besar,merah_besar,Maluku Utara,94,38,0.40425531914893614,2018-01,2022-05,0,0,53,3,0,1,3,0,excluded
+pedagang_besar,merah_besar,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Sulawesi Tengah,94,89,0.9468085106382979,2018-01,2026-11,14,0,0,3,0,3,5,0,main
+pedagang_besar,merah_besar,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Sulawesi Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+pedagang_besar,merah_besar,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+pedagang_besar,merah_besar,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_besar,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Maluku Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,merah_keriting,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Aceh,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Gorontalo,94,13,0.13829787234042554,2018-01,2020-01,0,0,81,0,0,0,0,0,excluded
+pedagang_besar,rawit_hijau,Jambi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Kepulauan Riau,94,94,1.0,2018-01,2026-11,13,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Maluku,94,74,0.7872340425531915,2018-01,2026-06,0,0,4,2,1,10,6,10,descriptive
+pedagang_besar,rawit_hijau,Maluku Utara,94,79,0.8404255319148937,2018-10,2026-11,14,0,0,3,1,7,8,7,descriptive
+pedagang_besar,rawit_hijau,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Papua Barat,94,67,0.7127659574468085,2018-01,2026-11,14,0,0,0,1,27,0,27,descriptive
+pedagang_besar,rawit_hijau,Riau,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Sulawesi Selatan,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+pedagang_besar,rawit_hijau,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Sumatera Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_hijau,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Aceh,94,74,0.7872340425531915,2018-01,2026-11,14,6,0,1,1,9,5,9,descriptive
+pedagang_besar,rawit_merah,Bali,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Banten,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Bengkulu,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,DI Yogyakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,DKI Jakarta,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Gorontalo,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+pedagang_besar,rawit_merah,Jawa Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Jawa Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Jawa Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Kalimantan Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Kalimantan Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Kalimantan Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Kalimantan Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Kalimantan Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Kepulauan Bangka Belitung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Kepulauan Riau,94,10,0.10638297872340426,2026-01,2026-11,13,84,0,0,0,0,0,0,excluded
+pedagang_besar,rawit_merah,Lampung,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Maluku,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Maluku Utara,94,76,0.8085106382978723,2018-01,2026-11,14,0,0,1,1,17,1,17,descriptive
+pedagang_besar,rawit_merah,Nusa Tenggara Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Nusa Tenggara Timur,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Papua,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Papua Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Riau,94,93,0.9893617021276596,2018-01,2026-11,14,0,0,1,0,1,1,0,main
+pedagang_besar,rawit_merah,Semua Provinsi,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Sulawesi Barat,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Sulawesi Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Sulawesi Tengah,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Sulawesi Tenggara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Sulawesi Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+pedagang_besar,rawit_merah,Sumatera Selatan,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+pedagang_besar,rawit_merah,Sumatera Utara,94,94,1.0,2018-01,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Aceh,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Banten,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,1,4,0,main
+produsen,cabai_merah,Bengkulu,94,87,0.925531914893617,2018-09,2026-11,14,0,0,4,0,3,7,0,main
+produsen,cabai_merah,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,cabai_merah,Gorontalo,94,84,0.8936170212765957,2019-10,2026-11,14,9,0,1,0,1,1,0,main
+produsen,cabai_merah,Jambi,94,92,0.9787234042553191,2018-09,2026-11,14,0,0,2,0,1,2,0,main
+produsen,cabai_merah,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Kalimantan Barat,94,91,0.9680851063829787,2018-10,2026-11,14,0,0,3,0,1,3,0,main
+produsen,cabai_merah,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,cabai_merah,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,cabai_merah,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,cabai_merah,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,1,2,0,main
+produsen,cabai_merah,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,2,2,0,main
+produsen,cabai_merah,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,1,4,0,main
+produsen,cabai_merah,Maluku Utara,94,89,0.9468085106382979,2018-10,2026-11,14,1,0,3,0,2,4,0,main
+produsen,cabai_merah,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,6,0,3,10,0,descriptive
+produsen,cabai_merah,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,1,2,0,main
+produsen,cabai_merah,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,1,4,0,main
+produsen,cabai_merah,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Sulawesi Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_merah,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Aceh,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Banten,94,77,0.8191489361702128,2018-10,2026-11,14,0,0,7,1,9,8,9,descriptive
+produsen,cabai_rawit,Bengkulu,94,84,0.8936170212765957,2018-09,2026-11,14,0,0,8,0,2,10,0,main
+produsen,cabai_rawit,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,cabai_rawit,Gorontalo,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,cabai_rawit,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,cabai_rawit,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Kalimantan Barat,94,91,0.9680851063829787,2018-12,2026-11,14,0,0,3,0,1,3,0,main
+produsen,cabai_rawit,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,cabai_rawit,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,cabai_rawit,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,cabai_rawit,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,1,2,0,main
+produsen,cabai_rawit,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,2,2,0,main
+produsen,cabai_rawit,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,1,4,0,main
+produsen,cabai_rawit,Maluku Utara,94,88,0.9361702127659575,2018-10,2026-11,14,1,0,4,0,2,5,0,main
+produsen,cabai_rawit,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,6,0,3,10,0,descriptive
+produsen,cabai_rawit,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,1,2,0,main
+produsen,cabai_rawit,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,1,4,0,main
+produsen,cabai_rawit,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Sulawesi Utara,94,92,0.9787234042553191,2018-10,2026-11,14,1,0,1,0,1,1,0,main
+produsen,cabai_rawit,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,main
+produsen,cabai_rawit,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Aceh,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Banten,94,77,0.8191489361702128,2018-10,2026-11,14,1,0,4,1,7,9,7,descriptive
+produsen,merah_besar,Bengkulu,94,82,0.8723404255319149,2018-10,2026-11,14,0,0,6,0,4,12,0,main
+produsen,merah_besar,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Gorontalo,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Kalimantan Barat,94,91,0.9680851063829787,2018-10,2026-11,14,0,0,3,0,1,3,0,main
+produsen,merah_besar,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,merah_besar,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,merah_besar,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,merah_besar,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,1,2,0,main
+produsen,merah_besar,Kepulauan Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Maluku,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Maluku Utara,94,89,0.9468085106382979,2018-10,2026-11,14,1,0,3,0,2,4,0,main
+produsen,merah_besar,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,6,0,3,10,0,descriptive
+produsen,merah_besar,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,1,4,0,main
+produsen,merah_besar,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Sulawesi Tengah,94,2,0.02127659574468085,2018-10,2019-02,0,0,92,0,0,0,0,0,excluded
+produsen,merah_besar,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Sulawesi Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_besar,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_besar,Sumatera Utara,94,93,0.9893617021276596,2018-08,2026-11,14,0,0,1,0,1,1,0,main
+produsen,merah_keriting,Aceh,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Bali,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_keriting,Banten,94,87,0.925531914893617,2018-10,2026-11,14,0,0,6,0,2,7,0,main
+produsen,merah_keriting,Bengkulu,94,87,0.925531914893617,2018-09,2026-11,14,0,0,4,0,3,7,0,main
+produsen,merah_keriting,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,merah_keriting,Gorontalo,94,84,0.8936170212765957,2019-10,2026-11,14,9,0,1,0,1,1,0,main
+produsen,merah_keriting,Jambi,94,92,0.9787234042553191,2018-09,2026-11,14,0,0,2,0,1,2,0,main
+produsen,merah_keriting,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Jawa Timur,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Kalimantan Barat,94,91,0.9680851063829787,2018-12,2026-11,14,0,0,3,0,1,3,0,main
+produsen,merah_keriting,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,merah_keriting,Kalimantan Tengah,94,76,0.8085106382978723,2019-09,2026-11,14,8,0,2,1,8,2,8,descriptive
+produsen,merah_keriting,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,merah_keriting,Kalimantan Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,1,2,0,main
+produsen,merah_keriting,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,2,2,0,main
+produsen,merah_keriting,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,1,4,0,main
+produsen,merah_keriting,Maluku Utara,94,20,0.2127659574468085,2024-12,2026-11,14,71,0,2,0,2,3,0,excluded
+produsen,merah_keriting,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-11,2023-12,0,0,34,6,0,3,10,0,descriptive
+produsen,merah_keriting,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,1,2,0,main
+produsen,merah_keriting,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,1,4,0,main
+produsen,merah_keriting,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Sulawesi Tenggara,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Sulawesi Utara,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,merah_keriting,Sumatera Selatan,94,89,0.9468085106382979,2018-11,2026-11,14,0,0,1,0,5,5,0,main
+produsen,merah_keriting,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Aceh,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Banten,94,77,0.8191489361702128,2018-10,2026-11,14,0,0,7,1,9,8,9,descriptive
+produsen,rawit_hijau,Bengkulu,94,55,0.5851063829787234,2018-09,2026-11,14,0,0,10,1,8,31,8,descriptive
+produsen,rawit_hijau,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Gorontalo,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Kalimantan Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_hijau,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_hijau,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_hijau,Kalimantan Utara,94,92,0.9787234042553191,2018-10,2026-11,14,0,0,1,0,2,2,0,main
+produsen,rawit_hijau,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,1,2,0,main
+produsen,rawit_hijau,Kepulauan Riau,94,92,0.9787234042553191,2018-10,2026-10,0,0,0,1,0,2,2,0,main
+produsen,rawit_hijau,Lampung,94,92,0.9787234042553191,2018-10,2026-11,14,0,0,2,0,1,2,0,main
+produsen,rawit_hijau,Maluku,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Maluku Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Nusa Tenggara Timur,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Papua Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Riau,94,92,0.9787234042553191,2018-08,2026-11,14,0,0,2,0,1,2,0,main
+produsen,rawit_hijau,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,1,4,0,main
+produsen,rawit_hijau,Sulawesi Selatan,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Sulawesi Tengah,94,94,1.0,2018-10,2026-10,0,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Sulawesi Tenggara,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Sulawesi Utara,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_hijau,Sumatera Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Sumatera Selatan,94,94,1.0,2018-11,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_hijau,Sumatera Utara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Aceh,94,4,0.0425531914893617,2018-10,2019-07,0,0,87,1,0,3,3,0,excluded
+produsen,rawit_merah,Bali,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Banten,94,62,0.6595744680851063,2018-10,2026-11,14,23,0,6,0,3,9,0,descriptive
+produsen,rawit_merah,Bengkulu,94,76,0.8085106382978723,2019-10,2026-11,14,9,0,7,0,2,9,0,main
+produsen,rawit_merah,DI Yogyakarta,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,DKI Jakarta,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_merah,Gorontalo,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_merah,Jambi,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_merah,Jawa Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Jawa Tengah,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Jawa Timur,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Kalimantan Barat,94,91,0.9680851063829787,2018-12,2026-11,14,0,0,3,0,1,3,0,main
+produsen,rawit_merah,Kalimantan Selatan,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_merah,Kalimantan Tengah,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_merah,Kalimantan Timur,94,93,0.9893617021276596,2018-10,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_merah,Kalimantan Utara,94,92,0.9787234042553191,2018-10,2026-11,14,2,0,0,0,0,0,0,main
+produsen,rawit_merah,Kepulauan Bangka Belitung,94,92,0.9787234042553191,2018-11,2026-11,14,0,0,2,0,1,2,0,main
+produsen,rawit_merah,Kepulauan Riau,94,91,0.9680851063829787,2018-10,2026-09,0,0,1,1,0,2,2,0,main
+produsen,rawit_merah,Lampung,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Maluku,94,90,0.9574468085106383,2018-10,2026-11,14,0,0,4,0,1,4,0,main
+produsen,rawit_merah,Maluku Utara,94,88,0.9361702127659575,2018-10,2026-11,14,1,0,4,0,2,5,0,main
+produsen,rawit_merah,Nusa Tenggara Barat,94,94,1.0,2018-09,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Nusa Tenggara Timur,94,50,0.5319148936170213,2018-09,2023-12,0,0,34,6,0,3,10,0,descriptive
+produsen,rawit_merah,Papua,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Papua Barat,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Riau,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_merah,Semua Provinsi,94,94,1.0,2018-04,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Sulawesi Barat,94,89,0.9468085106382979,2018-05,2026-11,14,1,0,4,0,1,4,0,main
+produsen,rawit_merah,Sulawesi Selatan,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Sulawesi Tengah,94,94,1.0,2018-10,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Sulawesi Tenggara,94,94,1.0,2018-08,2026-11,14,0,0,0,0,0,0,0,main
+produsen,rawit_merah,Sulawesi Utara,94,92,0.9787234042553191,2018-10,2026-11,14,1,0,1,0,1,1,0,main
+produsen,rawit_merah,Sumatera Barat,94,0,0.0,,,0,94,0,0,0,0,0,0,excluded
+produsen,rawit_merah,Sumatera Selatan,94,93,0.9893617021276596,2018-11,2026-11,14,0,0,1,0,1,1,0,main
+produsen,rawit_merah,Sumatera Utara,94,93,0.9893617021276596,2018-08,2026-11,14,0,0,1,0,1,1,0,main

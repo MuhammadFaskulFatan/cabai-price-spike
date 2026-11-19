@@ -5,9 +5,10 @@ Output di data/final/:
   core_province_year.csv    provinsi x tahun x grup komoditas, untuk uji H5 (D-27)
   price_monthly_variants.csv  empat varian (merah besar, merah keriting, rawit merah, rawit hijau), deskriptif (US3)
   price_monthly_national.csv  baris nasional ("Semua Provinsi") semua komoditas
-  dim_province.csv, dim_commodity.csv, dim_price_type.csv, dim_month.csv
+  dim_province.csv, dim_commodity.csv, dim_price_type.csv, dim_month.csv, dim_holiday.csv (libur + cuti bersama, source_level)
 Tiap nilai yang di-impute atau diestimasi punya pasangan flag is_imputed dan impute_method; sel kosong hanya
 sah dengan alasan yang tercatat (di luar periode, seri excluded, gap tengah > 6 bulan, NTT produsen, produksi 2026).
+Produksi di core_province_month = angka tahunan BDSP (`production_annual_ton`), bukan estimasi bulanan (D-42).
 """
 import numpy as np
 import pandas as pd
@@ -77,10 +78,13 @@ def build_core_month(dim_province, dim_month):
 
     core = skeleton.merge(price_wide(load_prices()), on=["province_id", "month_start", "commodity_group"], how="left")
 
-    production = pd.read_parquet(INTERIM / "fact_production_monthly.parquet")
-    production["month_start"] = pd.to_datetime(production["month_start"]).dt.date
-    production = production.rename(columns={"is_imputed": "production_is_imputed", "impute_method": "production_impute_method", "is_preliminary_year": "production_year_preliminary"})
-    core = core.merge(production, on=["province_id", "month_start", "commodity_group"], how="left")
+    # produksi: angka tahunan BDSP, sama untuk 12 bulan dalam tahunnya; 2026 NULL (D-42)
+    annual = pd.read_parquet(INTERIM / "fact_production_annual.parquet")
+    annual = annual[annual["commodity_group"].isin(CORE_COMMODITY.values())]
+    annual = annual.rename(columns={"production_ton": "production_annual_ton", "is_preliminary": "production_annual_preliminary"})
+    core["year"] = pd.to_datetime(core["month_start"]).dt.year
+    core = core.merge(annual[["province_id", "year", "commodity_group", "production_annual_ton", "production_annual_preliminary"]],
+                      on=["province_id", "year", "commodity_group"], how="left").drop(columns="year")
 
     oni = pd.read_parquet(INTERIM / "fact_oni_monthly.parquet")[["month_start", "oni_anomaly", "enso_phase"]]
     oni["month_start"] = pd.to_datetime(oni["month_start"]).dt.date
@@ -146,6 +150,7 @@ def run():
         "dim_commodity.csv": dim_commodity,
         "dim_price_type.csv": dim_price_type,
         "dim_month.csv": dim_month,
+        "dim_holiday.csv": pd.read_parquet(INTERIM / "dim_holiday.parquet"),
     }
     for name, frame in outputs.items():
         frame.round(4).to_csv(FINAL / name, index=False)

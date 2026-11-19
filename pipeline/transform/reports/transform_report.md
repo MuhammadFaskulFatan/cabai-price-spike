@@ -1,6 +1,6 @@
 # Laporan Fase 4 (Transform)
 
-Sumber angka: `data/interim/` dan `data/final/`. Aturan dan ambang ada di `pipeline/rules.py` (D-35).
+Sumber angka: `data/interim/` dan `data/final/`. Aturan dan ambang ada di `pipeline/rules.py` (D-35, D-43).
 
 ## 1. Seri per tier (tipe harga x komoditas)
 
@@ -27,36 +27,37 @@ Satu seri = satu provinsi (atau baris nasional). Tier dihitung pada Jan 2019 - O
 | produsen | rawit_hijau | 23 | 2 | 10 |
 | produsen | rawit_merah | 28 | 2 | 5 |
 
-### Hold-out validation metode imputation (D-09)
+### Hold-out validation metode imputation (D-09, D-43)
 
-Aturan (panduan kerja): gap 1-2 bulan linear interpolation pada log price, 3-6 bulan Kalman. Success criterion charter: setiap metode lebih akurat dari linear interpolation.
+Success criterion: metode imputasi dipilih lewat hold-out; jika tidak lebih akurat dari baseline linear, baseline yang dipakai. Kandidat `kalman` tidak lebih akurat di bucket mana pun, jadi semua gap 1-6 bulan memakai `linear_log` (D-43).
 
-| bucket | metode_aturan | metode_mape_terendah | sesuai_aturan | mape_linear_pct | mape_kalman_pct | mape_locf_pct |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1-2 bulan | linear_log | linear_log | True | 17.01 | 17.20 | 24.47 |
-| 3-6 bulan | kalman | linear_log | False | 24.55 | 24.80 | 32.25 |
+| bucket | mape_linear_pct | mape_kalman_pct | mape_locf_pct | kalman_lebih_akurat | metode_dipakai |
+| --- | --- | --- | --- | --- | --- |
+| 1-2 bulan | 17.01 | 17.20 | 24.47 | False | linear_log |
+| 3-6 bulan | 24.55 | 24.80 | 32.25 | False | linear_log |
+| 1-6 bulan | 23.47 | 23.71 | 31.14 | False | linear_log |
 
 Rincian di `pipeline/validate/reports/holdout_imputation.md`.
 
 ## 2. Nilai yang di-impute
 
-| price_type | commodity | linear_log | kalman | total_imputed |
-| --- | --- | --- | --- | --- |
-| eceran | merah_besar | 5 | 5 | 10 |
-| pedagang_besar | cabai_merah | 1 | 0 | 1 |
-| pedagang_besar | cabai_rawit | 3 | 0 | 3 |
-| pedagang_besar | merah_besar | 5 | 11 | 16 |
-| pedagang_besar | merah_keriting | 1 | 0 | 1 |
-| pedagang_besar | rawit_hijau | 5 | 10 | 15 |
-| pedagang_besar | rawit_merah | 3 | 5 | 8 |
-| produsen | cabai_merah | 45 | 6 | 51 |
-| produsen | cabai_rawit | 55 | 3 | 58 |
-| produsen | merah_besar | 37 | 16 | 53 |
-| produsen | merah_keriting | 45 | 11 | 56 |
-| produsen | rawit_hijau | 32 | 25 | 57 |
-| produsen | rawit_merah | 52 | 10 | 62 |
+| price_type | commodity | impute_method | nilai |
+| --- | --- | --- | --- |
+| eceran | merah_besar | linear_log | 10 |
+| pedagang_besar | cabai_merah | linear_log | 1 |
+| pedagang_besar | cabai_rawit | linear_log | 3 |
+| pedagang_besar | merah_besar | linear_log | 16 |
+| pedagang_besar | merah_keriting | linear_log | 1 |
+| pedagang_besar | rawit_hijau | linear_log | 15 |
+| pedagang_besar | rawit_merah | linear_log | 8 |
+| produsen | cabai_merah | linear_log | 51 |
+| produsen | cabai_rawit | linear_log | 58 |
+| produsen | merah_besar | linear_log | 53 |
+| produsen | merah_keriting | linear_log | 56 |
+| produsen | rawit_hijau | linear_log | 57 |
+| produsen | rawit_merah | linear_log | 62 |
 
-Total 391 nilai dari 60,089 bulan berharga. Gap > 6 bulan, gap awal/akhir, dan seri excluded tidak diisi.
+Total 391 nilai dari 60,089 bulan berharga, semuanya linear interpolation pada log price. Gap > 6 bulan, gap awal/akhir, dan seri excluded tidak diisi. Setiap uji H2/H4 wajib punya sensitivity check tanpa bulan imputasi (D-44).
 
 ## 3. Sel harga kosong di core_province_month (periode model Jan 2019 - Okt 2026)
 
@@ -71,10 +72,11 @@ Total 391 nilai dari 60,089 bulan berharga. Gap > 6 bulan, gap awal/akhir, dan s
 ## 4. Produksi
 
 - `fact_production_annual`: 816 baris (34 provinsi x 8 tahun x 3 grup). `is_preliminary` = 2025; `is_outlier` = 21 baris; `suspect_copy` = 8 baris (cabai_keriting).
-- `fact_production_monthly` (Denton, deskriptif): 6,528 nilai estimasi, seluruhnya `is_imputed = TRUE`, `impute_method = denton`; 2026 NULL (tanpa ekstrapolasi). Total 12 bulan sama dengan angka tahunan BDSP (selisih maksimum 1.2e-10 ton).
-- Seri provinsi x grup yang hasil Denton tanpa batas bawah sempat negatif lalu diselesaikan dengan batas x >= 0: 2.
+- `core_province_month` memakai `production_annual_ton`: angka tahunan BDSP yang sama untuk 12 bulan dalam tahunnya; 2026 NULL. Disagregasi bulanan (Denton) dibatalkan (D-42).
 
-Hold-out MAPE Denton (rincian di `pipeline/validate/reports/holdout_production.md`):
+### Dokumentasi: hold-out disagregasi bulanan yang membuat Denton dibatalkan (D-42)
+
+Realisasi SPH-BPS Januari-Maret 2022-2025 (24 nilai), leave-one-year-out. MAPE nasional (persen):
 
 | commodity_group | denton | flat | profile |
 | --- | --- | --- | --- |
@@ -89,9 +91,11 @@ Gabungan dua komoditas:
 | flat | 14.04 | 24 |
 | profile | 16.23 | 24 |
 
+Pola musiman dari tabel prognosa Buletin tidak membuat tebakan lebih baik dari flat (tahunan / 12). Rincian di `pipeline/validate/reports/holdout_production.md`.
+
 ## 5. Core dataset
 
-- `core_province_month.csv`: 7,276 baris x 34 kolom; key (provinsi, bulan, grup) unik: True.
+- `core_province_month.csv`: 7,276 baris x 32 kolom; key (provinsi, bulan, grup) unik: True.
 - `core_province_year.csv`: 544 baris x 13 kolom; produksi dan luas panen 2018-2025, 2026 tidak ada.
 - Pasangan flag konsisten (is_imputed TRUE hanya jika impute_method terisi): True.
 - Kolom cuaca belum ada; menyusul setelah data Open-Meteo lengkap.
