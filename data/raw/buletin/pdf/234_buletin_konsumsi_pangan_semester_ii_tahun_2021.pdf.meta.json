@@ -1,0 +1,13 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "detail_url": "https://satudata.pertanian.go.id/details/publikasi/234",
+    "pdf_url": "https://satudata.pertanian.go.id/assets/docs/publikasi/Buletin_Konsumsi_Pangan_Semester_II_Tahun_2021.pdf",
+    "title": "Buletin Konsumsi Pangan Semester II Tahun 2021",
+    "publication_id": 234
+  },
+  "n_rows": null,
+  "n_bytes": 2326353,
+  "sha256": "3373e44f8689bd2b8a1d7d7563afdf994d80e3ffccc130514b059a0a9738d059"
+}

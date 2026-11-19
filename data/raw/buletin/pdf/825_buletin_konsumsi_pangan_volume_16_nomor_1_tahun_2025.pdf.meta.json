@@ -1,0 +1,13 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "detail_url": "https://satudata.pertanian.go.id/details/publikasi/825",
+    "pdf_url": "https://satudata.pertanian.go.id/assets/docs/publikasi/Buletin_Konsumsi_Pangan_Smtr1-2025-Ok.pdf",
+    "title": "Buletin Konsumsi Pangan Volume 16 Nomor 1 Tahun 2025",
+    "publication_id": 825
+  },
+  "n_rows": null,
+  "n_bytes": 2228613,
+  "sha256": "545ef2921346f9d0a2619323b4ef2b107d7724fee6a284093a1abb563cf4a75b"
+}

@@ -1,0 +1,13 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "detail_url": "https://satudata.pertanian.go.id/details/publikasi/480",
+    "pdf_url": "https://satudata.pertanian.go.id/assets/docs/publikasi/Buletin_Konsumsi_Vo_14_No_1_Tahun_2023.pdf",
+    "title": "Buletin Konsumsi Pangan Volume 14 Nomor 1 Tahun 2023",
+    "publication_id": 480
+  },
+  "n_rows": null,
+  "n_bytes": 2352897,
+  "sha256": "193a68148a7bc5c2a63b5d52281ec9a5673bd899f8ac93761a24e0ba877faf1c"
+}

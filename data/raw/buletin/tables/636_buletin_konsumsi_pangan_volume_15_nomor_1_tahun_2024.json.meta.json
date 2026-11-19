@@ -1,0 +1,17 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "pdf": "636_buletin_konsumsi_pangan_volume_15_nomor_1_tahun_2024.pdf",
+    "pages": [
+      54,
+      55,
+      56,
+      57
+    ],
+    "tool": "pdfplumber 0.11.10"
+  },
+  "n_rows": 4,
+  "n_bytes": 18739,
+  "sha256": "ec539d14323da437411d8fd9952271b8aefddb7754908ac5d53b009de247820f"
+}

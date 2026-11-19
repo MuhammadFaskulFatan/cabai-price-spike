@@ -1,0 +1,13 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "detail_url": "https://satudata.pertanian.go.id/details/publikasi/414",
+    "pdf_url": "https://satudata.pertanian.go.id/assets/docs/publikasi/Buletin_Konsumsi_Pangan_Vol_13_No_2_Tahun_2022.pdf",
+    "title": "Buletin Konsumsi Pangan Volume 13 Nomor 2 Tahun 2022",
+    "publication_id": 414
+  },
+  "n_rows": null,
+  "n_bytes": 2772035,
+  "sha256": "a9dc53472b53a9e20dc0319a5de443d98257d59b345b860c3e3ca87856005f8e"
+}

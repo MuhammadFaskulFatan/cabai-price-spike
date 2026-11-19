@@ -1,0 +1,13 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "detail_url": "https://satudata.pertanian.go.id/details/publikasi/654",
+    "pdf_url": "https://satudata.pertanian.go.id/assets/docs/publikasi/Buletin_Konsumsi_Smt2-2024-Gab.pdf",
+    "title": "Buletin Konsumsi Pangan Volume 15 Nomor 2 Tahun 2024",
+    "publication_id": 654
+  },
+  "n_rows": null,
+  "n_bytes": 2703177,
+  "sha256": "043a03b97b6be6a6e9da8c1114223272b2fb089f400d64d20ca9328706842aaf"
+}

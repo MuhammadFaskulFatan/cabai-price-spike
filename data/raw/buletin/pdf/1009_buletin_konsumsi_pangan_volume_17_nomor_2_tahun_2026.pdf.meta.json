@@ -1,0 +1,13 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "detail_url": "https://satudata.pertanian.go.id/details/publikasi/1009",
+    "pdf_url": "https://satudata.pertanian.go.id/assets/docs/publikasi/40a692d972e64778d39aba1e656412b5.pdf",
+    "title": "Buletin Konsumsi Pangan Volume 17 Nomor 2 Tahun 2026",
+    "publication_id": 1009
+  },
+  "n_rows": null,
+  "n_bytes": 5181692,
+  "sha256": "a502f3a94bdcc5ebb91d1691cd6e88950ef0d50d1bf44cddb9c44cdfc14b2e8b"
+}

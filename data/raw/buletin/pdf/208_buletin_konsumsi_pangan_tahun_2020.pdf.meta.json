@@ -1,0 +1,13 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "detail_url": "https://satudata.pertanian.go.id/details/publikasi/208",
+    "pdf_url": "https://satudata.pertanian.go.id/assets/docs/publikasi/Buletin_Konsumsi_Pangan_Tahun_2020.pdf",
+    "title": "Buletin Konsumsi Pangan Tahun 2020",
+    "publication_id": 208
+  },
+  "n_rows": null,
+  "n_bytes": 1819417,
+  "sha256": "dc76f7b540b43e57a1eaf2d006a0c5e4951fe3b5535a73acdf682c24c3b302b5"
+}

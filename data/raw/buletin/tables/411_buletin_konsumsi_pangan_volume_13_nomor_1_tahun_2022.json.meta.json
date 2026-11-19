@@ -1,0 +1,17 @@
+{
+  "source": "buletin_pusdatin",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "pdf": "411_buletin_konsumsi_pangan_volume_13_nomor_1_tahun_2022.pdf",
+    "pages": [
+      61,
+      62,
+      63,
+      64
+    ],
+    "tool": "pdfplumber 0.11.10"
+  },
+  "n_rows": 4,
+  "n_bytes": 19802,
+  "sha256": "f88d4c6dc30739d566d17d69d1d467db29769e6e60f097815b73905adc13a345"
+}
