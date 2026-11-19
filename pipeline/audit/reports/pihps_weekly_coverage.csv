@@ -1,0 +1,1859 @@
+price_type,commodity,province,year,minggu,terisi,pct_terisi
+eceran,cabai_merah,Aceh,2018,53,51,96.0
+eceran,cabai_merah,Aceh,2019,53,50,94.0
+eceran,cabai_merah,Aceh,2020,53,50,94.0
+eceran,cabai_merah,Aceh,2021,53,49,92.0
+eceran,cabai_merah,Aceh,2022,52,49,94.0
+eceran,cabai_merah,Aceh,2023,52,50,96.0
+eceran,cabai_merah,Aceh,2024,53,53,100.0
+eceran,cabai_merah,Aceh,2025,53,53,100.0
+eceran,cabai_merah,Aceh,2026,47,47,100.0
+eceran,cabai_merah,Bali,2018,53,51,96.0
+eceran,cabai_merah,Bali,2019,53,49,92.0
+eceran,cabai_merah,Bali,2020,53,48,91.0
+eceran,cabai_merah,Bali,2021,53,49,92.0
+eceran,cabai_merah,Bali,2022,52,49,94.0
+eceran,cabai_merah,Bali,2023,52,50,96.0
+eceran,cabai_merah,Bali,2024,53,53,100.0
+eceran,cabai_merah,Bali,2025,53,53,100.0
+eceran,cabai_merah,Bali,2026,47,47,100.0
+eceran,cabai_merah,Banten,2018,53,51,96.0
+eceran,cabai_merah,Banten,2019,53,51,96.0
+eceran,cabai_merah,Banten,2020,53,49,92.0
+eceran,cabai_merah,Banten,2021,53,49,92.0
+eceran,cabai_merah,Banten,2022,52,49,94.0
+eceran,cabai_merah,Banten,2023,52,50,96.0
+eceran,cabai_merah,Banten,2024,53,53,100.0
+eceran,cabai_merah,Banten,2025,53,53,100.0
+eceran,cabai_merah,Banten,2026,47,47,100.0
+eceran,cabai_merah,Bengkulu,2018,53,51,96.0
+eceran,cabai_merah,Bengkulu,2019,53,50,94.0
+eceran,cabai_merah,Bengkulu,2020,53,49,92.0
+eceran,cabai_merah,Bengkulu,2021,53,49,92.0
+eceran,cabai_merah,Bengkulu,2022,52,49,94.0
+eceran,cabai_merah,Bengkulu,2023,52,52,100.0
+eceran,cabai_merah,Bengkulu,2024,53,50,94.0
+eceran,cabai_merah,Bengkulu,2025,53,53,100.0
+eceran,cabai_merah,Bengkulu,2026,47,47,100.0
+eceran,cabai_merah,DI Yogyakarta,2018,53,52,98.0
+eceran,cabai_merah,DI Yogyakarta,2019,53,51,96.0
+eceran,cabai_merah,DI Yogyakarta,2020,53,49,92.0
+eceran,cabai_merah,DI Yogyakarta,2021,53,49,92.0
+eceran,cabai_merah,DI Yogyakarta,2022,52,49,94.0
+eceran,cabai_merah,DI Yogyakarta,2023,52,51,98.0
+eceran,cabai_merah,DI Yogyakarta,2024,53,52,98.0
+eceran,cabai_merah,DI Yogyakarta,2025,53,53,100.0
+eceran,cabai_merah,DI Yogyakarta,2026,47,47,100.0
+eceran,cabai_merah,DKI Jakarta,2018,53,51,96.0
+eceran,cabai_merah,DKI Jakarta,2019,53,50,94.0
+eceran,cabai_merah,DKI Jakarta,2020,53,49,92.0
+eceran,cabai_merah,DKI Jakarta,2021,53,49,92.0
+eceran,cabai_merah,DKI Jakarta,2022,52,49,94.0
+eceran,cabai_merah,DKI Jakarta,2023,52,50,96.0
+eceran,cabai_merah,DKI Jakarta,2024,53,52,98.0
+eceran,cabai_merah,DKI Jakarta,2025,53,52,98.0
+eceran,cabai_merah,DKI Jakarta,2026,47,47,100.0
+eceran,cabai_merah,Dum,2021,53,0,0.0
+eceran,cabai_merah,Gorontalo,2018,53,51,96.0
+eceran,cabai_merah,Gorontalo,2019,53,51,96.0
+eceran,cabai_merah,Gorontalo,2020,53,50,94.0
+eceran,cabai_merah,Gorontalo,2021,53,49,92.0
+eceran,cabai_merah,Gorontalo,2022,52,49,94.0
+eceran,cabai_merah,Gorontalo,2023,52,51,98.0
+eceran,cabai_merah,Gorontalo,2024,53,53,100.0
+eceran,cabai_merah,Gorontalo,2025,53,53,100.0
+eceran,cabai_merah,Gorontalo,2026,47,47,100.0
+eceran,cabai_merah,Jambi,2018,53,51,96.0
+eceran,cabai_merah,Jambi,2019,53,50,94.0
+eceran,cabai_merah,Jambi,2020,53,49,92.0
+eceran,cabai_merah,Jambi,2021,53,49,92.0
+eceran,cabai_merah,Jambi,2022,52,49,94.0
+eceran,cabai_merah,Jambi,2023,52,49,94.0
+eceran,cabai_merah,Jambi,2024,53,53,100.0
+eceran,cabai_merah,Jambi,2025,53,53,100.0
+eceran,cabai_merah,Jambi,2026,47,47,100.0
+eceran,cabai_merah,Jawa Barat,2018,53,51,96.0
+eceran,cabai_merah,Jawa Barat,2019,53,51,96.0
+eceran,cabai_merah,Jawa Barat,2020,53,50,94.0
+eceran,cabai_merah,Jawa Barat,2021,53,49,92.0
+eceran,cabai_merah,Jawa Barat,2022,52,49,94.0
+eceran,cabai_merah,Jawa Barat,2023,52,51,98.0
+eceran,cabai_merah,Jawa Barat,2024,53,53,100.0
+eceran,cabai_merah,Jawa Barat,2025,53,53,100.0
+eceran,cabai_merah,Jawa Barat,2026,47,47,100.0
+eceran,cabai_merah,Jawa Tengah,2018,53,53,100.0
+eceran,cabai_merah,Jawa Tengah,2019,53,53,100.0
+eceran,cabai_merah,Jawa Tengah,2020,53,51,96.0
+eceran,cabai_merah,Jawa Tengah,2021,53,49,92.0
+eceran,cabai_merah,Jawa Tengah,2022,52,49,94.0
+eceran,cabai_merah,Jawa Tengah,2023,52,52,100.0
+eceran,cabai_merah,Jawa Tengah,2024,53,53,100.0
+eceran,cabai_merah,Jawa Tengah,2025,53,53,100.0
+eceran,cabai_merah,Jawa Tengah,2026,47,47,100.0
+eceran,cabai_merah,Jawa Timur,2018,53,52,98.0
+eceran,cabai_merah,Jawa Timur,2019,53,52,98.0
+eceran,cabai_merah,Jawa Timur,2020,53,49,92.0
+eceran,cabai_merah,Jawa Timur,2021,53,49,92.0
+eceran,cabai_merah,Jawa Timur,2022,52,49,94.0
+eceran,cabai_merah,Jawa Timur,2023,52,52,100.0
+eceran,cabai_merah,Jawa Timur,2024,53,53,100.0
+eceran,cabai_merah,Jawa Timur,2025,53,53,100.0
+eceran,cabai_merah,Jawa Timur,2026,47,47,100.0
+eceran,cabai_merah,Kalimantan Barat,2018,53,50,94.0
+eceran,cabai_merah,Kalimantan Barat,2019,53,50,94.0
+eceran,cabai_merah,Kalimantan Barat,2020,53,49,92.0
+eceran,cabai_merah,Kalimantan Barat,2021,53,50,94.0
+eceran,cabai_merah,Kalimantan Barat,2022,52,50,96.0
+eceran,cabai_merah,Kalimantan Barat,2023,52,49,94.0
+eceran,cabai_merah,Kalimantan Barat,2024,53,49,92.0
+eceran,cabai_merah,Kalimantan Barat,2025,53,52,98.0
+eceran,cabai_merah,Kalimantan Barat,2026,47,46,98.0
+eceran,cabai_merah,Kalimantan Selatan,2018,53,51,96.0
+eceran,cabai_merah,Kalimantan Selatan,2019,53,51,96.0
+eceran,cabai_merah,Kalimantan Selatan,2020,53,51,96.0
+eceran,cabai_merah,Kalimantan Selatan,2021,53,49,92.0
+eceran,cabai_merah,Kalimantan Selatan,2022,52,49,94.0
+eceran,cabai_merah,Kalimantan Selatan,2023,52,50,96.0
+eceran,cabai_merah,Kalimantan Selatan,2024,53,51,96.0
+eceran,cabai_merah,Kalimantan Selatan,2025,53,53,100.0
+eceran,cabai_merah,Kalimantan Selatan,2026,47,47,100.0
+eceran,cabai_merah,Kalimantan Tengah,2018,53,50,94.0
+eceran,cabai_merah,Kalimantan Tengah,2019,53,50,94.0
+eceran,cabai_merah,Kalimantan Tengah,2020,53,49,92.0
+eceran,cabai_merah,Kalimantan Tengah,2021,53,49,92.0
+eceran,cabai_merah,Kalimantan Tengah,2022,52,49,94.0
+eceran,cabai_merah,Kalimantan Tengah,2023,52,50,96.0
+eceran,cabai_merah,Kalimantan Tengah,2024,53,52,98.0
+eceran,cabai_merah,Kalimantan Tengah,2025,53,53,100.0
+eceran,cabai_merah,Kalimantan Tengah,2026,47,47,100.0
+eceran,cabai_merah,Kalimantan Timur,2018,53,51,96.0
+eceran,cabai_merah,Kalimantan Timur,2019,53,51,96.0
+eceran,cabai_merah,Kalimantan Timur,2020,53,51,96.0
+eceran,cabai_merah,Kalimantan Timur,2021,53,49,92.0
+eceran,cabai_merah,Kalimantan Timur,2022,52,49,94.0
+eceran,cabai_merah,Kalimantan Timur,2023,52,49,94.0
+eceran,cabai_merah,Kalimantan Timur,2024,53,53,100.0
+eceran,cabai_merah,Kalimantan Timur,2025,53,53,100.0
+eceran,cabai_merah,Kalimantan Timur,2026,47,46,98.0
+eceran,cabai_merah,Kalimantan Utara,2018,53,51,96.0
+eceran,cabai_merah,Kalimantan Utara,2019,53,51,96.0
+eceran,cabai_merah,Kalimantan Utara,2020,53,49,92.0
+eceran,cabai_merah,Kalimantan Utara,2021,53,49,92.0
+eceran,cabai_merah,Kalimantan Utara,2022,52,49,94.0
+eceran,cabai_merah,Kalimantan Utara,2023,52,49,94.0
+eceran,cabai_merah,Kalimantan Utara,2024,53,49,92.0
+eceran,cabai_merah,Kalimantan Utara,2025,53,53,100.0
+eceran,cabai_merah,Kalimantan Utara,2026,47,47,100.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2018,53,52,98.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2019,53,51,96.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2020,53,49,92.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2021,53,49,92.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2022,52,49,94.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2023,52,49,94.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2024,53,53,100.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2025,53,52,98.0
+eceran,cabai_merah,Kepulauan Bangka Belitung,2026,47,47,100.0
+eceran,cabai_merah,Kepulauan Riau,2018,53,51,96.0
+eceran,cabai_merah,Kepulauan Riau,2019,53,50,94.0
+eceran,cabai_merah,Kepulauan Riau,2020,53,50,94.0
+eceran,cabai_merah,Kepulauan Riau,2021,53,48,91.0
+eceran,cabai_merah,Kepulauan Riau,2022,52,49,94.0
+eceran,cabai_merah,Kepulauan Riau,2023,52,51,98.0
+eceran,cabai_merah,Kepulauan Riau,2024,53,52,98.0
+eceran,cabai_merah,Kepulauan Riau,2025,53,52,98.0
+eceran,cabai_merah,Kepulauan Riau,2026,47,44,94.0
+eceran,cabai_merah,Lampung,2018,53,51,96.0
+eceran,cabai_merah,Lampung,2019,53,50,94.0
+eceran,cabai_merah,Lampung,2020,53,50,94.0
+eceran,cabai_merah,Lampung,2021,53,49,92.0
+eceran,cabai_merah,Lampung,2022,52,49,94.0
+eceran,cabai_merah,Lampung,2023,52,51,98.0
+eceran,cabai_merah,Lampung,2024,53,52,98.0
+eceran,cabai_merah,Lampung,2025,53,53,100.0
+eceran,cabai_merah,Lampung,2026,47,47,100.0
+eceran,cabai_merah,Maluku,2018,53,51,96.0
+eceran,cabai_merah,Maluku,2019,53,49,92.0
+eceran,cabai_merah,Maluku,2020,53,49,92.0
+eceran,cabai_merah,Maluku,2021,53,49,92.0
+eceran,cabai_merah,Maluku,2022,52,49,94.0
+eceran,cabai_merah,Maluku,2023,52,50,96.0
+eceran,cabai_merah,Maluku,2024,53,52,98.0
+eceran,cabai_merah,Maluku,2025,53,53,100.0
+eceran,cabai_merah,Maluku,2026,47,47,100.0
+eceran,cabai_merah,Maluku Utara,2018,53,51,96.0
+eceran,cabai_merah,Maluku Utara,2019,53,51,96.0
+eceran,cabai_merah,Maluku Utara,2020,53,50,94.0
+eceran,cabai_merah,Maluku Utara,2021,53,49,92.0
+eceran,cabai_merah,Maluku Utara,2022,52,49,94.0
+eceran,cabai_merah,Maluku Utara,2023,52,51,98.0
+eceran,cabai_merah,Maluku Utara,2024,53,51,96.0
+eceran,cabai_merah,Maluku Utara,2025,53,50,94.0
+eceran,cabai_merah,Maluku Utara,2026,47,47,100.0
+eceran,cabai_merah,Nusa Tenggara Barat,2018,53,51,96.0
+eceran,cabai_merah,Nusa Tenggara Barat,2019,53,50,94.0
+eceran,cabai_merah,Nusa Tenggara Barat,2020,53,50,94.0
+eceran,cabai_merah,Nusa Tenggara Barat,2021,53,49,92.0
+eceran,cabai_merah,Nusa Tenggara Barat,2022,52,49,94.0
+eceran,cabai_merah,Nusa Tenggara Barat,2023,52,51,98.0
+eceran,cabai_merah,Nusa Tenggara Barat,2024,53,53,100.0
+eceran,cabai_merah,Nusa Tenggara Barat,2025,53,53,100.0
+eceran,cabai_merah,Nusa Tenggara Barat,2026,47,47,100.0
+eceran,cabai_merah,Nusa Tenggara Timur,2018,53,51,96.0
+eceran,cabai_merah,Nusa Tenggara Timur,2019,53,50,94.0
+eceran,cabai_merah,Nusa Tenggara Timur,2020,53,49,92.0
+eceran,cabai_merah,Nusa Tenggara Timur,2021,53,49,92.0
+eceran,cabai_merah,Nusa Tenggara Timur,2022,52,49,94.0
+eceran,cabai_merah,Nusa Tenggara Timur,2023,52,49,94.0
+eceran,cabai_merah,Nusa Tenggara Timur,2024,53,52,98.0
+eceran,cabai_merah,Nusa Tenggara Timur,2025,53,53,100.0
+eceran,cabai_merah,Nusa Tenggara Timur,2026,47,47,100.0
+eceran,cabai_merah,Papua,2018,53,52,98.0
+eceran,cabai_merah,Papua,2019,53,51,96.0
+eceran,cabai_merah,Papua,2020,53,52,98.0
+eceran,cabai_merah,Papua,2021,53,49,92.0
+eceran,cabai_merah,Papua,2022,52,49,94.0
+eceran,cabai_merah,Papua,2023,52,50,96.0
+eceran,cabai_merah,Papua,2024,53,51,96.0
+eceran,cabai_merah,Papua,2025,53,53,100.0
+eceran,cabai_merah,Papua,2026,47,47,100.0
+eceran,cabai_merah,Papua Barat,2018,53,52,98.0
+eceran,cabai_merah,Papua Barat,2019,53,50,94.0
+eceran,cabai_merah,Papua Barat,2020,53,52,98.0
+eceran,cabai_merah,Papua Barat,2021,53,49,92.0
+eceran,cabai_merah,Papua Barat,2022,52,49,94.0
+eceran,cabai_merah,Papua Barat,2023,52,51,98.0
+eceran,cabai_merah,Papua Barat,2024,53,53,100.0
+eceran,cabai_merah,Papua Barat,2025,53,53,100.0
+eceran,cabai_merah,Papua Barat,2026,47,47,100.0
+eceran,cabai_merah,Riau,2018,53,51,96.0
+eceran,cabai_merah,Riau,2019,53,50,94.0
+eceran,cabai_merah,Riau,2020,53,49,92.0
+eceran,cabai_merah,Riau,2021,53,49,92.0
+eceran,cabai_merah,Riau,2022,52,49,94.0
+eceran,cabai_merah,Riau,2023,52,50,96.0
+eceran,cabai_merah,Riau,2024,53,52,98.0
+eceran,cabai_merah,Riau,2025,53,52,98.0
+eceran,cabai_merah,Riau,2026,47,47,100.0
+eceran,cabai_merah,Semua Provinsi,2018,53,53,100.0
+eceran,cabai_merah,Semua Provinsi,2019,53,53,100.0
+eceran,cabai_merah,Semua Provinsi,2020,53,52,98.0
+eceran,cabai_merah,Semua Provinsi,2021,53,51,96.0
+eceran,cabai_merah,Semua Provinsi,2022,52,50,96.0
+eceran,cabai_merah,Semua Provinsi,2023,52,52,100.0
+eceran,cabai_merah,Semua Provinsi,2024,53,53,100.0
+eceran,cabai_merah,Semua Provinsi,2025,53,53,100.0
+eceran,cabai_merah,Semua Provinsi,2026,47,47,100.0
+eceran,cabai_merah,Sulawesi Barat,2018,53,51,96.0
+eceran,cabai_merah,Sulawesi Barat,2019,53,51,96.0
+eceran,cabai_merah,Sulawesi Barat,2020,53,50,94.0
+eceran,cabai_merah,Sulawesi Barat,2021,53,50,94.0
+eceran,cabai_merah,Sulawesi Barat,2022,52,49,94.0
+eceran,cabai_merah,Sulawesi Barat,2023,52,51,98.0
+eceran,cabai_merah,Sulawesi Barat,2024,53,52,98.0
+eceran,cabai_merah,Sulawesi Barat,2025,53,53,100.0
+eceran,cabai_merah,Sulawesi Barat,2026,47,47,100.0
+eceran,cabai_merah,Sulawesi Selatan,2018,53,51,96.0
+eceran,cabai_merah,Sulawesi Selatan,2019,53,51,96.0
+eceran,cabai_merah,Sulawesi Selatan,2020,53,51,96.0
+eceran,cabai_merah,Sulawesi Selatan,2021,53,49,92.0
+eceran,cabai_merah,Sulawesi Selatan,2022,52,49,94.0
+eceran,cabai_merah,Sulawesi Selatan,2023,52,52,100.0
+eceran,cabai_merah,Sulawesi Selatan,2024,53,52,98.0
+eceran,cabai_merah,Sulawesi Selatan,2025,53,53,100.0
+eceran,cabai_merah,Sulawesi Selatan,2026,47,47,100.0
+eceran,cabai_merah,Sulawesi Tengah,2018,53,52,98.0
+eceran,cabai_merah,Sulawesi Tengah,2019,53,50,94.0
+eceran,cabai_merah,Sulawesi Tengah,2020,53,49,92.0
+eceran,cabai_merah,Sulawesi Tengah,2021,53,48,91.0
+eceran,cabai_merah,Sulawesi Tengah,2022,52,49,94.0
+eceran,cabai_merah,Sulawesi Tengah,2023,52,51,98.0
+eceran,cabai_merah,Sulawesi Tengah,2024,53,52,98.0
+eceran,cabai_merah,Sulawesi Tengah,2025,53,53,100.0
+eceran,cabai_merah,Sulawesi Tengah,2026,47,47,100.0
+eceran,cabai_merah,Sulawesi Tenggara,2018,53,51,96.0
+eceran,cabai_merah,Sulawesi Tenggara,2019,53,51,96.0
+eceran,cabai_merah,Sulawesi Tenggara,2020,53,49,92.0
+eceran,cabai_merah,Sulawesi Tenggara,2021,53,49,92.0
+eceran,cabai_merah,Sulawesi Tenggara,2022,52,49,94.0
+eceran,cabai_merah,Sulawesi Tenggara,2023,52,52,100.0
+eceran,cabai_merah,Sulawesi Tenggara,2024,53,53,100.0
+eceran,cabai_merah,Sulawesi Tenggara,2025,53,53,100.0
+eceran,cabai_merah,Sulawesi Tenggara,2026,47,47,100.0
+eceran,cabai_merah,Sulawesi Utara,2018,53,52,98.0
+eceran,cabai_merah,Sulawesi Utara,2019,53,50,94.0
+eceran,cabai_merah,Sulawesi Utara,2020,53,49,92.0
+eceran,cabai_merah,Sulawesi Utara,2021,53,48,91.0
+eceran,cabai_merah,Sulawesi Utara,2022,52,49,94.0
+eceran,cabai_merah,Sulawesi Utara,2023,52,51,98.0
+eceran,cabai_merah,Sulawesi Utara,2024,53,53,100.0
+eceran,cabai_merah,Sulawesi Utara,2025,53,53,100.0
+eceran,cabai_merah,Sulawesi Utara,2026,47,47,100.0
+eceran,cabai_merah,Sumatera Barat,2018,53,52,98.0
+eceran,cabai_merah,Sumatera Barat,2019,53,51,96.0
+eceran,cabai_merah,Sumatera Barat,2020,53,50,94.0
+eceran,cabai_merah,Sumatera Barat,2021,53,49,92.0
+eceran,cabai_merah,Sumatera Barat,2022,52,49,94.0
+eceran,cabai_merah,Sumatera Barat,2023,52,49,94.0
+eceran,cabai_merah,Sumatera Barat,2024,53,51,96.0
+eceran,cabai_merah,Sumatera Barat,2025,53,52,98.0
+eceran,cabai_merah,Sumatera Barat,2026,47,47,100.0
+eceran,cabai_merah,Sumatera Selatan,2018,53,51,96.0
+eceran,cabai_merah,Sumatera Selatan,2019,53,51,96.0
+eceran,cabai_merah,Sumatera Selatan,2020,53,50,94.0
+eceran,cabai_merah,Sumatera Selatan,2021,53,49,92.0
+eceran,cabai_merah,Sumatera Selatan,2022,52,49,94.0
+eceran,cabai_merah,Sumatera Selatan,2023,52,49,94.0
+eceran,cabai_merah,Sumatera Selatan,2024,53,52,98.0
+eceran,cabai_merah,Sumatera Selatan,2025,53,53,100.0
+eceran,cabai_merah,Sumatera Selatan,2026,47,47,100.0
+eceran,cabai_merah,Sumatera Utara,2018,53,52,98.0
+eceran,cabai_merah,Sumatera Utara,2019,53,51,96.0
+eceran,cabai_merah,Sumatera Utara,2020,53,50,94.0
+eceran,cabai_merah,Sumatera Utara,2021,53,49,92.0
+eceran,cabai_merah,Sumatera Utara,2022,52,49,94.0
+eceran,cabai_merah,Sumatera Utara,2023,52,51,98.0
+eceran,cabai_merah,Sumatera Utara,2024,53,53,100.0
+eceran,cabai_merah,Sumatera Utara,2025,53,53,100.0
+eceran,cabai_merah,Sumatera Utara,2026,47,47,100.0
+eceran,cabai_rawit,Aceh,2018,53,51,96.0
+eceran,cabai_rawit,Aceh,2019,53,50,94.0
+eceran,cabai_rawit,Aceh,2020,53,50,94.0
+eceran,cabai_rawit,Aceh,2021,53,49,92.0
+eceran,cabai_rawit,Aceh,2022,52,49,94.0
+eceran,cabai_rawit,Aceh,2023,52,50,96.0
+eceran,cabai_rawit,Aceh,2024,53,53,100.0
+eceran,cabai_rawit,Aceh,2025,53,53,100.0
+eceran,cabai_rawit,Aceh,2026,47,47,100.0
+eceran,cabai_rawit,Bali,2018,53,51,96.0
+eceran,cabai_rawit,Bali,2019,53,49,92.0
+eceran,cabai_rawit,Bali,2020,53,48,91.0
+eceran,cabai_rawit,Bali,2021,53,49,92.0
+eceran,cabai_rawit,Bali,2022,52,49,94.0
+eceran,cabai_rawit,Bali,2023,52,50,96.0
+eceran,cabai_rawit,Bali,2024,53,53,100.0
+eceran,cabai_rawit,Bali,2025,53,53,100.0
+eceran,cabai_rawit,Bali,2026,47,47,100.0
+eceran,cabai_rawit,Banten,2018,53,51,96.0
+eceran,cabai_rawit,Banten,2019,53,51,96.0
+eceran,cabai_rawit,Banten,2020,53,49,92.0
+eceran,cabai_rawit,Banten,2021,53,49,92.0
+eceran,cabai_rawit,Banten,2022,52,49,94.0
+eceran,cabai_rawit,Banten,2023,52,50,96.0
+eceran,cabai_rawit,Banten,2024,53,53,100.0
+eceran,cabai_rawit,Banten,2025,53,53,100.0
+eceran,cabai_rawit,Banten,2026,47,47,100.0
+eceran,cabai_rawit,Bengkulu,2018,53,51,96.0
+eceran,cabai_rawit,Bengkulu,2019,53,50,94.0
+eceran,cabai_rawit,Bengkulu,2020,53,49,92.0
+eceran,cabai_rawit,Bengkulu,2021,53,49,92.0
+eceran,cabai_rawit,Bengkulu,2022,52,49,94.0
+eceran,cabai_rawit,Bengkulu,2023,52,52,100.0
+eceran,cabai_rawit,Bengkulu,2024,53,50,94.0
+eceran,cabai_rawit,Bengkulu,2025,53,53,100.0
+eceran,cabai_rawit,Bengkulu,2026,47,47,100.0
+eceran,cabai_rawit,DI Yogyakarta,2018,53,52,98.0
+eceran,cabai_rawit,DI Yogyakarta,2019,53,51,96.0
+eceran,cabai_rawit,DI Yogyakarta,2020,53,49,92.0
+eceran,cabai_rawit,DI Yogyakarta,2021,53,49,92.0
+eceran,cabai_rawit,DI Yogyakarta,2022,52,49,94.0
+eceran,cabai_rawit,DI Yogyakarta,2023,52,51,98.0
+eceran,cabai_rawit,DI Yogyakarta,2024,53,52,98.0
+eceran,cabai_rawit,DI Yogyakarta,2025,53,53,100.0
+eceran,cabai_rawit,DI Yogyakarta,2026,47,47,100.0
+eceran,cabai_rawit,DKI Jakarta,2018,53,51,96.0
+eceran,cabai_rawit,DKI Jakarta,2019,53,50,94.0
+eceran,cabai_rawit,DKI Jakarta,2020,53,49,92.0
+eceran,cabai_rawit,DKI Jakarta,2021,53,49,92.0
+eceran,cabai_rawit,DKI Jakarta,2022,52,49,94.0
+eceran,cabai_rawit,DKI Jakarta,2023,52,50,96.0
+eceran,cabai_rawit,DKI Jakarta,2024,53,52,98.0
+eceran,cabai_rawit,DKI Jakarta,2025,53,52,98.0
+eceran,cabai_rawit,DKI Jakarta,2026,47,47,100.0
+eceran,cabai_rawit,Dum,2021,53,0,0.0
+eceran,cabai_rawit,Gorontalo,2018,53,51,96.0
+eceran,cabai_rawit,Gorontalo,2019,53,51,96.0
+eceran,cabai_rawit,Gorontalo,2020,53,50,94.0
+eceran,cabai_rawit,Gorontalo,2021,53,49,92.0
+eceran,cabai_rawit,Gorontalo,2022,52,49,94.0
+eceran,cabai_rawit,Gorontalo,2023,52,51,98.0
+eceran,cabai_rawit,Gorontalo,2024,53,53,100.0
+eceran,cabai_rawit,Gorontalo,2025,53,53,100.0
+eceran,cabai_rawit,Gorontalo,2026,47,47,100.0
+eceran,cabai_rawit,Jambi,2018,53,51,96.0
+eceran,cabai_rawit,Jambi,2019,53,50,94.0
+eceran,cabai_rawit,Jambi,2020,53,49,92.0
+eceran,cabai_rawit,Jambi,2021,53,49,92.0
+eceran,cabai_rawit,Jambi,2022,52,49,94.0
+eceran,cabai_rawit,Jambi,2023,52,49,94.0
+eceran,cabai_rawit,Jambi,2024,53,53,100.0
+eceran,cabai_rawit,Jambi,2025,53,53,100.0
+eceran,cabai_rawit,Jambi,2026,47,47,100.0
+eceran,cabai_rawit,Jawa Barat,2018,53,51,96.0
+eceran,cabai_rawit,Jawa Barat,2019,53,51,96.0
+eceran,cabai_rawit,Jawa Barat,2020,53,50,94.0
+eceran,cabai_rawit,Jawa Barat,2021,53,49,92.0
+eceran,cabai_rawit,Jawa Barat,2022,52,49,94.0
+eceran,cabai_rawit,Jawa Barat,2023,52,51,98.0
+eceran,cabai_rawit,Jawa Barat,2024,53,53,100.0
+eceran,cabai_rawit,Jawa Barat,2025,53,53,100.0
+eceran,cabai_rawit,Jawa Barat,2026,47,47,100.0
+eceran,cabai_rawit,Jawa Tengah,2018,53,53,100.0
+eceran,cabai_rawit,Jawa Tengah,2019,53,53,100.0
+eceran,cabai_rawit,Jawa Tengah,2020,53,51,96.0
+eceran,cabai_rawit,Jawa Tengah,2021,53,49,92.0
+eceran,cabai_rawit,Jawa Tengah,2022,52,49,94.0
+eceran,cabai_rawit,Jawa Tengah,2023,52,52,100.0
+eceran,cabai_rawit,Jawa Tengah,2024,53,53,100.0
+eceran,cabai_rawit,Jawa Tengah,2025,53,53,100.0
+eceran,cabai_rawit,Jawa Tengah,2026,47,47,100.0
+eceran,cabai_rawit,Jawa Timur,2018,53,52,98.0
+eceran,cabai_rawit,Jawa Timur,2019,53,52,98.0
+eceran,cabai_rawit,Jawa Timur,2020,53,49,92.0
+eceran,cabai_rawit,Jawa Timur,2021,53,49,92.0
+eceran,cabai_rawit,Jawa Timur,2022,52,49,94.0
+eceran,cabai_rawit,Jawa Timur,2023,52,52,100.0
+eceran,cabai_rawit,Jawa Timur,2024,53,53,100.0
+eceran,cabai_rawit,Jawa Timur,2025,53,53,100.0
+eceran,cabai_rawit,Jawa Timur,2026,47,47,100.0
+eceran,cabai_rawit,Kalimantan Barat,2018,53,50,94.0
+eceran,cabai_rawit,Kalimantan Barat,2019,53,50,94.0
+eceran,cabai_rawit,Kalimantan Barat,2020,53,49,92.0
+eceran,cabai_rawit,Kalimantan Barat,2021,53,50,94.0
+eceran,cabai_rawit,Kalimantan Barat,2022,52,50,96.0
+eceran,cabai_rawit,Kalimantan Barat,2023,52,49,94.0
+eceran,cabai_rawit,Kalimantan Barat,2024,53,49,92.0
+eceran,cabai_rawit,Kalimantan Barat,2025,53,52,98.0
+eceran,cabai_rawit,Kalimantan Barat,2026,47,46,98.0
+eceran,cabai_rawit,Kalimantan Selatan,2018,53,51,96.0
+eceran,cabai_rawit,Kalimantan Selatan,2019,53,51,96.0
+eceran,cabai_rawit,Kalimantan Selatan,2020,53,51,96.0
+eceran,cabai_rawit,Kalimantan Selatan,2021,53,49,92.0
+eceran,cabai_rawit,Kalimantan Selatan,2022,52,49,94.0
+eceran,cabai_rawit,Kalimantan Selatan,2023,52,50,96.0
+eceran,cabai_rawit,Kalimantan Selatan,2024,53,51,96.0
+eceran,cabai_rawit,Kalimantan Selatan,2025,53,53,100.0
+eceran,cabai_rawit,Kalimantan Selatan,2026,47,47,100.0
+eceran,cabai_rawit,Kalimantan Tengah,2018,53,50,94.0
+eceran,cabai_rawit,Kalimantan Tengah,2019,53,50,94.0
+eceran,cabai_rawit,Kalimantan Tengah,2020,53,49,92.0
+eceran,cabai_rawit,Kalimantan Tengah,2021,53,49,92.0
+eceran,cabai_rawit,Kalimantan Tengah,2022,52,49,94.0
+eceran,cabai_rawit,Kalimantan Tengah,2023,52,50,96.0
+eceran,cabai_rawit,Kalimantan Tengah,2024,53,52,98.0
+eceran,cabai_rawit,Kalimantan Tengah,2025,53,53,100.0
+eceran,cabai_rawit,Kalimantan Tengah,2026,47,47,100.0
+eceran,cabai_rawit,Kalimantan Timur,2018,53,51,96.0
+eceran,cabai_rawit,Kalimantan Timur,2019,53,51,96.0
+eceran,cabai_rawit,Kalimantan Timur,2020,53,51,96.0
+eceran,cabai_rawit,Kalimantan Timur,2021,53,49,92.0
+eceran,cabai_rawit,Kalimantan Timur,2022,52,49,94.0
+eceran,cabai_rawit,Kalimantan Timur,2023,52,49,94.0
+eceran,cabai_rawit,Kalimantan Timur,2024,53,53,100.0
+eceran,cabai_rawit,Kalimantan Timur,2025,53,53,100.0
+eceran,cabai_rawit,Kalimantan Timur,2026,47,46,98.0
+eceran,cabai_rawit,Kalimantan Utara,2018,53,51,96.0
+eceran,cabai_rawit,Kalimantan Utara,2019,53,51,96.0
+eceran,cabai_rawit,Kalimantan Utara,2020,53,49,92.0
+eceran,cabai_rawit,Kalimantan Utara,2021,53,49,92.0
+eceran,cabai_rawit,Kalimantan Utara,2022,52,49,94.0
+eceran,cabai_rawit,Kalimantan Utara,2023,52,49,94.0
+eceran,cabai_rawit,Kalimantan Utara,2024,53,49,92.0
+eceran,cabai_rawit,Kalimantan Utara,2025,53,53,100.0
+eceran,cabai_rawit,Kalimantan Utara,2026,47,47,100.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2018,53,52,98.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2019,53,51,96.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2020,53,49,92.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2021,53,49,92.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2022,52,49,94.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2023,52,49,94.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2024,53,53,100.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2025,53,52,98.0
+eceran,cabai_rawit,Kepulauan Bangka Belitung,2026,47,47,100.0
+eceran,cabai_rawit,Kepulauan Riau,2018,53,51,96.0
+eceran,cabai_rawit,Kepulauan Riau,2019,53,50,94.0
+eceran,cabai_rawit,Kepulauan Riau,2020,53,50,94.0
+eceran,cabai_rawit,Kepulauan Riau,2021,53,48,91.0
+eceran,cabai_rawit,Kepulauan Riau,2022,52,49,94.0
+eceran,cabai_rawit,Kepulauan Riau,2023,52,51,98.0
+eceran,cabai_rawit,Kepulauan Riau,2024,53,52,98.0
+eceran,cabai_rawit,Kepulauan Riau,2025,53,52,98.0
+eceran,cabai_rawit,Kepulauan Riau,2026,47,44,94.0
+eceran,cabai_rawit,Lampung,2018,53,51,96.0
+eceran,cabai_rawit,Lampung,2019,53,50,94.0
+eceran,cabai_rawit,Lampung,2020,53,50,94.0
+eceran,cabai_rawit,Lampung,2021,53,49,92.0
+eceran,cabai_rawit,Lampung,2022,52,49,94.0
+eceran,cabai_rawit,Lampung,2023,52,51,98.0
+eceran,cabai_rawit,Lampung,2024,53,52,98.0
+eceran,cabai_rawit,Lampung,2025,53,53,100.0
+eceran,cabai_rawit,Lampung,2026,47,47,100.0
+eceran,cabai_rawit,Maluku,2018,53,51,96.0
+eceran,cabai_rawit,Maluku,2019,53,49,92.0
+eceran,cabai_rawit,Maluku,2020,53,49,92.0
+eceran,cabai_rawit,Maluku,2021,53,49,92.0
+eceran,cabai_rawit,Maluku,2022,52,49,94.0
+eceran,cabai_rawit,Maluku,2023,52,50,96.0
+eceran,cabai_rawit,Maluku,2024,53,52,98.0
+eceran,cabai_rawit,Maluku,2025,53,53,100.0
+eceran,cabai_rawit,Maluku,2026,47,47,100.0
+eceran,cabai_rawit,Maluku Utara,2018,53,51,96.0
+eceran,cabai_rawit,Maluku Utara,2019,53,51,96.0
+eceran,cabai_rawit,Maluku Utara,2020,53,50,94.0
+eceran,cabai_rawit,Maluku Utara,2021,53,49,92.0
+eceran,cabai_rawit,Maluku Utara,2022,52,49,94.0
+eceran,cabai_rawit,Maluku Utara,2023,52,51,98.0
+eceran,cabai_rawit,Maluku Utara,2024,53,51,96.0
+eceran,cabai_rawit,Maluku Utara,2025,53,50,94.0
+eceran,cabai_rawit,Maluku Utara,2026,47,47,100.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2018,53,51,96.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2019,53,50,94.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2020,53,50,94.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2021,53,49,92.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2022,52,49,94.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2023,52,51,98.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2024,53,53,100.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2025,53,53,100.0
+eceran,cabai_rawit,Nusa Tenggara Barat,2026,47,47,100.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2018,53,51,96.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2019,53,50,94.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2020,53,49,92.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2021,53,49,92.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2022,52,49,94.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2023,52,49,94.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2024,53,52,98.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2025,53,53,100.0
+eceran,cabai_rawit,Nusa Tenggara Timur,2026,47,47,100.0
+eceran,cabai_rawit,Papua,2018,53,52,98.0
+eceran,cabai_rawit,Papua,2019,53,51,96.0
+eceran,cabai_rawit,Papua,2020,53,52,98.0
+eceran,cabai_rawit,Papua,2021,53,49,92.0
+eceran,cabai_rawit,Papua,2022,52,49,94.0
+eceran,cabai_rawit,Papua,2023,52,50,96.0
+eceran,cabai_rawit,Papua,2024,53,51,96.0
+eceran,cabai_rawit,Papua,2025,53,53,100.0
+eceran,cabai_rawit,Papua,2026,47,47,100.0
+eceran,cabai_rawit,Papua Barat,2018,53,52,98.0
+eceran,cabai_rawit,Papua Barat,2019,53,50,94.0
+eceran,cabai_rawit,Papua Barat,2020,53,52,98.0
+eceran,cabai_rawit,Papua Barat,2021,53,49,92.0
+eceran,cabai_rawit,Papua Barat,2022,52,49,94.0
+eceran,cabai_rawit,Papua Barat,2023,52,51,98.0
+eceran,cabai_rawit,Papua Barat,2024,53,53,100.0
+eceran,cabai_rawit,Papua Barat,2025,53,53,100.0
+eceran,cabai_rawit,Papua Barat,2026,47,47,100.0
+eceran,cabai_rawit,Riau,2018,53,51,96.0
+eceran,cabai_rawit,Riau,2019,53,50,94.0
+eceran,cabai_rawit,Riau,2020,53,49,92.0
+eceran,cabai_rawit,Riau,2021,53,49,92.0
+eceran,cabai_rawit,Riau,2022,52,49,94.0
+eceran,cabai_rawit,Riau,2023,52,50,96.0
+eceran,cabai_rawit,Riau,2024,53,52,98.0
+eceran,cabai_rawit,Riau,2025,53,52,98.0
+eceran,cabai_rawit,Riau,2026,47,47,100.0
+eceran,cabai_rawit,Semua Provinsi,2018,53,53,100.0
+eceran,cabai_rawit,Semua Provinsi,2019,53,53,100.0
+eceran,cabai_rawit,Semua Provinsi,2020,53,52,98.0
+eceran,cabai_rawit,Semua Provinsi,2021,53,51,96.0
+eceran,cabai_rawit,Semua Provinsi,2022,52,50,96.0
+eceran,cabai_rawit,Semua Provinsi,2023,52,52,100.0
+eceran,cabai_rawit,Semua Provinsi,2024,53,53,100.0
+eceran,cabai_rawit,Semua Provinsi,2025,53,53,100.0
+eceran,cabai_rawit,Semua Provinsi,2026,47,47,100.0
+eceran,cabai_rawit,Sulawesi Barat,2018,53,51,96.0
+eceran,cabai_rawit,Sulawesi Barat,2019,53,51,96.0
+eceran,cabai_rawit,Sulawesi Barat,2020,53,50,94.0
+eceran,cabai_rawit,Sulawesi Barat,2021,53,50,94.0
+eceran,cabai_rawit,Sulawesi Barat,2022,52,49,94.0
+eceran,cabai_rawit,Sulawesi Barat,2023,52,51,98.0
+eceran,cabai_rawit,Sulawesi Barat,2024,53,52,98.0
+eceran,cabai_rawit,Sulawesi Barat,2025,53,53,100.0
+eceran,cabai_rawit,Sulawesi Barat,2026,47,47,100.0
+eceran,cabai_rawit,Sulawesi Selatan,2018,53,51,96.0
+eceran,cabai_rawit,Sulawesi Selatan,2019,53,51,96.0
+eceran,cabai_rawit,Sulawesi Selatan,2020,53,51,96.0
+eceran,cabai_rawit,Sulawesi Selatan,2021,53,49,92.0
+eceran,cabai_rawit,Sulawesi Selatan,2022,52,49,94.0
+eceran,cabai_rawit,Sulawesi Selatan,2023,52,52,100.0
+eceran,cabai_rawit,Sulawesi Selatan,2024,53,52,98.0
+eceran,cabai_rawit,Sulawesi Selatan,2025,53,53,100.0
+eceran,cabai_rawit,Sulawesi Selatan,2026,47,47,100.0
+eceran,cabai_rawit,Sulawesi Tengah,2018,53,52,98.0
+eceran,cabai_rawit,Sulawesi Tengah,2019,53,50,94.0
+eceran,cabai_rawit,Sulawesi Tengah,2020,53,49,92.0
+eceran,cabai_rawit,Sulawesi Tengah,2021,53,48,91.0
+eceran,cabai_rawit,Sulawesi Tengah,2022,52,49,94.0
+eceran,cabai_rawit,Sulawesi Tengah,2023,52,51,98.0
+eceran,cabai_rawit,Sulawesi Tengah,2024,53,52,98.0
+eceran,cabai_rawit,Sulawesi Tengah,2025,53,53,100.0
+eceran,cabai_rawit,Sulawesi Tengah,2026,47,47,100.0
+eceran,cabai_rawit,Sulawesi Tenggara,2018,53,51,96.0
+eceran,cabai_rawit,Sulawesi Tenggara,2019,53,51,96.0
+eceran,cabai_rawit,Sulawesi Tenggara,2020,53,49,92.0
+eceran,cabai_rawit,Sulawesi Tenggara,2021,53,49,92.0
+eceran,cabai_rawit,Sulawesi Tenggara,2022,52,49,94.0
+eceran,cabai_rawit,Sulawesi Tenggara,2023,52,52,100.0
+eceran,cabai_rawit,Sulawesi Tenggara,2024,53,53,100.0
+eceran,cabai_rawit,Sulawesi Tenggara,2025,53,53,100.0
+eceran,cabai_rawit,Sulawesi Tenggara,2026,47,47,100.0
+eceran,cabai_rawit,Sulawesi Utara,2018,53,52,98.0
+eceran,cabai_rawit,Sulawesi Utara,2019,53,50,94.0
+eceran,cabai_rawit,Sulawesi Utara,2020,53,49,92.0
+eceran,cabai_rawit,Sulawesi Utara,2021,53,48,91.0
+eceran,cabai_rawit,Sulawesi Utara,2022,52,49,94.0
+eceran,cabai_rawit,Sulawesi Utara,2023,52,51,98.0
+eceran,cabai_rawit,Sulawesi Utara,2024,53,53,100.0
+eceran,cabai_rawit,Sulawesi Utara,2025,53,53,100.0
+eceran,cabai_rawit,Sulawesi Utara,2026,47,47,100.0
+eceran,cabai_rawit,Sumatera Barat,2018,53,52,98.0
+eceran,cabai_rawit,Sumatera Barat,2019,53,51,96.0
+eceran,cabai_rawit,Sumatera Barat,2020,53,50,94.0
+eceran,cabai_rawit,Sumatera Barat,2021,53,49,92.0
+eceran,cabai_rawit,Sumatera Barat,2022,52,49,94.0
+eceran,cabai_rawit,Sumatera Barat,2023,52,49,94.0
+eceran,cabai_rawit,Sumatera Barat,2024,53,51,96.0
+eceran,cabai_rawit,Sumatera Barat,2025,53,52,98.0
+eceran,cabai_rawit,Sumatera Barat,2026,47,47,100.0
+eceran,cabai_rawit,Sumatera Selatan,2018,53,51,96.0
+eceran,cabai_rawit,Sumatera Selatan,2019,53,51,96.0
+eceran,cabai_rawit,Sumatera Selatan,2020,53,50,94.0
+eceran,cabai_rawit,Sumatera Selatan,2021,53,49,92.0
+eceran,cabai_rawit,Sumatera Selatan,2022,52,49,94.0
+eceran,cabai_rawit,Sumatera Selatan,2023,52,49,94.0
+eceran,cabai_rawit,Sumatera Selatan,2024,53,52,98.0
+eceran,cabai_rawit,Sumatera Selatan,2025,53,53,100.0
+eceran,cabai_rawit,Sumatera Selatan,2026,47,47,100.0
+eceran,cabai_rawit,Sumatera Utara,2018,53,52,98.0
+eceran,cabai_rawit,Sumatera Utara,2019,53,51,96.0
+eceran,cabai_rawit,Sumatera Utara,2020,53,50,94.0
+eceran,cabai_rawit,Sumatera Utara,2021,53,49,92.0
+eceran,cabai_rawit,Sumatera Utara,2022,52,49,94.0
+eceran,cabai_rawit,Sumatera Utara,2023,52,51,98.0
+eceran,cabai_rawit,Sumatera Utara,2024,53,53,100.0
+eceran,cabai_rawit,Sumatera Utara,2025,53,53,100.0
+eceran,cabai_rawit,Sumatera Utara,2026,47,47,100.0
+pedagang_besar,cabai_merah,Aceh,2018,53,53,100.0
+pedagang_besar,cabai_merah,Aceh,2019,53,52,98.0
+pedagang_besar,cabai_merah,Aceh,2020,53,53,100.0
+pedagang_besar,cabai_merah,Aceh,2021,53,53,100.0
+pedagang_besar,cabai_merah,Aceh,2022,52,51,98.0
+pedagang_besar,cabai_merah,Aceh,2023,52,52,100.0
+pedagang_besar,cabai_merah,Aceh,2024,53,53,100.0
+pedagang_besar,cabai_merah,Aceh,2025,53,53,100.0
+pedagang_besar,cabai_merah,Aceh,2026,47,47,100.0
+pedagang_besar,cabai_merah,Bali,2018,53,51,96.0
+pedagang_besar,cabai_merah,Bali,2019,53,52,98.0
+pedagang_besar,cabai_merah,Bali,2020,53,49,92.0
+pedagang_besar,cabai_merah,Bali,2021,53,53,100.0
+pedagang_besar,cabai_merah,Bali,2022,52,51,98.0
+pedagang_besar,cabai_merah,Bali,2023,52,52,100.0
+pedagang_besar,cabai_merah,Bali,2024,53,52,98.0
+pedagang_besar,cabai_merah,Bali,2025,53,53,100.0
+pedagang_besar,cabai_merah,Bali,2026,47,47,100.0
+pedagang_besar,cabai_merah,Banten,2018,53,53,100.0
+pedagang_besar,cabai_merah,Banten,2019,53,53,100.0
+pedagang_besar,cabai_merah,Banten,2020,53,53,100.0
+pedagang_besar,cabai_merah,Banten,2021,53,53,100.0
+pedagang_besar,cabai_merah,Banten,2022,52,51,98.0
+pedagang_besar,cabai_merah,Banten,2023,52,52,100.0
+pedagang_besar,cabai_merah,Banten,2024,53,53,100.0
+pedagang_besar,cabai_merah,Banten,2025,53,53,100.0
+pedagang_besar,cabai_merah,Banten,2026,47,47,100.0
+pedagang_besar,cabai_merah,Bengkulu,2018,53,53,100.0
+pedagang_besar,cabai_merah,Bengkulu,2019,53,53,100.0
+pedagang_besar,cabai_merah,Bengkulu,2020,53,53,100.0
+pedagang_besar,cabai_merah,Bengkulu,2021,53,53,100.0
+pedagang_besar,cabai_merah,Bengkulu,2022,52,51,98.0
+pedagang_besar,cabai_merah,Bengkulu,2023,52,52,100.0
+pedagang_besar,cabai_merah,Bengkulu,2024,53,53,100.0
+pedagang_besar,cabai_merah,Bengkulu,2025,53,53,100.0
+pedagang_besar,cabai_merah,Bengkulu,2026,47,47,100.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2018,53,53,100.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2019,53,52,98.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2020,53,53,100.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2021,53,53,100.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2022,52,51,98.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2023,52,51,98.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2024,53,53,100.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2025,53,53,100.0
+pedagang_besar,cabai_merah,DI Yogyakarta,2026,47,47,100.0
+pedagang_besar,cabai_merah,DKI Jakarta,2018,53,53,100.0
+pedagang_besar,cabai_merah,DKI Jakarta,2019,53,53,100.0
+pedagang_besar,cabai_merah,DKI Jakarta,2020,53,52,98.0
+pedagang_besar,cabai_merah,DKI Jakarta,2021,53,52,98.0
+pedagang_besar,cabai_merah,DKI Jakarta,2022,52,51,98.0
+pedagang_besar,cabai_merah,DKI Jakarta,2023,52,52,100.0
+pedagang_besar,cabai_merah,DKI Jakarta,2024,53,53,100.0
+pedagang_besar,cabai_merah,DKI Jakarta,2025,53,53,100.0
+pedagang_besar,cabai_merah,DKI Jakarta,2026,47,47,100.0
+pedagang_besar,cabai_merah,Gorontalo,2018,53,52,98.0
+pedagang_besar,cabai_merah,Gorontalo,2019,53,50,94.0
+pedagang_besar,cabai_merah,Gorontalo,2020,53,53,100.0
+pedagang_besar,cabai_merah,Gorontalo,2021,53,53,100.0
+pedagang_besar,cabai_merah,Gorontalo,2022,52,50,96.0
+pedagang_besar,cabai_merah,Gorontalo,2023,52,52,100.0
+pedagang_besar,cabai_merah,Gorontalo,2024,53,52,98.0
+pedagang_besar,cabai_merah,Gorontalo,2025,53,53,100.0
+pedagang_besar,cabai_merah,Gorontalo,2026,47,47,100.0
+pedagang_besar,cabai_merah,Jambi,2018,53,53,100.0
+pedagang_besar,cabai_merah,Jambi,2019,53,53,100.0
+pedagang_besar,cabai_merah,Jambi,2020,53,53,100.0
+pedagang_besar,cabai_merah,Jambi,2021,53,53,100.0
+pedagang_besar,cabai_merah,Jambi,2022,52,51,98.0
+pedagang_besar,cabai_merah,Jambi,2023,52,52,100.0
+pedagang_besar,cabai_merah,Jambi,2024,53,52,98.0
+pedagang_besar,cabai_merah,Jambi,2025,53,53,100.0
+pedagang_besar,cabai_merah,Jambi,2026,47,47,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2018,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2019,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2020,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2021,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2022,52,51,98.0
+pedagang_besar,cabai_merah,Jawa Barat,2023,52,52,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2024,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2025,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Barat,2026,47,47,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2018,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2019,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2020,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2021,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2022,52,51,98.0
+pedagang_besar,cabai_merah,Jawa Tengah,2023,52,52,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2024,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2025,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Tengah,2026,47,47,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2018,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2019,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2020,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2021,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2022,52,51,98.0
+pedagang_besar,cabai_merah,Jawa Timur,2023,52,52,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2024,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2025,53,53,100.0
+pedagang_besar,cabai_merah,Jawa Timur,2026,47,47,100.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2018,53,51,96.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2019,53,52,98.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2020,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2021,53,52,98.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2022,52,51,98.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2023,52,52,100.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2024,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2025,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Barat,2026,47,47,100.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2018,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2019,53,51,96.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2020,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2021,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2022,52,51,98.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2023,52,52,100.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2024,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2025,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Selatan,2026,47,47,100.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2018,53,44,83.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2019,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2020,53,52,98.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2021,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2022,52,51,98.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2023,52,52,100.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2024,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2025,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Tengah,2026,47,47,100.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2018,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2019,53,52,98.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2020,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2021,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2022,52,51,98.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2023,52,51,98.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2024,53,52,98.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2025,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Timur,2026,47,47,100.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2018,53,52,98.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2019,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2020,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2021,53,52,98.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2022,52,51,98.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2023,52,51,98.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2024,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2025,53,53,100.0
+pedagang_besar,cabai_merah,Kalimantan Utara,2026,47,47,100.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2018,53,52,98.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2019,53,53,100.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2020,53,51,96.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2021,53,52,98.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2022,52,51,98.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2023,52,51,98.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2024,53,53,100.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2025,53,53,100.0
+pedagang_besar,cabai_merah,Kepulauan Bangka Belitung,2026,47,47,100.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2018,53,53,100.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2019,53,52,98.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2020,53,53,100.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2021,53,52,98.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2022,52,50,96.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2023,52,52,100.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2024,53,53,100.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2025,53,53,100.0
+pedagang_besar,cabai_merah,Kepulauan Riau,2026,47,47,100.0
+pedagang_besar,cabai_merah,Lampung,2018,53,52,98.0
+pedagang_besar,cabai_merah,Lampung,2019,53,52,98.0
+pedagang_besar,cabai_merah,Lampung,2020,53,53,100.0
+pedagang_besar,cabai_merah,Lampung,2021,53,53,100.0
+pedagang_besar,cabai_merah,Lampung,2022,52,51,98.0
+pedagang_besar,cabai_merah,Lampung,2023,52,51,98.0
+pedagang_besar,cabai_merah,Lampung,2024,53,53,100.0
+pedagang_besar,cabai_merah,Lampung,2025,53,52,98.0
+pedagang_besar,cabai_merah,Lampung,2026,47,47,100.0
+pedagang_besar,cabai_merah,Maluku,2018,53,53,100.0
+pedagang_besar,cabai_merah,Maluku,2019,53,52,98.0
+pedagang_besar,cabai_merah,Maluku,2020,53,53,100.0
+pedagang_besar,cabai_merah,Maluku,2021,53,53,100.0
+pedagang_besar,cabai_merah,Maluku,2022,52,51,98.0
+pedagang_besar,cabai_merah,Maluku,2023,52,51,98.0
+pedagang_besar,cabai_merah,Maluku,2024,53,53,100.0
+pedagang_besar,cabai_merah,Maluku,2025,53,53,100.0
+pedagang_besar,cabai_merah,Maluku,2026,47,47,100.0
+pedagang_besar,cabai_merah,Maluku Utara,2018,53,51,96.0
+pedagang_besar,cabai_merah,Maluku Utara,2019,53,52,98.0
+pedagang_besar,cabai_merah,Maluku Utara,2020,53,51,96.0
+pedagang_besar,cabai_merah,Maluku Utara,2021,53,52,98.0
+pedagang_besar,cabai_merah,Maluku Utara,2022,52,50,96.0
+pedagang_besar,cabai_merah,Maluku Utara,2023,52,50,96.0
+pedagang_besar,cabai_merah,Maluku Utara,2024,53,51,96.0
+pedagang_besar,cabai_merah,Maluku Utara,2025,53,52,98.0
+pedagang_besar,cabai_merah,Maluku Utara,2026,47,47,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2018,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2019,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2020,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2021,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2022,52,51,98.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2023,52,52,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2024,53,52,98.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2025,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Barat,2026,47,47,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2018,53,52,98.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2019,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2020,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2021,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2022,52,50,96.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2023,52,51,98.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2024,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2025,53,53,100.0
+pedagang_besar,cabai_merah,Nusa Tenggara Timur,2026,47,47,100.0
+pedagang_besar,cabai_merah,Papua,2018,53,53,100.0
+pedagang_besar,cabai_merah,Papua,2019,53,53,100.0
+pedagang_besar,cabai_merah,Papua,2020,53,53,100.0
+pedagang_besar,cabai_merah,Papua,2021,53,53,100.0
+pedagang_besar,cabai_merah,Papua,2022,52,51,98.0
+pedagang_besar,cabai_merah,Papua,2023,52,49,94.0
+pedagang_besar,cabai_merah,Papua,2024,53,51,96.0
+pedagang_besar,cabai_merah,Papua,2025,53,52,98.0
+pedagang_besar,cabai_merah,Papua,2026,47,47,100.0
+pedagang_besar,cabai_merah,Papua Barat,2018,53,53,100.0
+pedagang_besar,cabai_merah,Papua Barat,2019,53,53,100.0
+pedagang_besar,cabai_merah,Papua Barat,2020,53,53,100.0
+pedagang_besar,cabai_merah,Papua Barat,2021,53,53,100.0
+pedagang_besar,cabai_merah,Papua Barat,2022,52,51,98.0
+pedagang_besar,cabai_merah,Papua Barat,2023,52,52,100.0
+pedagang_besar,cabai_merah,Papua Barat,2024,53,53,100.0
+pedagang_besar,cabai_merah,Papua Barat,2025,53,53,100.0
+pedagang_besar,cabai_merah,Papua Barat,2026,47,47,100.0
+pedagang_besar,cabai_merah,Riau,2018,53,52,98.0
+pedagang_besar,cabai_merah,Riau,2019,53,53,100.0
+pedagang_besar,cabai_merah,Riau,2020,53,52,98.0
+pedagang_besar,cabai_merah,Riau,2021,53,53,100.0
+pedagang_besar,cabai_merah,Riau,2022,52,51,98.0
+pedagang_besar,cabai_merah,Riau,2023,52,51,98.0
+pedagang_besar,cabai_merah,Riau,2024,53,53,100.0
+pedagang_besar,cabai_merah,Riau,2025,53,53,100.0
+pedagang_besar,cabai_merah,Riau,2026,47,47,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2018,53,53,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2019,53,53,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2020,53,53,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2021,53,53,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2022,52,51,98.0
+pedagang_besar,cabai_merah,Semua Provinsi,2023,52,52,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2024,53,53,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2025,53,53,100.0
+pedagang_besar,cabai_merah,Semua Provinsi,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2018,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2019,53,52,98.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2020,53,52,98.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2021,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2022,52,51,98.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2023,52,52,100.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2024,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Barat,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2018,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2019,53,48,91.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2020,53,50,94.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2021,53,52,98.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2022,52,51,98.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2023,52,52,100.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2024,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Selatan,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2018,53,51,96.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2019,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2020,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2021,53,52,98.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2022,52,50,96.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2023,52,51,98.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2024,53,52,98.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tengah,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2018,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2019,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2020,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2021,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2022,52,51,98.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2023,52,52,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2024,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Tenggara,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2018,53,51,96.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2019,53,52,98.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2020,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2021,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2022,52,51,98.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2023,52,51,98.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2024,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sulawesi Utara,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sumatera Barat,2018,53,52,98.0
+pedagang_besar,cabai_merah,Sumatera Barat,2019,53,52,98.0
+pedagang_besar,cabai_merah,Sumatera Barat,2020,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Barat,2021,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Barat,2022,52,51,98.0
+pedagang_besar,cabai_merah,Sumatera Barat,2023,52,51,98.0
+pedagang_besar,cabai_merah,Sumatera Barat,2024,53,52,98.0
+pedagang_besar,cabai_merah,Sumatera Barat,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Barat,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2018,53,48,91.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2019,53,50,94.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2020,53,51,96.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2021,53,52,98.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2022,52,51,98.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2023,52,52,100.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2024,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Selatan,2026,47,47,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2018,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2019,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2020,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2021,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2022,52,51,98.0
+pedagang_besar,cabai_merah,Sumatera Utara,2023,52,52,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2024,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2025,53,53,100.0
+pedagang_besar,cabai_merah,Sumatera Utara,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Aceh,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Aceh,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Aceh,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Aceh,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Aceh,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Aceh,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Aceh,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Aceh,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Aceh,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Bali,2018,53,51,96.0
+pedagang_besar,cabai_rawit,Bali,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Bali,2020,53,49,92.0
+pedagang_besar,cabai_rawit,Bali,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Bali,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Bali,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Bali,2024,53,52,98.0
+pedagang_besar,cabai_rawit,Bali,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Bali,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Banten,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Banten,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Banten,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Banten,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Banten,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Banten,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Banten,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Banten,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Banten,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Bengkulu,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Bengkulu,2026,47,47,100.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2018,53,53,100.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2019,53,52,98.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2020,53,53,100.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2021,53,53,100.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2022,52,51,98.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2023,52,51,98.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2024,53,53,100.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2025,53,53,100.0
+pedagang_besar,cabai_rawit,DI Yogyakarta,2026,47,47,100.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2018,53,53,100.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2019,53,53,100.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2020,53,52,98.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2021,53,52,98.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2022,52,51,98.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2023,52,52,100.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2024,53,53,100.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2025,53,53,100.0
+pedagang_besar,cabai_rawit,DKI Jakarta,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Gorontalo,2018,53,52,98.0
+pedagang_besar,cabai_rawit,Gorontalo,2019,53,50,94.0
+pedagang_besar,cabai_rawit,Gorontalo,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Gorontalo,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Gorontalo,2022,52,50,96.0
+pedagang_besar,cabai_rawit,Gorontalo,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Gorontalo,2024,53,52,98.0
+pedagang_besar,cabai_rawit,Gorontalo,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Gorontalo,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Jambi,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Jambi,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Jambi,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Jambi,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Jambi,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Jambi,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Jambi,2024,53,52,98.0
+pedagang_besar,cabai_rawit,Jambi,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Jambi,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Jawa Barat,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Barat,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Tengah,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Jawa Timur,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Jawa Timur,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2018,53,51,96.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2020,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Barat,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2019,53,51,96.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Selatan,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2018,53,44,83.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2020,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Tengah,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2024,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Timur,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2018,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Kalimantan Utara,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2018,53,52,98.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2020,53,51,96.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Kepulauan Bangka Belitung,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2022,52,50,96.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Kepulauan Riau,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Lampung,2018,53,52,98.0
+pedagang_besar,cabai_rawit,Lampung,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Lampung,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Lampung,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Lampung,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Lampung,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Lampung,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Lampung,2025,53,52,98.0
+pedagang_besar,cabai_rawit,Lampung,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Maluku,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Maluku,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Maluku,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Maluku,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Maluku,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Maluku,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Maluku,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Maluku,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Maluku,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Maluku Utara,2018,53,51,96.0
+pedagang_besar,cabai_rawit,Maluku Utara,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Maluku Utara,2020,53,48,91.0
+pedagang_besar,cabai_rawit,Maluku Utara,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Maluku Utara,2022,52,24,46.0
+pedagang_besar,cabai_rawit,Maluku Utara,2023,52,39,75.0
+pedagang_besar,cabai_rawit,Maluku Utara,2024,53,50,94.0
+pedagang_besar,cabai_rawit,Maluku Utara,2025,53,52,98.0
+pedagang_besar,cabai_rawit,Maluku Utara,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2024,53,52,98.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Barat,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2018,53,52,98.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2022,52,50,96.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Nusa Tenggara Timur,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Papua,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Papua,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Papua,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Papua,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Papua,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Papua,2023,52,49,94.0
+pedagang_besar,cabai_rawit,Papua,2024,53,51,96.0
+pedagang_besar,cabai_rawit,Papua,2025,53,52,98.0
+pedagang_besar,cabai_rawit,Papua,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Papua Barat,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Papua Barat,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Riau,2018,53,52,98.0
+pedagang_besar,cabai_rawit,Riau,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Riau,2020,53,52,98.0
+pedagang_besar,cabai_rawit,Riau,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Riau,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Riau,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Riau,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Riau,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Riau,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Semua Provinsi,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2020,53,52,98.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Barat,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2019,53,48,91.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2020,53,50,94.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Selatan,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2018,53,51,96.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2022,52,50,96.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2024,53,52,98.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tengah,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Tenggara,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2018,53,51,96.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sulawesi Utara,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2018,53,52,98.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2019,53,52,98.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2023,52,51,98.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2024,53,52,98.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Barat,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2018,53,48,91.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2019,53,50,94.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2020,53,51,96.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2021,53,52,98.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Selatan,2026,47,47,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2018,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2019,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2020,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2021,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2022,52,51,98.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2023,52,52,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2024,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2025,53,53,100.0
+pedagang_besar,cabai_rawit,Sumatera Utara,2026,47,47,100.0
+produsen,cabai_merah,Aceh,2018,53,16,30.0
+produsen,cabai_merah,Aceh,2019,53,53,100.0
+produsen,cabai_merah,Aceh,2020,53,53,100.0
+produsen,cabai_merah,Aceh,2021,53,53,100.0
+produsen,cabai_merah,Aceh,2022,52,51,98.0
+produsen,cabai_merah,Aceh,2023,52,52,100.0
+produsen,cabai_merah,Aceh,2024,53,53,100.0
+produsen,cabai_merah,Aceh,2025,53,53,100.0
+produsen,cabai_merah,Aceh,2026,47,47,100.0
+produsen,cabai_merah,Bali,2018,53,14,26.0
+produsen,cabai_merah,Bali,2019,53,52,98.0
+produsen,cabai_merah,Bali,2020,53,52,98.0
+produsen,cabai_merah,Bali,2021,53,52,98.0
+produsen,cabai_merah,Bali,2022,52,51,98.0
+produsen,cabai_merah,Bali,2023,52,52,100.0
+produsen,cabai_merah,Bali,2024,53,53,100.0
+produsen,cabai_merah,Bali,2025,53,53,100.0
+produsen,cabai_merah,Bali,2026,47,47,100.0
+produsen,cabai_merah,Banten,2018,53,14,26.0
+produsen,cabai_merah,Banten,2019,53,53,100.0
+produsen,cabai_merah,Banten,2020,53,50,94.0
+produsen,cabai_merah,Banten,2021,53,53,100.0
+produsen,cabai_merah,Banten,2022,52,51,98.0
+produsen,cabai_merah,Banten,2023,52,52,100.0
+produsen,cabai_merah,Banten,2024,53,44,83.0
+produsen,cabai_merah,Banten,2025,53,53,100.0
+produsen,cabai_merah,Banten,2026,47,42,89.0
+produsen,cabai_merah,Bengkulu,2018,53,16,30.0
+produsen,cabai_merah,Bengkulu,2019,53,45,85.0
+produsen,cabai_merah,Bengkulu,2020,53,53,100.0
+produsen,cabai_merah,Bengkulu,2021,53,52,98.0
+produsen,cabai_merah,Bengkulu,2022,52,46,88.0
+produsen,cabai_merah,Bengkulu,2023,52,44,85.0
+produsen,cabai_merah,Bengkulu,2024,53,45,85.0
+produsen,cabai_merah,Bengkulu,2025,53,52,98.0
+produsen,cabai_merah,Bengkulu,2026,47,47,100.0
+produsen,cabai_merah,DI Yogyakarta,2018,53,23,43.0
+produsen,cabai_merah,DI Yogyakarta,2019,53,51,96.0
+produsen,cabai_merah,DI Yogyakarta,2020,53,53,100.0
+produsen,cabai_merah,DI Yogyakarta,2021,53,53,100.0
+produsen,cabai_merah,DI Yogyakarta,2022,52,51,98.0
+produsen,cabai_merah,DI Yogyakarta,2023,52,52,100.0
+produsen,cabai_merah,DI Yogyakarta,2024,53,53,100.0
+produsen,cabai_merah,DI Yogyakarta,2025,53,53,100.0
+produsen,cabai_merah,DI Yogyakarta,2026,47,47,100.0
+produsen,cabai_merah,Gorontalo,2019,53,15,28.0
+produsen,cabai_merah,Gorontalo,2020,53,53,100.0
+produsen,cabai_merah,Gorontalo,2021,53,52,98.0
+produsen,cabai_merah,Gorontalo,2022,52,48,92.0
+produsen,cabai_merah,Gorontalo,2023,52,52,100.0
+produsen,cabai_merah,Gorontalo,2024,53,53,100.0
+produsen,cabai_merah,Gorontalo,2025,53,53,100.0
+produsen,cabai_merah,Gorontalo,2026,47,47,100.0
+produsen,cabai_merah,Jambi,2018,53,19,36.0
+produsen,cabai_merah,Jambi,2019,53,53,100.0
+produsen,cabai_merah,Jambi,2020,53,53,100.0
+produsen,cabai_merah,Jambi,2021,53,52,98.0
+produsen,cabai_merah,Jambi,2022,52,47,90.0
+produsen,cabai_merah,Jambi,2023,52,52,100.0
+produsen,cabai_merah,Jambi,2024,53,52,98.0
+produsen,cabai_merah,Jambi,2025,53,49,92.0
+produsen,cabai_merah,Jambi,2026,47,47,100.0
+produsen,cabai_merah,Jawa Barat,2018,53,15,28.0
+produsen,cabai_merah,Jawa Barat,2019,53,53,100.0
+produsen,cabai_merah,Jawa Barat,2020,53,53,100.0
+produsen,cabai_merah,Jawa Barat,2021,53,53,100.0
+produsen,cabai_merah,Jawa Barat,2022,52,51,98.0
+produsen,cabai_merah,Jawa Barat,2023,52,52,100.0
+produsen,cabai_merah,Jawa Barat,2024,53,53,100.0
+produsen,cabai_merah,Jawa Barat,2025,53,53,100.0
+produsen,cabai_merah,Jawa Barat,2026,47,47,100.0
+produsen,cabai_merah,Jawa Tengah,2018,53,41,77.0
+produsen,cabai_merah,Jawa Tengah,2019,53,53,100.0
+produsen,cabai_merah,Jawa Tengah,2020,53,53,100.0
+produsen,cabai_merah,Jawa Tengah,2021,53,53,100.0
+produsen,cabai_merah,Jawa Tengah,2022,52,51,98.0
+produsen,cabai_merah,Jawa Tengah,2023,52,52,100.0
+produsen,cabai_merah,Jawa Tengah,2024,53,53,100.0
+produsen,cabai_merah,Jawa Tengah,2025,53,53,100.0
+produsen,cabai_merah,Jawa Tengah,2026,47,47,100.0
+produsen,cabai_merah,Jawa Timur,2018,53,23,43.0
+produsen,cabai_merah,Jawa Timur,2019,53,53,100.0
+produsen,cabai_merah,Jawa Timur,2020,53,53,100.0
+produsen,cabai_merah,Jawa Timur,2021,53,53,100.0
+produsen,cabai_merah,Jawa Timur,2022,52,51,98.0
+produsen,cabai_merah,Jawa Timur,2023,52,52,100.0
+produsen,cabai_merah,Jawa Timur,2024,53,53,100.0
+produsen,cabai_merah,Jawa Timur,2025,53,53,100.0
+produsen,cabai_merah,Jawa Timur,2026,47,47,100.0
+produsen,cabai_merah,Kalimantan Barat,2018,53,10,19.0
+produsen,cabai_merah,Kalimantan Barat,2019,53,45,85.0
+produsen,cabai_merah,Kalimantan Barat,2020,53,53,100.0
+produsen,cabai_merah,Kalimantan Barat,2021,53,53,100.0
+produsen,cabai_merah,Kalimantan Barat,2022,52,51,98.0
+produsen,cabai_merah,Kalimantan Barat,2023,52,52,100.0
+produsen,cabai_merah,Kalimantan Barat,2024,53,51,96.0
+produsen,cabai_merah,Kalimantan Barat,2025,53,48,91.0
+produsen,cabai_merah,Kalimantan Barat,2026,47,47,100.0
+produsen,cabai_merah,Kalimantan Selatan,2018,53,14,26.0
+produsen,cabai_merah,Kalimantan Selatan,2019,53,49,92.0
+produsen,cabai_merah,Kalimantan Selatan,2020,53,53,100.0
+produsen,cabai_merah,Kalimantan Selatan,2021,53,53,100.0
+produsen,cabai_merah,Kalimantan Selatan,2022,52,51,98.0
+produsen,cabai_merah,Kalimantan Selatan,2023,52,52,100.0
+produsen,cabai_merah,Kalimantan Selatan,2024,53,53,100.0
+produsen,cabai_merah,Kalimantan Selatan,2025,53,53,100.0
+produsen,cabai_merah,Kalimantan Selatan,2026,47,47,100.0
+produsen,cabai_merah,Kalimantan Tengah,2018,53,14,26.0
+produsen,cabai_merah,Kalimantan Tengah,2019,53,53,100.0
+produsen,cabai_merah,Kalimantan Tengah,2020,53,53,100.0
+produsen,cabai_merah,Kalimantan Tengah,2021,53,53,100.0
+produsen,cabai_merah,Kalimantan Tengah,2022,52,51,98.0
+produsen,cabai_merah,Kalimantan Tengah,2023,52,47,90.0
+produsen,cabai_merah,Kalimantan Tengah,2024,53,53,100.0
+produsen,cabai_merah,Kalimantan Tengah,2025,53,52,98.0
+produsen,cabai_merah,Kalimantan Tengah,2026,47,47,100.0
+produsen,cabai_merah,Kalimantan Timur,2018,53,14,26.0
+produsen,cabai_merah,Kalimantan Timur,2019,53,53,100.0
+produsen,cabai_merah,Kalimantan Timur,2020,53,53,100.0
+produsen,cabai_merah,Kalimantan Timur,2021,53,53,100.0
+produsen,cabai_merah,Kalimantan Timur,2022,52,47,90.0
+produsen,cabai_merah,Kalimantan Timur,2023,52,52,100.0
+produsen,cabai_merah,Kalimantan Timur,2024,53,52,98.0
+produsen,cabai_merah,Kalimantan Timur,2025,53,53,100.0
+produsen,cabai_merah,Kalimantan Timur,2026,47,47,100.0
+produsen,cabai_merah,Kalimantan Utara,2018,53,14,26.0
+produsen,cabai_merah,Kalimantan Utara,2019,53,53,100.0
+produsen,cabai_merah,Kalimantan Utara,2020,53,53,100.0
+produsen,cabai_merah,Kalimantan Utara,2021,53,53,100.0
+produsen,cabai_merah,Kalimantan Utara,2022,52,51,98.0
+produsen,cabai_merah,Kalimantan Utara,2023,52,52,100.0
+produsen,cabai_merah,Kalimantan Utara,2024,53,52,98.0
+produsen,cabai_merah,Kalimantan Utara,2025,53,51,96.0
+produsen,cabai_merah,Kalimantan Utara,2026,47,47,100.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2018,53,10,19.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2019,53,48,91.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2020,53,53,100.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2021,53,52,98.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2022,52,47,90.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2023,52,52,100.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2024,53,53,100.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2025,53,52,98.0
+produsen,cabai_merah,Kepulauan Bangka Belitung,2026,47,47,100.0
+produsen,cabai_merah,Kepulauan Riau,2018,53,15,28.0
+produsen,cabai_merah,Kepulauan Riau,2019,53,53,100.0
+produsen,cabai_merah,Kepulauan Riau,2020,53,53,100.0
+produsen,cabai_merah,Kepulauan Riau,2021,53,51,96.0
+produsen,cabai_merah,Kepulauan Riau,2022,52,48,92.0
+produsen,cabai_merah,Kepulauan Riau,2023,52,51,98.0
+produsen,cabai_merah,Kepulauan Riau,2024,53,43,81.0
+produsen,cabai_merah,Kepulauan Riau,2025,53,46,87.0
+produsen,cabai_merah,Kepulauan Riau,2026,47,42,89.0
+produsen,cabai_merah,Lampung,2018,53,15,28.0
+produsen,cabai_merah,Lampung,2019,53,53,100.0
+produsen,cabai_merah,Lampung,2020,53,53,100.0
+produsen,cabai_merah,Lampung,2021,53,53,100.0
+produsen,cabai_merah,Lampung,2022,52,51,98.0
+produsen,cabai_merah,Lampung,2023,52,52,100.0
+produsen,cabai_merah,Lampung,2024,53,53,100.0
+produsen,cabai_merah,Lampung,2025,53,53,100.0
+produsen,cabai_merah,Lampung,2026,47,47,100.0
+produsen,cabai_merah,Maluku,2018,53,14,26.0
+produsen,cabai_merah,Maluku,2019,53,46,87.0
+produsen,cabai_merah,Maluku,2020,53,53,100.0
+produsen,cabai_merah,Maluku,2021,53,53,100.0
+produsen,cabai_merah,Maluku,2022,52,51,98.0
+produsen,cabai_merah,Maluku,2023,52,52,100.0
+produsen,cabai_merah,Maluku,2024,53,44,83.0
+produsen,cabai_merah,Maluku,2025,53,53,100.0
+produsen,cabai_merah,Maluku,2026,47,43,91.0
+produsen,cabai_merah,Maluku Utara,2018,53,13,25.0
+produsen,cabai_merah,Maluku Utara,2019,53,49,92.0
+produsen,cabai_merah,Maluku Utara,2020,53,49,92.0
+produsen,cabai_merah,Maluku Utara,2021,53,53,100.0
+produsen,cabai_merah,Maluku Utara,2022,52,48,92.0
+produsen,cabai_merah,Maluku Utara,2023,52,52,100.0
+produsen,cabai_merah,Maluku Utara,2024,53,52,98.0
+produsen,cabai_merah,Maluku Utara,2025,53,44,83.0
+produsen,cabai_merah,Maluku Utara,2026,47,46,98.0
+produsen,cabai_merah,Nusa Tenggara Barat,2018,53,19,36.0
+produsen,cabai_merah,Nusa Tenggara Barat,2019,53,53,100.0
+produsen,cabai_merah,Nusa Tenggara Barat,2020,53,53,100.0
+produsen,cabai_merah,Nusa Tenggara Barat,2021,53,53,100.0
+produsen,cabai_merah,Nusa Tenggara Barat,2022,52,51,98.0
+produsen,cabai_merah,Nusa Tenggara Barat,2023,52,52,100.0
+produsen,cabai_merah,Nusa Tenggara Barat,2024,53,52,98.0
+produsen,cabai_merah,Nusa Tenggara Barat,2025,53,53,100.0
+produsen,cabai_merah,Nusa Tenggara Barat,2026,47,47,100.0
+produsen,cabai_merah,Nusa Tenggara Timur,2018,53,18,34.0
+produsen,cabai_merah,Nusa Tenggara Timur,2019,53,53,100.0
+produsen,cabai_merah,Nusa Tenggara Timur,2020,53,53,100.0
+produsen,cabai_merah,Nusa Tenggara Timur,2021,53,48,91.0
+produsen,cabai_merah,Nusa Tenggara Timur,2022,52,32,62.0
+produsen,cabai_merah,Nusa Tenggara Timur,2023,52,36,69.0
+produsen,cabai_merah,Papua,2018,53,14,26.0
+produsen,cabai_merah,Papua,2019,53,53,100.0
+produsen,cabai_merah,Papua,2020,53,53,100.0
+produsen,cabai_merah,Papua,2021,53,53,100.0
+produsen,cabai_merah,Papua,2022,52,51,98.0
+produsen,cabai_merah,Papua,2023,52,52,100.0
+produsen,cabai_merah,Papua,2024,53,53,100.0
+produsen,cabai_merah,Papua,2025,53,53,100.0
+produsen,cabai_merah,Papua,2026,47,47,100.0
+produsen,cabai_merah,Papua Barat,2018,53,14,26.0
+produsen,cabai_merah,Papua Barat,2019,53,53,100.0
+produsen,cabai_merah,Papua Barat,2020,53,53,100.0
+produsen,cabai_merah,Papua Barat,2021,53,53,100.0
+produsen,cabai_merah,Papua Barat,2022,52,51,98.0
+produsen,cabai_merah,Papua Barat,2023,52,52,100.0
+produsen,cabai_merah,Papua Barat,2024,53,52,98.0
+produsen,cabai_merah,Papua Barat,2025,53,53,100.0
+produsen,cabai_merah,Papua Barat,2026,47,47,100.0
+produsen,cabai_merah,Riau,2018,53,23,43.0
+produsen,cabai_merah,Riau,2019,53,53,100.0
+produsen,cabai_merah,Riau,2020,53,53,100.0
+produsen,cabai_merah,Riau,2021,53,53,100.0
+produsen,cabai_merah,Riau,2022,52,47,90.0
+produsen,cabai_merah,Riau,2023,52,52,100.0
+produsen,cabai_merah,Riau,2024,53,52,98.0
+produsen,cabai_merah,Riau,2025,53,49,92.0
+produsen,cabai_merah,Riau,2026,47,47,100.0
+produsen,cabai_merah,Semua Provinsi,2018,53,41,77.0
+produsen,cabai_merah,Semua Provinsi,2019,53,53,100.0
+produsen,cabai_merah,Semua Provinsi,2020,53,53,100.0
+produsen,cabai_merah,Semua Provinsi,2021,53,53,100.0
+produsen,cabai_merah,Semua Provinsi,2022,52,51,98.0
+produsen,cabai_merah,Semua Provinsi,2023,52,52,100.0
+produsen,cabai_merah,Semua Provinsi,2024,53,53,100.0
+produsen,cabai_merah,Semua Provinsi,2025,53,53,100.0
+produsen,cabai_merah,Semua Provinsi,2026,47,47,100.0
+produsen,cabai_merah,Sulawesi Barat,2018,53,35,66.0
+produsen,cabai_merah,Sulawesi Barat,2019,53,40,75.0
+produsen,cabai_merah,Sulawesi Barat,2020,53,48,91.0
+produsen,cabai_merah,Sulawesi Barat,2021,53,53,100.0
+produsen,cabai_merah,Sulawesi Barat,2022,52,47,90.0
+produsen,cabai_merah,Sulawesi Barat,2023,52,52,100.0
+produsen,cabai_merah,Sulawesi Barat,2024,53,53,100.0
+produsen,cabai_merah,Sulawesi Barat,2025,53,52,98.0
+produsen,cabai_merah,Sulawesi Barat,2026,47,47,100.0
+produsen,cabai_merah,Sulawesi Selatan,2018,53,14,26.0
+produsen,cabai_merah,Sulawesi Selatan,2019,53,53,100.0
+produsen,cabai_merah,Sulawesi Selatan,2020,53,53,100.0
+produsen,cabai_merah,Sulawesi Selatan,2021,53,53,100.0
+produsen,cabai_merah,Sulawesi Selatan,2022,52,51,98.0
+produsen,cabai_merah,Sulawesi Selatan,2023,52,52,100.0
+produsen,cabai_merah,Sulawesi Selatan,2024,53,53,100.0
+produsen,cabai_merah,Sulawesi Selatan,2025,53,53,100.0
+produsen,cabai_merah,Sulawesi Selatan,2026,47,47,100.0
+produsen,cabai_merah,Sulawesi Tengah,2018,53,14,26.0
+produsen,cabai_merah,Sulawesi Tengah,2019,53,53,100.0
+produsen,cabai_merah,Sulawesi Tengah,2020,53,52,98.0
+produsen,cabai_merah,Sulawesi Tengah,2021,53,53,100.0
+produsen,cabai_merah,Sulawesi Tengah,2022,52,51,98.0
+produsen,cabai_merah,Sulawesi Tengah,2023,52,52,100.0
+produsen,cabai_merah,Sulawesi Tengah,2024,53,53,100.0
+produsen,cabai_merah,Sulawesi Tengah,2025,53,52,98.0
+produsen,cabai_merah,Sulawesi Tengah,2026,47,47,100.0
+produsen,cabai_merah,Sulawesi Tenggara,2018,53,22,42.0
+produsen,cabai_merah,Sulawesi Tenggara,2019,53,53,100.0
+produsen,cabai_merah,Sulawesi Tenggara,2020,53,53,100.0
+produsen,cabai_merah,Sulawesi Tenggara,2021,53,53,100.0
+produsen,cabai_merah,Sulawesi Tenggara,2022,52,51,98.0
+produsen,cabai_merah,Sulawesi Tenggara,2023,52,52,100.0
+produsen,cabai_merah,Sulawesi Tenggara,2024,53,53,100.0
+produsen,cabai_merah,Sulawesi Tenggara,2025,53,53,100.0
+produsen,cabai_merah,Sulawesi Tenggara,2026,47,47,100.0
+produsen,cabai_merah,Sulawesi Utara,2018,53,14,26.0
+produsen,cabai_merah,Sulawesi Utara,2019,53,52,98.0
+produsen,cabai_merah,Sulawesi Utara,2020,53,53,100.0
+produsen,cabai_merah,Sulawesi Utara,2021,53,53,100.0
+produsen,cabai_merah,Sulawesi Utara,2022,52,51,98.0
+produsen,cabai_merah,Sulawesi Utara,2023,52,52,100.0
+produsen,cabai_merah,Sulawesi Utara,2024,53,53,100.0
+produsen,cabai_merah,Sulawesi Utara,2025,53,53,100.0
+produsen,cabai_merah,Sulawesi Utara,2026,47,47,100.0
+produsen,cabai_merah,Sumatera Barat,2018,53,14,26.0
+produsen,cabai_merah,Sumatera Barat,2019,53,53,100.0
+produsen,cabai_merah,Sumatera Barat,2020,53,53,100.0
+produsen,cabai_merah,Sumatera Barat,2021,53,53,100.0
+produsen,cabai_merah,Sumatera Barat,2022,52,51,98.0
+produsen,cabai_merah,Sumatera Barat,2023,52,52,100.0
+produsen,cabai_merah,Sumatera Barat,2024,53,53,100.0
+produsen,cabai_merah,Sumatera Barat,2025,53,53,100.0
+produsen,cabai_merah,Sumatera Barat,2026,47,47,100.0
+produsen,cabai_merah,Sumatera Selatan,2018,53,10,19.0
+produsen,cabai_merah,Sumatera Selatan,2019,53,52,98.0
+produsen,cabai_merah,Sumatera Selatan,2020,53,53,100.0
+produsen,cabai_merah,Sumatera Selatan,2021,53,53,100.0
+produsen,cabai_merah,Sumatera Selatan,2022,52,51,98.0
+produsen,cabai_merah,Sumatera Selatan,2023,52,50,96.0
+produsen,cabai_merah,Sumatera Selatan,2024,53,52,98.0
+produsen,cabai_merah,Sumatera Selatan,2025,53,53,100.0
+produsen,cabai_merah,Sumatera Selatan,2026,47,47,100.0
+produsen,cabai_merah,Sumatera Utara,2018,53,23,43.0
+produsen,cabai_merah,Sumatera Utara,2019,53,53,100.0
+produsen,cabai_merah,Sumatera Utara,2020,53,53,100.0
+produsen,cabai_merah,Sumatera Utara,2021,53,53,100.0
+produsen,cabai_merah,Sumatera Utara,2022,52,51,98.0
+produsen,cabai_merah,Sumatera Utara,2023,52,52,100.0
+produsen,cabai_merah,Sumatera Utara,2024,53,52,98.0
+produsen,cabai_merah,Sumatera Utara,2025,53,53,100.0
+produsen,cabai_merah,Sumatera Utara,2026,47,47,100.0
+produsen,cabai_rawit,Aceh,2018,53,15,28.0
+produsen,cabai_rawit,Aceh,2019,53,53,100.0
+produsen,cabai_rawit,Aceh,2020,53,53,100.0
+produsen,cabai_rawit,Aceh,2021,53,53,100.0
+produsen,cabai_rawit,Aceh,2022,52,51,98.0
+produsen,cabai_rawit,Aceh,2023,52,52,100.0
+produsen,cabai_rawit,Aceh,2024,53,53,100.0
+produsen,cabai_rawit,Aceh,2025,53,53,100.0
+produsen,cabai_rawit,Aceh,2026,47,47,100.0
+produsen,cabai_rawit,Bali,2018,53,14,26.0
+produsen,cabai_rawit,Bali,2019,53,52,98.0
+produsen,cabai_rawit,Bali,2020,53,52,98.0
+produsen,cabai_rawit,Bali,2021,53,52,98.0
+produsen,cabai_rawit,Bali,2022,52,51,98.0
+produsen,cabai_rawit,Bali,2023,52,52,100.0
+produsen,cabai_rawit,Bali,2024,53,53,100.0
+produsen,cabai_rawit,Bali,2025,53,53,100.0
+produsen,cabai_rawit,Bali,2026,47,47,100.0
+produsen,cabai_rawit,Banten,2018,53,14,26.0
+produsen,cabai_rawit,Banten,2019,53,44,83.0
+produsen,cabai_rawit,Banten,2020,53,14,26.0
+produsen,cabai_rawit,Banten,2021,53,45,85.0
+produsen,cabai_rawit,Banten,2022,52,48,92.0
+produsen,cabai_rawit,Banten,2023,52,52,100.0
+produsen,cabai_rawit,Banten,2024,53,44,83.0
+produsen,cabai_rawit,Banten,2025,53,53,100.0
+produsen,cabai_rawit,Banten,2026,47,42,89.0
+produsen,cabai_rawit,Bengkulu,2018,53,16,30.0
+produsen,cabai_rawit,Bengkulu,2019,53,50,94.0
+produsen,cabai_rawit,Bengkulu,2020,53,45,85.0
+produsen,cabai_rawit,Bengkulu,2021,53,37,70.0
+produsen,cabai_rawit,Bengkulu,2022,52,46,88.0
+produsen,cabai_rawit,Bengkulu,2023,52,48,92.0
+produsen,cabai_rawit,Bengkulu,2024,53,40,75.0
+produsen,cabai_rawit,Bengkulu,2025,53,52,98.0
+produsen,cabai_rawit,Bengkulu,2026,47,47,100.0
+produsen,cabai_rawit,DI Yogyakarta,2018,53,23,43.0
+produsen,cabai_rawit,DI Yogyakarta,2019,53,51,96.0
+produsen,cabai_rawit,DI Yogyakarta,2020,53,53,100.0
+produsen,cabai_rawit,DI Yogyakarta,2021,53,53,100.0
+produsen,cabai_rawit,DI Yogyakarta,2022,52,51,98.0
+produsen,cabai_rawit,DI Yogyakarta,2023,52,52,100.0
+produsen,cabai_rawit,DI Yogyakarta,2024,53,53,100.0
+produsen,cabai_rawit,DI Yogyakarta,2025,53,53,100.0
+produsen,cabai_rawit,DI Yogyakarta,2026,47,47,100.0
+produsen,cabai_rawit,Gorontalo,2018,53,15,28.0
+produsen,cabai_rawit,Gorontalo,2019,53,53,100.0
+produsen,cabai_rawit,Gorontalo,2020,53,53,100.0
+produsen,cabai_rawit,Gorontalo,2021,53,52,98.0
+produsen,cabai_rawit,Gorontalo,2022,52,48,92.0
+produsen,cabai_rawit,Gorontalo,2023,52,52,100.0
+produsen,cabai_rawit,Gorontalo,2024,53,53,100.0
+produsen,cabai_rawit,Gorontalo,2025,53,53,100.0
+produsen,cabai_rawit,Gorontalo,2026,47,47,100.0
+produsen,cabai_rawit,Jawa Barat,2018,53,15,28.0
+produsen,cabai_rawit,Jawa Barat,2019,53,53,100.0
+produsen,cabai_rawit,Jawa Barat,2020,53,53,100.0
+produsen,cabai_rawit,Jawa Barat,2021,53,53,100.0
+produsen,cabai_rawit,Jawa Barat,2022,52,51,98.0
+produsen,cabai_rawit,Jawa Barat,2023,52,52,100.0
+produsen,cabai_rawit,Jawa Barat,2024,53,53,100.0
+produsen,cabai_rawit,Jawa Barat,2025,53,53,100.0
+produsen,cabai_rawit,Jawa Barat,2026,47,47,100.0
+produsen,cabai_rawit,Jawa Tengah,2018,53,41,77.0
+produsen,cabai_rawit,Jawa Tengah,2019,53,53,100.0
+produsen,cabai_rawit,Jawa Tengah,2020,53,53,100.0
+produsen,cabai_rawit,Jawa Tengah,2021,53,53,100.0
+produsen,cabai_rawit,Jawa Tengah,2022,52,51,98.0
+produsen,cabai_rawit,Jawa Tengah,2023,52,52,100.0
+produsen,cabai_rawit,Jawa Tengah,2024,53,53,100.0
+produsen,cabai_rawit,Jawa Tengah,2025,53,53,100.0
+produsen,cabai_rawit,Jawa Tengah,2026,47,47,100.0
+produsen,cabai_rawit,Jawa Timur,2018,53,23,43.0
+produsen,cabai_rawit,Jawa Timur,2019,53,53,100.0
+produsen,cabai_rawit,Jawa Timur,2020,53,53,100.0
+produsen,cabai_rawit,Jawa Timur,2021,53,53,100.0
+produsen,cabai_rawit,Jawa Timur,2022,52,51,98.0
+produsen,cabai_rawit,Jawa Timur,2023,52,52,100.0
+produsen,cabai_rawit,Jawa Timur,2024,53,53,100.0
+produsen,cabai_rawit,Jawa Timur,2025,53,53,100.0
+produsen,cabai_rawit,Jawa Timur,2026,47,47,100.0
+produsen,cabai_rawit,Kalimantan Barat,2018,53,6,11.0
+produsen,cabai_rawit,Kalimantan Barat,2019,53,45,85.0
+produsen,cabai_rawit,Kalimantan Barat,2020,53,53,100.0
+produsen,cabai_rawit,Kalimantan Barat,2021,53,53,100.0
+produsen,cabai_rawit,Kalimantan Barat,2022,52,51,98.0
+produsen,cabai_rawit,Kalimantan Barat,2023,52,52,100.0
+produsen,cabai_rawit,Kalimantan Barat,2024,53,52,98.0
+produsen,cabai_rawit,Kalimantan Barat,2025,53,48,91.0
+produsen,cabai_rawit,Kalimantan Barat,2026,47,47,100.0
+produsen,cabai_rawit,Kalimantan Selatan,2018,53,14,26.0
+produsen,cabai_rawit,Kalimantan Selatan,2019,53,49,92.0
+produsen,cabai_rawit,Kalimantan Selatan,2020,53,53,100.0
+produsen,cabai_rawit,Kalimantan Selatan,2021,53,53,100.0
+produsen,cabai_rawit,Kalimantan Selatan,2022,52,51,98.0
+produsen,cabai_rawit,Kalimantan Selatan,2023,52,52,100.0
+produsen,cabai_rawit,Kalimantan Selatan,2024,53,53,100.0
+produsen,cabai_rawit,Kalimantan Selatan,2025,53,53,100.0
+produsen,cabai_rawit,Kalimantan Selatan,2026,47,47,100.0
+produsen,cabai_rawit,Kalimantan Tengah,2018,53,14,26.0
+produsen,cabai_rawit,Kalimantan Tengah,2019,53,53,100.0
+produsen,cabai_rawit,Kalimantan Tengah,2020,53,53,100.0
+produsen,cabai_rawit,Kalimantan Tengah,2021,53,53,100.0
+produsen,cabai_rawit,Kalimantan Tengah,2022,52,51,98.0
+produsen,cabai_rawit,Kalimantan Tengah,2023,52,47,90.0
+produsen,cabai_rawit,Kalimantan Tengah,2024,53,53,100.0
+produsen,cabai_rawit,Kalimantan Tengah,2025,53,52,98.0
+produsen,cabai_rawit,Kalimantan Tengah,2026,47,47,100.0
+produsen,cabai_rawit,Kalimantan Timur,2018,53,14,26.0
+produsen,cabai_rawit,Kalimantan Timur,2019,53,53,100.0
+produsen,cabai_rawit,Kalimantan Timur,2020,53,53,100.0
+produsen,cabai_rawit,Kalimantan Timur,2021,53,53,100.0
+produsen,cabai_rawit,Kalimantan Timur,2022,52,47,90.0
+produsen,cabai_rawit,Kalimantan Timur,2023,52,52,100.0
+produsen,cabai_rawit,Kalimantan Timur,2024,53,52,98.0
+produsen,cabai_rawit,Kalimantan Timur,2025,53,53,100.0
+produsen,cabai_rawit,Kalimantan Timur,2026,47,47,100.0
+produsen,cabai_rawit,Kalimantan Utara,2018,53,14,26.0
+produsen,cabai_rawit,Kalimantan Utara,2019,53,53,100.0
+produsen,cabai_rawit,Kalimantan Utara,2020,53,53,100.0
+produsen,cabai_rawit,Kalimantan Utara,2021,53,53,100.0
+produsen,cabai_rawit,Kalimantan Utara,2022,52,51,98.0
+produsen,cabai_rawit,Kalimantan Utara,2023,52,52,100.0
+produsen,cabai_rawit,Kalimantan Utara,2024,53,52,98.0
+produsen,cabai_rawit,Kalimantan Utara,2025,53,51,96.0
+produsen,cabai_rawit,Kalimantan Utara,2026,47,47,100.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2018,53,10,19.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2019,53,48,91.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2020,53,53,100.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2021,53,52,98.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2022,52,47,90.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2023,52,52,100.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2024,53,53,100.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2025,53,52,98.0
+produsen,cabai_rawit,Kepulauan Bangka Belitung,2026,47,47,100.0
+produsen,cabai_rawit,Kepulauan Riau,2018,53,15,28.0
+produsen,cabai_rawit,Kepulauan Riau,2019,53,53,100.0
+produsen,cabai_rawit,Kepulauan Riau,2020,53,53,100.0
+produsen,cabai_rawit,Kepulauan Riau,2021,53,51,96.0
+produsen,cabai_rawit,Kepulauan Riau,2022,52,48,92.0
+produsen,cabai_rawit,Kepulauan Riau,2023,52,51,98.0
+produsen,cabai_rawit,Kepulauan Riau,2024,53,43,81.0
+produsen,cabai_rawit,Kepulauan Riau,2025,53,46,87.0
+produsen,cabai_rawit,Kepulauan Riau,2026,47,42,89.0
+produsen,cabai_rawit,Lampung,2018,53,15,28.0
+produsen,cabai_rawit,Lampung,2019,53,53,100.0
+produsen,cabai_rawit,Lampung,2020,53,53,100.0
+produsen,cabai_rawit,Lampung,2021,53,53,100.0
+produsen,cabai_rawit,Lampung,2022,52,51,98.0
+produsen,cabai_rawit,Lampung,2023,52,52,100.0
+produsen,cabai_rawit,Lampung,2024,53,53,100.0
+produsen,cabai_rawit,Lampung,2025,53,53,100.0
+produsen,cabai_rawit,Lampung,2026,47,47,100.0
+produsen,cabai_rawit,Maluku,2018,53,14,26.0
+produsen,cabai_rawit,Maluku,2019,53,46,87.0
+produsen,cabai_rawit,Maluku,2020,53,53,100.0
+produsen,cabai_rawit,Maluku,2021,53,53,100.0
+produsen,cabai_rawit,Maluku,2022,52,51,98.0
+produsen,cabai_rawit,Maluku,2023,52,52,100.0
+produsen,cabai_rawit,Maluku,2024,53,44,83.0
+produsen,cabai_rawit,Maluku,2025,53,53,100.0
+produsen,cabai_rawit,Maluku,2026,47,43,91.0
+produsen,cabai_rawit,Maluku Utara,2018,53,13,25.0
+produsen,cabai_rawit,Maluku Utara,2019,53,49,92.0
+produsen,cabai_rawit,Maluku Utara,2020,53,49,92.0
+produsen,cabai_rawit,Maluku Utara,2021,53,53,100.0
+produsen,cabai_rawit,Maluku Utara,2022,52,48,92.0
+produsen,cabai_rawit,Maluku Utara,2023,52,52,100.0
+produsen,cabai_rawit,Maluku Utara,2024,53,52,98.0
+produsen,cabai_rawit,Maluku Utara,2025,53,43,81.0
+produsen,cabai_rawit,Maluku Utara,2026,47,42,89.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2018,53,19,36.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2019,53,53,100.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2020,53,53,100.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2021,53,53,100.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2022,52,51,98.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2023,52,52,100.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2024,53,52,98.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2025,53,53,100.0
+produsen,cabai_rawit,Nusa Tenggara Barat,2026,47,47,100.0
+produsen,cabai_rawit,Nusa Tenggara Timur,2018,53,18,34.0
+produsen,cabai_rawit,Nusa Tenggara Timur,2019,53,53,100.0
+produsen,cabai_rawit,Nusa Tenggara Timur,2020,53,53,100.0
+produsen,cabai_rawit,Nusa Tenggara Timur,2021,53,48,91.0
+produsen,cabai_rawit,Nusa Tenggara Timur,2022,52,32,62.0
+produsen,cabai_rawit,Nusa Tenggara Timur,2023,52,36,69.0
+produsen,cabai_rawit,Papua,2018,53,14,26.0
+produsen,cabai_rawit,Papua,2019,53,53,100.0
+produsen,cabai_rawit,Papua,2020,53,53,100.0
+produsen,cabai_rawit,Papua,2021,53,53,100.0
+produsen,cabai_rawit,Papua,2022,52,51,98.0
+produsen,cabai_rawit,Papua,2023,52,52,100.0
+produsen,cabai_rawit,Papua,2024,53,53,100.0
+produsen,cabai_rawit,Papua,2025,53,53,100.0
+produsen,cabai_rawit,Papua,2026,47,47,100.0
+produsen,cabai_rawit,Papua Barat,2018,53,14,26.0
+produsen,cabai_rawit,Papua Barat,2019,53,53,100.0
+produsen,cabai_rawit,Papua Barat,2020,53,53,100.0
+produsen,cabai_rawit,Papua Barat,2021,53,53,100.0
+produsen,cabai_rawit,Papua Barat,2022,52,51,98.0
+produsen,cabai_rawit,Papua Barat,2023,52,52,100.0
+produsen,cabai_rawit,Papua Barat,2024,53,52,98.0
+produsen,cabai_rawit,Papua Barat,2025,53,53,100.0
+produsen,cabai_rawit,Papua Barat,2026,47,47,100.0
+produsen,cabai_rawit,Riau,2018,53,23,43.0
+produsen,cabai_rawit,Riau,2019,53,53,100.0
+produsen,cabai_rawit,Riau,2020,53,53,100.0
+produsen,cabai_rawit,Riau,2021,53,53,100.0
+produsen,cabai_rawit,Riau,2022,52,47,90.0
+produsen,cabai_rawit,Riau,2023,52,52,100.0
+produsen,cabai_rawit,Riau,2024,53,52,98.0
+produsen,cabai_rawit,Riau,2025,53,49,92.0
+produsen,cabai_rawit,Riau,2026,47,47,100.0
+produsen,cabai_rawit,Semua Provinsi,2018,53,41,77.0
+produsen,cabai_rawit,Semua Provinsi,2019,53,53,100.0
+produsen,cabai_rawit,Semua Provinsi,2020,53,53,100.0
+produsen,cabai_rawit,Semua Provinsi,2021,53,53,100.0
+produsen,cabai_rawit,Semua Provinsi,2022,52,51,98.0
+produsen,cabai_rawit,Semua Provinsi,2023,52,52,100.0
+produsen,cabai_rawit,Semua Provinsi,2024,53,53,100.0
+produsen,cabai_rawit,Semua Provinsi,2025,53,53,100.0
+produsen,cabai_rawit,Semua Provinsi,2026,47,47,100.0
+produsen,cabai_rawit,Sulawesi Barat,2018,53,35,66.0
+produsen,cabai_rawit,Sulawesi Barat,2019,53,40,75.0
+produsen,cabai_rawit,Sulawesi Barat,2020,53,48,91.0
+produsen,cabai_rawit,Sulawesi Barat,2021,53,53,100.0
+produsen,cabai_rawit,Sulawesi Barat,2022,52,47,90.0
+produsen,cabai_rawit,Sulawesi Barat,2023,52,52,100.0
+produsen,cabai_rawit,Sulawesi Barat,2024,53,53,100.0
+produsen,cabai_rawit,Sulawesi Barat,2025,53,52,98.0
+produsen,cabai_rawit,Sulawesi Barat,2026,47,47,100.0
+produsen,cabai_rawit,Sulawesi Selatan,2018,53,14,26.0
+produsen,cabai_rawit,Sulawesi Selatan,2019,53,53,100.0
+produsen,cabai_rawit,Sulawesi Selatan,2020,53,53,100.0
+produsen,cabai_rawit,Sulawesi Selatan,2021,53,53,100.0
+produsen,cabai_rawit,Sulawesi Selatan,2022,52,51,98.0
+produsen,cabai_rawit,Sulawesi Selatan,2023,52,52,100.0
+produsen,cabai_rawit,Sulawesi Selatan,2024,53,53,100.0
+produsen,cabai_rawit,Sulawesi Selatan,2025,53,53,100.0
+produsen,cabai_rawit,Sulawesi Selatan,2026,47,47,100.0
+produsen,cabai_rawit,Sulawesi Tengah,2018,53,14,26.0
+produsen,cabai_rawit,Sulawesi Tengah,2019,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tengah,2020,53,52,98.0
+produsen,cabai_rawit,Sulawesi Tengah,2021,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tengah,2022,52,51,98.0
+produsen,cabai_rawit,Sulawesi Tengah,2023,52,52,100.0
+produsen,cabai_rawit,Sulawesi Tengah,2024,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tengah,2025,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tengah,2026,47,47,100.0
+produsen,cabai_rawit,Sulawesi Tenggara,2018,53,22,42.0
+produsen,cabai_rawit,Sulawesi Tenggara,2019,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tenggara,2020,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tenggara,2021,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tenggara,2022,52,51,98.0
+produsen,cabai_rawit,Sulawesi Tenggara,2023,52,52,100.0
+produsen,cabai_rawit,Sulawesi Tenggara,2024,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tenggara,2025,53,53,100.0
+produsen,cabai_rawit,Sulawesi Tenggara,2026,47,47,100.0
+produsen,cabai_rawit,Sulawesi Utara,2018,53,13,25.0
+produsen,cabai_rawit,Sulawesi Utara,2019,53,44,83.0
+produsen,cabai_rawit,Sulawesi Utara,2020,53,53,100.0
+produsen,cabai_rawit,Sulawesi Utara,2021,53,53,100.0
+produsen,cabai_rawit,Sulawesi Utara,2022,52,51,98.0
+produsen,cabai_rawit,Sulawesi Utara,2023,52,52,100.0
+produsen,cabai_rawit,Sulawesi Utara,2024,53,53,100.0
+produsen,cabai_rawit,Sulawesi Utara,2025,53,53,100.0
+produsen,cabai_rawit,Sulawesi Utara,2026,47,47,100.0
+produsen,cabai_rawit,Sumatera Barat,2018,53,14,26.0
+produsen,cabai_rawit,Sumatera Barat,2019,53,53,100.0
+produsen,cabai_rawit,Sumatera Barat,2020,53,53,100.0
+produsen,cabai_rawit,Sumatera Barat,2021,53,53,100.0
+produsen,cabai_rawit,Sumatera Barat,2022,52,51,98.0
+produsen,cabai_rawit,Sumatera Barat,2023,52,52,100.0
+produsen,cabai_rawit,Sumatera Barat,2024,53,53,100.0
+produsen,cabai_rawit,Sumatera Barat,2025,53,53,100.0
+produsen,cabai_rawit,Sumatera Barat,2026,47,47,100.0
+produsen,cabai_rawit,Sumatera Selatan,2018,53,10,19.0
+produsen,cabai_rawit,Sumatera Selatan,2019,53,52,98.0
+produsen,cabai_rawit,Sumatera Selatan,2020,53,53,100.0
+produsen,cabai_rawit,Sumatera Selatan,2021,53,53,100.0
+produsen,cabai_rawit,Sumatera Selatan,2022,52,51,98.0
+produsen,cabai_rawit,Sumatera Selatan,2023,52,50,96.0
+produsen,cabai_rawit,Sumatera Selatan,2024,53,52,98.0
+produsen,cabai_rawit,Sumatera Selatan,2025,53,53,100.0
+produsen,cabai_rawit,Sumatera Selatan,2026,47,47,100.0
+produsen,cabai_rawit,Sumatera Utara,2018,53,23,43.0
+produsen,cabai_rawit,Sumatera Utara,2019,53,53,100.0
+produsen,cabai_rawit,Sumatera Utara,2020,53,53,100.0
+produsen,cabai_rawit,Sumatera Utara,2021,53,53,100.0
+produsen,cabai_rawit,Sumatera Utara,2022,52,51,98.0
+produsen,cabai_rawit,Sumatera Utara,2023,52,52,100.0
+produsen,cabai_rawit,Sumatera Utara,2024,53,52,98.0
+produsen,cabai_rawit,Sumatera Utara,2025,53,53,100.0
+produsen,cabai_rawit,Sumatera Utara,2026,47,47,100.0
