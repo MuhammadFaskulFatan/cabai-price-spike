@@ -66,6 +66,7 @@ BDSP_FILES = {
 NAME_ALIASES = {
     "Kab. Kutai Kertanegara": "Kab. Kutai Kartanegara",
     "Kab. Mamuju Utara/Kab. Pasangkayu": "Kab. Pasangkayu",
+    "Kab. Karang Asem": "Kab. Karangasem",  # tanpa alias, Nominatim mencocokkan sebuah sekolah di Sentul, Jawa Barat
 }
 
 
@@ -180,13 +181,16 @@ def build_points():
     for group, code, info in selected:
         totals[code] = totals.get(code, 0.0) + info["ton"]
 
-    rows, unresolved = [], []
+    rows, unresolved, suspicious = [], [], []
     for group, code, info in selected:
         place = geocode(session, info["label"], bdsp_prov[info["bps_prov"]], cache)
         GEOCODE_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
         if place is None:
             unresolved.append(info["label"])
             continue
+        province_name = bdsp_prov[info["bps_prov"]]
+        if province_name.split(" ")[-1].lower() not in place["match"].lower():
+            suspicious.append(f"{info['label']} -> {place['match'][:60]}")
         rows.append(
             {
                 "commodity_group": group,
@@ -214,6 +218,8 @@ def build_points():
     print(f"{len(rows)} baris kabupaten x komoditas -> {len(locations)} lokasi cuaca; koordinat tidak ketemu: {unresolved or 'tidak ada'}")
     print(f"perkiraan {calls:,.0f} call API (~{calls_per_location():.0f} per lokasi), sekitar {calls / 10000:.1f} hari pada batas 10.000/hari")
     print(f"{len({row['province_id'] for row in rows})} dari 34 provinsi punya titik sentra")
+    if suspicious:
+        print("PERIKSA geocoding (nama provinsi tidak muncul di hasil):", suspicious)
 
 
 def weather_file_name(latitude, longitude):

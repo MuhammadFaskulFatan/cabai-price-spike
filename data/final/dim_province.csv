@@ -1,35 +1,35 @@
-province_id,province_name,island_group,in_producer_price_analysis
-1,Aceh,Sumatera,True
-2,Sumatera Utara,Sumatera,True
-3,Sumatera Barat,Sumatera,True
-4,Riau,Sumatera,True
-5,Kepulauan Riau,Sumatera,True
-6,Jambi,Sumatera,True
-7,Bengkulu,Sumatera,True
-8,Sumatera Selatan,Sumatera,True
-9,Kepulauan Bangka Belitung,Sumatera,True
-10,Lampung,Sumatera,True
-11,Banten,Jawa,True
-12,Jawa Barat,Jawa,True
-13,DKI Jakarta,Jawa,True
-14,Jawa Tengah,Jawa,True
-15,DI Yogyakarta,Jawa,True
-16,Jawa Timur,Jawa,True
-17,Bali,Bali dan Nusa Tenggara,True
-18,Nusa Tenggara Barat,Bali dan Nusa Tenggara,True
-19,Nusa Tenggara Timur,Bali dan Nusa Tenggara,False
-20,Kalimantan Barat,Kalimantan,True
-21,Kalimantan Selatan,Kalimantan,True
-22,Kalimantan Tengah,Kalimantan,True
-23,Kalimantan Timur,Kalimantan,True
-24,Kalimantan Utara,Kalimantan,True
-25,Gorontalo,Sulawesi,True
-26,Sulawesi Selatan,Sulawesi,True
-27,Sulawesi Tenggara,Sulawesi,True
-28,Sulawesi Tengah,Sulawesi,True
-29,Sulawesi Utara,Sulawesi,True
-30,Sulawesi Barat,Sulawesi,True
-31,Maluku,Maluku,True
-32,Maluku Utara,Maluku,True
-33,Papua,Papua,True
-34,Papua Barat,Papua,True
+province_id,province_name,island_group,in_producer_price_analysis,capital,island,capital_lat,capital_lon
+1,Aceh,Sumatera,True,Banda Aceh,Sumatera,5.5528,95.3193
+2,Sumatera Utara,Sumatera,True,Medan,Sumatera,3.5895,98.6742
+3,Sumatera Barat,Sumatera,True,Padang,Sumatera,-0.9248,100.3633
+4,Riau,Sumatera,True,Pekanbaru,Sumatera,0.5262,101.4516
+5,Kepulauan Riau,Sumatera,True,Tanjung Pinang,Bintan,0.9237,104.4461
+6,Jambi,Sumatera,True,Jambi,Sumatera,-1.6297,103.6078
+7,Bengkulu,Sumatera,True,Bengkulu,Sumatera,-3.7923,102.2624
+8,Sumatera Selatan,Sumatera,True,Palembang,Sumatera,-2.9888,104.7569
+9,Kepulauan Bangka Belitung,Sumatera,True,Pangkal Pinang,Bangka,-2.1207,106.1135
+10,Lampung,Sumatera,True,Bandar Lampung,Sumatera,-5.4294,105.2626
+11,Banten,Jawa,True,Serang,Jawa,-6.117,106.1518
+12,Jawa Barat,Jawa,True,Bandung,Jawa,-6.9218,107.6071
+13,DKI Jakarta,Jawa,True,Jakarta Pusat,Jawa,-6.1823,106.8429
+14,Jawa Tengah,Jawa,True,Semarang,Jawa,-6.9904,110.4229
+15,DI Yogyakarta,Jawa,True,Yogyakarta,Jawa,-7.8013,110.3647
+16,Jawa Timur,Jawa,True,Surabaya,Jawa,-7.2463,112.7378
+17,Bali,Bali dan Nusa Tenggara,True,Denpasar,Bali,-8.6653,115.2176
+18,Nusa Tenggara Barat,Bali dan Nusa Tenggara,True,Mataram,Lombok,-8.5838,116.1068
+19,Nusa Tenggara Timur,Bali dan Nusa Tenggara,False,Kupang,Timor,-10.1632,123.6018
+20,Kalimantan Barat,Kalimantan,True,Pontianak,Kalimantan,-0.0227,109.3447
+21,Kalimantan Selatan,Kalimantan,True,Banjarbaru,Kalimantan,-3.4431,114.8308
+22,Kalimantan Tengah,Kalimantan,True,Palangka Raya,Kalimantan,-2.2073,113.9164
+23,Kalimantan Timur,Kalimantan,True,Samarinda,Kalimantan,-0.5018,117.1393
+24,Kalimantan Utara,Kalimantan,True,Tanjung Selor,Kalimantan,2.843,117.3613
+25,Gorontalo,Sulawesi,True,Gorontalo,Sulawesi,0.5384,123.0595
+26,Sulawesi Selatan,Sulawesi,True,Makassar,Sulawesi,-5.1343,119.4124
+27,Sulawesi Tenggara,Sulawesi,True,Kendari,Sulawesi,-3.9918,122.518
+28,Sulawesi Tengah,Sulawesi,True,Palu,Sulawesi,-0.9052,119.8722
+29,Sulawesi Utara,Sulawesi,True,Manado,Sulawesi,1.49,124.8408
+30,Sulawesi Barat,Sulawesi,True,Mamuju,Sulawesi,-2.5394,119.3889
+31,Maluku,Maluku,True,Ambon,Ambon,-3.6959,128.1788
+32,Maluku Utara,Maluku,True,Sofifi,Halmahera,0.7348,127.5761
+33,Papua,Papua,True,Jayapura,Papua,-2.5388,140.7037
+34,Papua Barat,Papua,True,Manokwari,Papua,-0.9777,133.7538

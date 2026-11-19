@@ -249,11 +249,6 @@
   "lon": 115.368046,
   "match": "Bangli, Bali, Indonesia"
  },
- "Kab. Karang Asem|Bali": {
-  "lat": -6.4911678,
-  "lon": 106.8793384,
-  "match": "SMP Tahfidz Indonesia, Jalan Raya Sirkuit Sentul, Citeureup, Kab Bogor, Jawa Barat, 16810, Indonesia"
- },
  "Kab. Buleleng|Bali": {
   "lat": -8.2222492,
   "lon": 114.9950437,
@@ -743,5 +738,180 @@
   "lat": -6.7611892,
   "lon": 108.4564232,
   "match": "Kabupaten Cirebon, Jawa Barat, Indonesia"
+ },
+ "capital|Banda Aceh|Aceh": {
+  "lat": 5.5528455,
+  "lon": 95.3192908,
+  "match": "Banda Aceh, Aceh, Indonesia"
+ },
+ "capital|Medan|Sumatera Utara": {
+  "lat": 3.5894617,
+  "lon": 98.6741623,
+  "match": "Kota Medan, Sumatera Utara, Indonesia"
+ },
+ "capital|Padang|Sumatera Barat": {
+  "lat": -0.9247587,
+  "lon": 100.3632561,
+  "match": "Padang, Sumatera Barat, Indonesia"
+ },
+ "capital|Pekanbaru|Riau": {
+  "lat": 0.5262455,
+  "lon": 101.4515727,
+  "match": "Pekanbaru, Pekanbaru Kota, Riau, Indonesia"
+ },
+ "capital|Tanjung Pinang|Kepulauan Riau": {
+  "lat": 0.9236915,
+  "lon": 104.446094,
+  "match": "Tanjungpinang, Kepulauan Riau, Indonesia"
+ },
+ "capital|Jambi|Jambi": {
+  "lat": -1.6296917,
+  "lon": 103.6077806,
+  "match": "Jambi, Indonesia"
+ },
+ "capital|Bengkulu|Bengkulu": {
+  "lat": -3.7922858,
+  "lon": 102.2623797,
+  "match": "Bengkulu, Teluk Segara, Bengkulu, Indonesia"
+ },
+ "capital|Palembang|Sumatera Selatan": {
+  "lat": -2.9888243,
+  "lon": 104.7568507,
+  "match": "Palembang, Sumatera Selatan, Indonesia"
+ },
+ "capital|Pangkal Pinang|Kepulauan Bangka Belitung": {
+  "lat": -2.1206733,
+  "lon": 106.1134604,
+  "match": "Pangkalpinang, Kepulauan Bangka Belitung, Indonesia"
+ },
+ "capital|Bandar Lampung|Lampung": {
+  "lat": -5.4293858,
+  "lon": 105.2626169,
+  "match": "Bandar Lampung, Lampung, Indonesia"
+ },
+ "capital|Serang|Banten": {
+  "lat": -6.1169662,
+  "lon": 106.1518079,
+  "match": "Serang, Banten, Indonesia"
+ },
+ "capital|Bandung|Jawa Barat": {
+  "lat": -6.9218457,
+  "lon": 107.6070833,
+  "match": "Kota Bandung, Jawa Barat, Indonesia"
+ },
+ "capital|Jakarta Pusat|DKI Jakarta": {
+  "lat": -6.1823399,
+  "lon": 106.8428715,
+  "match": "Jakarta Pusat, Daerah Khusus Ibukota Jakarta, Indonesia"
+ },
+ "capital|Semarang|Jawa Tengah": {
+  "lat": -6.9903988,
+  "lon": 110.4229104,
+  "match": "Kota Semarang, Jawa Tengah, Indonesia"
+ },
+ "capital|Yogyakarta|DI Yogyakarta": {
+  "lat": -7.801349,
+  "lon": 110.3647351,
+  "match": "Kota Yogyakarta, Depok, Daerah Istimewa Yogyakarta, Indonesia"
+ },
+ "capital|Surabaya|Jawa Timur": {
+  "lat": -7.2462836,
+  "lon": 112.7377674,
+  "match": "Surabaya, Jawa Timur, Indonesia"
+ },
+ "capital|Denpasar|Bali": {
+  "lat": -8.6653349,
+  "lon": 115.2176191,
+  "match": "Denpasar, Bali, Indonesia"
+ },
+ "capital|Mataram|Nusa Tenggara Barat": {
+  "lat": -8.5837726,
+  "lon": 116.10685,
+  "match": "Mataram, Kec. Selaparang, Nusa Tenggara Barat, Indonesia"
+ },
+ "capital|Kupang|Nusa Tenggara Timur": {
+  "lat": -10.1632209,
+  "lon": 123.6017755,
+  "match": "Kupang, Nusa Tenggara Timur, Indonesia"
+ },
+ "capital|Pontianak|Kalimantan Barat": {
+  "lat": -0.0226903,
+  "lon": 109.3447488,
+  "match": "Pontianak, Kalimantan Barat, Indonesia"
+ },
+ "capital|Banjarbaru|Kalimantan Selatan": {
+  "lat": -3.4430503,
+  "lon": 114.8308481,
+  "match": "Banjarbaru, Kalimantan Selatan, Indonesia"
+ },
+ "capital|Palangka Raya|Kalimantan Tengah": {
+  "lat": -2.2072919,
+  "lon": 113.9164372,
+  "match": "Palangka Raya, Kalimantan Tengah, Indonesia"
+ },
+ "capital|Samarinda|Kalimantan Timur": {
+  "lat": -0.5017804,
+  "lon": 117.1393089,
+  "match": "Samarinda, Kalimantan Timur, Indonesia"
+ },
+ "capital|Tanjung Selor|Kalimantan Utara": {
+  "lat": 2.8430475,
+  "lon": 117.3613188,
+  "match": "Tanjung Selor, Bulungan, Kalimantan Utara, 77211, Indonesia"
+ },
+ "capital|Gorontalo|Gorontalo": {
+  "lat": 0.5384433,
+  "lon": 123.0594971,
+  "match": "Gorontalo, Indonesia"
+ },
+ "capital|Makassar|Sulawesi Selatan": {
+  "lat": -5.1342962,
+  "lon": 119.4124282,
+  "match": "Makassar, Sulawesi Selatan, Indonesia"
+ },
+ "capital|Kendari|Sulawesi Tenggara": {
+  "lat": -3.9918068,
+  "lon": 122.5180066,
+  "match": "Kendari, Sulawesi Tenggara, Indonesia"
+ },
+ "capital|Palu|Sulawesi Tengah": {
+  "lat": -0.9051548,
+  "lon": 119.8722373,
+  "match": "Palu, Sulawesi Tengah, Indonesia"
+ },
+ "capital|Manado|Sulawesi Utara": {
+  "lat": 1.4900447,
+  "lon": 124.8407673,
+  "match": "Manado, Sulawesi Utara, Indonesia"
+ },
+ "capital|Mamuju|Sulawesi Barat": {
+  "lat": -2.5394187,
+  "lon": 119.3889455,
+  "match": "Mamuju, Sulawesi Barat, Indonesia"
+ },
+ "capital|Ambon|Maluku": {
+  "lat": -3.6959434,
+  "lon": 128.178785,
+  "match": "Ambon, Maluku, Indonesia"
+ },
+ "capital|Sofifi|Maluku Utara": {
+  "lat": 0.734776,
+  "lon": 127.5760518,
+  "match": "Sofifi, Maluku Utara, Indonesia"
+ },
+ "capital|Jayapura|Papua": {
+  "lat": -2.5387539,
+  "lon": 140.7037389,
+  "match": "Jayapura, Papua, Indonesia"
+ },
+ "capital|Manokwari|Papua Barat": {
+  "lat": -0.9776762,
+  "lon": 133.7538039,
+  "match": "Manokwari, Papua Barat, Indonesia"
+ },
+ "Kab. Karang Asem|Bali": {
+  "lat": -8.3587533,
+  "lon": 115.5472993,
+  "match": "Karangasem, Bali, Indonesia"
  }
 }

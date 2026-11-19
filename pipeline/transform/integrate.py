@@ -41,7 +41,8 @@ def build_dim_province():
     frame["province_name"] = frame["province_id"].map(names)
     frame["island_group"] = frame["province_id"].map(ISLAND_GROUP)
     frame["in_producer_price_analysis"] = ~frame["province_id"].isin(NO_PRODUCER_ANALYSIS)
-    return frame
+    capitals = pd.read_parquet(INTERIM / "province_capitals.parquet")[["province_id", "capital", "island", "capital_lat", "capital_lon"]]
+    return frame.merge(capitals, on="province_id", how="left")
 
 
 def load_prices():
@@ -94,6 +95,9 @@ def build_core_month(dim_province, dim_month):
                           "n_cuti_bersama_days", "cuti_bersama_verified", "months_to_idulfitri"]]
     core = core.merge(calendar, on="month_start", how="left")
     core = core.merge(dim_province[["province_id", "in_producer_price_analysis"]], on="province_id", how="left")
+    # jarak ke titik sentra terdekat per komoditas (D-48, D-50)
+    geography = pd.read_parquet(INTERIM / "province_geography.parquet")[["province_id", "commodity_group", "distance_to_sentra_km", "is_different_island", "nearest_sentra_province_id"]]
+    core = core.merge(geography, on=["province_id", "commodity_group"], how="left")
     return core.sort_values(["province_id", "commodity_group", "month_start"]).reset_index(drop=True)
 
 

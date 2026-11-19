@@ -166,6 +166,16 @@ PK: `month_start`. Sumber: NOAA ONI, nasional.
 
 ## 4. Tabel akhir: `core_province_month`
 
+Kolom geografi (D-48, D-50), sama untuk semua bulan satu provinsi x komoditas:
+
+| Kolom | Tipe | Deskripsi | Catatan |
+| --- | --- | --- | --- |
+| `distance_to_sentra_km` | float | Jarak great-circle (km) dari ibu kota provinsi ke titik sentra berbobot produksi terdekat untuk komoditas itu | Titik sentra = rata-rata koordinat kabupaten sentra satu provinsi, berbobot produksi rata-rata 2019-2025 (`sentra_points.csv`); provinsi sendiri ikut dihitung. Ibu kota digeocode lewat Nominatim |
+| `is_different_island` | bool | `TRUE` kalau pulau ibu kota berbeda dengan pulau titik sentra terdekat | Pulau utama per provinsi, tabel di `pipeline/transform/geography.py` |
+| `nearest_sentra_province_id` | int | Provinsi tempat titik sentra terdekat | Untuk menelusuri jarak |
+
+`dim_province` juga memuat `capital`, `island`, `capital_lat`, `capital_lon`.
+
 Kolom produksi: `production_annual_ton` (ton, angka tahunan BDSP diulang untuk 12 bulan dalam tahunnya, 2026 NULL) dan `production_annual_preliminary` (`TRUE` untuk 2025) (D-42).
 
 Definisi kolom sudah ada di [ERD, bagian 3](02_erd_core_dataset.md). Aturan kualitasnya:
