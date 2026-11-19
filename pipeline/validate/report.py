@@ -65,7 +65,15 @@ def run(skip_live=False):
               to_markdown(crosscheck["summary"], floatfmt="{:,.2f}"), "",
               f"- Sel yang hanya terisi di PIHPS bulanan: {crosscheck['only_pihps']} (bulan kita kosong karena hanya {int(crosscheck['only_pihps_days'][0]) if crosscheck['only_pihps_days'] else 0}-{int(crosscheck['only_pihps_days'][1]) if crosscheck['only_pihps_days'] else 0} hari kerja terisi, di bawah aturan minimal 10 hari). Sel yang hanya terisi di data kita: {crosscheck['only_ours']}.",
               "- Eceran praktis identik. Pedagang besar dan produsen sedikit berbeda (88-89% dalam 1%, hampir semua dalam 5%), kemungkinan karena PIHPS menghitung angka bulanan dengan cara lain (misalnya rata-rata pasar atau minggu, bukan rata-rata hari). Angka PIHPS bulanan tetap hanya pembanding.", "",
-              "Sepuluh selisih terbesar:", "", to_markdown(crosscheck["worst"], floatfmt="{:,.1f}"), ""]
+              "Sepuluh selisih terbesar:", "", to_markdown(crosscheck["worst"], floatfmt="{:,.1f}"), "",
+              "### Sel kosong karena kurang dari 10 hari kerja: bulan Idulfitri vs bulan lain", "",
+              "Sel yang terisi di PIHPS bulanan tetapi kosong di data kita, dibagi menurut bulan 1 Syawal, bulan sesudahnya, dan bulan lain. "
+              "Periode 2019-2026 dipisah karena sebagian besar sel kosong 2018 berasal dari masa awal seri harga produsen (Juli-September 2018).", ""]
+    for label, table in crosscheck["idulfitri"].items():
+        lines += [f"Periode {label}:", "", to_markdown(table, floatfmt="{:.2f}"), ""]
+    lines += ["Kesimpulan: sel kosong hampir seluruhnya di harga produsen, dan proporsinya di bulan Idulfitri tidak jauh lebih tinggi daripada bulan lain "
+              "(2019-2026: 1,71% di bulan Idulfitri dan bulan sesudahnya vs 1,40% di bulan lain, masing-masing 9 sel). Tidak dicatat sebagai risiko H6; "
+              "hasil ini cukup didokumentasikan di sini.", ""]
 
     if spots:
         lines += ["## 4. Spot-check terhadap sumber (seed 2026)", "",

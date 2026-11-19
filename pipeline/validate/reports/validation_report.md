@@ -106,6 +106,40 @@ Sepuluh selisih terbesar:
 | produsen | cabai_rawit | 20 | 2021-12 | 23 | 44,673.9 | 42,500.0 | 5.1 |
 | produsen | cabai_merah | 15 | 2020-10 | 22 | 14,725.0 | 15,500.0 | 5.0 |
 
+### Sel kosong karena kurang dari 10 hari kerja: bulan Idulfitri vs bulan lain
+
+Sel yang terisi di PIHPS bulanan tetapi kosong di data kita, dibagi menurut bulan 1 Syawal, bulan sesudahnya, dan bulan lain. Periode 2019-2026 dipisah karena sebagian besar sel kosong 2018 berasal dari masa awal seri harga produsen (Juli-September 2018).
+
+Periode 2018-2026:
+
+| tipe_harga | kategori | sel | kosong | pct_kosong |
+| --- | --- | --- | --- | --- |
+| eceran | bulan_idulfitri | 630 | 0 | 0.00 |
+| eceran | bulan_lain | 6160 | 0 | 0.00 |
+| eceran | bulan_sesudah | 630 | 0 | 0.00 |
+| pedagang_besar | bulan_idulfitri | 630 | 2 | 0.32 |
+| pedagang_besar | bulan_lain | 6152 | 1 | 0.02 |
+| pedagang_besar | bulan_sesudah | 630 | 0 | 0.00 |
+| produsen | bulan_idulfitri | 533 | 9 | 1.69 |
+| produsen | bulan_lain | 5436 | 126 | 2.32 |
+| produsen | bulan_sesudah | 542 | 19 | 3.51 |
+
+Periode 2019-2026:
+
+| tipe_harga | kategori | sel | kosong | pct_kosong |
+| --- | --- | --- | --- | --- |
+| eceran | bulan_idulfitri | 560 | 0 | 0.00 |
+| eceran | bulan_lain | 5460 | 0 | 0.00 |
+| eceran | bulan_sesudah | 560 | 0 | 0.00 |
+| pedagang_besar | bulan_idulfitri | 560 | 0 | 0.00 |
+| pedagang_besar | bulan_lain | 5452 | 1 | 0.02 |
+| pedagang_besar | bulan_sesudah | 560 | 0 | 0.00 |
+| produsen | bulan_idulfitri | 527 | 9 | 1.71 |
+| produsen | bulan_lain | 5141 | 72 | 1.40 |
+| produsen | bulan_sesudah | 526 | 9 | 1.71 |
+
+Kesimpulan: sel kosong hampir seluruhnya di harga produsen, dan proporsinya di bulan Idulfitri tidak jauh lebih tinggi daripada bulan lain (2019-2026: 1,71% di bulan Idulfitri dan bulan sesudahnya vs 1,40% di bulan lain, masing-masing 9 sel). Tidak dicatat sebagai risiko H6; hasil ini cukup didokumentasikan di sini.
+
 ## 4. Spot-check terhadap sumber (seed 2026)
 
 Harga: 30 sel observed acak dihitung ulang dari file raw harian dengan kode terpisah; 10 pertama juga ditarik ulang dari PIHPS live pada 19 Nov 2026.

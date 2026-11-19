@@ -32,6 +32,23 @@ def load_pihps_monthly():
     return pd.DataFrame(records, columns=["price_type_id", "commodity_id", "province_id", "month", "price_pihps"])
 
 
+def idulfitri_breakdown(merged):
+    """Sel yang terisi di PIHPS bulanan tetapi kosong di data kita (< 10 hari kerja): bulan Idulfitri, bulan sesudahnya,
+    dan bulan lain, per tipe harga. Dihitung untuk seluruh periode dan untuk 2019 ke atas (tanpa masa awal seri produsen 2018)."""
+    months = pd.read_csv(ROOT / "data" / "final" / "dim_month.csv")
+    category = dict(zip(months["month_start"].str[:7], months["months_to_idulfitri"].map(lambda m: "bulan_idulfitri" if m == 0 else ("bulan_sesudah" if m == 1 else "bulan_lain"))))
+    frame = merged[merged["price_pihps"].notna()].copy()
+    frame["kategori"] = frame["month"].map(category)
+    frame["kosong"] = frame["price_observed"].isna()
+    tables = {}
+    for label, part in (("2018-2026", frame), ("2019-2026", frame[frame["month"] >= "2019-01"])):
+        table = part.groupby(["price_type_id", "kategori"])["kosong"].agg(sel="size", kosong="sum").reset_index()
+        table["pct_kosong"] = table["kosong"] / table["sel"] * 100
+        table.insert(0, "tipe_harga", table.pop("price_type_id").map(PRICE_TYPE_LABELS))
+        tables[label] = table
+    return tables
+
+
 def run():
     ours = pd.read_parquet(ROOT / "data" / "interim" / "price_monthly_observed.parquet")
     ours = ours[ours["commodity_id"].isin(["cat_7", "cat_8"])]
@@ -52,6 +69,7 @@ def run():
     worst["tipe_harga"] = worst["price_type_id"].map(PRICE_TYPE_LABELS)
     worst["komoditas"] = worst["commodity_id"].map(COMMODITY_LABELS)
     return {
+        "idulfitri": idulfitri_breakdown(merged),
         "summary": summary,
         "n_compared": len(both),
         "only_pihps": len(only_pihps),
