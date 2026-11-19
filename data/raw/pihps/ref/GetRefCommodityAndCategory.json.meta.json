@@ -1,0 +1,10 @@
+{
+  "source": "pihps",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://www.bi.go.id/hargapangan/WebSite/TabelHarga/GetRefCommodityAndCategory"
+  },
+  "n_rows": 31,
+  "n_bytes": 2785,
+  "sha256": "af6439603c170991917a665cf89e75ee072330f62f11336ea527d6088c59005d"
+}

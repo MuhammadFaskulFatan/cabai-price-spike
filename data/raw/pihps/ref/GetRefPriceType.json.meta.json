@@ -1,0 +1,10 @@
+{
+  "source": "pihps",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://www.bi.go.id/hargapangan/WebSite/TabelHarga/GetRefPriceType"
+  },
+  "n_rows": 4,
+  "n_bytes": 137,
+  "sha256": "1df9fe93768955a2a1a21684ea3286907b41f77ec2938babee0bc207c328c43d"
+}

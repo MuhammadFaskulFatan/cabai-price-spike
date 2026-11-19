@@ -1,0 +1,21 @@
+{
+  "source": "pihps",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://www.bi.go.id/hargapangan/WebSite/TabelHarga/GetGridDataKomoditas",
+    "params": {
+      "price_type_id": 3,
+      "comcat_id": "cat_8",
+      "province_id": "",
+      "regency_id": "",
+      "showKota": "false",
+      "showPasar": "false",
+      "tipe_laporan": 1,
+      "start_date": "2024-04-01",
+      "end_date": "2024-06-30"
+    }
+  },
+  "n_rows": 35,
+  "n_bytes": 51502,
+  "sha256": "75664549bd1c6cf3e0c352d86568787ef19bb960a316e69efe6138de8e230902"
+}

@@ -1,0 +1,10 @@
+{
+  "source": "pihps",
+  "extraction_date": "2026-11-19",
+  "request": {
+    "url": "https://www.bi.go.id/hargapangan/WebSite/TabelHarga/GetRefProvince"
+  },
+  "n_rows": 34,
+  "n_bytes": 1097,
+  "sha256": "5aea0bf16fb7b99651744b248f0bc2fbe452180f789fc58c6327c9448ec65e51"
+}
