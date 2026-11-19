@@ -1,4 +1,4 @@
-"""Jalankan pipeline dari awal. Saat ini baru tahap extract; audit sampai validate menyusul.
+"""Jalankan pipeline dari awal. Tahap yang sudah ada: extract, audit, transform (validate menyusul di fase 5).
 
     python -m pipeline.run                 # semua tahap yang sudah ada
     python -m pipeline.run --stage extract
@@ -20,6 +20,16 @@ from pipeline.extract import (
     open_meteo,
     pihps,
 )
+from pipeline.transform import (
+    aggregate_monthly,
+    aggregate_weekly,
+    calendar_features,
+    disaggregate_production,
+    impute_price,
+    integrate,
+    report,
+)
+from pipeline.validate import holdout_imputation, holdout_production
 
 EXTRACT_STEPS = [
     ("pihps", pihps),
@@ -31,14 +41,28 @@ EXTRACT_STEPS = [
     ("open_meteo", open_meteo),
 ]
 
-STAGES = {"extract": EXTRACT_STEPS, "audit": [("completeness", completeness)]}
+# hold-out harga dijalankan sebelum imputation karena memilih metode (D-09); hold-out produksi setelah disagregasi
+TRANSFORM_STEPS = [
+    ("aggregate_monthly", aggregate_monthly),
+    ("aggregate_weekly", aggregate_weekly),
+    ("holdout_imputation", holdout_imputation),
+    ("impute_price", impute_price),
+    ("disaggregate_production", disaggregate_production),
+    ("holdout_production", holdout_production),
+    ("calendar_features", calendar_features),
+    ("integrate", integrate),
+    ("report", report),
+]
+
+STAGES = {"extract": EXTRACT_STEPS, "audit": [("completeness", completeness)], "transform": TRANSFORM_STEPS}
 
 
 def run_stage(name, refresh):
     for step_name, module in STAGES[name]:
         print(f"\n=== {name}: {step_name} ===")
         sys.argv = [step_name] + (["--refresh"] if refresh and name == "extract" else [])
-        module.main()
+        # modul extract dan audit punya main() dengan argparse; modul transform cukup run()
+        (module.main if hasattr(module, "main") else module.run)()
 
 
 def main():
