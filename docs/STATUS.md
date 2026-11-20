@@ -79,7 +79,7 @@ Laporan `analysis/06_h1_report.md` (format D-53, ketentuan D-58). Ringkasan:
 - pola U tidak didukung untuk keduanya; jalur produksi tahunan tidak terdeteksi;
 - lag terkuat: rawit lag 3 (harga pedagang besar rawit: lag 2); merah tidak ada lag signifikan.
 
-Yang perlu diputuskan Fatan saat review: lag cuaca untuk sinyal H4 (usulan: rawit lag 2-3, merah lag 1-4 dicoba di backtest tanpa prioritas).
+Yang perlu diputuskan saat review: lag cuaca untuk sinyal H4 (usulan: rawit lag 2-3, merah lag 1-4 dicoba di backtest tanpa prioritas).
 
 ### 4.6 H4: final
 

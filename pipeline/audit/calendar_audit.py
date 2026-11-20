@@ -2,7 +2,7 @@
 
 Pembanding libur nasional: timeanddate.com (sumber sekunder) untuk 2018-2025 dan SKB 2026 di setneg.go.id.
 Untuk sebagian tanggal ada konfirmasi dari halaman situs pemerintah (menpan.go.id, kemenag.go.id, kemnaker.go.id);
-dokumen SKB aslinya (PDF) tidak dibuka. Verifikasi dibatasi sekitar 10 menit sesuai instruksi, dicek 19 Nov 2026.
+dokumen SKB aslinya (PDF) tidak dibuka. Verifikasi sengaja dibatasi sekitar 10 menit, dicek 19 Nov 2026.
 Cuti bersama dibaca dari data/raw/calendar/cuti_bersama.csv beserta status verifikasinya.
 """
 import pandas as pd

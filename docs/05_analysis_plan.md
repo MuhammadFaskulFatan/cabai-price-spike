@@ -2,7 +2,7 @@
 
 Status: **disetujui 19 Nov 2026 (D-48)**. Rincian keputusan atas usulan ada di bagian 9. Hasil uji per hipotesis dilaporkan di `analysis/` dengan format: hasil utama dan effect size, keputusan, sensitivity (termasuk D-44), chart, dan "so what".
 
-Dokumen ini menetapkan, untuk H1-H6, pertanyaan bisnis, data, metode, metrik, aturan keputusan, dan sensitivity check. Usulan yang berbeda dari arah awal Fatan ditulis di bagian **Usulan** masing-masing dan di bagian 9; tidak ada yang diganti diam-diam.
+Dokumen ini menetapkan, untuk H1-H6, pertanyaan bisnis, data, metode, metrik, aturan keputusan, dan sensitivity check. Usulan yang berbeda dari rancangan awal ditulis di bagian **Usulan** masing-masing dan di bagian 9; tidak ada yang diganti diam-diam.
 
 ## 1. Aturan umum
 
@@ -98,7 +98,7 @@ Catatan urutan: perbandingan dengan efek cuaca membutuhkan H1. Karena H6 dijalan
 | Aturan keputusan | **Didukung** kalau suku kuadrat positif dan signifikan (uji gabungan lag 1-4) sehingga kedua ekstrem menaikkan harga, dengan lag terbesar di 1-4 bulan. **Dibantah** kalau tidak ada perbedaan harga yang konsisten antara bulan anomali dan normal di semua lag (charter) |
 | Sensitivity | Kategori kering/normal/basah (tercile atau +-1 SD) menggantikan kuadrat; lag 0-6; tanpa bulan imputasi; harga pedagang besar sebagai outcome; dengan dan tanpa ONI |
 
-**Keputusan (D-48):** dua spesifikasi dipakai. Efek ONI hanya terbaca di spesifikasi pertama, karena FE tahun-bulan menyerap semua variabel yang sama untuk seluruh provinsi. Latar usulan: dengan FE month-of-year saja, ONI dan semua guncangan nasional ikut terbaca sebagai efek hujan lokal. Saya usulkan dua spesifikasi: (a) arahan Fatan: FE provinsi + month-of-year + ONI, untuk efek total termasuk iklim nasional; (b) FE provinsi + **FE tahun-bulan** (ONI otomatis terserap), untuk efek hujan lokal bersih dari guncangan nasional. Kalau keduanya sejalan, kesimpulan lebih kuat. Catatan: produksi bulanan tidak ada (D-42), jadi bagian "menurunkan produksi" hanya bisa diuji tahunan.
+**Keputusan (D-48):** dua spesifikasi dipakai. Efek ONI hanya terbaca di spesifikasi pertama, karena FE tahun-bulan menyerap semua variabel yang sama untuk seluruh provinsi. Latar usulan: dengan FE month-of-year saja, ONI dan semua guncangan nasional ikut terbaca sebagai efek hujan lokal. Saya usulkan dua spesifikasi: (a) rancangan awal: FE provinsi + month-of-year + ONI, untuk efek total termasuk iklim nasional; (b) FE provinsi + **FE tahun-bulan** (ONI otomatis terserap), untuk efek hujan lokal bersih dari guncangan nasional. Kalau keduanya sejalan, kesimpulan lebih kuat. Catatan: produksi bulanan tidak ada (D-42), jadi bagian "menurunkan produksi" hanya bisa diuji tahunan.
 
 ## 8. H4: early warning (BR4)
 
@@ -112,7 +112,7 @@ Catatan urutan: perbandingan dengan efek cuaca membutuhkan H1. Karena H6 dijalan
 | Aturan keputusan | **Didukung** kalau signal mengalahkan **baseline yang lebih kuat** dari keduanya: lead time lebih panjang atau false alarm rate lebih rendah pada recall yang setara, dan US1 terpenuhi (lead time >= 1 bulan pada mayoritas episode). **Dibantah** kalau tidak lebih baik dari baseline (charter) |
 | Sensitivity | Tanpa bulan imputasi pada fitur (D-44, wajib); ambang spike 1,15/1,35; unit episode besar (bagian 2); tanpa fitur cuaca (agar bisa dibandingkan sebelum dan sesudah paket cuaca) |
 
-**Keputusan (D-48):** dua baseline; model dinyatakan berhasil hanya jika mengalahkan baseline yang lebih kuat. Target = onset episode besar (spike provinsi >= 2 bulan berturut-turut). Latar usulan: charter memakai baseline "harga naik bulan lalu", sedangkan arahan memakai baseline musiman naif. Saya usulkan **keduanya** dilaporkan, karena baseline yang lebih kuat menentukan apakah signal benar-benar berguna. Dengan sekitar 6-10 episode nasional, metrik per episode akan sangat bergejolak; evaluasi utama memakai unit provinsi-bulan, dan per episode nasional sebagai pelengkap.
+**Keputusan (D-48):** dua baseline; model dinyatakan berhasil hanya jika mengalahkan baseline yang lebih kuat. Target = onset episode besar (spike provinsi >= 2 bulan berturut-turut). Latar usulan: charter memakai baseline "harga naik bulan lalu", sedangkan rancangan awal memakai baseline musiman naif. Saya usulkan **keduanya** dilaporkan, karena baseline yang lebih kuat menentukan apakah signal benar-benar berguna. Dengan sekitar 6-10 episode nasional, metrik per episode akan sangat bergejolak; evaluasi utama memakai unit provinsi-bulan, dan per episode nasional sebagai pelengkap.
 
 ## 9. Usulan dan keputusannya (D-48)
 
