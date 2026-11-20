@@ -28,9 +28,9 @@ Branch kerja: `phase-6-analysis` (di-push ke origin sampai `3cad150`). Paket cua
 | H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif) | `272b843` |
 | H6 hari besar | **Sementara: tidak didukung untuk "menambah kenaikan"**; final menunggu H1 | `272b843` |
 | H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `883cc8d`, `07641c6`, (commit ini) |
-| H4 early warning | Belum; menunggu review H1 | - |
+| H4 early warning | **Sebagian (merah dan rawit)**: false alarm lebih rendah dari baseline charter pada recall setara (27% vs 42%; 35% vs 43%), US1 terpenuhi (59%, 52%), F1 belum pasti lebih baik; cuaca membantu rawit saja (D-61) | (commit ini) |
 
-Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/06_h1_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
+Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
 
 ## 2. Keputusan terakhir
 
@@ -42,10 +42,11 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/06_h1_repor
 - **D-56**: empat hal terbuka di bagian 3 diputuskan.
 - **D-57**: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
 - **D-59**: H1 disetujui; uji eksploratif merah dan kriterianya; lag H4 (rawit lag 2-3; merah hanya kalau sinyal konsisten, lag nested).
+- **D-61**: rincian dan aturan keputusan H4 (ditulis sebelum backtest).
 - **D-60**: indeks hujan nasional masuk H4 merah (kriteria (ii) D-59); kelembapan tidak.
 - **D-58**: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
 
-Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-60).
+Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-61).
 
 ## 3. Yang belum diputuskan
 
@@ -74,19 +75,9 @@ Laporan `analysis/06_h1_report.md` (format D-53, ketentuan D-58). Ringkasan:
 
 Yang perlu diputuskan Fatan saat review: lag cuaca untuk sinyal H4 (usulan: rawit lag 2-3, merah lag 1-4 dicoba di backtest tanpa prioritas).
 
-### 4.6 H4 (early warning), setelah review H1
+### 4.6 H4: selesai
 
-Buat `analysis/h4_early_warning.py` sesuai rencana bagian 8 dan D-55:
-- target: onset episode besar t+1/t+2;
-- sinyal: harga pedagang besar, `rain_anomaly`, ONI, `months_to_idulfitri`;
-- rolling-origin backtest 2023-2026;
-- berhasil hanya jika mengalahkan baseline yang lebih kuat (musiman naif atau "harga naik bulan lalu").
-
-```powershell
-python -m analysis.h4_early_warning
-```
-
-Laporan ke `analysis/07_h4_report.md`.
+Laporan `analysis/07_h4_report.md` (D-61). Keputusan: sebagian untuk kedua komoditas.
 
 ### 4.7 Keputusan final H6
 

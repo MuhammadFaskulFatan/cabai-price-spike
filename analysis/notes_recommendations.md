@@ -27,3 +27,9 @@ Bukan rekomendasi final. Catatan dari tiap hipotesis yang bisa menjadi bahan rek
 - **Bantuan saat musim hujan berlebih belum punya dasar untuk rawit dan merah**: hujan di atas normal tidak diikuti kenaikan harga produsen (temuan terbukti). Ini tidak berarti hujan lebat tidak merugikan petani; kerugiannya mungkin tidak tercermin di harga (dugaan).
 - **Kebijakan berbasis cuaca untuk cabai merah ditahan**: tidak ada hubungan cuaca-harga yang signifikan (temuan terbukti); alasannya belum diketahui (dugaan, H1 bagian 6).
 - **Kualitas data**: data luas tanam/panen bulanan per kabupaten dan harga produsen yang lebih sering diperbarui diperlukan untuk memastikan jalur cuaca -> produksi -> harga (dugaan, H1 bagian 6).
+
+## Dari H4
+
+- **Daftar pantau, bukan pemicu otomatis**: model peringatan dini menangkap 52-59% episode besar minimal sebulan sebelumnya, dengan false alarm 20-35% lebih sedikit daripada memantau "harga eceran naik", tetapi hanya sekitar 1 dari 7-10 alarm yang benar (temuan terbukti, H4 bagian 5). Alarm cocok sebagai dasar pengecekan lapangan dan koordinasi TPID, bukan langsung operasi pasar (implikasi; belum diuji).
+- **Pemantauan cuaca sentra untuk rawit**: anomali hujan di sentra adalah satu-satunya fitur yang membuat model rawit lebih baik dari baseline (temuan terbukti). Untuk merah, harga pedagang besar sudah cukup (temuan terbukti).
+- **Peringatan tingkat nasional** mungkin lebih berguna daripada per provinsi, karena lonjakan bersifat serentak (dugaan, H4 bagian 6).
