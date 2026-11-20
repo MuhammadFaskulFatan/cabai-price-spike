@@ -30,6 +30,6 @@ Bukan rekomendasi final. Catatan dari tiap hipotesis yang bisa menjadi bahan rek
 
 ## Dari H4
 
-- **Daftar pantau, bukan pemicu otomatis**: model peringatan dini menangkap 52-59% episode besar minimal sebulan sebelumnya, dengan false alarm 20-35% lebih sedikit daripada memantau "harga eceran naik", tetapi hanya sekitar 1 dari 7-10 alarm yang benar (temuan terbukti, H4 bagian 5). Alarm cocok sebagai dasar pengecekan lapangan dan koordinasi TPID, bukan langsung operasi pasar (implikasi; belum diuji).
-- **Pemantauan cuaca sentra untuk rawit**: anomali hujan di sentra adalah satu-satunya fitur yang membuat model rawit lebih baik dari baseline (temuan terbukti). Untuk merah, harga pedagang besar sudah cukup (temuan terbukti).
+- **Daftar pantau cabai merah, bukan pemicu otomatis**: model merah menangkap 59% episode besar minimal sebulan sebelumnya, alarmnya 1,8 kali lebih tepat dari acak, dan false alarm sepertiga lebih sedikit daripada memantau "harga eceran naik". Tetapi hanya sekitar 1 dari 7 alarm yang benar (temuan terbukti, H4 bagian 2b dan 5). Alarm cocok sebagai dasar pengecekan lapangan dan koordinasi TPID, bukan langsung operasi pasar (implikasi; belum diuji).
+- **Model peringatan dini rawit belum layak direkomendasikan**: lift alarm rawit belum jelas di atas acak (1,18; interval 0,92-1,50), sehingga H4 rawit tidak didukung (D-63). Data hujan sentra memperbaiki model rawit, tetapi belum cukup (temuan terbukti). Rekomendasi pemantauan rawit berbasis model ditahan sampai ada model yang lebih baik (dugaan: ambang alarm terlalu longgar, H4 bagian 6).
 - **Peringatan tingkat nasional** mungkin lebih berguna daripada per provinsi, karena lonjakan bersifat serentak (dugaan, H4 bagian 6).

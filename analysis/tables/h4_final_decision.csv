@@ -1,0 +1,3 @@
+grup,baseline_terkuat_pr_auc,lift_model,lift_model_p5,lift_jelas_di_atas_1,pr_auc_model_lebih_tinggi,keputusan_final
+cabai_merah,charter,1.810593900481541,1.221724225547446,True,True,sebagian
+cabai_rawit,charter,1.1848639574735957,0.9153334853680003,False,True,tidak didukung

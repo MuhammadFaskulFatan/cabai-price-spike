@@ -1,13 +1,18 @@
 # H4: bisakah lonjakan harga eceran dideteksi 1-2 bulan lebih awal?
 
-Script: `analysis/h4_early_warning.py`. Tabel: `analysis/tables/h4_*.csv`. Rencana: `docs/05_analysis_plan.md` bagian 8 (D-48), sinyal D-55, lag cuaca D-59 dan D-60. Rincian dan aturan keputusan ditulis di D-61 sebelum backtest dijalankan.
+Script: `analysis/h4_early_warning.py`. Tabel: `analysis/tables/h4_*.csv`. Rencana: `docs/05_analysis_plan.md` bagian 8 (D-48), sinyal D-55, lag cuaca D-59 dan D-60. Rincian dan aturan keputusan ditulis di D-61 sebelum backtest dijalankan. Aturan final lift dan PR-AUC ditulis di D-63 sebelum angkanya dihitung.
 
-**Keputusan: sebagian, untuk kedua komoditas.**
-- Pada recall yang setara, sinyal hulu menghasilkan false alarm yang jauh lebih sedikit daripada baseline terkuat.
-- Lebih dari separuh episode mendapat peringatan minimal 1 bulan sebelumnya (US1 terpenuhi).
-- Kenaikan F1 terhadap baseline belum bisa dibedakan dari kebetulan.
-- Precision tetap rendah: sekitar 1 dari 7-10 alarm yang benar.
-- Fitur cuaca membantu cabai rawit, tetapi tidak menambah apa-apa untuk cabai merah.
+**Keputusan final (D-63): cabai merah sebagian, cabai rawit tidak didukung.**
+- **Cabai merah:**
+  - Alarm model 1,8 kali lebih tepat daripada menebak acak (lift 1,81; interval 90% 1,22-2,37).
+  - PR-AUC sekitar dua kali baseline charter (0,178 vs 0,087).
+  - False alarm lebih rendah pada recall setara, dan US1 terpenuhi.
+  - Kenaikan F1 belum pasti.
+- **Cabai rawit:**
+  - Lift model hanya 1,18 dengan interval yang mencakup 1 (0,92-1,50). Alarm operasionalnya belum terbukti lebih tepat daripada menebak acak.
+  - Skor model memang memeringkat risiko sedikit lebih baik dari baseline (PR-AUC 0,120 vs 0,093), tetapi menurut aturan D-63 ini tidak cukup.
+- Precision tetap rendah untuk kedua komoditas: sekitar 1 dari 7-10 alarm yang benar.
+- Fitur cuaca membantu model rawit (tanpa cuaca, false alarm-nya lebih buruk dari baseline), tetapi tidak cukup untuk membuat rawit didukung. Untuk merah, cuaca tidak menambah apa-apa.
 
 ## 1. Desain singkat
 
@@ -64,14 +69,36 @@ Per horizon (`h4_per_horizon.csv`):
 
 ![Alarm vs onset](figures/h4_alarm_timeline.png)
 
-## 3. Keputusan terhadap aturan di rencana (D-61)
+## 2b. Base rate, lift, dan PR-AUC (D-63)
+
+Base rate = porsi onset di sampel yang diprediksi: provinsi yang tidak sedang spike di bulan origin, periode uji, kedua horizon digabung. Lift = precision / base rate. PR-AUC = average precision. Baseline bersifat biner, sehingga PR-AUC-nya = recall x precision + (1 - recall) x base rate. Interval 90% dari block bootstrap per bulan origin (1.000 ulangan). Tabel: `h4_lift_pr_auc.csv`, `h4_final_decision.csv`.
+
+| Ukuran | Cabai merah | Cabai rawit |
+| --- | --- | --- |
+| Base rate onset | 7,5% (4,9-10,4) | 8,8% (5,8-11,9) |
+| Lift model | **1,81 (1,22-2,37)** | **1,18 (0,92-1,50)** |
+| Lift baseline charter | 1,31 (1,07-1,58) | 1,10 (0,80-1,41) |
+| Lift baseline musiman naif | 0,66 (0,37-1,02) | 0,59 (0,15-1,17) |
+| PR-AUC model | 0,178 (0,094-0,307) | 0,120 (0,085-0,170) |
+| PR-AUC baseline charter (baseline terkuat) | 0,087 (0,058-0,123) | 0,093 (0,062-0,129) |
+| PR-AUC baseline musiman naif | 0,070 (0,047-0,098) | 0,084 (0,056-0,115) |
+| Selisih PR-AUC model - charter | +0,091 (+0,019 s/d +0,201) | +0,027 (+0,002 s/d +0,067) |
+
+- Baseline musiman naif lebih buruk dari menebak acak untuk kedua komoditas (lift di bawah 1). Spike tahun lalu di bulan yang sama tidak memberi informasi tentang onset tahun ini.
+- Baseline charter sedikit di atas acak untuk merah (1,31) dan tidak jelas untuk rawit (1,10).
+- Model merah memenuhi kedua syarat D-63. Model rawit gagal di syarat lift, meskipun PR-AUC-nya lebih tinggi dari charter dengan interval selisih di atas nol.
+
+## 3. Keputusan terhadap aturan di rencana (D-61) dan aturan final (D-63)
 
 | Kriteria | Cabai merah | Cabai rawit |
 | --- | --- | --- |
 | (a) F1 > baseline lebih kuat, interval 90% selisih di atas nol | Tidak (F1 lebih tinggi, tetapi interval -0,031 s/d +0,125) | Tidak (+0,006; interval -0,046 s/d +0,052) |
 | (b) False alarm rate lebih rendah pada recall setara | Ya (27% vs 42%) | Ya (35% vs 43%) |
 | (c) US1: >= 50% episode terdeteksi dengan lead time >= 1 bulan | Ya (59%) | Ya (52%) |
-| **Keputusan** | **Sebagian** | **Sebagian** |
+| Keputusan menurut D-61 | Sebagian | Sebagian |
+| D-63: lift model jelas > 1 (batas bawah interval 90% > 1) | Ya (1,22) | **Tidak (0,92)** |
+| D-63: PR-AUC model > baseline terkuat (charter) | Ya (0,178 vs 0,087) | Ya (0,120 vs 0,093) |
+| **Keputusan final (D-63)** | **Sebagian** | **Tidak didukung** |
 
 ## 4. Sensitivity check
 
@@ -100,15 +127,17 @@ Catatan:
 2. **US1 terpenuhi:** 59% episode merah dan 52% episode rawit mendapat peringatan minimal 1 bulan sebelum onset; sekitar 36-40% sudah 2 bulan sebelumnya.
 3. **Kenaikan F1 belum pasti:** interval 90% selisih F1 terhadap baseline charter mencakup nol untuk kedua komoditas.
 4. **Precision rendah untuk semua sinyal:** paling tinggi 13,5% (model merah). Onset episode besar hanya sekitar 7-9% provinsi-bulan, sehingga sebagian besar alarm tidak diikuti onset dalam 1-2 bulan.
-5. **Cuaca berguna untuk rawit, tidak untuk merah.** Tanpa anomali hujan, model rawit kalah dari baseline pada false alarm rate.
-6. **Aturan sederhana "pedagang besar >= 1,20 x median 12 bulan" tidak layak sendirian:** recall hanya 11-14%.
+5. **Dibanding menebak acak (D-63):** alarm model merah 1,8 kali lebih tepat dan jelas di atas acak. Alarm model rawit 1,2 kali, dengan interval yang mencakup 1, sehingga belum terbukti lebih baik dari acak. Baseline musiman naif lebih buruk dari acak untuk kedua komoditas.
+6. **Cuaca berguna untuk rawit, tidak untuk merah.** Tanpa anomali hujan, model rawit kalah dari baseline pada false alarm rate.
+7. **Aturan sederhana "pedagang besar >= 1,20 x median 12 bulan" tidak layak sendirian:** recall hanya 11-14%.
 
 ## 6. Dugaan yang perlu verifikasi
 
 1. **Banyak false alarm yang sebetulnya "hampir spike".** Lonjakan cabai bersifat nasional (H3), dan model cenderung berbunyi serentak di banyak provinsi. Contohnya awal 2023 untuk merah: alarm di sekitar 34 provinsi tanpa onset. Sebagian alarm palsu mungkin jatuh di bulan dengan kenaikan harga yang tidak mencapai 1,25x atau tidak bertahan 2 bulan. Verifikasi: hitung rasio harga di bulan target untuk alarm palsu.
 2. **Onset rawit Januari 2025 terlewat** (hanya 6-15% provinsi mendapat alarm), sedangkan baseline charter menangkapnya 1 bulan sebelumnya. Dugaan: kenaikan dimulai dari eceran sendiri atau dari guncangan yang tidak terlihat di harga pedagang besar dan hujan sentra bulan-bulan sebelumnya. Verifikasi: telusuri harga mingguan Desember 2024 - Januari 2025.
 3. **Peringatan di tingkat nasional mungkin lebih berguna daripada per provinsi.** Untuk episode merah November 2023, model memberi alarm di 100% provinsi dua bulan sebelumnya. Verifikasi: model khusus untuk spike nasional, dengan jumlah episode yang memang sedikit.
-4. **Kombinasi model + baseline charter** (misalnya alarm kalau keduanya berbunyi) mungkin menaikkan precision. Ini tidak diuji karena tidak ada di rencana.
+4. **Ambang alarm rawit mungkin terlalu longgar.** PR-AUC rawit lebih tinggi dari charter (interval selisih di atas nol), artinya skor memeringkat risiko sedikit lebih baik, tetapi ambang F1 di data latih menghasilkan alarm di 36% provinsi-bulan. Ambang yang lebih ketat mungkin menaikkan lift. Memilih ambang itu dari data uji tidak sah. Verifikasi: aturan ambang lain yang ditetapkan sebelumnya (misalnya porsi alarm maksimal) di backtest baru.
+5. **Kombinasi model + baseline charter** (misalnya alarm kalau keduanya berbunyi) mungkin menaikkan precision. Ini tidak diuji karena tidak ada di rencana.
 
 ## 7. Keterbatasan
 
@@ -119,6 +148,6 @@ Catatan:
 
 ## 8. So what
 
-Sistem peringatan dini berbasis harga pedagang besar, kalender Lebaran, ENSO, dan (untuk rawit) hujan di sentra bisa memberi tahu lebih dari separuh lonjakan besar setidaknya sebulan sebelumnya, dengan false alarm seperlima (rawit) sampai sepertiga (merah) lebih sedikit daripada sekadar memantau "harga eceran naik bulan ini". Tetapi alarmnya masih sering keliru: dari sepuluh peringatan, hanya satu sampai dua yang benar-benar diikuti lonjakan besar di provinsi itu.
+Untuk **cabai merah**, sistem peringatan dini berbasis harga pedagang besar, kalender Lebaran, dan ENSO layak dipakai sebagai daftar pantau. Model ini memberi tahu sekitar 6 dari 10 lonjakan besar setidaknya sebulan sebelumnya, dan alarmnya hampir dua kali lebih tepat daripada menebak acak. Meski begitu, dari sepuluh alarm hanya satu sampai dua yang benar, jadi alarm cocok untuk menentukan provinsi mana yang perlu dicek lebih teliti, bukan pemicu otomatis operasi pasar.
 
-Artinya, model ini cocok sebagai daftar pantau untuk menentukan provinsi mana yang perlu dicek lebih teliti, bukan sebagai pemicu otomatis operasi pasar. Untuk cabai rawit, data hujan di sentra layak masuk pemantauan. Untuk cabai merah, harga pedagang besar sudah cukup.
+Untuk **cabai rawit**, model yang sama belum layak dipakai. Alarmnya belum terbukti lebih tepat daripada menebak acak, walaupun data hujan di sentra memperbaikinya. Sebelum ada model rawit yang lebih baik, pemantauan rawit sebaiknya tetap bertumpu pada pergerakan harga eceran dan pedagang besar yang dibaca langsung oleh analis.

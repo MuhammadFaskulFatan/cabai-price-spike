@@ -1,6 +1,6 @@
 # Status proyek (per 20 Nov 2026)
 
-Branch kerja: `phase-6-analysis` (di-push ke origin sampai `07641c6`; commit setelahnya belum di-push). Paket cuaca dikerjakan di `weather-package` (D-56) dan sudah di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
+Branch kerja: `phase-6-analysis`, sudah di-merge ke `main` (fast-forward) dan di-push setelah H1, H4 final, dan H6 final (D-56, D-63). `main` dan `phase-6-analysis` sama di commit terakhir.
 
 ## 0. Paket cuaca (selesai)
 
@@ -24,11 +24,11 @@ Branch kerja: `phase-6-analysis` (di-push ke origin sampai `07641c6`; commit set
 | Fase 6 rencana, RTM, EDA | Disetujui (D-48) | `66b7b81` |
 | Keputusan analisis, kolom jarak, koreksi geocoding Karangasem | Selesai (D-48 s/d D-51) | `9c17e12` |
 | H2 rantai pasok | **Final: sebagian** | `1805c24` |
-| H3 disparitas | **Tidak didukung (dibantah)** | `272b843` |
-| H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif) | `272b843` |
-| H6 hari besar | **Final: sebagian**. Bukan pemicu utama (didukung: efek cuaca kering sekitar +6% harga eceran, bulan Idulfitri tidak terdeteksi); menambah kenaikan (tidak didukung) (D-62) | (commit ini) |
+| H3 disparitas | **Tidak didukung (dibantah)**; disetujui (D-63) | `272b843` |
+| H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif); disetujui (D-63) | `272b843` |
+| H6 hari besar | **Final: sebagian**, disetujui (D-63). Bukan pemicu utama (didukung: efek cuaca kering sekitar +6% harga eceran, bulan Idulfitri tidak terdeteksi); menambah kenaikan (tidak didukung) (D-62) | `d449b9f` |
 | H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `883cc8d`, `07641c6`, `ca9769f` |
-| H4 early warning | **Sebagian (merah dan rawit)**: false alarm lebih rendah dari baseline charter pada recall setara (27% vs 42%; 35% vs 43%), US1 terpenuhi (59%, 52%), F1 belum pasti lebih baik; cuaca membantu rawit saja (D-61) | `f0405a4` |
+| H4 early warning | **Final (D-63): merah sebagian** (lift 1,81, PR-AUC 0,178 vs 0,087 charter; FAR 27% vs 42% pada recall setara; US1 59%). **Rawit tidak didukung** (lift 1,18, interval 0,92-1,50 mencakup 1). Cuaca membantu rawit, tidak cukup | `f0405a4`, `5c53e8a`, (commit ini) |
 
 Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
 
@@ -42,18 +42,18 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_repor
 - **D-56**: empat hal terbuka di bagian 3 diputuskan.
 - **D-57**: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
 - **D-59**: H1 disetujui; uji eksploratif merah dan kriterianya; lag H4 (rawit lag 2-3; merah hanya kalau sinyal konsisten, lag nested).
+- **D-63**: H3, H5, H6 final, eksploratif, D-59 s/d D-62 disetujui; aturan final H4 (lift dan PR-AUC) ditulis sebelum dihitung.
 - **D-62**: keputusan final H6 (kontrol cuaca, perbandingan di model yang sama, label sebagian).
 - **D-61**: rincian dan aturan keputusan H4 (ditulis sebelum backtest).
 - **D-60**: indeks hujan nasional masuk H4 merah (kriteria (ii) D-59); kelembapan tidak.
 - **D-58**: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
 
-Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-62).
+Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-63).
 
 ## 3. Yang belum diputuskan
 
-1. **Review H4 dan H6 final** (laporan `analysis/07_h4_report.md` dan `analysis/05_h6_report.md`).
-2. **Merge `phase-6-analysis` ke `main`.** Syarat D-56 (H1, H4, keputusan final H6) sudah terpenuhi; merge menunggu persetujuan Fatan atas H4 dan H6.
-3. **Review H3 dan H5** masih terbuka sejak 19 Nov.
+1. **Review H4 final** (merah sebagian, rawit tidak didukung; `analysis/07_h4_report.md` bagian 2b dan 3).
+2. **Langkah 4.8**: RTM final dan rekomendasi akhir dari `analysis/notes_recommendations.md` (belum dimulai).
 
 ## 4. Langkah berikutnya (urut)
 
@@ -78,9 +78,9 @@ Laporan `analysis/06_h1_report.md` (format D-53, ketentuan D-58). Ringkasan:
 
 Yang perlu diputuskan Fatan saat review: lag cuaca untuk sinyal H4 (usulan: rawit lag 2-3, merah lag 1-4 dicoba di backtest tanpa prioritas).
 
-### 4.6 H4: selesai
+### 4.6 H4: final
 
-Laporan `analysis/07_h4_report.md` (D-61). Keputusan: sebagian untuk kedua komoditas.
+Laporan `analysis/07_h4_report.md` (D-61, D-63). Merah sebagian, rawit tidak didukung.
 
 ### 4.7 Keputusan final H6: selesai
 

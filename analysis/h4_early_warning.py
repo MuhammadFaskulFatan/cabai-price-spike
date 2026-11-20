@@ -15,6 +15,7 @@ Rencana: docs/05_analysis_plan.md bagian 8 (D-48), sinyal D-55, lag cuaca D-59/D
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import average_precision_score
 from sklearn.preprocessing import StandardScaler
 
 from analysis.spikes import MAIN_THRESHOLD, episodes, flag_spikes
@@ -206,6 +207,50 @@ def bootstrap_f1_gap(predictions, baseline):
     return np.percentile(gaps, [5, 95])
 
 
+def pr_point(sample):
+    """Base rate, precision, lift, dan PR-AUC (average precision) untuk model dan kedua baseline (D-63)."""
+    labels = (sample["label"] == 1).to_numpy()
+    base_rate = labels.mean()
+    out = {"base_rate": base_rate}
+    signals = {"model": (sample["alarm"].to_numpy(), sample["score"].to_numpy()),
+               "seasonal": (sample["seasonal"].to_numpy(), sample["seasonal"].astype(float).to_numpy()),
+               "charter": (sample["charter"].to_numpy(), sample["charter"].astype(float).to_numpy())}
+    for name, (alarm, score) in signals.items():
+        precision = labels[alarm].mean() if alarm.any() else np.nan
+        out[f"{name}_precision"] = precision
+        out[f"{name}_lift"] = precision / base_rate
+        out[f"{name}_pr_auc"] = average_precision_score(labels, score)
+    return out
+
+
+def pr_summary(predictions, group):
+    point = pr_point(predictions)
+    strongest = max(("seasonal", "charter"), key=lambda name: point[f"{name}_pr_auc"])
+    rng = np.random.default_rng(SEED)
+    groups = {origin: frame for origin, frame in predictions.groupby("month")}
+    origins = list(groups)
+    draws = []
+    for _ in range(BOOTSTRAP):
+        sample = pd.concat([groups[o] for o in rng.choice(origins, size=len(origins), replace=True)])
+        draw = pr_point(sample)
+        draw["selisih_pr_auc"] = draw["model_pr_auc"] - draw[f"{strongest}_pr_auc"]
+        draws.append(draw)
+    draws = pd.DataFrame(draws)
+    point["selisih_pr_auc"] = point["model_pr_auc"] - point[f"{strongest}_pr_auc"]
+    rows = []
+    for metric, value in point.items():
+        low, high = np.nanpercentile(draws[metric], [5, 95])
+        rows.append({"grup": group, "metrik": metric, "nilai": value, "p5": low, "p95": high})
+    table = pd.DataFrame(rows)
+    lift_low = table.loc[table["metrik"] == "model_lift", "p5"].iloc[0]
+    lift_clear = bool(lift_low > 1)
+    pr_higher = bool(point["selisih_pr_auc"] > 0)
+    verdict = "sebagian" if lift_clear and pr_higher else "tidak didukung"
+    decision = {"grup": group, "baseline_terkuat_pr_auc": strongest, "lift_model": point["model_lift"], "lift_model_p5": lift_low,
+                "lift_jelas_di_atas_1": lift_clear, "pr_auc_model_lebih_tinggi": pr_higher, "keputusan_final": verdict}
+    return table, decision
+
+
 def episode_table(predictions, panel, group):
     """Episode di periode uji: terdeteksi kalau ada alarm 1 atau 2 bulan sebelum onset."""
     onsets = panel[(panel["commodity_group"] == group) & (panel["horizon"] == 1) & (panel["label"] == 1)]
@@ -355,6 +400,10 @@ def run():
     per_horizon = pd.concat([scores_table(main[g]["predictions"][main[g]["predictions"]["horizon"] == h]).assign(grup=g, horizon=h)
                              for g in GROUP_LABEL for h in HORIZONS], ignore_index=True)
     merah_lags = main["cabai_merah"]["predictions"].groupby(["horizon", "features_used"]).size().rename("origin_x_provinsi").reset_index()
+    pr_tables, pr_decisions = zip(*(pr_summary(main[g]["predictions"], g) for g in GROUP_LABEL))
+    pr_table, pr_decision = pd.concat(pr_tables, ignore_index=True), pd.DataFrame(pr_decisions)
+    pr_table.to_csv(TABLES / "h4_lift_pr_auc.csv", index=False)
+    pr_decision.to_csv(TABLES / "h4_final_decision.csv", index=False)
     chart_metrics(main, FIGURES / "h4_metrics.png")
     chart_timeline(main, FIGURES / "h4_alarm_timeline.png")
     decisions.to_csv(TABLES / "h4_results.csv", index=False)
@@ -372,6 +421,8 @@ def run():
     print(per_horizon.round(3).to_string(index=False))
     print(coverage.round(2).to_string(index=False))
     print(merah_lags.to_string(index=False))
+    print(pr_table.round(4).to_string(index=False))
+    print(pr_decision.round(3).to_string(index=False))
 
 
 if __name__ == "__main__":
