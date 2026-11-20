@@ -224,7 +224,3 @@ __marimo__/
 
 # Interim: parquet hasil transform bisa dibuat ulang dari raw (python -m pipeline.run --stage transform)
 data/interim/*.parquet
-
-# File kerja lokal, tidak dipublikasikan
-CLAUDE.md
-.claude/
