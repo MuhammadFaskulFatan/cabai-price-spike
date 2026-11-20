@@ -1,6 +1,6 @@
 # Status proyek (per 20 Nov 2026)
 
-Branch kerja: `phase-6-analysis`, sudah di-merge ke `main` (fast-forward) dan di-push setelah H1, H4 final, dan H6 final (D-56, D-63). `main` dan `phase-6-analysis` sama di commit terakhir.
+Branch kerja: `phase-6-analysis`. Di-merge ke `main` (fast-forward) dan di-push di `9d1a572` setelah H1, H4 final, dan H6 final (D-56, D-63). Langkah 4.7b dan 4.8 dikerjakan di `phase-6-analysis` dan belum di-merge.
 
 ## 0. Paket cuaca (selesai)
 
@@ -28,7 +28,8 @@ Branch kerja: `phase-6-analysis`, sudah di-merge ke `main` (fast-forward) dan di
 | H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif); disetujui (D-63) | `272b843` |
 | H6 hari besar | **Final: sebagian**, disetujui (D-63). Bukan pemicu utama (didukung: efek cuaca kering sekitar +6% harga eceran, bulan Idulfitri tidak terdeteksi); menambah kenaikan (tidak didukung) (D-62) | `d449b9f` |
 | H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `883cc8d`, `07641c6`, `ca9769f` |
-| H4 early warning | **Final (D-63): merah sebagian** (lift 1,81, PR-AUC 0,178 vs 0,087 charter; FAR 27% vs 42% pada recall setara; US1 59%). **Rawit tidak didukung** (lift 1,18, interval 0,92-1,50 mencakup 1). Cuaca membantu rawit, tidak cukup | `f0405a4`, `5c53e8a`, (commit ini) |
+| H4 early warning | **Final, disetujui (D-63, D-64): merah sebagian** (lift 1,81, PR-AUC 0,178 vs 0,087 charter; FAR 27% vs 42% pada recall setara; US1 59%). **Rawit tidak didukung** (lift 1,18, interval 0,92-1,50 mencakup 1). Cuaca membantu rawit, tidak cukup | `f0405a4`, `5c53e8a`, `9d1a572` |
+| 4.7b Skenario what-if | Selesai: biaya lonjakan rumah tangga Jan 2023 - Okt 2026 merah Rp 5,53 T, rawit Rp 10,31 T; skenario redaman (asumsi) dan break-even untuk merah (D-64) | `a5b5827` (D-64), (commit ini) |
 
 Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
 
@@ -42,18 +43,19 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_repor
 - **D-56**: empat hal terbuka di bagian 3 diputuskan.
 - **D-57**: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
 - **D-59**: H1 disetujui; uji eksploratif merah dan kriterianya; lag H4 (rawit lag 2-3; merah hanya kalau sinyal konsisten, lag nested).
+- **D-64**: H4 final disetujui; ambang alarm rawit tidak diubah (future work); desain skenario what-if 4.7b.
 - **D-63**: H3, H5, H6 final, eksploratif, D-59 s/d D-62 disetujui; aturan final H4 (lift dan PR-AUC) ditulis sebelum dihitung.
 - **D-62**: keputusan final H6 (kontrol cuaca, perbandingan di model yang sama, label sebagian).
 - **D-61**: rincian dan aturan keputusan H4 (ditulis sebelum backtest).
 - **D-60**: indeks hujan nasional masuk H4 merah (kriteria (ii) D-59); kelembapan tidak.
 - **D-58**: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
 
-Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-63).
+Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-64).
 
 ## 3. Yang belum diputuskan
 
-1. **Review H4 final** (merah sebagian, rawit tidak didukung; `analysis/07_h4_report.md` bagian 2b dan 3).
-2. **Langkah 4.8**: RTM final dan rekomendasi akhir dari `analysis/notes_recommendations.md` (belum dimulai).
+1. **Review skenario what-if** (`analysis/08_scenario_report.md`).
+2. **Langkah 4.8**: RTM final dan rekomendasi akhir (berjalan).
 
 ## 4. Langkah berikutnya (urut)
 
@@ -85,6 +87,10 @@ Laporan `analysis/07_h4_report.md` (D-61, D-63). Merah sebagian, rawit tidak did
 ### 4.7 Keputusan final H6: selesai
 
 Laporan `analysis/05_h6_report.md` diperbarui (D-62).
+
+### 4.7b Skenario what-if: selesai
+
+Laporan `analysis/08_scenario_report.md` (D-64). Semua angka redaman adalah asumsi.
 
 ### 4.8 Setelah semua hipotesis
 
