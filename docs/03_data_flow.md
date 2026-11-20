@@ -95,10 +95,11 @@ flowchart TD
 | `extract/buletin_pusdatin.py` | Semua edisi Semester I dan II yang bisa ditemukan | PDF asli plus tabel hasil ekstraksi di `data/raw/buletin/` | `pdfplumber`/`camelot`; OCR kalau tabel berupa gambar; catatan kaki realisasi/proyeksi ikut disimpan |
 | `extract/calendar_holidays.py` | Daftar hari besar 2018-2026 yang ditulis di kode | `data/raw/calendar/` | Disusun manual, dicatat sumber tanggalnya |
 | `audit/completeness.py` | `data/raw/` | Laporan di `pipeline/audit/` | Per sumber × provinsi × bulan, termasuk tabel heatmap missing |
+| `audit/weather_audit.py` | `data/raw/open_meteo/` + `sentra_points.csv` | `weather_audit.md`, `weather_locations.csv` | Per lokasi: file valid, rentang tanggal, hari kosong, nilai di luar batas fisik; kelengkapan provinsi × tahun; file yang tidak dipakai |
 | `transform/aggregate_monthly.py` | PIHPS harian | Harga bulanan + `n_days_observed` | Rata-rata hari tersedia (survei Senin-Jumat); kurang dari 10 hari kerja = missing. Provinsi dari sumber 38-provinsi dipetakan ke 34 provinsi induk (D-17) |
 | `transform/impute_price.py` | Harga bulanan | Harga bulanan dengan `is_imputed`, `impute_method`, `tier` | Gap tengah 1-6 bulan: linear interpolation pada log price (Kalman dibatalkan, D-43). Gap > 6 bulan, gap awal/akhir, dan seri excluded: tidak di-impute |
 | `transform/production.py` | BDSP tahunan + tabel prognosa buletin | Produksi tahunan per provinsi (flag preliminary, outlier, suspect_copy) dan bulanan nasional (realisasi) | Tanpa disagregasi bulanan (Denton dibatalkan, D-42); 2026 tidak di-extrapolate |
-| `transform/weather_features.py` | Harian Open-Meteo + bobot sentra | Cuaca bulanan per provinsi × komoditas | Production-weighted average titik kabupaten sentra. Provinsi × komoditas tanpa titik sentra diberi `weather_status = not_applicable` dengan nilai `NULL`, tidak di-impute (D-25) |
+| `transform/weather_features.py` | Harian Open-Meteo + bobot sentra | Cuaca bulanan per provinsi × komoditas | Production-weighted average titik kabupaten sentra. Provinsi × komoditas tanpa titik sentra diberi `weather_status = not_applicable` dengan nilai `NULL`, tidak di-impute (D-25). Anomali terstandar terhadap normal 1991-2020; November 2026 `partial_month` (D-57) |
 | `transform/calendar_features.py` | ONI dan kalender | ONI bulanan, jumlah hari libur, jarak ke Idulfitri | Season dipetakan ke bulan tengah (DJF = Januari) |
 | `transform/integrate.py` | Semua tabel di `data/interim/` | `core_province_month` | Grain provinsi × bulan × komoditas |
 | `transform/integrate.py` (bagian tahunan) | BDSP tahunan + harga produsen bulanan | `core_province_year` | Rata-rata harga produsen tahunan dengan jumlah bulan terisi dan imputed; 2025 `is_preliminary` (D-27, D-29) |
@@ -109,7 +110,7 @@ flowchart TD
 | `validate/holdout_production.py` | Realisasi SPH Jan-Mar (2022-2025) vs Denton, flat, profile | MAPE nasional | Dokumentasi keputusan D-42; tidak dijalankan oleh `pipeline.run` |
 | `validate/reconcile_annual.py` | Core dataset + BDSP | Selisih per provinsi × tahun | Total 12 bulan harus sama dengan angka tahunan |
 | `validate/crosscheck_pihps_monthly.py` | Harga bulanan hasil hitung sendiri + angka bulanan PIHPS (`tipe_laporan=3`) | Selisih per provinsi × bulan | Cross-check saja; angka PIHPS bulanan tidak dipakai mengisi nilai (D-18) |
-| `validate/spot_check.py` | Sampel acak core dataset (seed 2026) | Perbandingan dengan raw dan sumber live | 30 harga vs raw harian (10 juga vs PIHPS live), 10 provinsi-tahun vs BDSP raw dan live, 5 bulan ONI vs NOAA live; hasil live tidak disimpan ke raw |
+| `validate/spot_check.py` | Sampel acak core dataset (seed 2026) | Perbandingan dengan raw dan sumber live | 30 harga vs raw harian (10 juga vs PIHPS live), 10 provinsi-tahun vs BDSP raw dan live, 5 bulan ONI vs NOAA live, 5 sel cuaca vs raw harian dan 3 lokasi × bulan vs Open-Meteo live; hasil live tidak disimpan ke raw |
 | `validate/report.py` | Semua modul validate | `pipeline/validate/reports/validation_report.md` | Ringkasan lulus/gagal; `--skip-live` untuk melewati request live |
 | `validate/checks_core.py` | Core dataset | Lulus atau gagal | Tidak ada missing yang tidak ter-flag; key unik |
 

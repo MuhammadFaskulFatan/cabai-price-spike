@@ -7,9 +7,9 @@ Branch kerja: `weather-package` (dibuat dari `phase-6-analysis`, D-56). Setelah 
 | Langkah | Status | Commit |
 | --- | --- | --- |
 | 4.1 Extract sisa lokasi | Selesai: 74 dari 74 lokasi valid | `430d0a2` |
-| 4.2 Audit | Selesai: 74/74 valid, 0 hari kosong, 0 nilai di luar batas fisik, 2 hari hujan > 300 mm (ditandai). Laporan `pipeline/audit/reports/weather_audit.md` | (commit ini) |
-| 4.3 Transform dan integrasi | Berikutnya | - |
-| 4.4 Validate | Belum | - |
+| 4.2 Audit | Selesai: 74/74 valid, 0 hari kosong, 0 nilai di luar batas fisik, 2 hari hujan > 300 mm (ditandai). Laporan `pipeline/audit/reports/weather_audit.md` | `b973e1f` |
+| 4.3 Transform dan integrasi | Selesai: `weather_features.py` (D-57); 6 kolom cuaca di `core_province_month` (`rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status`, `weather_n_points`); observed 3.074 sel (29 provinsi x komoditas), kosong 0; kolom lama tidak berubah | (commit ini) |
+| 4.4 Validate | Berikutnya | - |
 | Merge ke `phase-6-analysis` | Belum | - |
 
 ## 1. Yang sudah selesai
@@ -19,7 +19,7 @@ Branch kerja: `weather-package` (dibuat dari `phase-6-analysis`, D-56). Setelah 
 | Fase 1 Design | Selesai, di `main` | `bed84ca` |
 | Fase 2 Extract | Selesai; cuaca 74 dari 74 lokasi (paket cuaca) | `4963713` (merge ke `main`) |
 | Fase 3 Audit | Selesai; cuaca lewat paket cuaca | `69cb46c` |
-| Fase 4 Transform | Selesai kecuali cuaca | `d11ac73` |
+| Fase 4 Transform | Selesai; cuaca lewat paket cuaca | `d11ac73` |
 | Fase 5 Validate | Selesai kecuali cuaca; 46/46 cek lulus | `02f8a56` |
 | Fase 6 rencana, RTM, EDA | Disetujui (D-48) | `66b7b81` |
 | Keputusan analisis, kolom jarak, koreksi geocoding Karangasem | Selesai (D-48 s/d D-51) | `9c17e12` |

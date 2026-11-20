@@ -95,7 +95,15 @@ Pola musiman dari tabel prognosa Buletin tidak membuat tebakan lebih baik dari f
 
 ## 5. Core dataset
 
-- `core_province_month.csv`: 7,276 baris x 32 kolom; key (provinsi, bulan, grup) unik: True.
+- `core_province_month.csv`: 7,276 baris x 41 kolom; key (provinsi, bulan, grup) unik: True.
 - `core_province_year.csv`: 544 baris x 13 kolom; produksi dan luas panen 2018-2025, 2026 tidak ada.
 - Pasangan flag konsisten (is_imputed TRUE hanya jika impute_method terisi): True.
-- Kolom cuaca belum ada; menyusul setelah data Open-Meteo lengkap.
+- Kolom cuaca ikut di core (paket cuaca, D-57); ringkasan di bagian 6.
+
+## 6. Cuaca (D-19, D-24, D-25, D-57)
+
+- Status di core: {'not_applicable': 4173, 'observed': 3074, 'partial_month': 29}. Provinsi bertitik sentra: cabai merah 14, cabai rawit 15; provinsi lain `not_applicable` (bukan missing, tidak di-impute).
+- Per provinsi x komoditas: rata-rata berbobot produksi kabupaten sentra (bobot produksi rata-rata 2019-2025). Bulan dengan hari tidak lengkap di salah satu titik = NULL; tidak ada kasus seperti itu sampai Oktober 2026.
+- `rain_anomaly` = anomali terstandar terhadap rata-rata dan simpangan baku bulan kalender 1991-2020 dari seri provinsi; `rain_anomaly_mm` dalam mm. November 2026 `partial_month`, nilai NULL.
+- Periode model (observed, 2,726 sel): hujan median 235 mm/bulan, kelembapan rata-rata 85.9%, `rain_anomaly` rata-rata +0.20 (2019-2026 sedikit lebih basah dari normal 1991-2020).
+- Bulan terbasah: 2020-07, province_id 26 (2,228 mm, +4.1 SD), titik sentra: Kab. Enrekang. Nilai tidak diubah. Data Open-Meteo adalah reanalysis model, bukan pengamatan stasiun; besarnya hujan ekstrem di titik pegunungan perlu dibaca hati-hati.

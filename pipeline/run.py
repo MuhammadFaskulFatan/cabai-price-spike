@@ -25,6 +25,7 @@ from pipeline.transform import (
     aggregate_weekly,
     calendar_features,
     geography,
+    weather_features,
     impute_price,
     integrate,
     production,
@@ -53,6 +54,7 @@ TRANSFORM_STEPS = [
     ("production", production),
     ("calendar_features", calendar_features),
     ("geography", geography),
+    ("weather_features", weather_features),
     ("integrate", integrate),
     ("report", report),
 ]

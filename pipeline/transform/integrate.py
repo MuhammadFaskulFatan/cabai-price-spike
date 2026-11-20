@@ -1,4 +1,4 @@
-"""Integrasi ke core dataset (tanpa cuaca; cuaca menyusul setelah data Open-Meteo lengkap).
+"""Integrasi ke core dataset, termasuk cuaca berbobot produksi (paket cuaca, D-56, D-57).
 
 Output di data/final/:
   core_province_month.csv   provinsi x bulan x grup komoditas (cabai_merah, cabai_rawit), 2018-01 sampai 2026-11
@@ -98,6 +98,11 @@ def build_core_month(dim_province, dim_month):
     # jarak ke titik sentra terdekat per komoditas (D-48, D-50)
     geography = pd.read_parquet(INTERIM / "province_geography.parquet")[["province_id", "commodity_group", "distance_to_sentra_km", "is_different_island", "nearest_sentra_province_id"]]
     core = core.merge(geography, on=["province_id", "commodity_group"], how="left")
+    # cuaca berbobot produksi per provinsi x komoditas (D-25, D-57)
+    weather = pd.read_parquet(INTERIM / "fact_weather_monthly.parquet")
+    weather["month_start"] = pd.to_datetime(weather["month"] + "-01").dt.date
+    weather = weather[["province_id", "commodity_group", "month_start", "rain_total_mm", "rain_anomaly_mm", "rain_anomaly", "rel_humidity_mean", "weather_status", "n_points"]]
+    core = core.merge(weather.rename(columns={"n_points": "weather_n_points"}), on=["province_id", "month_start", "commodity_group"], how="left")
     return core.sort_values(["province_id", "commodity_group", "month_start"]).reset_index(drop=True)
 
 
