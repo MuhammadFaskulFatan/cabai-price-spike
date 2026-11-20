@@ -6,9 +6,9 @@ Branch kerja: `weather-package` (dibuat dari `phase-6-analysis`, D-56). Setelah 
 
 | Langkah | Status | Commit |
 | --- | --- | --- |
-| 4.1 Extract sisa lokasi | Selesai: 74 dari 74 lokasi valid | (commit ini) |
-| 4.2 Audit | Berikutnya | - |
-| 4.3 Transform dan integrasi | Belum | - |
+| 4.1 Extract sisa lokasi | Selesai: 74 dari 74 lokasi valid | `430d0a2` |
+| 4.2 Audit | Selesai: 74/74 valid, 0 hari kosong, 0 nilai di luar batas fisik, 2 hari hujan > 300 mm (ditandai). Laporan `pipeline/audit/reports/weather_audit.md` | (commit ini) |
+| 4.3 Transform dan integrasi | Berikutnya | - |
 | 4.4 Validate | Belum | - |
 | Merge ke `phase-6-analysis` | Belum | - |
 
@@ -18,7 +18,7 @@ Branch kerja: `weather-package` (dibuat dari `phase-6-analysis`, D-56). Setelah 
 | --- | --- | --- |
 | Fase 1 Design | Selesai, di `main` | `bed84ca` |
 | Fase 2 Extract | Selesai; cuaca 74 dari 74 lokasi (paket cuaca) | `4963713` (merge ke `main`) |
-| Fase 3 Audit | Selesai kecuali cuaca | `69cb46c` |
+| Fase 3 Audit | Selesai; cuaca lewat paket cuaca | `69cb46c` |
 | Fase 4 Transform | Selesai kecuali cuaca | `d11ac73` |
 | Fase 5 Validate | Selesai kecuali cuaca; 46/46 cek lulus | `02f8a56` |
 | Fase 6 rencana, RTM, EDA | Disetujui (D-48) | `66b7b81` |
