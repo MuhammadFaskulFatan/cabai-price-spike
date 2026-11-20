@@ -19,7 +19,7 @@ Bukan rekomendasi final. Catatan dari tiap hipotesis yang bisa menjadi bahan rek
 
 ## Dari H6
 
-- **Intervensi khusus menjelang Lebaran**: bulan Lebaran sendiri tidak lebih mahal; cabai merah cenderung lebih mahal sekitar sebulan sebelumnya (temuan terbukti di uji utama, p 0,05). Rekomendasi soal waktu intervensi ditahan sampai H1 memisahkan efek cuaca (dugaan, H6 bagian 5).
+- **Intervensi khusus menjelang Lebaran**: bulan Lebaran sendiri tidak lebih mahal; cabai merah cenderung lebih mahal sekitar sebulan sebelumnya (temuan terbukti di uji utama, p 0,05). Setelah kontrol cuaca (H6 final), efek bulan Lebaran tetap tidak terdeteksi, sedangkan kemarau di sentra terukur sekitar +6% harga eceran (temuan terbukti). Prioritas pemantauan sebaiknya cuaca di sentra; intervensi khusus Lebaran cukup berupa kesiapan stok sebulan sebelumnya, bukan operasi besar di bulan Lebaran (implikasi; belum diuji).
 
 ## Dari H1
 

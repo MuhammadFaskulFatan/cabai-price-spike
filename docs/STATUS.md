@@ -1,8 +1,8 @@
 # Status proyek (per 20 Nov 2026)
 
-Branch kerja: `phase-6-analysis` (di-push ke origin sampai `3cad150`). Paket cuaca dikerjakan di `weather-package` (D-56) dan sudah di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
+Branch kerja: `phase-6-analysis` (di-push ke origin sampai `07641c6`; commit setelahnya belum di-push). Paket cuaca dikerjakan di `weather-package` (D-56) dan sudah di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
 
-## 0. Paket cuaca (selesai, menunggu tinjauan Fatan sebelum H1)
+## 0. Paket cuaca (selesai)
 
 | Langkah | Status | Commit |
 | --- | --- | --- |
@@ -20,15 +20,15 @@ Branch kerja: `phase-6-analysis` (di-push ke origin sampai `3cad150`). Paket cua
 | Fase 2 Extract | Selesai; cuaca 74 dari 74 lokasi (paket cuaca) | `4963713` (merge ke `main`) |
 | Fase 3 Audit | Selesai; cuaca lewat paket cuaca | `69cb46c` |
 | Fase 4 Transform | Selesai; cuaca lewat paket cuaca | `d11ac73` |
-| Fase 5 Validate | Selesai; dengan cuaca 53/53 cek lulus | `02f8a56` |
+| Fase 5 Validate | Selesai; dengan cuaca 55/55 cek lulus (termasuk anomali per lokasi D-58 dan kelembapan D-59) | `02f8a56` |
 | Fase 6 rencana, RTM, EDA | Disetujui (D-48) | `66b7b81` |
 | Keputusan analisis, kolom jarak, koreksi geocoding Karangasem | Selesai (D-48 s/d D-51) | `9c17e12` |
 | H2 rantai pasok | **Final: sebagian** | `1805c24` |
 | H3 disparitas | **Tidak didukung (dibantah)** | `272b843` |
 | H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif) | `272b843` |
-| H6 hari besar | **Sementara: tidak didukung untuk "menambah kenaikan"**; final menunggu H1 | `272b843` |
-| H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `883cc8d`, `07641c6`, (commit ini) |
-| H4 early warning | **Sebagian (merah dan rawit)**: false alarm lebih rendah dari baseline charter pada recall setara (27% vs 42%; 35% vs 43%), US1 terpenuhi (59%, 52%), F1 belum pasti lebih baik; cuaca membantu rawit saja (D-61) | (commit ini) |
+| H6 hari besar | **Final: sebagian**. Bukan pemicu utama (didukung: efek cuaca kering sekitar +6% harga eceran, bulan Idulfitri tidak terdeteksi); menambah kenaikan (tidak didukung) (D-62) | (commit ini) |
+| H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `883cc8d`, `07641c6`, `ca9769f` |
+| H4 early warning | **Sebagian (merah dan rawit)**: false alarm lebih rendah dari baseline charter pada recall setara (27% vs 42%; 35% vs 43%), US1 terpenuhi (59%, 52%), F1 belum pasti lebih baik; cuaca membantu rawit saja (D-61) | `f0405a4` |
 
 Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
 
@@ -42,15 +42,18 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_repor
 - **D-56**: empat hal terbuka di bagian 3 diputuskan.
 - **D-57**: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
 - **D-59**: H1 disetujui; uji eksploratif merah dan kriterianya; lag H4 (rawit lag 2-3; merah hanya kalau sinyal konsisten, lag nested).
+- **D-62**: keputusan final H6 (kontrol cuaca, perbandingan di model yang sama, label sebagian).
 - **D-61**: rincian dan aturan keputusan H4 (ditulis sebelum backtest).
 - **D-60**: indeks hujan nasional masuk H4 merah (kriteria (ii) D-59); kelembapan tidak.
 - **D-58**: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
 
-Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-61).
+Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-62).
 
 ## 3. Yang belum diputuskan
 
-Tidak ada. Empat hal terbuka sebelumnya diputuskan di D-56: branch `weather-package` dari `phase-6-analysis`; merge ke `main` setelah H1, H4, dan keputusan final H6; teks H5 di charter sudah diganti ke versi tahunan (D-27); verifikasi eksternal tidak dikerjakan, dicatat sebagai keterbatasan data (frekuensi pembaruan harga produsen PIHPS; cuti bersama 2020 dan Natal 2018, 2019, 2022).
+1. **Review H4 dan H6 final** (laporan `analysis/07_h4_report.md` dan `analysis/05_h6_report.md`).
+2. **Merge `phase-6-analysis` ke `main`.** Syarat D-56 (H1, H4, keputusan final H6) sudah terpenuhi; merge menunggu persetujuan Fatan atas H4 dan H6.
+3. **Review H3 dan H5** masih terbuka sejak 19 Nov.
 
 ## 4. Langkah berikutnya (urut)
 
@@ -79,13 +82,9 @@ Yang perlu diputuskan Fatan saat review: lag cuaca untuk sinyal H4 (usulan: rawi
 
 Laporan `analysis/07_h4_report.md` (D-61). Keputusan: sebagian untuk kedua komoditas.
 
-### 4.7 Keputusan final H6
+### 4.7 Keputusan final H6: selesai
 
-Jalankan ulang `analysis/h6_holidays.py` dengan `rain_anomaly` sebagai kontrol tambahan (provinsi bertitik sentra). Bandingkan efek bulan dan jendela Idulfitri (persen) dengan efek 1 SD anomali hujan dari H1. Perbarui `analysis/05_h6_report.md` dengan keputusan final.
-
-```powershell
-python -m analysis.h6_holidays
-```
+Laporan `analysis/05_h6_report.md` diperbarui (D-62).
 
 ### 4.8 Setelah semua hipotesis
 

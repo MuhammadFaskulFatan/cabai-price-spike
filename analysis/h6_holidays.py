@@ -6,21 +6,29 @@ Rencana: docs/05_analysis_plan.md bagian 6 (D-48). Panel provinsi x bulan:
 SE cluster per tahun-bulan (perlakuan hanya bervariasi menurut waktu, jadi provinsi di bulan yang sama tidak independen).
 Idulfitri bergeser sekitar 11 hari per tahun sehingga efeknya bisa dipisah dari FE month-of-year.
 Sampel utama Jan 2019 - Des 2025 (produksi 2026 belum ada); sensitivity tanpa kontrol produksi sampai Okt 2026.
-Kesimpulan akhir (hari besar lebih kecil dari efek cuaca) menunggu H1.
+Keputusan final (D-62): spesifikasi yang sama diulang di provinsi bertitik sentra dengan dan tanpa kontrol anomali hujan
+lag 1-4 (D-58), lalu efek Idulfitri dibandingkan dengan efek anomali hujan -1 selama 4 bulan di model yang sama (persen
+harga eceran). Event study juga diulang dengan kontrol hujan.
 
     python -m analysis.h6_holidays
 """
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
+from scipy import stats
 
 from analysis.style import FIGURES, GROUP_COLOR, GROUP_LABEL, INK_2, SURFACE, TABLES, load_core, plt, setup
 
 ALPHA = 0.05
+RAIN_LAGS = [f"rain_l{k}" for k in (1, 2, 3, 4)]
 
 
 def prepare():
-    core = load_core()
+    core = load_core().sort_values(["province_id", "commodity_group", "month"])
+    grouped = core.groupby(["province_id", "commodity_group"])["rain_anomaly"]
+    for k in (1, 2, 3, 4):
+        core[f"rain_l{k}"] = grouped.shift(k)
+    core["sentra"] = core.groupby(["province_id", "commodity_group"])["weather_status"].transform(lambda s: (s == "observed").any())
     data = core[core["in_model_period"]].copy()
     data["log_price"] = np.log(data["price_retail"])
     data["idul"] = (data["months_to_idulfitri"] == 0).astype(float)
@@ -53,6 +61,14 @@ def effects(fitted, sample, terms):
         out[f"{term}_ci_bawah"] = (np.exp(low) - 1) * 100
         out[f"{term}_ci_atas"] = (np.exp(high) - 1) * 100
         out[f"{term}_p"] = fitted.pvalues[term]
+    if all(name in fitted.params for name in RAIN_LAGS):
+        vector = -np.ones(len(RAIN_LAGS))      # anomali -1 (lebih kering) di keempat lag
+        beta = float(vector @ fitted.params[RAIN_LAGS].to_numpy())
+        se = float(np.sqrt(vector @ fitted.cov_params().loc[RAIN_LAGS, RAIN_LAGS].to_numpy() @ vector))
+        out["hujan_kering_1_efek_pct"] = (np.exp(beta) - 1) * 100
+        out["hujan_kering_1_ci_bawah"] = (np.exp(beta - 1.96 * se) - 1) * 100
+        out["hujan_kering_1_ci_atas"] = (np.exp(beta + 1.96 * se) - 1) * 100
+        out["hujan_kering_1_p"] = 2 * (1 - stats.norm.cdf(abs(beta / se)))
     return out
 
 
@@ -65,6 +81,9 @@ def run_specs(data):
         "tanpa 2020": (data[(data["year"] <= 2025) & (data["year"] != 2020)], {}),
         "tanpa kontrol cuti bersama": (data[data["year"] <= 2025], {"controls": ("log_production", "oni_anomaly")}),
         "tambah FE tahun": (data[data["year"] <= 2025], {"year_fe": True}),
+        "provinsi bertitik sentra, tanpa kontrol hujan": (data[(data["year"] <= 2025) & data["sentra"]], {}),
+        "provinsi bertitik sentra + anomali hujan lag 1-4": (data[(data["year"] <= 2025) & data["sentra"]],
+                                                            {"controls": ("log_production", "oni_anomaly", "n_cuti_bersama_days", *RAIN_LAGS)}),
     }
     rows = []
     for group in GROUP_LABEL:
@@ -74,9 +93,9 @@ def run_specs(data):
     return pd.DataFrame(rows)
 
 
-def event_study(data, year_fe=False):
+def event_study(data, year_fe=False, controls=("log_production", "oni_anomaly", "n_cuti_bersama_days"), sentra_only=False):
     """Koefisien bulan -3 s/d +3 relatif terhadap Idulfitri (pembanding: bulan lain), spesifikasi utama."""
-    data = data[data["year"] <= 2025].copy()
+    data = data[(data["year"] <= 2025) & (data["sentra"] if sentra_only else True)].copy()
     terms = []
     for k in range(-3, 4):
         name = f"k{'m' if k < 0 else 'p'}{abs(k)}"
@@ -84,7 +103,7 @@ def event_study(data, year_fe=False):
         terms.append((k, name))
     rows = []
     for group in GROUP_LABEL:
-        fitted, _ = fit(data[data["commodity_group"] == group], [n for _, n in terms], year_fe=year_fe)
+        fitted, _ = fit(data[data["commodity_group"] == group], [n for _, n in terms], controls=controls, year_fe=year_fe)
         for k, name in terms:
             low, high = fitted.conf_int().loc[name]
             rows.append({"grup": group, "bulan_relatif": k, "efek_pct": (np.exp(fitted.params[name]) - 1) * 100,
@@ -118,14 +137,21 @@ def run():
     event = event_study(data)
     event_year = event_study(data, year_fe=True).assign(spesifikasi="tambah FE tahun")
     event_year.to_csv(TABLES / "h6_event_study_year_fe.csv", index=False)
+    rain_controls = ("log_production", "oni_anomaly", "n_cuti_bersama_days", *RAIN_LAGS)
+    event_sentra = pd.concat([event_study(data, sentra_only=True).assign(spesifikasi="sentra, tanpa kontrol hujan"),
+                              event_study(data, controls=rain_controls, sentra_only=True).assign(spesifikasi="sentra + anomali hujan lag 1-4")], ignore_index=True)
+    event_sentra.to_csv(TABLES / "h6_event_study_rain.csv", index=False)
     chart(event, FIGURES / "h6_idulfitri_event.png")
     results.to_csv(TABLES / "h6_results.csv", index=False)
     event.to_csv(TABLES / "h6_event_study.csv", index=False)
-    pd.to_pickle({"results": results, "event": event, "event_year": event_year}, TABLES / "h6_results.pkl")
+    pd.to_pickle({"results": results, "event": event, "event_year": event_year, "event_sentra": event_sentra}, TABLES / "h6_results.pkl")
     columns = ["grup", "spesifikasi", "n", "idulfitri_dalam_sampel", "idul_efek_pct", "idul_ci_bawah", "idul_ci_atas", "idul_p", "pre_idul_efek_pct", "pre_idul_ci_bawah", "pre_idul_ci_atas", "pre_idul_p"]
     print(results[columns].round(3).to_string(index=False))
     print(event.round(2).to_string(index=False))
     print(event_year.round(2).to_string(index=False))
+    print(results[results["spesifikasi"].str.contains("sentra")][["grup", "spesifikasi", "n", "idul_efek_pct", "idul_ci_bawah", "idul_ci_atas", "idul_p", "pre_idul_efek_pct", "pre_idul_p",
+          "hujan_kering_1_efek_pct", "hujan_kering_1_ci_bawah", "hujan_kering_1_ci_atas", "hujan_kering_1_p"]].round(3).to_string(index=False))
+    print(event_sentra.round(2).to_string(index=False))
 
 
 if __name__ == "__main__":
