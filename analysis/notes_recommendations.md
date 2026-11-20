@@ -37,4 +37,4 @@ Bukan rekomendasi final; rekomendasi akhir ada di `analysis/09_final_recommendat
 ## Dari skenario what-if (4.7b)
 
 - **Skala masalah**: biaya lonjakan bagi rumah tangga Jan 2023 - Okt 2026 sekitar Rp 5,5 triliun (merah) dan Rp 10,3 triliun (rawit), konsumsi rumah tangga saja dan harga nominal (temuan terbukti, `08_scenario_report.md` bagian 2).
-- **Manfaat peringatan dini merah bergantung pada redaman yang belum diukur**: dengan redaman asumsi 10-50%, biaya yang dihindari Rp 0,43-2,14 triliun; break-even hanya beberapa persen redaman kalau biaya tindak lanjut per alarm ratusan juta rupiah (semua asumsi). Data intervensi diperlukan sebelum memperbesar program (implikasi).
+- **Manfaat peringatan dini merah bergantung pada redaman yang belum diukur**: dengan redaman asumsi 10-50%, biaya yang dihindari Rp 0,43-2,14 triliun; break-even: redaman minimum 1,4-14,4% (model) dan 2,2-22,1% (charter) untuk biaya Rp 100 juta - 1 miliar per alarm palsu (semua asumsi, tanpa patokan resmi; D-65). Data intervensi diperlukan sebelum memperbesar program (implikasi).

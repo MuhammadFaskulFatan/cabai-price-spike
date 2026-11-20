@@ -6,7 +6,8 @@
    (catatan kaki tabel prognosa Buletin Semester I) / 12. 2026 memakai Susenas 2025 (flag).
 2. Redaman 10/25/50% adalah ASUMSI. Skenario (a) batas atas, (b) model merah H4, (c) baseline charter.
    Episode nasional dianggap diketahui lebih awal kalau alarm berbunyi di >= 50% provinsi risk set 1-2 bulan sebelumnya.
-3. Alarm palsu dari backtest H4; break-even sebagai biaya maksimum per alarm palsu.
+3. Alarm palsu dari backtest H4; break-even sebagai biaya maksimum per alarm palsu dan redaman minimum untuk rentang
+   biaya per alarm Rp 100 juta - 1 miliar (asumsi, tanpa patokan resmi; D-65).
 
     python -m analysis.scenario_whatif
 """
@@ -28,7 +29,7 @@ POPULATION_PDFS = {2023: "480_buletin_konsumsi_pangan_volume_14_nomor_1_tahun_20
 START, END = pd.Period("2023-01", "M"), pd.Period("2026-10", "M")
 FIRST_EVALUABLE, LAST_EVALUABLE = pd.Period("2023-02", "M"), pd.Period("2026-09", "M")   # D-64
 DAMPING = (0.10, 0.25, 0.50)                    # asumsi
-COST_PER_FALSE_ALARM = (50e6, 250e6, 1e9)       # asumsi, Rp per alarm palsu provinsi-bulan
+COST_PER_FALSE_ALARM = (100e6, 250e6, 500e6, 1e9)   # rentang asumsi, Rp per alarm palsu provinsi-bulan (D-65)
 NATIONAL_SHARE = 0.5
 
 
@@ -183,6 +184,38 @@ def chart_costs(monthly, path):
     plt.close(fig)
 
 
+def breakeven_table(table):
+    part = table[(table["commodity"] == "cabai_merah") & (table["redaman_asumsi"] == DAMPING[0]) & (table["alarm_palsu_provinsi_bulan"] > 0)]
+    rows = []
+    for item in part.itertuples():
+        for cost in COST_PER_FALSE_ALARM:
+            rows.append({"skenario": item.skenario, "biaya_per_alarm_palsu_idr": cost, "alarm_palsu_provinsi_bulan": item.alarm_palsu_provinsi_bulan,
+                         "biaya_episode_terdeteksi_idr": item.biaya_episode_terdeteksi_idr,
+                         "redaman_minimum": cost * item.alarm_palsu_provinsi_bulan / item.biaya_episode_terdeteksi_idr})
+    return pd.DataFrame(rows)
+
+
+def chart_breakeven(breakeven, path):
+    labels = {"(b) model merah H4": ("Model merah H4", GROUP_COLOR["cabai_merah"]), "(c) baseline charter": ("Baseline charter", MUTED)}
+    costs = list(COST_PER_FALSE_ALARM)
+    fig, ax = plt.subplots(figsize=(8, 3.6))
+    width = 0.36
+    for i, (scenario, (label, color)) in enumerate(labels.items()):
+        values = breakeven[breakeven["skenario"] == scenario].set_index("biaya_per_alarm_palsu_idr").loc[costs, "redaman_minimum"] * 100
+        bars = ax.bar(np.arange(len(costs)) + (i - 0.5) * width, values, width=width, color=color, label=label)
+        for bar, value in zip(bars, values):
+            ax.text(bar.get_x() + bar.get_width() / 2, value + 0.4, f"{value:.1f}%".replace(".", ","), ha="center", fontsize=7.5, color=INK_2)
+    ax.set_xticks(range(len(costs)), ["Rp 100 juta", "Rp 250 juta", "Rp 500 juta", "Rp 1 miliar"])
+    ax.set_xlabel("biaya menindaklanjuti satu alarm palsu provinsi-bulan (asumsi)")
+    ax.set_ylabel("redaman minimum (%)")
+    ax.legend(loc="upper left", fontsize=8)
+    fig.suptitle("Break-even cabai merah: redaman minimum agar manfaat menutup biaya alarm palsu", x=0.01, ha="left", fontweight="bold", fontsize=10)
+    fig.text(0.01, 0.9, "Biaya per alarm dan redaman adalah asumsi; tidak ada patokan anggaran resmi per kegiatan yang bisa dikutip (D-65)", fontsize=7.5, color=INK_2)
+    fig.tight_layout(rect=(0, 0, 1, 0.88))
+    fig.savefig(path, dpi=150)
+    plt.close(fig)
+
+
 def chart_scenarios(table, path):
     part = table[table["commodity"] == "cabai_merah"]
     labels = list(dict.fromkeys(part["skenario"]))
@@ -223,6 +256,9 @@ def run():
     episodes_out = pd.concat([merah_episodes, rawit_episodes], ignore_index=True)
     episodes_out.assign(start=episodes_out["start"].astype(str), end=episodes_out["end"].astype(str)).to_csv(TABLES / "scenario_episodes.csv", index=False)
     merah.to_csv(TABLES / "scenario_merah.csv", index=False)
+    breakeven = breakeven_table(merah)
+    breakeven.to_csv(TABLES / "scenario_breakeven.csv", index=False)
+    chart_breakeven(breakeven, FIGURES / "scenario_breakeven.png")
     summary.to_csv(TABLES / "scenario_summary.csv")
     chart_costs(monthly, FIGURES / "scenario_spike_cost.png")
     chart_scenarios(merah, FIGURES / "scenario_merah.png")
@@ -232,6 +268,7 @@ def run():
     print(summary.to_string())
     print(episodes_out.assign(start=episodes_out["start"].astype(str), end=episodes_out["end"].astype(str)).round(3).to_string(index=False))
     print(merah.round(4).to_string(index=False))
+    print(breakeven.round(4).to_string(index=False))
 
 
 if __name__ == "__main__":

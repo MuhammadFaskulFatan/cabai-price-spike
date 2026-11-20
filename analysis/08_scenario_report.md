@@ -57,18 +57,32 @@ Episode nasional dianggap diketahui lebih awal kalau di backtest H4 alarm berbun
 | (b) Model merah H4 | Rp 4,28 T (77%) | Rp 0,43 T | Rp 1,07 T | Rp 2,14 T | 616 (13,4) | 21 (18) |
 | (c) Baseline charter | Rp 4,28 T (77%) | Rp 0,43 T | Rp 1,07 T | Rp 2,14 T | 947 (20,6) | 20 (18) |
 
-**Break-even.** Biaya menindaklanjuti satu alarm palsu (pengecekan lapangan, koordinasi, atau intervensi yang ternyata tidak perlu) tidak diketahui, jadi disajikan dua arah:
+**Break-even (D-65).** Biaya menindaklanjuti satu alarm palsu (pengecekan lapangan, koordinasi, atau intervensi yang ternyata tidak perlu) tidak diketahui, jadi disajikan sebagai rentang.
+
+Tidak ada patokan resmi yang bisa dikutip:
+- Rencana Aksi Deputi Bidang Ketersediaan dan Stabilisasi Pangan Bapanas 2024 dan 2025 memuat jumlah kegiatan Gerakan Pangan Murah (misalnya 1.626 kegiatan yang didanai APBN Bapanas), tetapi tidak memuat anggaran per kegiatan.
+- Angka anggaran lain yang ditemukan hanya dari berita, bukan dokumen resmi Bapanas atau pemda, dan tidak khusus cabai. Angka itu tidak dipakai.
+
+Redaman minimum agar biaya lonjakan yang dihindari sama dengan biaya semua alarm palsu (`scenario_breakeven.csv`):
+
+| Biaya per alarm palsu provinsi-bulan (asumsi) | Model merah (616 alarm palsu) | Baseline charter (947 alarm palsu) |
+| --- | --- | --- |
+| Rp 100 juta | 1,4% | 2,2% |
+| Rp 250 juta | 3,6% | 5,5% |
+| Rp 500 juta | 7,2% | 11,1% |
+| Rp 1 miliar | 14,4% | 22,1% |
+
+![Break-even](figures/scenario_breakeven.png)
+
+Dari arah sebaliknya: biaya maksimum per alarm palsu agar manfaat tetap positif, untuk tiap redaman yang diasumsikan:
 
 | Ukuran | Model merah | Baseline charter |
 | --- | --- | --- |
 | Biaya maksimum per alarm palsu agar manfaat tetap positif, redaman 10% (asumsi) | Rp 0,70 miliar | Rp 0,45 miliar |
 | Sama, redaman 25% (asumsi) | Rp 1,74 miliar | Rp 1,13 miliar |
 | Sama, redaman 50% (asumsi) | Rp 3,48 miliar | Rp 2,26 miliar |
-| Redaman minimum jika satu alarm palsu berbiaya Rp 50 juta (asumsi) | 0,7% | 1,1% |
-| Redaman minimum jika Rp 250 juta (asumsi) | 3,6% | 5,5% |
-| Redaman minimum jika Rp 1 miliar (asumsi) | 14,4% | 22,1% |
 
-Cara membaca: kalau menindaklanjuti satu alarm provinsi-bulan menghabiskan Rp 250 juta, peringatan dini dari model merah sudah sepadan selama tindak lanjut itu meredam minimal sekitar 4% kelebihan harga di episode yang terdeteksi. Angka-angka ini hanya ilustrasi aritmetika dari asumsi, bukan perkiraan manfaat.
+Cara membaca: di rentang biaya Rp 100 juta sampai Rp 1 miliar per alarm palsu, peringatan dini model merah sepadan selama tindak lanjutnya meredam minimal sekitar 1,4% sampai 14,4% kelebihan harga di episode yang terdeteksi. Baseline charter butuh redaman sekitar 1,5 kali lebih besar karena alarm palsunya lebih banyak. Angka-angka ini hanya ilustrasi aritmetika dari asumsi, bukan perkiraan manfaat.
 
 ## 4. Cabai rawit
 
@@ -97,7 +111,7 @@ Yang dibutuhkan agar model rawit bisa diuji ulang:
 
 - **Konsumsi rumah tangga saja**, jadi biaya lonjakan understate. Konsumsi per kapita Susenas tahunan dibagi rata ke 12 bulan, tanpa pola musiman.
 - **Harga nominal**, tanpa penyesuaian inflasi.
-- **Redaman dan biaya per alarm palsu adalah asumsi**, bukan hasil. Tidak ada angka efektivitas intervensi yang diklaim.
+- **Redaman dan biaya per alarm palsu adalah asumsi**, bukan hasil. Tidak ada angka efektivitas intervensi yang diklaim, dan tidak ada patokan anggaran resmi per kegiatan yang bisa dikutip (D-65).
 - 2026 memakai konsumsi per kapita Susenas 2025 (flag), karena Susenas 2026 belum ada.
 - Episode merah Okt 2026 masih berjalan, dan November 2026 parsial tidak dihitung, sehingga biayanya akan bertambah.
 - Biaya lonjakan adalah tambahan pengeluaran rumah tangga. Sebagian menjadi pendapatan pelaku rantai pasok, jadi ini bukan kerugian ekonomi bersih.
@@ -106,4 +120,4 @@ Yang dibutuhkan agar model rawit bisa diuji ulang:
 
 Lonjakan harga cabai bukan masalah kecil: dalam hampir empat tahun, rumah tangga Indonesia membayar sekitar Rp 16 triliun lebih mahal untuk cabai merah dan rawit di bulan-bulan lonjakan. Itu baru dari belanja rumah tangga, belum termasuk warung, restoran, dan industri. Sebagian besar biaya itu terkumpul di beberapa episode besar, terutama akhir 2023 untuk kedua jenis cabai dan awal 2025 untuk rawit.
 
-Untuk cabai merah, peringatan dini sudah bisa menangkap episode besar seperti akhir 2023 satu sampai dua bulan sebelumnya. Kalau tindak lanjutnya berbiaya ratusan juta rupiah per provinsi per bulan, intervensi hanya perlu meredam beberapa persen kelebihan harga untuk sepadan dengan alarm palsunya. Tetapi seberapa besar redaman yang benar-benar bisa dicapai belum diketahui. Itu pertanyaan berikutnya, dan butuh data intervensi, bukan data harga saja. Untuk cabai rawit, biaya lonjakannya lebih besar, tetapi alat peringatan dininya belum siap. Perbaikan data harga produsen adalah prasyarat.
+Untuk cabai merah, peringatan dini sudah bisa menangkap episode besar seperti akhir 2023 satu sampai dua bulan sebelumnya. Kalau tindak lanjutnya berbiaya Rp 100 juta sampai Rp 1 miliar per provinsi per bulan, intervensi perlu meredam sekitar 1-14% kelebihan harga untuk sepadan dengan alarm palsunya. Tetapi seberapa besar redaman yang benar-benar bisa dicapai belum diketahui. Itu pertanyaan berikutnya, dan butuh data intervensi, bukan data harga saja. Untuk cabai rawit, biaya lonjakannya lebih besar, tetapi alat peringatan dininya belum siap. Perbaikan data harga produsen adalah prasyarat.
