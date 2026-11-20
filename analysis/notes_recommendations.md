@@ -1,6 +1,6 @@
 # Catatan untuk bagian rekomendasi akhir
 
-Bukan rekomendasi final. Catatan dari tiap hipotesis yang bisa menjadi bahan rekomendasi kebijakan setelah semua hipotesis selesai (D-53). Tiap catatan menyebut sumber temuannya dan apakah temuan itu terbukti atau masih dugaan.
+Bukan rekomendasi final; rekomendasi akhir ada di `analysis/09_final_recommendations.md` (langkah 4.8). Catatan dari tiap hipotesis yang bisa menjadi bahan rekomendasi kebijakan setelah semua hipotesis selesai (D-53). Tiap catatan menyebut sumber temuannya dan apakah temuan itu terbukti atau masih dugaan.
 
 ## Dari H2
 
@@ -33,3 +33,8 @@ Bukan rekomendasi final. Catatan dari tiap hipotesis yang bisa menjadi bahan rek
 - **Daftar pantau cabai merah, bukan pemicu otomatis**: model merah menangkap 59% episode besar minimal sebulan sebelumnya, alarmnya 1,8 kali lebih tepat dari acak, dan false alarm sepertiga lebih sedikit daripada memantau "harga eceran naik". Tetapi hanya sekitar 1 dari 7 alarm yang benar (temuan terbukti, H4 bagian 2b dan 5). Alarm cocok sebagai dasar pengecekan lapangan dan koordinasi TPID, bukan langsung operasi pasar (implikasi; belum diuji).
 - **Model peringatan dini rawit belum layak direkomendasikan**: lift alarm rawit belum jelas di atas acak (1,18; interval 0,92-1,50), sehingga H4 rawit tidak didukung (D-63). Data hujan sentra memperbaiki model rawit, tetapi belum cukup (temuan terbukti). Rekomendasi pemantauan rawit berbasis model ditahan sampai ada model yang lebih baik (dugaan: ambang alarm terlalu longgar, H4 bagian 6).
 - **Peringatan tingkat nasional** mungkin lebih berguna daripada per provinsi, karena lonjakan bersifat serentak (dugaan, H4 bagian 6).
+
+## Dari skenario what-if (4.7b)
+
+- **Skala masalah**: biaya lonjakan bagi rumah tangga Jan 2023 - Okt 2026 sekitar Rp 5,5 triliun (merah) dan Rp 10,3 triliun (rawit), konsumsi rumah tangga saja dan harga nominal (temuan terbukti, `08_scenario_report.md` bagian 2).
+- **Manfaat peringatan dini merah bergantung pada redaman yang belum diukur**: dengan redaman asumsi 10-50%, biaya yang dihindari Rp 0,43-2,14 triliun; break-even hanya beberapa persen redaman kalau biaya tindak lanjut per alarm ratusan juta rupiah (semua asumsi). Data intervensi diperlukan sebelum memperbesar program (implikasi).

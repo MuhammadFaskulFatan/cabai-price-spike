@@ -1,6 +1,6 @@
 # Status proyek (per 20 Nov 2026)
 
-Branch kerja: `phase-6-analysis`. Di-merge ke `main` (fast-forward) dan di-push di `9d1a572` setelah H1, H4 final, dan H6 final (D-56, D-63). Langkah 4.7b dan 4.8 dikerjakan di `phase-6-analysis` dan belum di-merge.
+Branch kerja: `phase-6-analysis`. Di-merge ke `main` (fast-forward) dan di-push di `9d1a572` setelah H1, H4 final, dan H6 final (D-56, D-63). Langkah 4.7b dan 4.8 dikerjakan di `phase-6-analysis`, belum di-merge ke `main` dan belum di-push.
 
 ## 0. Paket cuaca (selesai)
 
@@ -29,7 +29,8 @@ Branch kerja: `phase-6-analysis`. Di-merge ke `main` (fast-forward) dan di-push 
 | H6 hari besar | **Final: sebagian**, disetujui (D-63). Bukan pemicu utama (didukung: efek cuaca kering sekitar +6% harga eceran, bulan Idulfitri tidak terdeteksi); menambah kenaikan (tidak didukung) (D-62) | `d449b9f` |
 | H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `883cc8d`, `07641c6`, `ca9769f` |
 | H4 early warning | **Final, disetujui (D-63, D-64): merah sebagian** (lift 1,81, PR-AUC 0,178 vs 0,087 charter; FAR 27% vs 42% pada recall setara; US1 59%). **Rawit tidak didukung** (lift 1,18, interval 0,92-1,50 mencakup 1). Cuaca membantu rawit, tidak cukup | `f0405a4`, `5c53e8a`, `9d1a572` |
-| 4.7b Skenario what-if | Selesai: biaya lonjakan rumah tangga Jan 2023 - Okt 2026 merah Rp 5,53 T, rawit Rp 10,31 T; skenario redaman (asumsi) dan break-even untuk merah (D-64) | `a5b5827` (D-64), (commit ini) |
+| 4.7b Skenario what-if | Selesai: biaya lonjakan rumah tangga Jan 2023 - Okt 2026 merah Rp 5,53 T, rawit Rp 10,31 T; skenario redaman (asumsi) dan break-even untuk merah (D-64) | `a5b5827` (D-64), `7cd59b4` |
+| 4.8 RTM final dan rekomendasi akhir | Selesai: 9 rekomendasi (R1-R9) dan 6 usulan ditahan, masing-masing dilacak ke hipotesis/skenario di RTM bagian 4; `analysis/09_final_recommendations.md` | (commit ini) |
 
 Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
 
@@ -54,8 +55,8 @@ Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-64).
 
 ## 3. Yang belum diputuskan
 
-1. **Review skenario what-if** (`analysis/08_scenario_report.md`).
-2. **Langkah 4.8**: RTM final dan rekomendasi akhir (berjalan).
+1. **Review skenario what-if** (`analysis/08_scenario_report.md`) dan **rekomendasi akhir** (`analysis/09_final_recommendations.md`, RTM bagian 3-4).
+2. **Merge `phase-6-analysis` ke `main` dan push** untuk langkah 4.7b dan 4.8, setelah disetujui.
 
 ## 4. Langkah berikutnya (urut)
 
@@ -92,6 +93,6 @@ Laporan `analysis/05_h6_report.md` diperbarui (D-62).
 
 Laporan `analysis/08_scenario_report.md` (D-64). Semua angka redaman adalah asumsi.
 
-### 4.8 Setelah semua hipotesis
+### 4.8 RTM final dan rekomendasi akhir: selesai
 
-Susun Requirements Traceability Matrix final dan rekomendasi akhir dari `analysis/notes_recommendations.md`. Setelah disetujui, merge `phase-6-analysis` ke `main`.
+Rekomendasi akhir di `analysis/09_final_recommendations.md`; RTM final di `docs/06_requirements_traceability_matrix.md` (status final per hipotesis dan pemetaan R1-R9 ke bukti). Future work tercatat di rekomendasi akhir bagian 4.
