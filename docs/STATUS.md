@@ -1,6 +1,8 @@
 # Status proyek (per 20 Nov 2026)
 
-Fase 1-7 selesai. `main` berisi seluruh pekerjaan, termasuk Fase 7 (pre-publish cleanup, D-66). Riwayat git ditulis ulang di Fase 7, jadi hash commit di dokumen ini sudah dipetakan ke riwayat baru.
+**Proyek selesai.** Fase 1-7 sudah tuntas dan `main` berisi seluruh pekerjaan, termasuk Fase 7 (pre-publish cleanup, D-66). Riwayat git ditulis ulang di Fase 7, jadi hash commit di dokumen ini sudah dipetakan ke riwayat baru.
+
+Tahap berikutnya adalah penyusunan case study untuk portfolio. Case study disusun di luar repository ini dan merujuk ke laporan, chart, dan keputusan yang ada di sini. Repository tidak lagi menerima perubahan analisis, kecuali future work yang tercatat di bawah dan di `analysis/09_final_recommendations.md` bagian 4.
 
 ## Fase 7: pre-publish cleanup (selesai)
 
