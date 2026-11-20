@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.6150161",
+      "longitude": "111.9465075",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Nganjuk"
+  },
+  "n_rows": 13103,
+  "n_bytes": 278176,
+  "sha256": "91f1d04aaf6692833d7433208da4cad214d92d79fa7451e63eea558495974776"
+}

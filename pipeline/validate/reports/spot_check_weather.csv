@@ -1,0 +1,9 @@
+jenis,province_id,grup,bulan,core_mm,pembanding_mm,cocok
+raw,14,cabai_rawit,2019-06,17.9578,17.95779423393106,True
+raw,16,cabai_rawit,2019-04,239.4131,239.41314774660435,True
+raw,18,cabai_rawit,2025-12,214.4141,214.41406275421267,True
+raw,6,cabai_merah,2024-04,431.7,431.69999999999993,True
+raw,2,cabai_rawit,2019-09,207.0153,207.01532942163647,True
+live,2,Kab. Humbang Hasundutan,2025-09,222.1,222.1,True
+live,3,Kab. Solok,2020-05,356.00000000000006,356.00000000000006,True
+live,10,Kab. Lampung Selatan,2019-03,328.20000000000005,328.20000000000005,True

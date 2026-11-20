@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-8.3572425",
+      "longitude": "116.1609208",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Lombok Utara"
+  },
+  "n_rows": 13103,
+  "n_bytes": 278610,
+  "sha256": "33c1176ac2a3a6c986dcbdc361a9a92a4c62c96654a50179d7714b19cd792d47"
+}

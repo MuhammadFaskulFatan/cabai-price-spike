@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "2.2376995",
+      "longitude": "98.6006721",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Humbang Hasundutan"
+  },
+  "n_rows": 13103,
+  "n_bytes": 281514,
+  "sha256": "07c5e6b33231f3361dacf116c15ea86c0dd7893bd98023d1526a34cbc1dafcc7"
+}

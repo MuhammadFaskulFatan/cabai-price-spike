@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.461671",
+      "longitude": "108.8046146",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Cilacap"
+  },
+  "n_rows": 13103,
+  "n_bytes": 278675,
+  "sha256": "45ae2a66e560ba524ac92b785ad93999f856d55075b562f0968e649471933c20"
+}

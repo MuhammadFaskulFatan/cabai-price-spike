@@ -5,6 +5,8 @@
 2. Produksi: 10 provinsi-tahun di core_province_year dihitung ulang dari HTML raw BDSP; tabel provinsi BDSP untuk
    cabe besar dan cabe rawit ditarik ulang live (request yang sama dengan metadata raw).
 3. ONI: 5 bulan acak dibanding file ONI live dari NOAA.
+4. Cuaca: 5 sel provinsi x komoditas x bulan dihitung ulang dari file raw harian (rata-rata berbobot produksi);
+   3 lokasi x 1 bulan acak ditarik ulang dari Open-Meteo live (untuk lokasi live, kolom core_mm berisi jumlah dari file raw).
 Hasil live tidak disimpan ke data/raw (raw tetap snapshot tanggal extraction).
 """
 import json
@@ -134,9 +136,60 @@ def check_oni(n=5):
     return result
 
 
+ARCHIVE_URL = "https://archive-api.open-meteo.com/v1/archive"
+
+
+def check_weather(n_cells=5, n_live=3):
+    """Cuaca: sel provinsi x komoditas x bulan dihitung ulang langsung dari file raw harian (rata-rata berbobot produksi),
+    dan beberapa lokasi x bulan ditarik ulang dari Open-Meteo live (request satu bulan, biaya sekitar 1 call)."""
+    from pipeline.extract.open_meteo import weather_file_name
+
+    core = pd.read_csv(FINAL / "core_province_month.csv")
+    observed = core[core["weather_status"] == "observed"].sample(n=n_cells, random_state=SEED)
+    points = pd.read_csv(ROOT / "data" / "interim" / "sentra_points.csv")
+    daily_cache = {}
+
+    def daily(lat, lon):
+        key = (lat, lon)
+        if key not in daily_cache:
+            data = json.loads((RAW / "open_meteo" / "daily" / weather_file_name(lat, lon)).read_text(encoding="utf-8"))["daily"]
+            daily_cache[key] = pd.DataFrame(data).assign(time=lambda d: pd.to_datetime(d["time"]))
+        return daily_cache[key]
+
+    rows = []
+    for _, cell in observed.iterrows():
+        part = points[(points["province_id"] == cell["province_id"]) & (points["commodity_group"] == cell["commodity_group"])]
+        month = pd.Timestamp(cell["month_start"])
+        total, weight_sum = 0.0, 0.0
+        for item in part.itertuples():
+            frame = daily(item.anchor_latitude, item.anchor_longitude)
+            in_month = frame[(frame["time"].dt.year == month.year) & (frame["time"].dt.month == month.month)]
+            total += item.mean_production_ton_2019_2025 * in_month["precipitation_sum"].sum()
+            weight_sum += item.mean_production_ton_2019_2025
+        rows.append({"jenis": "raw", "province_id": cell["province_id"], "grup": cell["commodity_group"], "bulan": cell["month_start"][:7],
+                     "core_mm": cell["rain_total_mm"], "pembanding_mm": total / weight_sum})
+
+    session = new_session()
+    anchors = points.drop_duplicates("anchor_id").sample(n=n_live, random_state=SEED)
+    months_pool = pd.period_range("2019-01", "2026-10", freq="M")
+    rng = np.random.default_rng(SEED)
+    for item in anchors.itertuples():
+        month = months_pool[rng.integers(len(months_pool))]
+        params = {"latitude": item.anchor_latitude, "longitude": item.anchor_longitude, "start_date": str(month.start_time.date()),
+                  "end_date": str(month.end_time.date()), "daily": "precipitation_sum", "timezone": "Asia/Jakarta"}
+        live = request_with_retry(session, "GET", ARCHIVE_URL, params=params).json()["daily"]["precipitation_sum"]
+        frame = daily(item.anchor_latitude, item.anchor_longitude)
+        raw = frame[(frame["time"].dt.year == month.year) & (frame["time"].dt.month == month.month)]["precipitation_sum"].sum()
+        rows.append({"jenis": "live", "province_id": item.province_id, "grup": item.regency_name, "bulan": str(month), "core_mm": raw, "pembanding_mm": float(np.sum(live))})
+        time.sleep(2)
+    result = pd.DataFrame(rows)
+    result["cocok"] = (result["core_mm"] - result["pembanding_mm"]).abs() < 0.05
+    return result
+
+
 def run():
     core = pd.read_csv(FINAL / "core_province_month.csv")
-    return {"prices": check_prices(core), "production": check_production(), "oni": check_oni()}
+    return {"prices": check_prices(core), "production": check_production(), "oni": check_oni(), "weather": check_weather()}
 
 
 if __name__ == "__main__":

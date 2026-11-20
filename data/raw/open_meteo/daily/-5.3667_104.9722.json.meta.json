@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-5.3666892",
+      "longitude": "104.9722121",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Pringsewu"
+  },
+  "n_rows": 13103,
+  "n_bytes": 278427,
+  "sha256": "29a128993bc8c0925998ce7e18e4e683d2b269c72316164e5d0e8df95dda24ab"
+}

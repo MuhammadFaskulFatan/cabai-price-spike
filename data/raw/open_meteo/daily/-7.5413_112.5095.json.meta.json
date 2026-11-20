@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.5413377",
+      "longitude": "112.5094975",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Mojokerto"
+  },
+  "n_rows": 13103,
+  "n_bytes": 279265,
+  "sha256": "b71c043a2ffa368fb5d98f75a00e57692d74fa61385e3b37b84a51fd7bf2c642"
+}

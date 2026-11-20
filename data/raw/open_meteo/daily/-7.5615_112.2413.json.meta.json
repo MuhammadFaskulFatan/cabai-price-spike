@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.561464",
+      "longitude": "112.2413044",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Jombang"
+  },
+  "n_rows": 13103,
+  "n_bytes": 278290,
+  "sha256": "00551a0b57459889003a9e1d37c13d5d6c56c539b74f252351ea0b5a498182b7"
+}

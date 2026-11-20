@@ -1,9 +1,9 @@
 """Laporan Fase 5 (Validate): cek struktur core, reconciliation tahunan, cross-check PIHPS bulanan, spot-check
-ke sumber, dan ringkasan hold-out. Cuaca belum termasuk (paket terpisah).
+ke sumber (termasuk cuaca), dan ringkasan hold-out.
 
     python -m pipeline.validate.report [--skip-live]
 
---skip-live melewati request live ke PIHPS, BDSP, dan NOAA pada spot-check.
+--skip-live melewati request live ke PIHPS, BDSP, NOAA, dan Open-Meteo pada spot-check.
 """
 import argparse
 
@@ -39,13 +39,14 @@ def run(skip_live=False):
 
     passed = int(checks["lulus"].sum())
     lines = ["# Laporan Fase 5 (Validate)", "",
-             f"Core dataset tanpa cuaca (`data/final/`). Cek struktur: {passed} dari {len(checks)} lulus. "
+             f"Core dataset termasuk cuaca (`data/final/`). Cek struktur: {passed} dari {len(checks)} lulus. "
              f"Reconciliation tahunan: {'cocok' if reconcile['totals_pass'] and reconcile['papua_pass'] else 'ADA SELISIH'}. "
              f"Cross-check PIHPS bulanan: {crosscheck['n_compared']:,} sel dibandingkan. "
              + ("Spot-check live dilewati." if spots is None else
                 f"Spot-check: harga {int(spots['prices']['raw_cocok'].sum())}/{len(spots['prices'])} cocok dengan raw, "
                 f"{int((spots['prices']['live_selisih_pct'] < 0.01).sum())}/{int(spots['prices']['live'].notna().sum())} cocok dengan PIHPS live; "
-                f"produksi {int(spots['production']['live_cocok'].sum())}/{len(spots['production'])} cocok dengan BDSP live; ONI {int(spots['oni']['cocok'].sum())}/{len(spots['oni'])}."), ""]
+                f"produksi {int(spots['production']['live_cocok'].sum())}/{len(spots['production'])} cocok dengan BDSP live; ONI {int(spots['oni']['cocok'].sum())}/{len(spots['oni'])}; "
+                f"cuaca {int(spots['weather']['cocok'].sum())}/{len(spots['weather'])}."), ""]
 
     lines += ["## 1. Cek struktur dan aturan core dataset", "", to_markdown(checks), "",
               "Dua cek sempat gagal pada versi pertama karena cara mengeceknya, bukan datanya: (1) imputation di awal 2019 dibaca sebagai gap awal seri karena cek hanya melihat periode model, "
@@ -81,6 +82,8 @@ def run(skip_live=False):
                   to_markdown(spots["prices"], floatfmt="{:,.2f}"), "",
                   "Produksi: 10 provinsi-tahun acak vs HTML raw BDSP dan tabel BDSP yang ditarik ulang live.", "", to_markdown(spots["production"], floatfmt="{:,.2f}"), "",
                   "ONI: 5 bulan acak vs file NOAA live.", "", to_markdown(spots["oni"], floatfmt="{:.2f}"), "",
+                  "Cuaca: 5 sel acak dihitung ulang dari file raw harian (rata-rata berbobot produksi), dan 3 lokasi x 1 bulan acak ditarik ulang dari Open-Meteo live "
+                  "(untuk baris live, `core_mm` = jumlah hujan dari file raw lokasi itu).", "", to_markdown(spots["weather"], floatfmt="{:,.2f}"), "",
                   "Tidak ada revisi sumber yang terdeteksi pada sampel live.", ""]
 
     lines += ["## 5. Hold-out validation imputation (D-09, D-43)", "",
@@ -88,9 +91,9 @@ def run(skip_live=False):
               "Hold-out produksi bulanan (Denton) terdokumentasi di `holdout_production.md`; metode itu dibatalkan (D-42).", ""]
 
     lines += ["## 6. Belum tercakup", "",
-              "- Cuaca (Open-Meteo): 51 dari 74 lokasi; extract, audit, transform, dan validate cuaca dikerjakan sebagai paket terpisah, lalu dimasukkan ke core dataset.",
+              "- Cuaca hanya untuk 18 provinsi bertitik sentra (14 untuk cabai merah, 15 untuk cabai rawit); provinsi lain `not_applicable` (D-25). Data reanalysis Open-Meteo belum dibandingkan dengan pengamatan stasiun BMKG.",
               "- Cross-check mingguan PIHPS tidak dilakukan; data mingguan tidak di-impute dan hanya dipakai untuk lead-lag (D-12).",
-              "- Spot-check live hanya sampel (10 harga, 2 tabel BDSP, 1 file ONI); revisi PIHPS di luar sampel tidak terdeteksi. Tanggal extraction tersimpan di metadata raw (D-14).", ""]
+              "- Spot-check live hanya sampel (10 harga, 2 tabel BDSP, 1 file ONI, 3 lokasi cuaca); revisi PIHPS di luar sampel tidak terdeteksi. Tanggal extraction tersimpan di metadata raw (D-14).", ""]
 
     (REPORTS / "validation_report.md").write_text("\n".join(lines), encoding="utf-8")
     print(f"ditulis: pipeline/validate/reports/validation_report.md ({passed}/{len(checks)} cek lulus)")

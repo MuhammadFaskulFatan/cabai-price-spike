@@ -1,10 +1,10 @@
-"""Jalankan semua audit completeness (kecuali cuaca, yang menyusul setelah datanya lengkap).
+"""Jalankan semua audit completeness.
 
-    python -m pipeline.audit.completeness [--only pihps|bdsp|buletin|oni|calendar]
+    python -m pipeline.audit.completeness [--only pihps|bdsp|buletin|oni|calendar|weather]
 """
 import argparse
 
-from pipeline.audit import bdsp_audit, buletin_audit, calendar_audit, oni_audit, pihps_audit
+from pipeline.audit import bdsp_audit, buletin_audit, calendar_audit, oni_audit, pihps_audit, weather_audit
 
 AUDITS = {
     "pihps": pihps_audit,
@@ -12,6 +12,7 @@ AUDITS = {
     "buletin": buletin_audit,
     "oni": oni_audit,
     "calendar": calendar_audit,
+    "weather": weather_audit,
 }
 
 
