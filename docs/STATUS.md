@@ -19,31 +19,31 @@ Future work dari Fase 7: hitung `n_weekdays` bulan parsial sampai tanggal extrac
 
 | Langkah | Status | Commit |
 | --- | --- | --- |
-| 4.1 Extract sisa lokasi | Selesai: 74 dari 74 lokasi valid | `430d0a2` |
-| 4.2 Audit | Selesai: 74/74 valid, 0 hari kosong, 0 nilai di luar batas fisik, 2 hari hujan > 300 mm (ditandai). Laporan `pipeline/audit/reports/weather_audit.md` | `b973e1f` |
-| 4.3 Transform dan integrasi | Selesai: `weather_features.py` (D-57); 6 kolom cuaca di `core_province_month` (`rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status`, `weather_n_points`); observed 3.074 sel (29 provinsi x komoditas), kosong 0; kolom lama tidak berubah | `bf9b7f9` |
-| 4.4 Validate | Selesai: 53/53 cek lulus (7 cek cuaca baru); spot-check cuaca 8/8 cocok (5 sel vs raw harian, 3 lokasi x bulan vs Open-Meteo live) | `fbc180b` |
+| 4.1 Extract sisa lokasi | Selesai: 74 dari 74 lokasi valid | `8d26188` |
+| 4.2 Audit | Selesai: 74/74 valid, 0 hari kosong, 0 nilai di luar batas fisik, 2 hari hujan > 300 mm (ditandai). Laporan `pipeline/audit/reports/weather_audit.md` | `51d23e8` |
+| 4.3 Transform dan integrasi | Selesai: `weather_features.py` (D-57); 6 kolom cuaca di `core_province_month` (`rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status`, `weather_n_points`); observed 3.074 sel (29 provinsi x komoditas), kosong 0; kolom lama tidak berubah | `67d69f0` |
+| 4.4 Validate | Selesai: 53/53 cek lulus (7 cek cuaca baru); spot-check cuaca 8/8 cocok (5 sel vs raw harian, 3 lokasi x bulan vs Open-Meteo live) | `4aa0fee` |
 | Merge ke `phase-6-analysis` | Selesai (merge `--no-ff`, di-push) | merge commit "Merge weather-package" |
 
 ## 1. Yang sudah selesai
 
 | Fase / hipotesis | Status | Commit |
 | --- | --- | --- |
-| Fase 1 Design | Selesai, di `main` | `bed84ca` |
-| Fase 2 Extract | Selesai; cuaca 74 dari 74 lokasi (paket cuaca) | `4963713` (merge ke `main`) |
-| Fase 3 Audit | Selesai; cuaca lewat paket cuaca | `69cb46c` |
-| Fase 4 Transform | Selesai; cuaca lewat paket cuaca | `d11ac73` |
-| Fase 5 Validate | Selesai; dengan cuaca 55/55 cek lulus (termasuk anomali per lokasi D-58 dan kelembapan D-59) | `02f8a56` |
-| Fase 6 rencana, RTM, EDA | Disetujui (D-48) | `66b7b81` |
-| Keputusan analisis, kolom jarak, koreksi geocoding Karangasem | Selesai (D-48 s/d D-51) | `9c17e12` |
-| H2 rantai pasok | **Final: sebagian** | `1805c24` |
-| H3 disparitas | **Tidak didukung (dibantah)**; disetujui (D-63) | `272b843` |
-| H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif); disetujui (D-63) | `272b843` |
-| H6 hari besar | **Final: sebagian**, disetujui (D-63). Bukan pemicu utama (didukung: efek cuaca kering sekitar +6% harga eceran, bulan Idulfitri tidak terdeteksi); menambah kenaikan (tidak didukung) (D-62) | `d449b9f` |
-| H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `883cc8d`, `07641c6`, `ca9769f` |
-| H4 early warning | **Final, disetujui (D-63, D-64): merah sebagian** (lift 1,81, PR-AUC 0,178 vs 0,087 charter; FAR 27% vs 42% pada recall setara; US1 59%). **Rawit tidak didukung** (lift 1,18, interval 0,92-1,50 mencakup 1). Cuaca membantu rawit, tidak cukup | `f0405a4`, `5c53e8a`, `9d1a572` |
-| 4.7b Skenario what-if | Selesai: biaya lonjakan rumah tangga Jan 2023 - Okt 2026 merah Rp 5,53 T, rawit Rp 10,31 T; skenario redaman (asumsi) dan break-even untuk merah (D-64) | `a5b5827` (D-64), `7cd59b4` |
-| 4.8 RTM final dan rekomendasi akhir | Selesai: 9 rekomendasi (R1-R9) dan 6 usulan ditahan, masing-masing dilacak ke hipotesis/skenario di RTM bagian 4; `analysis/09_final_recommendations.md` | `c653ba5`, D-65 (commit ini) |
+| Fase 1 Design | Selesai, di `main` | `eee13d3` |
+| Fase 2 Extract | Selesai; cuaca 74 dari 74 lokasi (paket cuaca) | `b3f8fc7` (merge ke `main`) |
+| Fase 3 Audit | Selesai; cuaca lewat paket cuaca | `401bd5a` |
+| Fase 4 Transform | Selesai; cuaca lewat paket cuaca | `8ec0e61` |
+| Fase 5 Validate | Selesai; dengan cuaca 55/55 cek lulus (termasuk anomali per lokasi D-58 dan kelembapan D-59) | `dd8ee98` |
+| Fase 6 rencana, RTM, EDA | Disetujui (D-48) | `47d6c22` |
+| Keputusan analisis, kolom jarak, koreksi geocoding Karangasem | Selesai (D-48 s/d D-51) | `9144c20` |
+| H2 rantai pasok | **Final: sebagian** | `0cb1b3b` |
+| H3 disparitas | **Tidak didukung (dibantah)**; disetujui (D-63) | `a709502` |
+| H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif); disetujui (D-63) | `a709502` |
+| H6 hari besar | **Final: sebagian**, disetujui (D-63). Bukan pemicu utama (didukung: efek cuaca kering sekitar +6% harga eceran, bulan Idulfitri tidak terdeteksi); menambah kenaikan (tidak didukung) (D-62) | `ada8d8a` |
+| H1 cuaca | **Disetujui (D-59)**. Sebagian (rawit): kering -> harga produsen naik, lag 3; tidak didukung (merah); pola U tidak didukung. Lampiran eksploratif merah: indeks hujan nasional signifikan untuk harga pedagang besar nasional (lag 2), kelembapan tidak (D-60) | `7c2483d`, `ce8129c`, `cf6e5b9` |
+| H4 early warning | **Final, disetujui (D-63, D-64): merah sebagian** (lift 1,81, PR-AUC 0,178 vs 0,087 charter; FAR 27% vs 42% pada recall setara; US1 59%). **Rawit tidak didukung** (lift 1,18, interval 0,92-1,50 mencakup 1). Cuaca membantu rawit, tidak cukup | `72d884b`, `91471a6`, `534d0e5` |
+| 4.7b Skenario what-if | Selesai: biaya lonjakan rumah tangga Jan 2023 - Okt 2026 merah Rp 5,53 T, rawit Rp 10,31 T; skenario redaman (asumsi) dan break-even untuk merah (D-64) | `94bd814` (D-64), `536d84a` |
+| 4.8 RTM final dan rekomendasi akhir | Selesai: 9 rekomendasi (R1-R9) dan 6 usulan ditahan, masing-masing dilacak ke hipotesis/skenario di RTM bagian 4; `analysis/09_final_recommendations.md` | `bbbf408`, `fa64f67` (D-65) |
 
 Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
 
