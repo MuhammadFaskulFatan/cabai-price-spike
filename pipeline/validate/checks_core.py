@@ -147,7 +147,7 @@ def run_checks():
     expected_observed = [(p, g) in has_points for p, g in zip(core["province_id"], core["commodity_group"])]
     check(results, "cuaca observed tepat di provinsi x komoditas bertitik sentra (kecuali Nov 2026)",
           bool(((status != "not_applicable") == pd.Series(expected_observed, index=core.index)).all()), f"{len(has_points)} provinsi x komoditas bertitik")
-    weather_columns = ["rain_total_mm", "rain_anomaly_mm", "rain_anomaly", "rain_anomaly_plain_z", "rain_is_extreme", "rel_humidity_mean"]
+    weather_columns = ["rain_total_mm", "rain_anomaly_mm", "rain_anomaly", "rain_anomaly_plain_z", "rain_is_extreme", "rel_humidity_mean", "rh_anomaly"]
     check(results, "not_applicable dan partial_month: semua nilai cuaca kosong", bool(core.loc[status != "observed", weather_columns].isna().all().all()), "")
     check(results, "observed: tidak ada nilai cuaca kosong", bool(core.loc[status == "observed", weather_columns].notna().all().all()), f"{int((status == 'observed').sum())} baris")
     check(results, "partial_month hanya November 2026", set(core.loc[status == "partial_month", "month_start"].unique()) <= {"2026-11-01"}, "")
@@ -156,13 +156,13 @@ def run_checks():
           f"hujan maks {observed['rain_total_mm'].max():,.0f} mm/bulan")
     full = pd.read_parquet(ROOT / "data" / "interim" / "weather_monthly_full.parquet")
     base = full[(full["month"] >= "1991-01") & (full["month"] <= "2020-12")]
-    moments = base.groupby(["province_id", "commodity_group", base["month"].str[5:7]])[["rain_anomaly", "rain_anomaly_plain_z"]].mean()
-    check(results, "rain_anomaly (rata-rata berbobot z per lokasi, D-58): rata-rata 0 per bulan kalender di 1991-2020",
+    moments = base.groupby(["province_id", "commodity_group", base["month"].str[5:7]])[["rain_anomaly", "rain_anomaly_plain_z", "rh_anomaly"]].mean()
+    check(results, "rain_anomaly dan rh_anomaly (rata-rata berbobot z per lokasi, D-58, D-59): rata-rata 0 per bulan kalender di 1991-2020",
           bool((moments.abs() < 1e-9).all().all()), f"{len(moments)} seri x bulan kalender")
     sites = pd.read_parquet(ROOT / "data" / "interim" / "weather_site_monthly.parquet")
     site_base = sites[(sites["month"] >= "1991-01") & (sites["month"] <= "2020-12")]
-    site_sd = site_base.groupby(["anchor_id", site_base["month"].str[5:7]])["rain_z"].std()
-    check(results, "z per lokasi (akar hujan): SD 1 per lokasi x bulan kalender di 1991-2020", bool(((site_sd - 1).abs() < 1e-9).all()), f"{len(site_sd)} lokasi x bulan kalender")
+    site_sd = site_base.groupby(["anchor_id", site_base["month"].str[5:7]])[["rain_z", "rh_z"]].std()
+    check(results, "z per lokasi (akar hujan, logit kelembapan): SD 1 per lokasi x bulan kalender di 1991-2020", bool(((site_sd - 1).abs() < 1e-9).all().all()), f"{len(site_sd)} lokasi x bulan kalender")
     flagged = sites[sites["is_extreme"]].merge(points[["anchor_id", "province_id", "commodity_group"]], on="anchor_id")
     flagged_keys = set(zip(flagged["province_id"], flagged["commodity_group"], flagged["month"] + "-01"))
     core_flag = {(p, g, m) for p, g, m in zip(observed["province_id"], observed["commodity_group"], observed["month_start"]) if (p, g, m) in flagged_keys}

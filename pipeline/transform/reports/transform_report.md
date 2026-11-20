@@ -95,7 +95,7 @@ Pola musiman dari tabel prognosa Buletin tidak membuat tebakan lebih baik dari f
 
 ## 5. Core dataset
 
-- `core_province_month.csv`: 7,276 baris x 43 kolom; key (provinsi, bulan, grup) unik: True.
+- `core_province_month.csv`: 7,276 baris x 44 kolom; key (provinsi, bulan, grup) unik: True.
 - `core_province_year.csv`: 544 baris x 13 kolom; produksi dan luas panen 2018-2025, 2026 tidak ada.
 - Pasangan flag konsisten (is_imputed TRUE hanya jika impute_method terisi): True.
 - Kolom cuaca ikut di core (paket cuaca, D-57); ringkasan di bagian 6.

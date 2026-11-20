@@ -46,7 +46,7 @@ def prepare():
     core["rain_anomaly_wins"] = core["rain_anomaly"].clip(core["commodity_group"].map(bounds[0.01]), core["commodity_group"].map(bounds[0.99]))
     for label, lower, upper in (("dry", -np.inf, -1.0), ("wet", 1.0, np.inf)):
         core[f"rain_{label}"] = core["rain_anomaly"].between(lower, upper, inclusive="neither").astype(float).where(core["rain_anomaly"].notna())
-    core = add_lags(core, ["rain_anomaly", "rain_anomaly_wins", "rain_anomaly_plain_z", "rain_dry", "rain_wet", "rain_is_extreme"], range(0, 7))
+    core = add_lags(core, ["rain_anomaly", "rain_anomaly_wins", "rain_anomaly_plain_z", "rain_dry", "rain_wet", "rain_is_extreme", "rh_anomaly"], range(0, 7))
     data = core[core["in_model_period"]].copy()
     data["log_producer"] = np.log(data["price_producer"])
     data["log_wholesale"] = np.log(data["price_wholesale"])

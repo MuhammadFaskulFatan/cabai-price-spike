@@ -137,6 +137,7 @@ erDiagram
         float rain_anomaly_plain_z
         bool rain_is_extreme
         float rel_humidity_mean
+        float rh_anomaly
         int n_points
         string weather_status
         date source_extract_date
@@ -176,7 +177,7 @@ Pipeline mengubah tabel fakta menjadi satu tabel lebar di `data/final/`, satu ba
 | Key | `province_id`, `month_start`, `commodity_group` |
 | Harga | `price_retail`, `price_wholesale`, `price_producer` |
 | Produksi | `production_annual_ton`, `production_annual_preliminary` |
-| Cuaca | `rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rain_anomaly_plain_z`, `rain_is_extreme`, `rel_humidity_mean`, `weather_status`, `weather_n_points` |
+| Cuaca | `rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rain_anomaly_plain_z`, `rain_is_extreme`, `rel_humidity_mean`, `rh_anomaly`, `weather_status`, `weather_n_points` |
 | ENSO | `oni_anomaly`, `enso_phase` |
 | Kalender | `n_weekdays`, `n_holiday_days`, `n_holiday_weekdays`, `n_cuti_bersama_days`, `cuti_bersama_verified`, `months_to_idulfitri` |
 | Flag | untuk tiap harga: `<variabel>_is_imputed`, `<variabel>_impute_method`, `<variabel>_tier`, `<variabel>_n_days`; periode: `in_core_period`, `in_model_period`, `is_partial_month`, `in_producer_price_analysis` |

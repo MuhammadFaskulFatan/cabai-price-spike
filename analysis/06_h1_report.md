@@ -141,3 +141,55 @@ Implikasi untuk H4 (sinyal: harga pedagang besar, cuaca, ONI):
 Bagi pengambil kebijakan dan pelaku usaha, cuaca di sentra memang menggerakkan harga cabai rawit, tetapi bukan dengan cara yang sering diasumsikan. Yang menaikkan harga adalah musim yang lebih kering dari biasanya: harga di petani rawit naik sekitar 13% kalau sentra mengalami kekeringan sedang selama sekitar empat bulan, dan dampaknya paling terasa sekitar tiga bulan kemudian. Musim yang lebih basah dari biasanya justru diikuti harga yang lebih rendah. Untuk cabai merah, data tidak menunjukkan pengaruh cuaca yang bisa diandalkan.
 
 Artinya, kekeringan di sentra rawit bisa menjadi tanda awal kenaikan harga dengan jeda sekitar dua sampai tiga bulan, cukup untuk bersiap. Kemampuan sinyal ini memprediksi lonjakan di tingkat eceran akan diuji di H4.
+
+## Lampiran: uji eksploratif cabai merah (D-59)
+
+**Label: eksploratif.** Uji ini dijalankan setelah keputusan H1, untuk memilih fitur H4 cabai merah. Hasilnya tidak mengubah keputusan H1. Kriteria "sinyal konsisten" ditetapkan di D-59 sebelum uji dijalankan.
+
+Script: `analysis/h1_exploratory_merah.py`. Tabel: `analysis/tables/h1x_merah_*.csv`.
+
+### E1. Anomali kelembapan, panel provinsi (dasar: antraknosa)
+
+`rh_anomaly` dihitung dengan cara yang sejalan dengan D-58: z-score per lokasi × bulan kalender terhadap 1991-2020, dari **logit** kelembapan relatif (karena kelembapan dibatasi 0-100% dan miring ke kiri), lalu dirata-rata berbobot produksi.
+
+Spesifikasi sama dengan H1: lag 1-4 + kuadrat; FE provinsi, FE month-of-year, trend, ONI; SE Driscoll-Kraay. Sampel: 14 provinsi, 1.302 observasi.
+
+| Outcome | Uji gabungan lag 1-4 (p) | Tanpa bulan ekstrem (p) | Anomali -1 selama 4 bulan, linear (95% CI) | Anomali +1 selama 4 bulan, linear |
+| --- | --- | --- | --- | --- |
+| Harga produsen | 0,67 | 0,80 | +6,3% (-1,7 s/d 14,9) | -5,9% (p 0,12) |
+| Harga pedagang besar | 0,10 | 0,16 | +6,7% (-0,6 s/d 14,5) | -6,3% (p 0,07) |
+
+- Tidak ada sinyal kelembapan di tingkat provinsi.
+- Arah estimasinya **kebalikan** dugaan antraknosa: bulan yang lebih lembap diikuti harga sedikit lebih rendah, bukan lebih tinggi.
+- Anomali kelembapan berkorelasi 0,59 dengan anomali hujan, sehingga hasil ini mirip dengan hasil hujan.
+- Periode 2018-2026 rata-rata sedikit kurang lembap dari normal 1991-2020 (`rh_anomaly` rata-rata -0,31).
+
+### E2. Indeks cuaca nasional berbobot produksi vs harga pedagang besar nasional (time series)
+
+Indeks dibuat sebagai rata-rata anomali provinsi bertitik sentra cabai merah, berbobot produksi sentra. Ini setara dengan rata-rata berbobot seluruh lokasi sentra.
+
+Model: log harga pedagang besar nasional pada indeks lag 1-4, dengan FE bulan kalender, trend, dan ONI; SE HAC (maxlags 6). Sampel: Jan 2019 - Sep 2026, 93 bulan (ONI Oktober 2026 belum ada). Satu SD indeks sekitar 0,5 unit.
+
+| Indeks | Uji gabungan lag 1-4 (p) | Anomali -1 SD selama 4 bulan (95% CI) | Anomali +1 SD selama 4 bulan | Lag terkuat |
+| --- | --- | --- | --- | --- |
+| Hujan | **0,001** | **+18,4% (6,6 s/d 31,6)** | -15,6% | Lag 2 (p 0,001) |
+| Kelembapan | 0,46 | +10,7% (-1,5 s/d 24,4) | -9,6% | Lag 3 (p 0,18) |
+
+Model dengan hujan dan kelembapan sekaligus memberi koefisien besar dengan tanda berlawanan (hujan -37%, kelembapan +31% per +1 SD). Ini gejala kolinearitas kedua indeks, bukan temuan, dan tidak dipakai.
+
+### Hasil terhadap kriteria D-59
+
+| Variabel | (i) Panel pedagang besar p < 0,05, tetap tanpa bulan ekstrem, arah sama dengan produsen | (ii) Indeks nasional p < 0,05, arah sama dengan panel | Masuk H4 merah |
+| --- | --- | --- | --- |
+| Hujan | Tidak (p 0,62; tanpa ekstrem 0,19) | **Ya** (p 0,001; kering → harga naik, sama dengan panel) | **Ya, sebagai indeks nasional** |
+| Kelembapan | Tidak (p 0,10; tanpa ekstrem 0,16) | Tidak (p 0,46) | Tidak |
+
+**Yang terbukti (eksploratif):**
+- Anomali hujan di sentra cabai merah, digabung secara nasional, berasosiasi dengan harga pedagang besar nasional sekitar 2 bulan kemudian, dengan arah yang sama seperti rawit: lebih kering, lebih mahal.
+- Di tingkat provinsi, hubungan ini tidak terlihat.
+- Kelembapan tidak memberi sinyal di kedua tingkat.
+
+**Dugaan yang perlu verifikasi:**
+- Cabai merah tampaknya diperdagangkan sebagai pasar nasional. Kekeringan yang meluas di sentra menaikkan harga di semua provinsi, sedangkan hujan di satu provinsi tidak menggerakkan harga provinsi itu sendiri. Ini sejalan dengan H3, yang menemukan lonjakan bersifat nasional.
+- Dengan 93 bulan, ada beberapa uji, dan uji ini eksploratif, hasil E2 bisa sebagian kebetulan. Uji yang lebih tegas adalah apakah indeks ini membantu prediksi di backtest H4 (data uji tidak dipakai memilih fitur).
+- Dugaan antraknosa tidak didukung oleh kelembapan bulanan dari reanalysis. Kelembapan harian di kanopi, yang relevan untuk penyakit, tidak sama dengan rata-rata grid 25 km.

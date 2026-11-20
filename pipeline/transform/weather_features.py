@@ -1,4 +1,4 @@
-"""Cuaca bulanan per provinsi x komoditas dari titik sentra Open-Meteo (D-19, D-24, D-25, D-57, D-58).
+"""Cuaca bulanan per provinsi x komoditas dari titik sentra Open-Meteo (D-19, D-24, D-25, D-57, D-58, D-59).
 
 Langkah:
 1. Per lokasi (anchor): hujan bulanan = jumlah harian, kelembapan = rata-rata harian, plus hujan harian maksimum.
@@ -7,6 +7,7 @@ Langkah:
    Akar kuadrat membuat sebaran hujan bulanan mendekati normal; tanpa itu bulan kemarau dengan normal hampir nol
    menghasilkan z yang meledak (Situbondo Agustus 2022: 18 mm = +14,7 SD). z-score biasa (tanpa akar) ikut disimpan
    untuk sensitivity. Lokasi-bulan ditandai ekstrem kalau |z| >= 3 atau ada hari dengan hujan > 300 mm.
+   Kelembapan diperlakukan sama, tetapi transformasinya logit (kelembapan dibatasi 0-100% dan miring ke kiri; D-59).
 3. Per provinsi x komoditas: rata-rata berbobot produksi kabupaten sentra (bobot = produksi rata-rata 2019-2025;
    tiap kabupaten memakai cuaca anchor-nya), untuk hujan, kelembapan, dan anomali. rain_is_extreme = TRUE kalau ada
    titik penyumbang yang ditandai ekstrem.
@@ -31,7 +32,7 @@ NORMAL_START, NORMAL_END = pd.Period("1991-01", "M"), pd.Period("2020-12", "M")
 GROUPS = ["cabai_merah", "cabai_rawit"]
 EXTREME_Z = 3
 EXTREME_DAILY_MM = 300
-VALUE_COLUMNS = ["rain_total_mm", "rain_normal_mm", "rain_anomaly_mm", "rain_anomaly", "rain_anomaly_plain_z", "rel_humidity_mean"]
+VALUE_COLUMNS = ["rain_total_mm", "rain_normal_mm", "rain_anomaly_mm", "rain_anomaly", "rain_anomaly_plain_z", "rel_humidity_mean", "rh_anomaly"]
 
 
 def anchor_monthly(latitude, longitude):
@@ -67,6 +68,7 @@ def site_series(points):
         in_base = (monthly["month"] >= NORMAL_START) & (monthly["month"] <= NORMAL_END)
         monthly["rain_z"] = standardise(np.sqrt(monthly["rain"]), moy, in_base)
         monthly["rain_z_plain"] = standardise(monthly["rain"], moy, in_base)
+        monthly["rh_z"] = standardise(np.log(monthly["humidity"] / (100 - monthly["humidity"])), moy, in_base)
         monthly["is_extreme"] = (monthly["rain_z"].abs() >= EXTREME_Z) | (monthly["rain_daily_max"] > EXTREME_DAILY_MM)
         monthly["anchor_id"], monthly["regency_name"] = anchor.anchor_id, anchor.regency_name
         frames.append(monthly)
@@ -80,15 +82,16 @@ def province_series(points, sites):
     links = points[["province_id", "commodity_group", "anchor_id", "mean_production_ton_2019_2025"]]
     merged = links.merge(sites, on="anchor_id")
     merged["weight"] = merged["mean_production_ton_2019_2025"] / merged.groupby(["province_id", "commodity_group", "month"])["mean_production_ton_2019_2025"].transform("sum")
-    weighted = merged[["rain", "humidity", "rain_z", "rain_z_plain"]].mul(merged["weight"], axis=0)
+    weighted = merged[["rain", "humidity", "rain_z", "rain_z_plain", "rh_z"]].mul(merged["weight"], axis=0)
     # NaN di salah satu titik membuat nilai provinsi NaN (min_count = jumlah titik)
     merged = pd.concat([merged[["province_id", "commodity_group", "month", "is_extreme", "extraction_date"]], weighted], axis=1)
     keys = ["province_id", "commodity_group", "month"]
     n_points = merged.groupby(keys).size().rename("n_points")
-    sums = merged.groupby(keys)[["rain", "humidity", "rain_z", "rain_z_plain"]].sum(min_count=1)
-    complete = merged.groupby(keys)[["rain", "humidity", "rain_z", "rain_z_plain"]].count().eq(n_points, axis=0)
+    value_columns = ["rain", "humidity", "rain_z", "rain_z_plain", "rh_z"]
+    sums = merged.groupby(keys)[value_columns].sum(min_count=1)
+    complete = merged.groupby(keys)[value_columns].count().eq(n_points, axis=0)
     sums = sums.where(complete)
-    series = sums.rename(columns={"rain": "rain_total_mm", "humidity": "rel_humidity_mean", "rain_z": "rain_anomaly", "rain_z_plain": "rain_anomaly_plain_z"})
+    series = sums.rename(columns={"rain": "rain_total_mm", "humidity": "rel_humidity_mean", "rain_z": "rain_anomaly", "rain_z_plain": "rain_anomaly_plain_z", "rh_z": "rh_anomaly"})
     series["rain_is_extreme"] = merged.groupby(keys)["is_extreme"].any()
     series["n_points"] = n_points
     series["source_extract_date"] = merged.groupby(keys)["extraction_date"].max()
