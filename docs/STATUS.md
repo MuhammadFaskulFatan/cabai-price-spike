@@ -1,6 +1,19 @@
 # Status proyek (per 20 Nov 2026)
 
-Branch kerja: `phase-6-analysis`. Di-merge ke `main` (fast-forward) dan di-push di `9d1a572` setelah H1, H4 final, dan H6 final (D-56, D-63). Langkah 4.7b dan 4.8 (disetujui, D-65) di-merge ke `main` dan di-push.
+Fase 1-7 selesai. `main` berisi seluruh pekerjaan, termasuk Fase 7 (pre-publish cleanup, D-66). Riwayat git ditulis ulang di Fase 7, jadi hash commit di dokumen ini sudah dipetakan ke riwayat baru.
+
+## Fase 7: pre-publish cleanup (selesai)
+
+| Langkah | Hasil |
+| --- | --- |
+| Charter dan alur kerja | `docs/00_project_charter.md` (versi baseline 19 Nov 2026) dan `docs/00_project_workflow.md` |
+| Riwayat git | File catatan kerja lokal dan folder konfigurasi editor dikeluarkan dari seluruh riwayat; pesan commit yang menyebutnya ditulis ulang |
+| Bahasa dokumen | Sebutan orang ketiga untuk pemilik proyek diganti bentuk netral; label tebal di awal butir dilepas; angka di setiap dokumen identik sebelum dan sesudah |
+| Kode | Hanya komentar dan docstring; logika 56 file Python identik (perbandingan AST) |
+| README | Pintu masuk: masalah, temuan utama, dokumen, struktur repo, cara menjalankan, sumber data; `requirements.txt` ditambahkan |
+| Verifikasi | Transform, validate (55/55 cek, spot-check live), dan semua script analisis dijalankan ulang: tabel, chart, dan laporan identik. Satu perbedaan yang berasal dari tanggal run, bukan perapian: `n_weekdays` November 2026 (lihat D-66) |
+
+Future work dari Fase 7: hitung `n_weekdays` bulan parsial sampai tanggal extraction data raw, bukan tanggal pipeline dijalankan.
 
 ## 0. Paket cuaca (selesai)
 
@@ -44,6 +57,7 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_repor
 - D-56: empat hal terbuka di bagian 3 diputuskan.
 - D-57: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
 - D-59: H1 disetujui; uji eksploratif merah dan kriterianya; lag H4 (rawit lag 2-3; merah hanya kalau sinyal konsisten, lag nested).
+- D-66: Fase 7, pre-publish cleanup (dokumen, kode, README, rewrite riwayat git).
 - D-65: 4.7b dan 4.8 disetujui; break-even menjadi rentang biaya per alarm palsu Rp 100 juta - 1 miliar (tanpa patokan resmi).
 - D-64: H4 final disetujui; ambang alarm rawit tidak diubah (future work); desain skenario what-if 4.7b.
 - D-63: H3, H5, H6 final, eksploratif, D-59 s/d D-62 disetujui; aturan final H4 (lift dan PR-AUC) ditulis sebelum dihitung.
@@ -52,11 +66,11 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_repor
 - D-60: indeks hujan nasional masuk H4 merah (kriteria (ii) D-59); kelembapan tidak.
 - D-58: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
 
-Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-65).
+Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-66).
 
 ## 3. Yang belum diputuskan
 
-Tidak ada untuk Fase 6. Berikutnya Fase 7 (pre-publish cleanup) di branch `phase-7-cleanup`.
+Tidak ada.
 
 ## 4. Langkah berikutnya (urut)
 

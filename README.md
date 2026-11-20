@@ -24,7 +24,7 @@ Requirements dan desain:
 - [Project charter](docs/00_project_charter.md) dan [alur kerja proyek](docs/00_project_workflow.md)
 - [AS-IS process map rantai pasok](docs/01_as_is_process_map.md), [ERD core dataset](docs/02_erd_core_dataset.md), [data flow pipeline](docs/03_data_flow.md), [data dictionary](docs/04_data_dictionary.md)
 - [Rencana analisis](docs/05_analysis_plan.md) dan [requirements traceability matrix](docs/06_requirements_traceability_matrix.md)
-- [Decision log](docs/decision_log.md) (D-01 sampai D-65) dan [status proyek](docs/STATUS.md)
+- [Decision log](docs/decision_log.md) (D-01 sampai D-66) dan [status proyek](docs/STATUS.md)
 
 Data dan validasi:
 - Laporan audit completeness di `pipeline/audit/reports/`
