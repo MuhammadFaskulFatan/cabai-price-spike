@@ -1,13 +1,23 @@
-# Status proyek (per 19 Nov 2026, akhir hari)
+# Status proyek (per 20 Nov 2026)
 
-Branch kerja: `phase-6-analysis` (di-push ke origin sebagai backup, belum di-merge ke `main`). `main` berisi Fase 1-5 (sampai `02f8a56`).
+Branch kerja: `weather-package` (dibuat dari `phase-6-analysis`, D-56). Setelah paket cuaca lolos validasi, branch ini di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
+
+## 0. Paket cuaca (berjalan)
+
+| Langkah | Status | Commit |
+| --- | --- | --- |
+| 4.1 Extract sisa lokasi | Selesai: 74 dari 74 lokasi valid | (commit ini) |
+| 4.2 Audit | Berikutnya | - |
+| 4.3 Transform dan integrasi | Belum | - |
+| 4.4 Validate | Belum | - |
+| Merge ke `phase-6-analysis` | Belum | - |
 
 ## 1. Yang sudah selesai
 
 | Fase / hipotesis | Status | Commit |
 | --- | --- | --- |
 | Fase 1 Design | Selesai, di `main` | `bed84ca` |
-| Fase 2 Extract | Selesai kecuali cuaca (50 dari 74 lokasi Open-Meteo) | `4963713` (merge ke `main`) |
+| Fase 2 Extract | Selesai; cuaca 74 dari 74 lokasi (paket cuaca) | `4963713` (merge ke `main`) |
 | Fase 3 Audit | Selesai kecuali cuaca | `69cb46c` |
 | Fase 4 Transform | Selesai kecuali cuaca | `d11ac73` |
 | Fase 5 Validate | Selesai kecuali cuaca; 46/46 cek lulus | `02f8a56` |
@@ -29,16 +39,14 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/05_h6_repor
 - **D-54**: penyesuaian saat menjalankan H3, H5, H6 (penanda guncangan pedagang besar di H3, dummy Natal tidak bisa diidentifikasi di H6, event study dan FE tahun sebagai pemeriksaan pendukung, label indikatif H5).
 - **D-55**: sinyal H4 = harga pedagang besar, cuaca, ONI (plus `months_to_idulfitri`); harga produsen tidak dipakai.
 
-Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-55).
+- **D-56**: empat hal terbuka di bagian 3 diputuskan.
+- **D-57**: definisi variabel cuaca (anomali terstandar terhadap normal 1991-2020, November 2026 `partial_month`).
+
+Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-57).
 
 ## 3. Yang belum diputuskan
 
-1. **Alur branch paket cuaca.** Rekomendasi: buat branch `weather-package` dari `phase-6-analysis`, karena branch ini sudah memuat perbaikan koordinat Karangasem (D-51) dan kolom jarak. Setelah paket cuaca lolos validasi, merge kembali ke `phase-6-analysis`.
-2. **Kapan `phase-6-analysis` di-merge ke `main`.** Rekomendasi: setelah H1, H4, dan keputusan final H6 disetujui.
-3. **Project Charter, bagian H5.** Charter masih menulis H5 sebagai lagged correlation bulanan 3-6 bulan. D-27 memindahkannya ke grain tahunan, dan charter belum diperbarui.
-4. **Verifikasi eksternal (opsional).** Ada dua hal yang hanya bisa dicek ke sumber luar:
-   - cara pengumpulan harga produsen PIHPS ke Bank Indonesia (H2);
-   - cuti bersama 2020 dan Natal 2018, 2019, 2022 ke dokumen SKB (H6).
+Tidak ada. Empat hal terbuka sebelumnya diputuskan di D-56: branch `weather-package` dari `phase-6-analysis`; merge ke `main` setelah H1, H4, dan keputusan final H6; teks H5 di charter sudah diganti ke versi tahunan (D-27); verifikasi eksternal tidak dikerjakan, dicatat sebagai keterbatasan data (frekuensi pembaruan harga produsen PIHPS; cuti bersama 2020 dan Natal 2018, 2019, 2022).
 
 ## 4. Langkah berikutnya (urut)
 

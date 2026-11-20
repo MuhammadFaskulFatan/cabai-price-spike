@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "0.1875382",
+      "longitude": "99.6935157",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Pasaman Barat"
+  },
+  "n_rows": 13103,
+  "n_bytes": 281217,
+  "sha256": "39dec162780603ea9f25fd7e9da618c94fad51b6bce6892f04f549927415c447"
+}

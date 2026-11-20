@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "3.7617255",
+      "longitude": "98.1769187",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Langkat"
+  },
+  "n_rows": 13103,
+  "n_bytes": 280255,
+  "sha256": "04ccb4116f56f86b4c98f21f588809e8886a5f99d6f3271bc1ff97906ac623af"
+}

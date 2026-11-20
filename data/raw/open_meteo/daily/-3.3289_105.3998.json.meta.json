@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-3.3288538",
+      "longitude": "105.3997866",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Ogan Komering Ilir"
+  },
+  "n_rows": 13103,
+  "n_bytes": 279363,
+  "sha256": "b18713055dc2a8a3f81086a0f52b8da437779f0849a3f9bfe96b3d8ef02840f3"
+}

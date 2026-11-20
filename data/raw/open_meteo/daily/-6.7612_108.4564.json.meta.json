@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-6.7611892",
+      "longitude": "108.4564232",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Cirebon"
+  },
+  "n_rows": 13103,
+  "n_bytes": 278466,
+  "sha256": "d6d551fb2882d61d20677ea77ac849f06f0792d7e18a7824bedb9cb54a27375e"
+}

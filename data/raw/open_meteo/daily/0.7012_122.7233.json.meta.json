@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "0.7011802",
+      "longitude": "122.7233095",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Gorontalo"
+  },
+  "n_rows": 13103,
+  "n_bytes": 279268,
+  "sha256": "4eb484b71131dc765fe878998b7227fe3da841be94f3ef2d6cf8eb3b97170aed"
+}

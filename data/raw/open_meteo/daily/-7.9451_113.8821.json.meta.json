@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-7.9451279",
+      "longitude": "113.882059",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Bondowoso"
+  },
+  "n_rows": 13103,
+  "n_bytes": 278695,
+  "sha256": "6a9c1438ff4fe62a3599fc0076d52a92a298c740ed740031d829175feeac1742"
+}

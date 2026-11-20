@@ -1,0 +1,19 @@
+{
+  "source": "open_meteo",
+  "extraction_date": "2026-11-20",
+  "request": {
+    "url": "https://archive-api.open-meteo.com/v1/archive",
+    "params": {
+      "latitude": "-6.5453875",
+      "longitude": "107.001782",
+      "start_date": "1991-01-01",
+      "end_date": "2026-11-15",
+      "daily": "precipitation_sum,relative_humidity_2m_mean",
+      "timezone": "Asia/Jakarta"
+    },
+    "regency": "Kab. Bogor"
+  },
+  "n_rows": 13103,
+  "n_bytes": 279337,
+  "sha256": "66902ae9ad333b86d853cb72fd834a0a5e911f2e24c8cbacdd12d5d3f848c22e"
+}
