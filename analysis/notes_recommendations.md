@@ -21,3 +21,9 @@ Bukan rekomendasi final. Catatan dari tiap hipotesis yang bisa menjadi bahan rek
 
 - **Intervensi khusus menjelang Lebaran**: bulan Lebaran sendiri tidak lebih mahal; cabai merah cenderung lebih mahal sekitar sebulan sebelumnya (temuan terbukti di uji utama, p 0,05). Rekomendasi soal waktu intervensi ditahan sampai H1 memisahkan efek cuaca (dugaan, H6 bagian 5).
 
+## Dari H1
+
+- **Kekeringan di sentra rawit sebagai tanda awal**: musim lebih kering dari normal di sentra rawit diikuti harga produsen lebih tinggi sekitar 3 bulan kemudian (+13% untuk kekeringan sedang yang bertahan sekitar 4 bulan; temuan terbukti, H1 bagian 5). Pemantauan anomali hujan di sentra rawit bisa memberi waktu persiapan 2-3 bulan; nilai prediksinya untuk lonjakan eceran diuji di H4 (implikasi; belum diuji).
+- **Bantuan saat musim hujan berlebih belum punya dasar untuk rawit dan merah**: hujan di atas normal tidak diikuti kenaikan harga produsen (temuan terbukti). Ini tidak berarti hujan lebat tidak merugikan petani; kerugiannya mungkin tidak tercermin di harga (dugaan).
+- **Kebijakan berbasis cuaca untuk cabai merah ditahan**: tidak ada hubungan cuaca-harga yang signifikan (temuan terbukti); alasannya belum diketahui (dugaan, H1 bagian 6).
+- **Kualitas data**: data luas tanam/panen bulanan per kabupaten dan harga produsen yang lebih sering diperbarui diperlukan untuk memastikan jalur cuaca -> produksi -> harga (dugaan, H1 bagian 6).

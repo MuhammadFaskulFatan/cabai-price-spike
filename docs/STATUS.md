@@ -27,10 +27,10 @@ Branch kerja: `phase-6-analysis` (di-push ke origin sampai `3cad150`). Paket cua
 | H3 disparitas | **Tidak didukung (dibantah)** | `272b843` |
 | H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif) | `272b843` |
 | H6 hari besar | **Sementara: tidak didukung untuk "menambah kenaikan"**; final menunggu H1 | `272b843` |
-| H1 cuaca | Berjalan: definisi anomali per lokasi dan flag ekstrem (D-58) selesai, 55/55 cek lulus; model menyusul | (commit ini) |
-| H4 early warning | Belum; data cuaca sudah di core | - |
+| H1 cuaca | **Sebagian (rawit)**: kering -> harga produsen naik, lag 3; **tidak didukung (merah)**; pola U tidak didukung. Menunggu review | `883cc8d` (D-58), (commit ini) |
+| H4 early warning | Belum; menunggu review H1 | - |
 
-Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/05_h6_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
+Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/06_h1_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
 
 ## 2. Keputusan terakhir
 
@@ -62,24 +62,17 @@ Extract, audit, transform, dan validate cuaca sudah selesai (lihat bagian 0). La
 
 Catatan untuk H1: hujan bulanan ekstrem (misalnya Enrekang Juli 2020, 2.228 mm, +4,1 SD) dibiarkan apa adanya. Data Open-Meteo adalah reanalysis, jadi sensitivity H1 sebaiknya memeriksa pengaruh bulan ekstrem.
 
-### 4.5 H1 (cuaca di sentra -> harga)
+### 4.5 H1: selesai, menunggu review
 
-Buat `analysis/h1_weather.py` sesuai `docs/05_analysis_plan.md` bagian 7. Ringkasnya:
-- panel provinsi bertitik sentra;
-- `rain_anomaly` dan kuadratnya lag 1-4;
-- **spesifikasi 1**: FE provinsi + month-of-year + ONI;
-- **spesifikasi 2**: FE tahun-bulan (efek ONI hanya terbaca di spesifikasi 1, D-48);
-- outcome utama harga produsen, dengan catatan H2 soal frekuensi pembaruannya, plus harga pedagang besar sebagai sensitivity;
-- jalur produksi di grain tahunan;
-- sensitivity sesuai rencana, termasuk D-44.
+Laporan `analysis/06_h1_report.md` (format D-53, ketentuan D-58). Ringkasan:
+- rawit: musim lebih kering dari normal -> harga produsen naik sekitar 3 bulan kemudian (+12,9% untuk anomali -1 selama 4 bulan); lebih basah -> harga turun; tahan di sensitivity (a)-(d) dan leave-one-out;
+- merah: tidak ada hubungan signifikan;
+- pola U tidak didukung untuk keduanya; jalur produksi tahunan tidak terdeteksi;
+- lag terkuat: rawit lag 3 (harga pedagang besar rawit: lag 2); merah tidak ada lag signifikan.
 
-```powershell
-python -m analysis.h1_weather
-```
+Yang perlu diputuskan Fatan saat review: lag cuaca untuk sinyal H4 (usulan: rawit lag 2-3, merah lag 1-4 dicoba di backtest tanpa prioritas).
 
-Laporan ke `analysis/06_h1_report.md` dengan format D-53.
-
-### 4.6 H4 (early warning)
+### 4.6 H4 (early warning), setelah review H1
 
 Buat `analysis/h4_early_warning.py` sesuai rencana bagian 8 dan D-55:
 - target: onset episode besar t+1/t+2;

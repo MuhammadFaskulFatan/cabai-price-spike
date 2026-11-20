@@ -13,7 +13,7 @@ Dokumen ini menetapkan, untuk H1-H6, pertanyaan bisnis, data, metode, metrik, at
 | Bulan imputasi | Setiap uji H2 dan H4 wajib diulang tanpa bulan `<harga>_is_imputed = TRUE` (D-44). Aturan yang sama dipakai untuk H3, H5, H6 sebagai sensitivity |
 | Harga produsen | NTT keluar (`in_producer_price_analysis = FALSE`, D-03); tidak pernah diisi dari harga pedagang besar |
 | Produksi | Hanya angka tahunan BDSP (`production_annual_ton`, `core_province_year`); 2025 preliminary masuk analisis utama, sensitivity tanpa 2025 (D-29, D-40) |
-| Cuaca | Hanya provinsi bertitik sentra (`weather_status = observed`; 14 provinsi untuk cabai merah, 15 untuk rawit); `not_applicable` tidak dipakai (D-25). Menunggu paket cuaca |
+| Cuaca | Hanya provinsi bertitik sentra (`weather_status = observed`; 14 provinsi untuk cabai merah, 15 untuk rawit); `not_applicable` tidak dipakai (D-25). Paket cuaca selesai (D-56, D-57); ketentuan H1 di D-58 |
 | Inferensi | Standard error robust terhadap korelasi antar provinsi di bulan yang sama (Driscoll-Kraay) atau cluster per provinsi; disebut per uji |
 | Ambang signifikansi | p < 0,05, dua sisi, kecuali disebut lain. Hasil dibaca sebagai asosiasi yang konsisten, bukan bukti kausal (charter: hanya sekitar 6-7 episode besar) |
 | Grup komoditas | Semua uji dijalankan terpisah untuk `cabai_merah` dan `cabai_rawit` |
@@ -92,7 +92,7 @@ Catatan urutan: perbandingan dengan efek cuaca membutuhkan H1. Karena H6 dijalan
 | Elemen | Isi |
 | --- | --- |
 | Pertanyaan bisnis | Apakah curah hujan ekstrem di sentra (terlalu kering atau terlalu basah) menaikkan harga produsen, dan berapa lag-nya? |
-| Data | `rain_anomaly` (berbobot produksi, baseline 1991-2020; menunggu paket cuaca), `oni_anomaly`, `price_producer` (log), `production_annual_ton` |
+| Data | `rain_anomaly` (rata-rata berbobot produksi dari z-score per lokasi, akar kuadrat hujan, baseline 1991-2020; D-58), `oni_anomaly`, `price_producer` (log), `production_annual_ton` |
 | Metode | Panel FE provinsi x bulan (provinsi bertitik sentra): log harga produsen pada `rain_anomaly` dan `rain_anomaly^2` lag 1-4 (bentuk U), FE provinsi dan month-of-year, ONI sebagai driver hulu. Jalur produksi diuji di grain tahunan: Δ log produksi pada anomali hujan tahunan (rata-rata absolut atau jumlah bulan ekstrem) |
 | Metrik | Efek marginal hujan sangat kering dan sangat basah (persen harga per 1 SD) per lag; uji gabungan lag 1-4; lag dengan efek terbesar |
 | Aturan keputusan | **Didukung** kalau suku kuadrat positif dan signifikan (uji gabungan lag 1-4) sehingga kedua ekstrem menaikkan harga, dengan lag terbesar di 1-4 bulan. **Dibantah** kalau tidak ada perbedaan harga yang konsisten antara bulan anomali dan normal di semua lag (charter) |
