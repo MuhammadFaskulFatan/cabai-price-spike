@@ -139,6 +139,27 @@ def run_checks():
     check(results, "dim_holiday: source_level hanya official/secondary", set(dim_holiday["source_level"]) <= {"official", "secondary"}, dim_holiday["source_level"].value_counts().to_dict().__str__())
     check(results, "periode model = Jan 2019 - Okt 2026", dim_month[dim_month["in_model_period"]]["month_start"].agg(["min", "max"]).tolist() == ["2019-01-01", "2026-10-01"], "")
 
+    # --- cuaca (paket cuaca, D-25, D-57) ---
+    points = pd.read_csv(ROOT / "data" / "interim" / "sentra_points.csv")
+    has_points = set(zip(points["province_id"], points["commodity_group"]))
+    status = core["weather_status"]
+    check(results, "weather_status hanya observed / not_applicable / partial_month", set(status.unique()) <= {"observed", "not_applicable", "partial_month"}, str(status.value_counts().to_dict()))
+    expected_observed = [(p, g) in has_points for p, g in zip(core["province_id"], core["commodity_group"])]
+    check(results, "cuaca observed tepat di provinsi x komoditas bertitik sentra (kecuali Nov 2026)",
+          bool(((status != "not_applicable") == pd.Series(expected_observed, index=core.index)).all()), f"{len(has_points)} provinsi x komoditas bertitik")
+    weather_columns = ["rain_total_mm", "rain_anomaly_mm", "rain_anomaly", "rel_humidity_mean"]
+    check(results, "not_applicable dan partial_month: semua nilai cuaca kosong", bool(core.loc[status != "observed", weather_columns].isna().all().all()), "")
+    check(results, "observed: tidak ada nilai cuaca kosong", bool(core.loc[status == "observed", weather_columns].notna().all().all()), f"{int((status == 'observed').sum())} baris")
+    check(results, "partial_month hanya November 2026", set(core.loc[status == "partial_month", "month_start"].unique()) <= {"2026-11-01"}, "")
+    observed = core[status == "observed"]
+    check(results, "hujan >= 0 dan kelembapan 0-100", bool((observed["rain_total_mm"] >= 0).all() and observed["rel_humidity_mean"].between(0, 100).all()),
+          f"hujan maks {observed['rain_total_mm'].max():,.0f} mm/bulan")
+    full = pd.read_parquet(ROOT / "data" / "interim" / "weather_monthly_full.parquet")
+    base = full[(full["month"] >= "1991-01") & (full["month"] <= "2020-12")]
+    moments = base.groupby(["province_id", "commodity_group", base["month"].str[5:7]])["rain_anomaly"].agg(["mean", "std"])
+    check(results, "rain_anomaly terstandar: rata-rata 0 dan SD 1 per bulan kalender di 1991-2020",
+          bool((moments["mean"].abs() < 1e-9).all() and ((moments["std"] - 1).abs() < 1e-9).all()), f"{len(moments)} seri x bulan kalender")
+
     # --- core_province_year ---
     check(results, "core_province_year: key unik dan lengkap 34 x 8 tahun x 2 grup", len(year) == 34 * 8 * 2 and not year.duplicated(["province_id", "year", "commodity_group"]).any(), f"{len(year)} baris")
     check(results, "core_province_year: producer_price_n_months di 0-12", bool(year["producer_price_n_months"].between(0, 12).all()), "")

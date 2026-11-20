@@ -40,6 +40,13 @@ months_to_idulfitri = 0 tepat di bulan 1 Syawal,True,9 bulan
 n_holiday_days = jumlah libur nasional di dim_holiday,True,44 hari
 dim_holiday: source_level hanya official/secondary,True,"{'official': 69, 'secondary': 16}"
 periode model = Jan 2019 - Okt 2026,True,
+weather_status hanya observed / not_applicable / partial_month,True,"{'not_applicable': 4173, 'observed': 3074, 'partial_month': 29}"
+cuaca observed tepat di provinsi x komoditas bertitik sentra (kecuali Nov 2026),True,29 provinsi x komoditas bertitik
+not_applicable dan partial_month: semua nilai cuaca kosong,True,
+observed: tidak ada nilai cuaca kosong,True,3074 baris
+partial_month hanya November 2026,True,
+hujan >= 0 dan kelembapan 0-100,True,"hujan maks 2,228 mm/bulan"
+rain_anomaly terstandar: rata-rata 0 dan SD 1 per bulan kalender di 1991-2020,True,348 seri x bulan kalender
 core_province_year: key unik dan lengkap 34 x 8 tahun x 2 grup,True,544 baris
 core_province_year: producer_price_n_months di 0-12,True,
 core_province_year: is_preliminary hanya 2025,True,

@@ -1,6 +1,6 @@
 # Laporan Fase 5 (Validate)
 
-Core dataset tanpa cuaca (`data/final/`). Cek struktur: 46 dari 46 lulus. Reconciliation tahunan: cocok. Cross-check PIHPS bulanan: 21,186 sel dibandingkan. Spot-check: harga 30/30 cocok dengan raw, 10/10 cocok dengan PIHPS live; produksi 10/10 cocok dengan BDSP live; ONI 5/5.
+Core dataset termasuk cuaca (`data/final/`). Cek struktur: 53 dari 53 lulus. Reconciliation tahunan: cocok. Cross-check PIHPS bulanan: 21,186 sel dibandingkan. Spot-check: harga 30/30 cocok dengan raw, 10/10 cocok dengan PIHPS live; produksi 10/10 cocok dengan BDSP live; ONI 5/5; cuaca 8/8.
 
 ## 1. Cek struktur dan aturan core dataset
 
@@ -47,6 +47,13 @@ Core dataset tanpa cuaca (`data/final/`). Cek struktur: 46 dari 46 lulus. Reconc
 | n_holiday_days = jumlah libur nasional di dim_holiday | True | 44 hari |
 | dim_holiday: source_level hanya official/secondary | True | {'official': 69, 'secondary': 16} |
 | periode model = Jan 2019 - Okt 2026 | True |  |
+| weather_status hanya observed / not_applicable / partial_month | True | {'not_applicable': 4173, 'observed': 3074, 'partial_month': 29} |
+| cuaca observed tepat di provinsi x komoditas bertitik sentra (kecuali Nov 2026) | True | 29 provinsi x komoditas bertitik |
+| not_applicable dan partial_month: semua nilai cuaca kosong | True |  |
+| observed: tidak ada nilai cuaca kosong | True | 3074 baris |
+| partial_month hanya November 2026 | True |  |
+| hujan >= 0 dan kelembapan 0-100 | True | hujan maks 2,228 mm/bulan |
+| rain_anomaly terstandar: rata-rata 0 dan SD 1 per bulan kalender di 1991-2020 | True | 348 seri x bulan kalender |
 | core_province_year: key unik dan lengkap 34 x 8 tahun x 2 grup | True | 544 baris |
 | core_province_year: producer_price_n_months di 0-12 | True |  |
 | core_province_year: is_preliminary hanya 2025 | True |  |
@@ -202,6 +209,19 @@ ONI: 5 bulan acak vs file NOAA live.
 | 2023-06 | 0.73 | 0.73 | True |
 | 2018-09 | 0.52 | 0.52 | True |
 
+Cuaca: 5 sel acak dihitung ulang dari file raw harian (rata-rata berbobot produksi), dan 3 lokasi x 1 bulan acak ditarik ulang dari Open-Meteo live (untuk baris live, `core_mm` = jumlah hujan dari file raw lokasi itu).
+
+| jenis | province_id | grup | bulan | core_mm | pembanding_mm | cocok |
+| --- | --- | --- | --- | --- | --- | --- |
+| raw | 14 | cabai_rawit | 2019-06 | 17.96 | 17.96 | True |
+| raw | 16 | cabai_rawit | 2019-04 | 239.41 | 239.41 | True |
+| raw | 18 | cabai_rawit | 2025-12 | 214.41 | 214.41 | True |
+| raw | 6 | cabai_merah | 2024-04 | 431.70 | 431.70 | True |
+| raw | 2 | cabai_rawit | 2019-09 | 207.02 | 207.02 | True |
+| live | 2 | Kab. Humbang Hasundutan | 2025-09 | 222.10 | 222.10 | True |
+| live | 3 | Kab. Solok | 2020-05 | 356.00 | 356.00 | True |
+| live | 10 | Kab. Lampung Selatan | 2019-03 | 328.20 | 328.20 | True |
+
 Tidak ada revisi sumber yang terdeteksi pada sampel live.
 
 ## 5. Hold-out validation imputation (D-09, D-43)
@@ -218,6 +238,6 @@ Hold-out produksi bulanan (Denton) terdokumentasi di `holdout_production.md`; me
 
 ## 6. Belum tercakup
 
-- Cuaca (Open-Meteo): 51 dari 74 lokasi; extract, audit, transform, dan validate cuaca dikerjakan sebagai paket terpisah, lalu dimasukkan ke core dataset.
+- Cuaca hanya untuk 18 provinsi bertitik sentra (14 untuk cabai merah, 15 untuk cabai rawit); provinsi lain `not_applicable` (D-25). Data reanalysis Open-Meteo belum dibandingkan dengan pengamatan stasiun BMKG.
 - Cross-check mingguan PIHPS tidak dilakukan; data mingguan tidak di-impute dan hanya dipakai untuk lead-lag (D-12).
-- Spot-check live hanya sampel (10 harga, 2 tabel BDSP, 1 file ONI); revisi PIHPS di luar sampel tidak terdeteksi. Tanggal extraction tersimpan di metadata raw (D-14).
+- Spot-check live hanya sampel (10 harga, 2 tabel BDSP, 1 file ONI, 3 lokasi cuaca); revisi PIHPS di luar sampel tidak terdeteksi. Tanggal extraction tersimpan di metadata raw (D-14).
