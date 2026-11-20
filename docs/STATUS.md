@@ -1,16 +1,16 @@
 # Status proyek (per 20 Nov 2026)
 
-Branch kerja: `weather-package` (dibuat dari `phase-6-analysis`, D-56). Setelah paket cuaca lolos validasi, branch ini di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
+Branch kerja: `phase-6-analysis`. Paket cuaca dikerjakan di `weather-package` (D-56) dan sudah di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
 
-## 0. Paket cuaca (berjalan)
+## 0. Paket cuaca (selesai, menunggu tinjauan Fatan sebelum H1)
 
 | Langkah | Status | Commit |
 | --- | --- | --- |
 | 4.1 Extract sisa lokasi | Selesai: 74 dari 74 lokasi valid | `430d0a2` |
 | 4.2 Audit | Selesai: 74/74 valid, 0 hari kosong, 0 nilai di luar batas fisik, 2 hari hujan > 300 mm (ditandai). Laporan `pipeline/audit/reports/weather_audit.md` | `b973e1f` |
 | 4.3 Transform dan integrasi | Selesai: `weather_features.py` (D-57); 6 kolom cuaca di `core_province_month` (`rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status`, `weather_n_points`); observed 3.074 sel (29 provinsi x komoditas), kosong 0; kolom lama tidak berubah | `bf9b7f9` |
-| 4.4 Validate | Selesai: 53/53 cek lulus (7 cek cuaca baru); spot-check cuaca 8/8 cocok (5 sel vs raw harian, 3 lokasi x bulan vs Open-Meteo live) | (commit ini) |
-| Merge ke `phase-6-analysis` | Setelah commit validate | - |
+| 4.4 Validate | Selesai: 53/53 cek lulus (7 cek cuaca baru); spot-check cuaca 8/8 cocok (5 sel vs raw harian, 3 lokasi x bulan vs Open-Meteo live) | `fbc180b` |
+| Merge ke `phase-6-analysis` | Selesai (merge `--no-ff`, belum di-push) | merge commit "Merge weather-package" |
 
 ## 1. Yang sudah selesai
 
@@ -52,58 +52,14 @@ Tidak ada. Empat hal terbuka sebelumnya diputuskan di D-56: branch `weather-pack
 
 Semua perintah dijalankan dari folder repo.
 
-### 4.1 Paket cuaca: sisa extract (24 lokasi)
+### 4.1-4.4 Paket cuaca: selesai
 
-```powershell
-git switch -c weather-package
-```
+Extract, audit, transform, dan validate cuaca sudah selesai (lihat bagian 0). Laporan:
+- `pipeline/audit/reports/weather_audit.md`
+- `pipeline/transform/reports/transform_report.md` bagian 6
+- `pipeline/validate/reports/validation_report.md`
 
-```powershell
-python -m pipeline.extract.open_meteo --only weather
-```
-
-- Kebutuhannya sekitar 24 x 187 = 4.500 call API, di bawah kuota harian 10.000. Batas per jam (5.000) bisa memaksa script menunggu sampai satu jam.
-- Script resumable dan berhenti sendiri kalau kuota harian habis. Kalau berhenti, jalankan ulang perintah yang sama.
-- Termasuk lokasi Karangasem yang benar (-8,36; 115,55). File raw lokasi Sentul yang salah (`-6.4912_106.8793.json`) tetap di raw dan tidak dipakai (D-51).
-- Setelah selesai, cek bahwa 74 dari 74 lokasi valid, lalu commit `data/raw/open_meteo`.
-
-### 4.2 Paket cuaca: audit
-
-Belum ada modulnya. Yang perlu dibuat adalah `pipeline/audit/weather_audit.py`, lalu didaftarkan di `pipeline/audit/completeness.py`. Isinya:
-- kelengkapan harian per lokasi 1991-2026 (hari kosong, nilai negatif atau ekstrem);
-- cek bahwa setiap `anchor_id` di `sentra_points.csv` punya file valid;
-- daftar file cuaca yang tidak dipakai (Sentul).
-
-```powershell
-python -m pipeline.audit.completeness --only weather
-```
-
-### 4.3 Paket cuaca: transform dan integrasi
-
-Belum ada modulnya. Yang perlu dibuat adalah `pipeline/transform/weather_features.py`, lalu didaftarkan di `TRANSFORM_STEPS` sebelum `integrate`. Isinya:
-- hujan bulanan per lokasi (jumlah) dan kelembapan rata-rata;
-- normal per bulan kalender 1991-2020 (D-19) dan `rain_anomaly`;
-- rata-rata berbobot produksi per provinsi x komoditas (bobot dari `mean_production_ton_2019_2025`);
-- `weather_status = observed` untuk provinsi bertitik, `not_applicable` untuk lainnya (D-25).
-
-Setelah itu tambahkan `rain_total_mm`, `rain_anomaly`, `rel_humidity_mean`, dan `weather_status` ke `integrate.py`.
-
-```powershell
-python -m pipeline.run --stage transform
-```
-
-### 4.4 Paket cuaca: validate
-
-Tambahkan cek cuaca di `pipeline/validate/checks_core.py`:
-- `not_applicable` hanya di provinsi tanpa titik;
-- tidak ada `NULL` cuaca tanpa alasan;
-- spot-check beberapa lokasi ke Open-Meteo live.
-
-```powershell
-python -m pipeline.validate.report
-```
-
-Setelah lolos: commit, merge `weather-package` ke `phase-6-analysis`, lalu laporkan sebelum H1.
+Catatan untuk H1: hujan bulanan ekstrem (misalnya Enrekang Juli 2020, 2.228 mm, +4,1 SD) dibiarkan apa adanya. Data Open-Meteo adalah reanalysis, jadi sensitivity H1 sebaiknya memeriksa pengaruh bulan ekstrem.
 
 ### 4.5 H1 (cuaca di sentra -> harga)
 
