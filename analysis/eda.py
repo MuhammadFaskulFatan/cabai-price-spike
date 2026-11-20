@@ -56,7 +56,7 @@ def national_series(national, group):
     return national[national["commodity"] == group].set_index("month")["price_idr_per_kg"].sort_index()
 
 
-# ---------------------------------------------------------------- episode
+# --- episode ---
 def national_episodes(national):
     rows, flags_out = [], {}
     for group in GROUPS:
@@ -87,7 +87,7 @@ def province_spike_months(core, threshold=MAIN_THRESHOLD):
     return pd.concat(rows, ignore_index=True)
 
 
-# ---------------------------------------------------------------- musiman
+# --- musiman ---
 def seasonal_profile(series):
     """Deviasi log harga dari rata-rata 12 bulan terpusat (trend dikeluarkan), dirangkum per bulan kalender."""
     logged = np.log(series.loc["2018-07":"2026-10"])
@@ -100,7 +100,7 @@ def seasonal_profile(series):
     return summary, share
 
 
-# ---------------------------------------------------------------- chart
+# --- chart ---
 def chart_national_trend(flags_by_group, path):
     fig, axes = plt.subplots(2, 1, figsize=(9, 5.6), sharex=True)
     for ax, group in zip(axes, GROUPS):
@@ -178,7 +178,7 @@ def chart_merah_vs_rawit(national, path):
     plt.close(fig)
 
 
-# ---------------------------------------------------------------- laporan
+# --- laporan ---
 def md_table(frame, floatfmt="{:,.2f}"):
     lines = ["| " + " | ".join(map(str, frame.columns)) + " |", "| " + " | ".join("---" for _ in frame.columns) + " |"]
     for _, row in frame.iterrows():

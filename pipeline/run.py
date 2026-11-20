@@ -1,4 +1,4 @@
-"""Jalankan pipeline dari awal. Tahap: extract, audit, transform, validate (cuaca menyusul sebagai paket terpisah).
+"""Jalankan pipeline dari awal. Tahap: extract, audit, transform, validate.
 
     python -m pipeline.run                 # semua tahap yang sudah ada
     python -m pipeline.run --stage extract

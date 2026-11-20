@@ -51,7 +51,7 @@ plt.rcParams.update({
 })
 
 
-# =============================================================== A. mingguan
+# --- A. mingguan ---
 def weekly_panel(province_id=0):
     weekly = pd.read_parquet(INTERIM / "fact_price_weekly.parquet")
     weekly = weekly[weekly["province_id"] == province_id].copy()
@@ -115,7 +115,7 @@ def weekly_lead_lag(province_id=0, with_bootstrap=True):
     return pd.DataFrame(rows), curves
 
 
-# =============================================================== B. bulanan
+# --- B. bulanan ---
 def load_core():
     core = pd.read_csv(FINAL / "core_province_month.csv")
     core["month"] = pd.PeriodIndex(core["month_start"].str[:7], freq="M")
@@ -229,7 +229,7 @@ def pooled(core, tiers=("main",), exclude_imputed=False):
     return pd.DataFrame(rows)
 
 
-# =============================================================== keputusan
+# --- keputusan ---
 def decide(weekly, share, pooled_main):
     rows = []
     for group in GROUPS.values():
@@ -260,7 +260,7 @@ def share_table(models):
     return counts.join(model_counts).reset_index()
 
 
-# =============================================================== chart
+# --- chart ---
 def chart_ccf(curves, weekly, path):
     fig, axes = plt.subplots(2, 3, figsize=(11, 5.4), sharey=True)
     for row, group in enumerate(GROUPS.values()):
@@ -328,7 +328,7 @@ def reporting_cadence():
     return pd.DataFrame(rows)
 
 
-# =============================================================== laporan
+# --- laporan ---
 def md(frame, fmt="{:,.3f}"):
     lines = ["| " + " | ".join(map(str, frame.columns)) + " |", "| " + " | ".join("---" for _ in frame.columns) + " |"]
     for _, row in frame.iterrows():
