@@ -58,10 +58,10 @@ Kebutuhan stakeholder di bawah diturunkan dari secondary research (pernyataan pe
 
 Analisis harus menjawab empat business requirements (BR). Setiap BR diuji lewat hipotesis yang punya cara uji dan kondisi yang akan membantahnya. H1–H4 adalah hipotesis prioritas; H5–H6 pendukung.
 
-- **BR1:** Apa driver utama price spike, dan berapa lag dari driver ke harga konsumen?
-- **BR2:** Di level supply chain mana price spike dimulai dan membesar?
-- **BR3:** Kenapa daerah tertentu tetap mahal saat produksi nasional cukup?
-- **BR4:** Bisakah price spike dideteksi lebih awal (early warning), dan berapa lead time-nya?
+- BR1: Apa driver utama price spike, dan berapa lag dari driver ke harga konsumen?
+- BR2: Di level supply chain mana price spike dimulai dan membesar?
+- BR3: Kenapa daerah tertentu tetap mahal saat produksi nasional cukup?
+- BR4: Bisakah price spike dideteksi lebih awal (early warning), dan berapa lead time-nya?
 
 | ID | BR | Hipotesis | Cara uji | Dibantah jika |
 | --- | --- | --- | --- | --- |
@@ -102,8 +102,8 @@ Semua sumber inti sudah dicek langsung pada 19 November 2026. Sumber yang belum 
 
 Dua data belum tersedia publik dan tidak masuk core dataset:
 
-- **Luas tanam bulanan:** dikumpulkan BPS lewat formulir SPH-SBS, tapi tidak dipublikasikan. Bisa diminta lewat PST BPS atau PPID Kementan. H5 diuji di grain tahunan memakai luas panen dan produksi BDSP; luas tanam bulanan tetap akan memperkuat uji ini.
-- **Pasokan harian Pasar Induk Kramat Jati:** Info Pangan Jakarta hanya menampilkan harga. Bisa diminta lewat PPID Perumda Pasar Jaya. Untuk H3, price disparity antarprovinsi dan price spread antar level supply chain dipakai sebagai proxy.
+- Luas tanam bulanan: dikumpulkan BPS lewat formulir SPH-SBS, tapi tidak dipublikasikan. Bisa diminta lewat PST BPS atau PPID Kementan. H5 diuji di grain tahunan memakai luas panen dan produksi BDSP; luas tanam bulanan tetap akan memperkuat uji ini.
+- Pasokan harian Pasar Induk Kramat Jati: Info Pangan Jakarta hanya menampilkan harga. Bisa diminta lewat PPID Perumda Pasar Jaya. Untuk H3, price disparity antarprovinsi dan price spread antar level supply chain dipakai sebagai proxy.
 
 ## Data quality rules
 
@@ -132,10 +132,10 @@ Tiga aturan pendukung:
 
 Project dianggap berhasil kalau empat hal ini terpenuhi:
 
-1. **Data:** core dataset provinsi × bulan tanpa missing value yang tidak ter-flag, dan metode imputasi dipilih lewat hold-out; jika tidak lebih akurat dari baseline linear, baseline yang dipakai.
-2. **Explanatory power:** secara out-of-sample (episode price spike yang tidak dipakai saat training model), driver di H1–H3 menjelaskan arah dan magnitude kenaikan harga lebih baik dari baseline seasonal average.
-3. **Early warning:** signal dari H4 memberi lead time lebih panjang atau false alarm rate lebih rendah dibanding baseline "harga naik bulan lalu".
-4. **Jawaban:** setiap BR terjawab, termasuk jawaban "tidak terbukti" kalau hipotesisnya dibantah data.
+1. Data: core dataset provinsi × bulan tanpa missing value yang tidak ter-flag, dan metode imputasi dipilih lewat hold-out; jika tidak lebih akurat dari baseline linear, baseline yang dipakai.
+2. Explanatory power: secara out-of-sample (episode price spike yang tidak dipakai saat training model), driver di H1–H3 menjelaskan arah dan magnitude kenaikan harga lebih baik dari baseline seasonal average.
+3. Early warning: signal dari H4 memberi lead time lebih panjang atau false alarm rate lebih rendah dibanding baseline "harga naik bulan lalu".
+4. Jawaban: setiap BR terjawab, termasuk jawaban "tidak terbukti" kalau hipotesisnya dibantah data.
 
 ## Assumptions, risks & constraints
 
@@ -164,12 +164,12 @@ Project dianggap berhasil kalau empat hal ini terpenuhi:
 
 ## Next steps
 
-1. **Review dan sign-off dokumen ini.** Requirements yang disetujui menjadi baseline; perubahan berikutnya dicatat di decision log.
-2. **Design:** AS-IS process map rantai pasok cabai, data model (ERD) core dataset, data flow diagram pipeline, dan data dictionary.
-3. **Build:** tarik semua sumber, data completeness audit per provinsi × bulan, imputation sesuai data quality rules, lalu integrasi ke grain provinsi × bulan. Belum ada analisis di tahap ini.
-4. **Validation:** hold-out validation untuk metode imputation dan reconciliation dataset final terhadap sumber.
-5. **Analysis:** uji H1–H6, lalu susun Requirements Traceability Matrix yang menghubungkan setiap BR → hipotesis → data → metode → temuan.
-6. **Delivery:** findings dan what-if scenario ("kalau root cause-nya diatasi"), lalu case study di portfolio. Dashboard menyusul sebagai tahap terpisah.
+1. Review dan sign-off dokumen ini. Requirements yang disetujui menjadi baseline; perubahan berikutnya dicatat di decision log.
+2. Design: AS-IS process map rantai pasok cabai, data model (ERD) core dataset, data flow diagram pipeline, dan data dictionary.
+3. Build: tarik semua sumber, data completeness audit per provinsi × bulan, imputation sesuai data quality rules, lalu integrasi ke grain provinsi × bulan. Belum ada analisis di tahap ini.
+4. Validation: hold-out validation untuk metode imputation dan reconciliation dataset final terhadap sumber.
+5. Analysis: uji H1–H6, lalu susun Requirements Traceability Matrix yang menghubungkan setiap BR → hipotesis → data → metode → temuan.
+6. Delivery: findings dan what-if scenario ("kalau root cause-nya diatasi"), lalu case study di portfolio. Dashboard menyusul sebagai tahap terpisah.
 
 ## Sumber
 

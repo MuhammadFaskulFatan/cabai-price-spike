@@ -63,7 +63,7 @@ Ini sesuai kondisi "dibantah jika" di charter: disparitas tidak melebar dan tida
 
 - Arah semua spesifikasi sama. Untuk rawit, efek CV tidak signifikan pada ambang 1,15 dan 1,35, tetapi tetap negatif.
 - Penanda dari harga pedagang besar ditambahkan karena H2 menunjukkan harga produsen PIHPS jarang diperbarui. Hasilnya lebih kuat, bukan berbalik.
-- **D-44:** harga eceran tidak punya bulan imputasi, sehingga tidak ada yang perlu dikeluarkan. Penanda guncangan dari harga produsen nasional juga tidak memakai bulan imputasi (seri nasional lengkap).
+- D-44: harga eceran tidak punya bulan imputasi, sehingga tidak ada yang perlu dikeluarkan. Penanda guncangan dari harga produsen nasional juga tidak memakai bulan imputasi (seri nasional lengkap).
 
 ## 4. Temuan yang terbukti
 

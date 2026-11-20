@@ -6,10 +6,7 @@ Script: `analysis/h5_cobweb.py`. Tabel: `analysis/tables/h5_results.csv`. Rencan
 
 ## 1. Hasil utama dan effect size
 
-Panel FE provinsi: Δ log luas panen_t pada log harga produsen_(t-1), SE cluster provinsi. Sampel:
-- Cabai merah: 32 provinsi, 223 provinsi-tahun.
-- Cabai rawit: 31 provinsi, 217 provinsi-tahun.
-- Dikeluarkan: NTT (D-03), DKI Jakarta (seri harga produsen tier excluded), dan Jambi untuk rawit (excluded).
+Panel FE provinsi: Δ log luas panen_t pada log harga produsen_(t-1), SE cluster provinsi. Sampel cabai merah 32 provinsi (223 provinsi-tahun) dan cabai rawit 31 provinsi (217 provinsi-tahun). Yang dikeluarkan: NTT (D-03), DKI Jakarta (seri harga produsen tier excluded), dan Jambi untuk rawit (excluded).
 
 | Komoditas | Outcome | Elastisitas | 95% CI | p |
 | --- | --- | --- | --- | --- |

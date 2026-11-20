@@ -27,8 +27,8 @@ Hasil EDA dengan definisi ini: 6 episode nasional cabai merah dan 10 cabai rawit
 **Keputusan (D-48):** 1,25x dipakai untuk deskriptif dan H3. Target H4 = onset **episode besar** (spike provinsi yang bertahan >= 2 bulan berturut-turut). Label **spike nasional** = spike serentak di >= 50% provinsi, untuk narasi dan chart.
 
 Latar usulan: 27% bulan terlalu sering untuk disebut "lonjakan" di level provinsi, karena median trailing 12 bulan ikut tertinggal ketika harga naik bertahap. Saya usulkan dua tambahan sebagai sensitivity, bukan pengganti:
-1. **Episode besar**: spike yang bertahan >= 2 bulan berturut-turut, atau terjadi serentak di >= 50% provinsi (sesuai pola "spike serentak" di EDA: Maret 2021 rawit 97% provinsi).
-2. **Spike nasional** sebagai unit kejadian untuk H4 dan H6, provinsi sebagai unit untuk H3.
+1. Episode besar: spike yang bertahan >= 2 bulan berturut-turut, atau terjadi serentak di >= 50% provinsi (sesuai pola "spike serentak" di EDA: Maret 2021 rawit 97% provinsi).
+2. Spike nasional sebagai unit kejadian untuk H4 dan H6, provinsi sebagai unit untuk H3.
 
 ## 3. H2: asal dan transmisi lonjakan di rantai pasok (BR2)
 
@@ -58,7 +58,7 @@ Latar usulan: 27% bulan terlalu sering untuk disebut "lonjakan" di level provins
 **Keputusan (D-48, D-50):** `distance_to_sentra_km` dan `is_different_island` ditambahkan ke `core_province_month` (definisi di data dictionary).
 
 Latar usulan:
-1. **Jarak ke sentra** belum ada di core dataset. Usul: jarak garis lurus dari ibu kota provinsi ke titik tengah produksi sentra nasional (rata-rata koordinat kabupaten sentra berbobot produksi, dari `data/interim/sentra_points.csv`), dihitung per komoditas. Karena Indonesia kepulauan, tambahkan dummy "beda pulau dengan sentra terdekat", sebab ongkos antarpulau lebih menentukan daripada kilometer. Ini perlu persetujuan karena menambah variabel ke core.
+1. Jarak ke sentra belum ada di core dataset. Usul: jarak garis lurus dari ibu kota provinsi ke titik tengah produksi sentra nasional (rata-rata koordinat kabupaten sentra berbobot produksi, dari `data/interim/sentra_points.csv`), dihitung per komoditas. Karena Indonesia kepulauan, tambahkan dummy "beda pulau dengan sentra terdekat", sebab ongkos antarpulau lebih menentukan daripada kilometer. Ini perlu persetujuan karena menambah variabel ke core.
 2. Penanda guncangan memakai harga produsen, bukan produksi bulanan (produksi bulanan dibatalkan, D-42).
 
 ## 5. H5: siklus cobweb di grain provinsi x tahun (BR1)

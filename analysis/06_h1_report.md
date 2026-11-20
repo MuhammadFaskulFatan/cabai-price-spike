@@ -7,21 +7,17 @@ Data:
 - anomali hujan di kabupaten sentra (D-58).
 
 **Keputusan:**
-- **Cabai rawit: sebagian.** Hujan di sentra berhubungan konsisten dengan harga produsen sekitar 3 bulan kemudian. Bentuknya searah, bukan U: musim yang lebih kering dari normal menaikkan harga, sedangkan musim yang lebih basah justru menurunkannya.
-- **Cabai merah: tidak didukung.** Tidak ada hubungan yang signifikan. Arah estimasinya sama dengan rawit.
-- **Pola U (kedua ekstrem menaikkan harga) tidak didukung untuk kedua komoditas,** termasuk di sensitivity (a) dan (b).
+- Cabai rawit: sebagian. Hujan di sentra berhubungan konsisten dengan harga produsen sekitar 3 bulan kemudian. Bentuknya searah, bukan U: musim yang lebih kering dari normal menaikkan harga, sedangkan musim yang lebih basah justru menurunkannya.
+- Cabai merah: tidak didukung. Tidak ada hubungan yang signifikan. Arah estimasinya sama dengan rawit.
+- Pola U (kedua ekstrem menaikkan harga) tidak didukung untuk kedua komoditas, termasuk di sensitivity (a) dan (b).
 
 ## 1. Hasil utama dan effect size
 
 Variabel cuaca (D-58):
 - `rain_anomaly` adalah z-score hujan bulanan per lokasi × bulan kalender, terhadap baseline 1991-2020. Hujan diakarkuadratkan dulu supaya bulan kemarau dengan normal hampir nol tidak meledak.
-- Nilai per lokasi lalu dirata-rata berbobot produksi kabupaten sentra di provinsi itu.
-- Nilai -1 berarti sekitar satu simpangan baku lebih kering dari normal untuk bulan itu. Untuk provinsi dengan banyak titik sentra (Jawa), satu unit sedikit lebih besar dari satu SD provinsi, karena rata-rata beberapa lokasi lebih halus.
+- Nilai per lokasi lalu dirata-rata berbobot produksi kabupaten sentra di provinsi itu. Nilai -1 berarti sekitar satu simpangan baku lebih kering dari normal untuk bulan itu. Untuk provinsi dengan banyak titik sentra (Jawa), satu unit sedikit lebih besar dari satu SD provinsi, karena rata-rata beberapa lokasi lebih halus.
 
-Model panel provinsi × bulan:
-- log harga produsen pada anomali lag 1-4 dan kuadratnya;
-- FE provinsi, FE month-of-year, trend linear, dan ONI;
-- SE Driscoll-Kraay (maxlags 6).
+Model panel provinsi × bulan memakai log harga produsen pada anomali lag 1-4 dan kuadratnya, dengan FE provinsi, FE month-of-year, trend linear, dan ONI. SE-nya Driscoll-Kraay (maxlags 6).
 
 Efek di tabel adalah efek kumulatif dari anomali yang sama di keempat lag, artinya kondisi kering atau basah yang bertahan sekitar 4 bulan, dibanding anomali 0.
 
@@ -50,17 +46,16 @@ Kurva rawit hampir lurus dan menurun, tanpa lengkungan ke atas di sisi basah. Ga
 
 **Jalur produksi (tahunan, D-42).** Perubahan log produksi BDSP dimodelkan terhadap rata-rata anomali tahunan dan rata-rata kuadratnya, dengan FE tahun dan SE cluster per provinsi (sekitar 100 provinsi-tahun per komoditas).
 - Tidak ada koefisien yang signifikan, baik di spesifikasi utama, tanpa 2025 (preliminary), maupun tanpa outlier produktivitas.
-- Satu-satunya tanda: rawit tanpa 2025 punya suku kuadrat negatif (tahun dengan hujan lebih ekstrem, produksi tumbuh lebih rendah), dengan p 0,08.
-- Dengan data tahunan, jalur "hujan ekstrem → produksi turun" tidak bisa dikonfirmasi.
+- Satu-satunya tanda: rawit tanpa 2025 punya suku kuadrat negatif (tahun dengan hujan lebih ekstrem, produksi tumbuh lebih rendah), dengan p 0,08. Dengan data tahunan, jalur "hujan ekstrem → produksi turun" tidak bisa dikonfirmasi.
 
 **ONI.** Di spesifikasi utama, ONI tidak berpengaruh langsung terhadap harga produsen: sekitar -1% per unit, p 0,87 untuk kedua komoditas. Anomali hujan lokal sudah ada di model, jadi bagian efek El Niño/La Niña yang bekerja lewat hujan di sentra terbaca di variabel hujan, bukan di ONI.
 
 ## 2. Keputusan terhadap aturan di rencana
 
 Aturan (rencana bagian 7 dan D-58):
-- **Didukung** kalau 4 suku kuadrat signifikan bersama (p < 0,05), jumlahnya positif, dan efek kumulatif positif di anomali -1,5 maupun +1,5.
+- Didukung kalau 4 suku kuadrat signifikan bersama (p < 0,05), jumlahnya positif, dan efek kumulatif positif di anomali -1,5 maupun +1,5.
 - Pola U hanya diklaim kalau bertahan di sensitivity (a) dan (b).
-- **Dibantah** kalau tidak ada perbedaan harga yang konsisten antara bulan anomali dan normal di semua lag.
+- Dibantah kalau tidak ada perbedaan harga yang konsisten antara bulan anomali dan normal di semua lag.
 
 | Kriteria | Cabai merah | Cabai rawit |
 | --- | --- | --- |
@@ -90,11 +85,11 @@ Efek kumulatif lag 1-4, spesifikasi kuadrat kecuali disebut lain:
 | Outcome harga pedagang besar | +16,8% (0,10) | -3,2% (0,53) | +9,9% (0,13) | -7,9% (0,11) | 0,49 / 0,73 |
 
 Catatan:
-- **\*** Di (d) dan z-score biasa, suku kuadrat rawit signifikan bersama karena suku lag 3 positif, tetapi suku lag 1 negatif dan jumlahnya kecil (+0,005 dan +0,010). Efek di sisi basah tetap negatif, jadi tidak membentuk U.
-- **(a) dan (b), syarat klaim U:** pola U tidak muncul. Untuk rawit, efek kering justru menguat (+23% dan +26%). Efek basah melemah di (b) (p 0,10), yang berarti sebagian efek basah datang dari bulan-bulan ekstrem.
-- **(c) D-44:** hanya 10-13 bulan imputasi harga produsen di sampel ini, sehingga hasilnya praktis sama.
-- **(d) FE tahun-bulan:** semua guncangan nasional diserap, termasuk ENSO dan harga nasional. Efek rawit mengecil menjadi sekitar setengahnya (+8,5% / -6,0%; di anomali -1 dan +1: +5,4% dan -4,2%, p 0,03 dan 0,04). Lag 3 tetap paling kuat (p < 0,001). Artinya sekitar separuh efek di spesifikasi utama berasal dari kondisi hujan yang serentak di banyak sentra, dan separuhnya dari perbedaan hujan antarprovinsi.
-- **Pemeriksaan pendukung (di luar rencana), leave-one-out pada spesifikasi linear rawit** (`h1_leave_one_out.csv`): membuang satu tahun atau satu provinsi mana pun, efek kering -1 tetap +6,5% sampai +15,5% (semua p ≤ 0,014), dan koefisien lag 3 selalu p < 0,001. Efek terkecil muncul saat 2019 dibuang. Untuk merah, tidak ada satu pun yang signifikan.
+- \* Di (d) dan z-score biasa, suku kuadrat rawit signifikan bersama karena suku lag 3 positif, tetapi suku lag 1 negatif dan jumlahnya kecil (+0,005 dan +0,010). Efek di sisi basah tetap negatif, jadi tidak membentuk U.
+- (a) dan (b), syarat klaim U: pola U tidak muncul. Untuk rawit, efek kering justru menguat (+23% dan +26%). Efek basah melemah di (b) (p 0,10), yang berarti sebagian efek basah datang dari bulan-bulan ekstrem.
+- (c) D-44: hanya 10-13 bulan imputasi harga produsen di sampel ini, sehingga hasilnya praktis sama.
+- (d) FE tahun-bulan: semua guncangan nasional diserap, termasuk ENSO dan harga nasional. Efek rawit mengecil menjadi sekitar setengahnya (+8,5% / -6,0%; di anomali -1 dan +1: +5,4% dan -4,2%, p 0,03 dan 0,04). Lag 3 tetap paling kuat (p < 0,001). Artinya sekitar separuh efek di spesifikasi utama berasal dari kondisi hujan yang serentak di banyak sentra, dan separuhnya dari perbedaan hujan antarprovinsi.
+- Pemeriksaan pendukung (di luar rencana), leave-one-out pada spesifikasi linear rawit (`h1_leave_one_out.csv`): membuang satu tahun atau satu provinsi mana pun, efek kering -1 tetap +6,5% sampai +15,5% (semua p ≤ 0,014), dan koefisien lag 3 selalu p < 0,001. Efek terkecil muncul saat 2019 dibuang. Untuk merah, tidak ada satu pun yang signifikan.
 
 ## 4. Lag terkuat per komoditas (bahan pemilihan sinyal H4)
 
@@ -110,27 +105,27 @@ Lag terkuat = lag dengan statistik uji gabungan (linear + kuadrat) terbesar di s
 Untuk harga pedagang besar rawit, lag terkuat adalah **lag 2** (chi2 15,2; p 0,001), dengan lag 3 dan 4 juga signifikan.
 
 Implikasi untuk H4 (sinyal: harga pedagang besar, cuaca, ONI):
-- **Rawit:** anomali hujan sentra lag 2-3 adalah kandidat sinyal. Target H4 dihitung t+1/t+2, jadi anomali bulan t dan t-1 sudah memberi lead time sekitar 2-3 bulan sebelum dampak di harga.
-- **Merah:** belum ada dasar memilih lag cuaca. Usulan: H4 merah tetap mencoba lag 1-4 di dalam backtest, tanpa prioritas lag tertentu.
+- Rawit: anomali hujan sentra lag 2-3 adalah kandidat sinyal. Target H4 dihitung t+1/t+2, jadi anomali bulan t dan t-1 sudah memberi lead time sekitar 2-3 bulan sebelum dampak di harga.
+- Merah: belum ada dasar memilih lag cuaca. Usulan: H4 merah tetap mencoba lag 1-4 di dalam backtest, tanpa prioritas lag tertentu.
 
 ## 5. Temuan yang terbukti
 
-1. **Pola U tidak ada.** Untuk kedua komoditas, hujan yang jauh lebih basah dari normal tidak menaikkan harga produsen 1-4 bulan kemudian. Hasil ini bertahan setelah winsorize dan setelah bulan ekstrem dikeluarkan.
-2. **Cabai rawit: musim lebih kering dari normal di sentra berasosiasi dengan harga produsen lebih tinggi sekitar 3 bulan kemudian.** Anomali -1 yang bertahan 4 bulan: +12,9% (4,2 s/d 22,3). Lag 3 saja: sekitar +7% per 1 unit anomali. Hasil ini tahan di semua sensitivity wajib, di leave-one-out, dan (dengan besaran sekitar separuh) setelah semua guncangan nasional diserap FE tahun-bulan.
-3. **Cabai rawit: musim lebih basah dari normal berasosiasi dengan harga produsen lebih rendah,** sekitar -11% per anomali +1 yang bertahan 4 bulan. Arah ini kebalikan dari bagian "terlalu basah menaikkan harga" di hipotesis.
-4. **Cabai merah: tidak ada hubungan yang signifikan** antara anomali hujan di sentra dan harga produsen di lag 1-4 (uji gabungan p 0,62), di semua sensitivity.
-5. **Hubungan hujan → produksi tahunan tidak terdeteksi** untuk kedua komoditas dengan data BDSP tahunan.
+1. Pola U tidak ada. Untuk kedua komoditas, hujan yang jauh lebih basah dari normal tidak menaikkan harga produsen 1-4 bulan kemudian. Hasil ini bertahan setelah winsorize dan setelah bulan ekstrem dikeluarkan.
+2. Cabai rawit: musim lebih kering dari normal di sentra berasosiasi dengan harga produsen lebih tinggi sekitar 3 bulan kemudian. Anomali -1 yang bertahan 4 bulan: +12,9% (4,2 s/d 22,3). Lag 3 saja: sekitar +7% per 1 unit anomali. Hasil ini tahan di semua sensitivity wajib, di leave-one-out, dan (dengan besaran sekitar separuh) setelah semua guncangan nasional diserap FE tahun-bulan.
+3. Cabai rawit: musim lebih basah dari normal berasosiasi dengan harga produsen lebih rendah, sekitar -11% per anomali +1 yang bertahan 4 bulan. Arah ini kebalikan dari bagian "terlalu basah menaikkan harga" di hipotesis.
+4. Cabai merah: tidak ada hubungan yang signifikan antara anomali hujan di sentra dan harga produsen di lag 1-4 (uji gabungan p 0,62), di semua sensitivity.
+5. Hubungan hujan → produksi tahunan tidak terdeteksi untuk kedua komoditas dengan data BDSP tahunan.
 
 ## 6. Dugaan yang perlu verifikasi
 
-1. **Mengapa kering menaikkan dan basah menurunkan harga rawit.** Dugaan: sebagian besar rawit di sentra ditanam di lahan yang bergantung pada air hujan atau irigasi terbatas, sehingga kekeringan menurunkan hasil, sedangkan musim kemarau yang lebih basah justru membantu. Verifikasi: data luas tanam/panen bulanan SPH-BPS per kabupaten, atau data puso/kerusakan tanaman. Keduanya tidak tersedia di proyek ini.
-2. **Lag 3 bulan mungkin sebagian berasal dari cara harga produsen dicatat.** H2 menemukan harga produsen PIHPS hanya berubah di sekitar 22% minggu (keterbatasan diterima di D-56). Harga yang jarang diperbarui bisa membuat dampak cuaca terlihat lebih lambat. Harga pedagang besar rawit merespons di lag 2, sebulan lebih cepat. Verifikasi: ulangi H1 dengan harga produsen dari sumber lain yang diperbarui lebih sering (misalnya SHP BPS bulanan).
-3. **Cabai merah tidak merespons cuaca, atau responsnya tidak terbaca?** Estimasi merah searah dengan rawit (kering naik) dan kategori "empat bulan kering" signifikan sendiri (+32%, p 0,03), tetapi uji gabungannya tidak (p 0,20). Dugaan: sentra cabai merah lebih banyak beririgasi atau tersebar di dataran tinggi, sehingga kurang peka terhadap hujan. Bisa juga 14 provinsi × 94 bulan tidak cukup untuk efek sebesar ini. Verifikasi: data irigasi/ketinggian sentra, atau grain kabupaten.
-4. **Sebagian efek basah datang dari bulan ekstrem** (melemah di sensitivity (b)). Bulan seperti Enrekang Juli 2020 dan Aceh November 2025 adalah reanalysis yang besarannya belum dicek ke stasiun.
+1. Mengapa kering menaikkan dan basah menurunkan harga rawit. Dugaan: sebagian besar rawit di sentra ditanam di lahan yang bergantung pada air hujan atau irigasi terbatas, sehingga kekeringan menurunkan hasil, sedangkan musim kemarau yang lebih basah justru membantu. Verifikasi: data luas tanam/panen bulanan SPH-BPS per kabupaten, atau data puso/kerusakan tanaman. Keduanya tidak tersedia di proyek ini.
+2. Lag 3 bulan mungkin sebagian berasal dari cara harga produsen dicatat. H2 menemukan harga produsen PIHPS hanya berubah di sekitar 22% minggu (keterbatasan diterima di D-56). Harga yang jarang diperbarui bisa membuat dampak cuaca terlihat lebih lambat. Harga pedagang besar rawit merespons di lag 2, sebulan lebih cepat. Verifikasi: ulangi H1 dengan harga produsen dari sumber lain yang diperbarui lebih sering (misalnya SHP BPS bulanan).
+3. Cabai merah tidak merespons cuaca, atau responsnya tidak terbaca? Estimasi merah searah dengan rawit (kering naik) dan kategori "empat bulan kering" signifikan sendiri (+32%, p 0,03), tetapi uji gabungannya tidak (p 0,20). Dugaan: sentra cabai merah lebih banyak beririgasi atau tersebar di dataran tinggi, sehingga kurang peka terhadap hujan. Bisa juga 14 provinsi × 94 bulan tidak cukup untuk efek sebesar ini. Verifikasi: data irigasi/ketinggian sentra, atau grain kabupaten.
+4. Sebagian efek basah datang dari bulan ekstrem (melemah di sensitivity (b)). Bulan seperti Enrekang Juli 2020 dan Aceh November 2025 adalah reanalysis yang besarannya belum dicek ke stasiun.
 
 ## 7. Keterbatasan
 
-- **Cuaca berasal dari reanalysis, bukan stasiun.** Open-Meteo Historical memakai model reanalysis dengan resolusi sekitar 25 km. Satu titik mewakili rata-rata grid, bukan hujan di lahan. Hujan lokal yang sangat terkonsentrasi (badai konvektif, lereng gunung) bisa meleset, dan hujan ekstrem di titik pegunungan bisa terlalu besar atau terlalu kecil. Hasil H1 sebaiknya dibaca sebagai hubungan dengan kondisi hujan regional di sekitar sentra.
+- Cuaca berasal dari reanalysis, bukan stasiun. Open-Meteo Historical memakai model reanalysis dengan resolusi sekitar 25 km. Satu titik mewakili rata-rata grid, bukan hujan di lahan. Hujan lokal yang sangat terkonsentrasi (badai konvektif, lereng gunung) bisa meleset, dan hujan ekstrem di titik pegunungan bisa terlalu besar atau terlalu kecil. Hasil H1 sebaiknya dibaca sebagai hubungan dengan kondisi hujan regional di sekitar sentra.
 - Cuaca hanya untuk 14-15 provinsi bertitik sentra (D-24, D-25), sekitar 92-94% produksi nasional. Provinsi lain tidak diuji.
 - Produksi hanya tahunan (D-42), sehingga jalur "hujan → produksi → harga" tidak bisa diuji bulanan.
 - Harga produsen jarang diperbarui (sekitar 22% minggu; D-56). NTT tidak masuk karena tidak bertitik sentra dan tidak masuk analisis harga produsen.

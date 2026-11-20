@@ -36,21 +36,21 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/07_h4_repor
 
 ## 2. Keputusan terakhir
 
-- **D-52**: sensitivity periode spike H2 memakai spike harga pedagang besar. Uji lead-lag di provinsi dengan harga produsen sering berubah tidak bisa dijalankan (0 provinsi >= 50%).
-- **D-53**: laporan hipotesis memisahkan temuan terbukti dari dugaan; rekomendasi kebijakan dikumpulkan di `analysis/notes_recommendations.md`.
-- **D-54**: penyesuaian saat menjalankan H3, H5, H6 (penanda guncangan pedagang besar di H3, dummy Natal tidak bisa diidentifikasi di H6, event study dan FE tahun sebagai pemeriksaan pendukung, label indikatif H5).
-- **D-55**: sinyal H4 = harga pedagang besar, cuaca, ONI (plus `months_to_idulfitri`); harga produsen tidak dipakai.
+- D-52: sensitivity periode spike H2 memakai spike harga pedagang besar. Uji lead-lag di provinsi dengan harga produsen sering berubah tidak bisa dijalankan (0 provinsi >= 50%).
+- D-53: laporan hipotesis memisahkan temuan terbukti dari dugaan; rekomendasi kebijakan dikumpulkan di `analysis/notes_recommendations.md`.
+- D-54: penyesuaian saat menjalankan H3, H5, H6 (penanda guncangan pedagang besar di H3, dummy Natal tidak bisa diidentifikasi di H6, event study dan FE tahun sebagai pemeriksaan pendukung, label indikatif H5).
+- D-55: sinyal H4 = harga pedagang besar, cuaca, ONI (plus `months_to_idulfitri`); harga produsen tidak dipakai.
 
-- **D-56**: empat hal terbuka di bagian 3 diputuskan.
-- **D-57**: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
-- **D-59**: H1 disetujui; uji eksploratif merah dan kriterianya; lag H4 (rawit lag 2-3; merah hanya kalau sinyal konsisten, lag nested).
-- **D-65**: 4.7b dan 4.8 disetujui; break-even menjadi rentang biaya per alarm palsu Rp 100 juta - 1 miliar (tanpa patokan resmi).
-- **D-64**: H4 final disetujui; ambang alarm rawit tidak diubah (future work); desain skenario what-if 4.7b.
-- **D-63**: H3, H5, H6 final, eksploratif, D-59 s/d D-62 disetujui; aturan final H4 (lift dan PR-AUC) ditulis sebelum dihitung.
-- **D-62**: keputusan final H6 (kontrol cuaca, perbandingan di model yang sama, label sebagian).
-- **D-61**: rincian dan aturan keputusan H4 (ditulis sebelum backtest).
-- **D-60**: indeks hujan nasional masuk H4 merah (kriteria (ii) D-59); kelembapan tidak.
-- **D-58**: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
+- D-56: empat hal terbuka di bagian 3 diputuskan.
+- D-57: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
+- D-59: H1 disetujui; uji eksploratif merah dan kriterianya; lag H4 (rawit lag 2-3; merah hanya kalau sinyal konsisten, lag nested).
+- D-65: 4.7b dan 4.8 disetujui; break-even menjadi rentang biaya per alarm palsu Rp 100 juta - 1 miliar (tanpa patokan resmi).
+- D-64: H4 final disetujui; ambang alarm rawit tidak diubah (future work); desain skenario what-if 4.7b.
+- D-63: H3, H5, H6 final, eksploratif, D-59 s/d D-62 disetujui; aturan final H4 (lift dan PR-AUC) ditulis sebelum dihitung.
+- D-62: keputusan final H6 (kontrol cuaca, perbandingan di model yang sama, label sebagian).
+- D-61: rincian dan aturan keputusan H4 (ditulis sebelum backtest).
+- D-60: indeks hujan nasional masuk H4 merah (kriteria (ii) D-59); kelembapan tidak.
+- D-58: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
 
 Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-65).
 

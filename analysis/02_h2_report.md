@@ -128,9 +128,9 @@ Kriteria 2 hanya terpenuhi di simpul yang memakai harga produsen; lihat bagian 5
 
 ## 5. Dugaan yang perlu verifikasi
 
-1. **Jeda 3 minggu antara eceran dan harga produsen** kemungkinan besar berasal dari irama pencatatan harga produsen yang jarang, bukan dari pasar. Verifikasi: cara dan frekuensi pengumpulan harga produsen PIHPS ke Bank Indonesia, atau sumber harga petani lain (misalnya survei harga produsen BPS).
-2. **Asimetri produsen -> pedagang besar** (0,27-0,28) bisa ikut dibentuk oleh harga produsen yang tertinggal. Kalau harga produsen baru diperbarui setelah pasar bergerak, perubahan yang tercatat bukan perubahan yang dialami pedagang besar pada bulan itu. Verifikasi dengan data harga produsen yang diperbarui lebih sering.
-3. **Rawit saat spike pedagang besar**: penurunan diteruskan lebih penuh ke eceran. Bisa jadi pengecer lebih cepat menurunkan harga setelah lonjakan karena takut kehilangan pembeli, tetapi ini belum diuji.
+1. Jeda 3 minggu antara eceran dan harga produsen kemungkinan besar berasal dari irama pencatatan harga produsen yang jarang, bukan dari pasar. Verifikasi: cara dan frekuensi pengumpulan harga produsen PIHPS ke Bank Indonesia, atau sumber harga petani lain (misalnya survei harga produsen BPS).
+2. Asimetri produsen -> pedagang besar (0,27-0,28) bisa ikut dibentuk oleh harga produsen yang tertinggal. Kalau harga produsen baru diperbarui setelah pasar bergerak, perubahan yang tercatat bukan perubahan yang dialami pedagang besar pada bulan itu. Verifikasi dengan data harga produsen yang diperbarui lebih sering.
+3. Rawit saat spike pedagang besar: penurunan diteruskan lebih penuh ke eceran. Bisa jadi pengecer lebih cepat menurunkan harga setelah lonjakan karena takut kehilangan pembeli, tetapi ini belum diuji.
 
 ## 6. So what
 

@@ -8,10 +8,7 @@ Script: `analysis/h6_holidays.py`. Tabel: `analysis/tables/h6_*.csv`. Rencana: `
 
 ## 1. Hasil utama dan effect size
 
-Panel FE provinsi x bulan: log harga eceran pada dummy bulan Idulfitri dan bulan sebelum Idulfitri, dengan:
-- FE provinsi, FE month-of-year, dan trend;
-- log produksi tahunan provinsi, ONI, dan jumlah hari cuti bersama sebagai kontrol;
-- SE cluster per tahun-bulan.
+Panel FE provinsi x bulan: log harga eceran pada dummy bulan Idulfitri dan bulan sebelum Idulfitri, dengan FE provinsi, FE month-of-year, dan trend. Log produksi tahunan provinsi, ONI, dan jumlah hari cuti bersama masuk sebagai kontrol, dengan SE cluster per tahun-bulan.
 
 | Komoditas | Bulan Idulfitri: efek (95% CI) | p | Bulan sebelum Idulfitri: efek (95% CI) | p |
 | --- | --- | --- | --- | --- |
@@ -61,8 +58,8 @@ Spesifikasi utama diulang di provinsi bertitik sentra (14 provinsi merah, 15 raw
 
 - Hasil tidak stabil. Efek bulan Idulfitri hanya signifikan di subsampel bulan dengan cuti bersama terverifikasi. Subsampel itu membuang 2020 dan beberapa bulan Idulfitri, sehingga hanya tersisa 6 kejadian.
 - Bulan sebelum Idulfitri untuk cabai merah positif dan signifikan atau hampir signifikan di 5 dari 6 spesifikasi (+7 sampai +16%).
-- **Tidak dijalankan:** dummy Natal-Tahun Baru terpisah, yang ada di rencana. Natal dan Tahun Baru selalu jatuh di Desember-Januari, sehingga efeknya sepenuhnya terserap FE month-of-year dan tidak bisa diestimasi terpisah (dicatat di D-54).
-- **D-44:** harga eceran tidak punya bulan imputasi, sehingga tidak ada yang perlu dikeluarkan.
+- Tidak dijalankan: dummy Natal-Tahun Baru terpisah, yang ada di rencana. Natal dan Tahun Baru selalu jatuh di Desember-Januari, sehingga efeknya sepenuhnya terserap FE month-of-year dan tidak bisa diestimasi terpisah (dicatat di D-54).
+- D-44: harga eceran tidak punya bulan imputasi, sehingga tidak ada yang perlu dikeluarkan.
 
 ## 4. Temuan yang terbukti
 
@@ -73,8 +70,8 @@ Spesifikasi utama diulang di provinsi bertitik sentra (14 provinsi merah, 15 raw
 
 ## 5. Dugaan yang perlu verifikasi
 
-1. **Jendela sekitar Idulfitri yang mahal (event study).** Kenaikan 15-46% di bulan -2 sampai +2 kemungkinan bercampur dengan episode spike besar yang kebetulan jatuh dekat Idulfitri: Juni-Oktober 2019, Januari-Mei 2021 (rawit), Mei-September 2022, Januari-April 2025 (rawit). Dengan 7 kejadian, efek hari besar dan kebetulan waktu tidak bisa dipisahkan. EDA juga menunjukkan puncak harga tidak jatuh di bulan Lebaran (D-06). **Pembaruan (D-62):** kontrol anomali hujan lag 1-4 tidak mengubah pola jendela ini, jadi cuaca di sentra bukan penjelasannya. Penjelasan yang tersisa adalah kebetulan waktu dengan episode spike atau faktor lain di sekitar Lebaran (permintaan selama Ramadan, distribusi). Verifikasi: event study per tahun Idulfitri, untuk melihat apakah pola ini datang dari satu-dua tahun saja.
-2. **Efek di subsampel cuti bersama terverifikasi** (+35% rawit) kemungkinan efek komposisi sampel, karena tahun dan bulan yang dibuang tidak acak. Verifikasi: lengkapi data cuti bersama 2020 dan Natal 2018, 2019, 2022 dari dokumen SKB.
+1. Jendela sekitar Idulfitri yang mahal (event study). Kenaikan 15-46% di bulan -2 sampai +2 kemungkinan bercampur dengan episode spike besar yang kebetulan jatuh dekat Idulfitri: Juni-Oktober 2019, Januari-Mei 2021 (rawit), Mei-September 2022, Januari-April 2025 (rawit). Dengan 7 kejadian, efek hari besar dan kebetulan waktu tidak bisa dipisahkan. EDA juga menunjukkan puncak harga tidak jatuh di bulan Lebaran (D-06). **Pembaruan (D-62):** kontrol anomali hujan lag 1-4 tidak mengubah pola jendela ini, jadi cuaca di sentra bukan penjelasannya. Penjelasan yang tersisa adalah kebetulan waktu dengan episode spike atau faktor lain di sekitar Lebaran (permintaan selama Ramadan, distribusi). Verifikasi: event study per tahun Idulfitri, untuk melihat apakah pola ini datang dari satu-dua tahun saja.
+2. Efek di subsampel cuti bersama terverifikasi (+35% rawit) kemungkinan efek komposisi sampel, karena tahun dan bulan yang dibuang tidak acak. Verifikasi: lengkapi data cuti bersama 2020 dan Natal 2018, 2019, 2022 dari dokumen SKB.
 
 ## 6. So what
 

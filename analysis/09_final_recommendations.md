@@ -4,10 +4,10 @@ Disusun dari `analysis/notes_recommendations.md` dan hasil skenario what-if (lan
 
 Setiap rekomendasi menyebut:
 - hipotesis atau skenario yang mendukungnya;
-- **kekuatan bukti**:
-  - **terbukti**: temuan yang lolos uji di proyek ini;
-  - **implikasi**: langkah yang masuk akal dari temuan terbukti, tetapi efeknya belum diuji;
-  - **dugaan**: perlu verifikasi.
+- kekuatan bukti:
+  - terbukti: temuan yang lolos uji di proyek ini;
+  - implikasi: langkah yang masuk akal dari temuan terbukti, tetapi efeknya belum diuji;
+  - dugaan: perlu verifikasi.
 
 Tidak ada angka efektivitas intervensi yang diklaim. Semua angka redaman di skenario adalah asumsi (D-64).
 

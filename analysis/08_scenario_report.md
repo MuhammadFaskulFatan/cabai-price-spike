@@ -89,29 +89,29 @@ Cara membaca: di rentang biaya Rp 100 juta sampai Rp 1 miliar per alarm palsu, p
 Biaya lonjakan rawit (Rp 10,31 triliun) hampir dua kali merah. Penyebabnya lebih banyak bulan spike dan konsumsi per kapita sedikit lebih tinggi. Skenario (b) tidak dihitung untuk rawit, karena **model peringatan dini rawit belum lolos uji** (H4 final, D-63: lift 1,18, interval 0,92-1,50, belum jelas di atas menebak acak).
 
 Yang dibutuhkan agar model rawit bisa diuji ulang:
-- **Harga produsen yang lebih sering diperbarui.** Di PIHPS, harga produsen hanya berubah di sekitar 22% minggu (H2, D-56), sehingga sinyal dari tingkat petani tidak bisa dipakai (D-55). Padahal H1 menunjukkan harga produsen rawit merespons hujan di sentra dengan lag 3 bulan.
-- **Aturan ambang alarm yang lebih ketat**, ditetapkan sebelum backtest baru (future work, D-64). PR-AUC rawit lebih tinggi dari baseline charter, jadi skornya memeringkat risiko sedikit lebih baik.
+- Harga produsen yang lebih sering diperbarui. Di PIHPS, harga produsen hanya berubah di sekitar 22% minggu (H2, D-56), sehingga sinyal dari tingkat petani tidak bisa dipakai (D-55). Padahal H1 menunjukkan harga produsen rawit merespons hujan di sentra dengan lag 3 bulan.
+- Aturan ambang alarm yang lebih ketat, ditetapkan sebelum backtest baru (future work, D-64). PR-AUC rawit lebih tinggi dari baseline charter, jadi skornya memeringkat risiko sedikit lebih baik.
 - Mungkin juga model khusus spike nasional, karena lonjakan rawit bersifat serentak (H3).
 
 ## 5. Temuan yang terbukti
 
-1. **Biaya lonjakan bagi rumah tangga Jan 2023 - Okt 2026** (konsumsi rumah tangga saja, harga nominal): sekitar Rp 5,5 triliun untuk cabai merah dan Rp 10,3 triliun untuk cabai rawit. Di bulan spike, rumah tangga membayar rata-rata sekitar Rp 21.000/kg di atas harga normal 12 bulan sebelumnya.
-2. **Satu episode merah besar mendominasi:** Nov 2023 - Mar 2024 menyumbang 77% biaya lonjakan merah (Rp 4,28 triliun).
-3. **Di backtest H4, episode merah Nov 2023 terdeteksi lebih awal** oleh model (93% provinsi beralarm sebulan sebelumnya, 100% dua bulan sebelumnya) dan oleh baseline charter (77% sebulan sebelumnya). Jadi pada episode yang bisa dinilai, model dan baseline sama-sama "menangkap" episode itu. Bedanya ada di alarm palsu: 616 vs 947 provinsi-bulan, sepertiga lebih sedikit untuk model.
-4. **Di tingkat nasional, alarm palsu dominan untuk kedua sinyal:** dari sekitar 20 bulan dengan alarm di >= 50% provinsi, 18 tidak diikuti onset spike nasional dalam 1-2 bulan.
+1. Biaya lonjakan bagi rumah tangga Jan 2023 - Okt 2026 (konsumsi rumah tangga saja, harga nominal): sekitar Rp 5,5 triliun untuk cabai merah dan Rp 10,3 triliun untuk cabai rawit. Di bulan spike, rumah tangga membayar rata-rata sekitar Rp 21.000/kg di atas harga normal 12 bulan sebelumnya.
+2. Satu episode merah besar mendominasi: Nov 2023 - Mar 2024 menyumbang 77% biaya lonjakan merah (Rp 4,28 triliun).
+3. Di backtest H4, episode merah Nov 2023 terdeteksi lebih awal oleh model (93% provinsi beralarm sebulan sebelumnya, 100% dua bulan sebelumnya) dan oleh baseline charter (77% sebulan sebelumnya). Jadi pada episode yang bisa dinilai, model dan baseline sama-sama "menangkap" episode itu. Bedanya ada di alarm palsu: 616 vs 947 provinsi-bulan, sepertiga lebih sedikit untuk model.
+4. Di tingkat nasional, alarm palsu dominan untuk kedua sinyal: dari sekitar 20 bulan dengan alarm di >= 50% provinsi, 18 tidak diikuti onset spike nasional dalam 1-2 bulan.
 
 ## 6. Dugaan yang perlu verifikasi
 
-1. **Besar manfaat bergantung sepenuhnya pada redaman yang diasumsikan.** Tanpa data intervensi (kapan, di mana, berapa volume operasi pasar), redaman tidak bisa diestimasi. Verifikasi: data operasi pasar/SPHP Bapanas per provinsi-bulan, dibandingkan dengan harga sebelum dan sesudah.
-2. **Hasil skenario (b) vs (c) bertumpu pada satu episode merah yang bisa dinilai.** Dengan satu episode, tidak bisa dikatakan model lebih sering menangkap episode daripada baseline. Yang bisa dikatakan hanya bahwa model mencapai hal yang sama dengan alarm palsu lebih sedikit.
-3. **Biaya lonjakan kemungkinan understate.** Hanya konsumsi rumah tangga yang dihitung. Neraca Bapanas di Buletin menambahkan horeka/PMM (25% dari konsumsi rumah tangga) dan industri (20%), sehingga total kebutuhan sekitar 1,45 kali konsumsi rumah tangga (asumsi Ditjen Hortikultura, bukan hasil proyek ini). Median 12 bulan sebagai harga normal juga ikut naik selama episode panjang, sehingga kelebihan harga di akhir episode ter-understate.
-4. **Ada juga arah overstate.** Saat harga tinggi, rumah tangga mungkin membeli lebih sedikit, sedangkan konsumsi di sini dianggap tetap sepanjang tahun.
+1. Besar manfaat bergantung sepenuhnya pada redaman yang diasumsikan. Tanpa data intervensi (kapan, di mana, berapa volume operasi pasar), redaman tidak bisa diestimasi. Verifikasi: data operasi pasar/SPHP Bapanas per provinsi-bulan, dibandingkan dengan harga sebelum dan sesudah.
+2. Hasil skenario (b) vs (c) bertumpu pada satu episode merah yang bisa dinilai. Dengan satu episode, tidak bisa dikatakan model lebih sering menangkap episode daripada baseline. Yang bisa dikatakan hanya bahwa model mencapai hal yang sama dengan alarm palsu lebih sedikit.
+3. Biaya lonjakan kemungkinan understate. Hanya konsumsi rumah tangga yang dihitung. Neraca Bapanas di Buletin menambahkan horeka/PMM (25% dari konsumsi rumah tangga) dan industri (20%), sehingga total kebutuhan sekitar 1,45 kali konsumsi rumah tangga (asumsi Ditjen Hortikultura, bukan hasil proyek ini). Median 12 bulan sebagai harga normal juga ikut naik selama episode panjang, sehingga kelebihan harga di akhir episode ter-understate.
+4. Ada juga arah overstate. Saat harga tinggi, rumah tangga mungkin membeli lebih sedikit, sedangkan konsumsi di sini dianggap tetap sepanjang tahun.
 
 ## 7. Keterbatasan
 
-- **Konsumsi rumah tangga saja**, jadi biaya lonjakan understate. Konsumsi per kapita Susenas tahunan dibagi rata ke 12 bulan, tanpa pola musiman.
-- **Harga nominal**, tanpa penyesuaian inflasi.
-- **Redaman dan biaya per alarm palsu adalah asumsi**, bukan hasil. Tidak ada angka efektivitas intervensi yang diklaim, dan tidak ada patokan anggaran resmi per kegiatan yang bisa dikutip (D-65).
+- Konsumsi rumah tangga saja, jadi biaya lonjakan understate. Konsumsi per kapita Susenas tahunan dibagi rata ke 12 bulan, tanpa pola musiman.
+- Harga nominal, tanpa penyesuaian inflasi.
+- Redaman dan biaya per alarm palsu adalah asumsi, bukan hasil. Tidak ada angka efektivitas intervensi yang diklaim, dan tidak ada patokan anggaran resmi per kegiatan yang bisa dikutip (D-65).
 - 2026 memakai konsumsi per kapita Susenas 2025 (flag), karena Susenas 2026 belum ada.
 - Episode merah Okt 2026 masih berjalan, dan November 2026 parsial tidak dihitung, sehingga biayanya akan bertambah.
 - Biaya lonjakan adalah tambahan pengeluaran rumah tangga. Sebagian menjadi pendapatan pelaku rantai pasok, jadi ini bukan kerugian ekonomi bersih.
