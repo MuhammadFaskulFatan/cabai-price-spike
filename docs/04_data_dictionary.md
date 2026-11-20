@@ -142,13 +142,15 @@ Satu baris per hari libur nasional atau cuti bersama, 2018-2026 (D-46).
 
 ### `fact_weather_monthly`
 
-PK: `province_id`, `month_start`, `commodity_group`. Sumber: Open-Meteo, diagregasi dari harian per titik sentra lalu dirata-rata berbobot produksi (`mean_production_ton_2019_2025` tiap kabupaten sentra; kabupaten memakai cuaca anchor-nya). File: `data/interim/fact_weather_monthly.parquet` (Jan 2018 - Nov 2026, 34 provinsi x 2 grup); seri panjang 1991-2026 hanya untuk provinsi bertitik di `weather_monthly_full.parquet` (D-57).
+PK: `province_id`, `month_start`, `commodity_group`. Sumber: Open-Meteo, diagregasi dari harian per titik sentra lalu dirata-rata berbobot produksi (`mean_production_ton_2019_2025` tiap kabupaten sentra; kabupaten memakai cuaca anchor-nya). File: `data/interim/fact_weather_monthly.parquet` (Jan 2018 - Nov 2026, 34 provinsi x 2 grup); seri panjang 1991-2026 hanya untuk provinsi bertitik di `weather_monthly_full.parquet` (D-57); seri per lokasi di `weather_site_monthly.parquet` (D-58).
 
 | Kolom | Tipe | Deskripsi | Catatan |
 | --- | --- | --- | --- |
 | `rain_total_mm` | float | Jumlah hujan bulanan (mm), rata-rata berbobot titik sentra | Bulan dengan hari tidak lengkap di salah satu titik = `NULL` |
 | `rain_anomaly_mm` | float | `rain_total_mm` dikurangi normal bulan kalender (mm) | Normal = rata-rata 1991-2020 (WMO climate normal, D-19) |
-| `rain_anomaly` | float | Anomali terstandar: `rain_anomaly_mm` dibagi simpangan baku 1991-2020 bulan kalender yang sama | 1 = satu SD lebih basah dari normal; dipakai untuk kategori kering/basah dan model (D-57) |
+| `rain_anomaly` | float | Rata-rata berbobot produksi dari z-score per lokasi: akar kuadrat hujan bulanan terhadap rata-rata dan SD bulan kalender 1991-2020 di lokasi itu | Variabel utama H1 dan H4 (D-58). Rata-rata 0 di baseline; SD 1 untuk provinsi satu titik, lebih kecil (sampai 0,66) untuk provinsi banyak titik karena dirata-rata |
+| `rain_anomaly_plain_z` | float | Sama, tetapi z-score dari hujan bulanan tanpa akar | Hanya sensitivity; meledak di bulan kemarau yang normalnya hampir nol (D-58) |
+| `rain_is_extreme` | bool | `TRUE` kalau ada lokasi penyumbang dengan \|z\| >= 3 atau hujan harian > 300 mm di bulan itu | Flag dari audit cuaca; nilai tidak diubah (D-58). `NULL` untuk `not_applicable` dan `partial_month` |
 | `rel_humidity_mean` | float | Rata-rata kelembapan relatif harian (%) | - |
 | `n_points` | int | Jumlah kabupaten sentra yang dirata-rata | 0 untuk `not_applicable` |
 | `weather_status` | string | `observed`, `not_applicable`, atau `partial_month` | `partial_month` = November 2026 (arsip Open-Meteo tertinggal beberapa hari), nilai `NULL` (D-57).  `not_applicable` untuk provinsi × komoditas tanpa titik sentra (D-25); nilai cuaca `NULL` dan bukan missing. Provinsi bertitik: 14 untuk cabai merah (mencakup 94,1% produksi nasional rata-rata BDSP 2019-2025) dan 15 untuk cabai rawit (92,4%); gabungan 18 provinsi mencakup 95,7% (cabe besar) dan 94,8% (cabe rawit) |
@@ -178,7 +180,7 @@ Kolom geografi (D-48, D-50), sama untuk semua bulan satu provinsi x komoditas:
 
 `dim_province` juga memuat `capital`, `island`, `capital_lat`, `capital_lon`.
 
-Kolom cuaca: `rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status`, `weather_n_points` (lihat `fact_weather_monthly`).
+Kolom cuaca: `rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rain_anomaly_plain_z`, `rain_is_extreme`, `rel_humidity_mean`, `weather_status`, `weather_n_points` (lihat `fact_weather_monthly`).
 
 Kolom produksi: `production_annual_ton` (ton, angka tahunan BDSP diulang untuk 12 bulan dalam tahunnya, 2026 NULL) dan `production_annual_preliminary` (`TRUE` untuk 2025) (D-42).
 

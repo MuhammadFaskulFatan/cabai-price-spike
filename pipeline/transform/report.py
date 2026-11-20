@@ -97,14 +97,16 @@ def run():
     wettest = weather.loc[weather["rain_total_mm"].idxmax()]
     points = pd.read_csv(INTERIM / "sentra_points.csv")
     wettest_points = points[(points["province_id"] == wettest["province_id"]) & (points["commodity_group"] == wettest["commodity_group"])]["regency_name"]
-    lines += ["## 6. Cuaca (D-19, D-24, D-25, D-57)", "",
+    lines += ["## 6. Cuaca (D-19, D-24, D-25, D-57, D-58)", "",
               f"- Status di core: {core['weather_status'].value_counts().to_dict()}. Provinsi bertitik sentra: cabai merah {weather[weather.commodity_group == 'cabai_merah'].province_id.nunique()}, "
               f"cabai rawit {weather[weather.commodity_group == 'cabai_rawit'].province_id.nunique()}; provinsi lain `not_applicable` (bukan missing, tidak di-impute).",
               "- Per provinsi x komoditas: rata-rata berbobot produksi kabupaten sentra (bobot produksi rata-rata 2019-2025). Bulan dengan hari tidak lengkap di salah satu titik = NULL; tidak ada kasus seperti itu sampai Oktober 2026.",
-              "- `rain_anomaly` = anomali terstandar terhadap rata-rata dan simpangan baku bulan kalender 1991-2020 dari seri provinsi; `rain_anomaly_mm` dalam mm. November 2026 `partial_month`, nilai NULL.",
+              "- `rain_anomaly` (D-58) = rata-rata berbobot produksi dari z-score per lokasi: akar kuadrat hujan bulanan terhadap rata-rata dan simpangan baku bulan kalender 1991-2020 di lokasi itu. "
+              "`rain_anomaly_plain_z` = versi tanpa akar (untuk sensitivity). `rain_anomaly_mm` = hujan provinsi dikurangi normal bulan kalender (mm). November 2026 `partial_month`, nilai NULL.",
+              f"- `rain_is_extreme` (D-58): {int(weather['rain_is_extreme'].sum())} bulan observed di periode model memuat lokasi dengan |z| >= 3 atau hujan harian > 300 mm (daftar di audit cuaca). Nilai tidak diubah.",
               f"- Periode model (observed, {len(weather):,} sel): hujan median {weather['rain_total_mm'].median():,.0f} mm/bulan, kelembapan rata-rata {weather['rel_humidity_mean'].mean():.1f}%, "
               f"`rain_anomaly` rata-rata {weather['rain_anomaly'].mean():+.2f} (2019-2026 sedikit lebih basah dari normal 1991-2020).",
-              f"- Bulan terbasah: {wettest['month_start'][:7]}, province_id {wettest['province_id']} ({wettest['rain_total_mm']:,.0f} mm, {wettest['rain_anomaly']:+.1f} SD), titik sentra: {', '.join(wettest_points)}. "
+              f"- Bulan terbasah: {wettest['month_start'][:7]}, province_id {wettest['province_id']} ({wettest['rain_total_mm']:,.0f} mm, `rain_anomaly` {wettest['rain_anomaly']:+.1f}), titik sentra: {', '.join(wettest_points)}. "
               "Nilai tidak diubah. Data Open-Meteo adalah reanalysis model, bukan pengamatan stasiun; besarnya hujan ekstrem di titik pegunungan perlu dibaca hati-hati.", ""]
 
     REPORTS.mkdir(parents=True, exist_ok=True)

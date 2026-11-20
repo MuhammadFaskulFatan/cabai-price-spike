@@ -41,3 +41,31 @@ Provinsi tanpa titik sentra tidak muncul (cuaca `not_applicable`, D-25). Tahun 2
 | Sulawesi Selatan | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 95.2 |
 | Sulawesi Tengah | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 95.2 |
 | Sulawesi Utara | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 95.5 |
+
+## 4. Bulan ekstrem per lokasi (D-58)
+
+Aturan: |z| >= 3 untuk akar kuadrat hujan bulanan terhadap rata-rata dan simpangan baku bulan kalender 1991-2020 di lokasi itu, atau ada hari dengan hujan > 300 mm. Di baseline, 0.36% lokasi-bulan tertandai (distribusi normal: 0,27% untuk |z| >= 3).
+
+- 2018-2026: 112 dari 7,918 lokasi-bulan (87 basah, 24 kering, 1 hanya karena hujan harian).
+- Nilai tidak diubah. Bulan provinsi x komoditas yang memuat lokasi tertandai diberi `rain_is_extreme = TRUE` di core; sensitivity (b) H1 mengeluarkannya.
+- Daftar lengkap di `weather_extreme_months.csv`. Lima belas terbesar menurut |z|:
+
+| anchor_id | kabupaten | provinsi | bulan | hujan_mm | hujan_harian_maks_mm | z_akar | z_biasa | sebab |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 3512 | Kab. Situbondo | Jawa Timur | 2022-08 | 18.4 | 11.4 | 5.5 | 14.7 | z |
+| 3512 | Kab. Situbondo | Jawa Timur | 2025-08 | 16.2 | 6.4 | 5.1 | 12.9 | z |
+| 3511 | Kab. Bondowoso | Jawa Timur | 2025-02 | 150.4 | 25.3 | -5.1 | -4.1 | z |
+| 1602 | Kab. Ogan Komering Ilir | Sumatera Selatan | 2024-01 | 574.6 | 45.7 | 5.0 | 6.2 | z |
+| 1106 | Kab. Aceh Tengah | Aceh | 2025-11 | 714.8 | 234.1 | 4.8 | 5.9 | z |
+| 3513 | Kab. Probolinggo | Jawa Timur | 2022-08 | 71.3 | 29.4 | 4.8 | 10.7 | z |
+| 3329 | Kab. Brebes | Jawa Tengah | 2023-12 | 84.2 | 18.1 | -4.8 | -3.7 | z |
+| 7316 | Kab. Enrekang | Sulawesi Selatan | 2025-11 | 97.9 | 22.4 | -4.7 | -3.3 | z |
+| 3529 | Kab. Sumenep | Jawa Timur | 2022-08 | 47.5 | 20.1 | 4.5 | 7.7 | z |
+| 1219 | Kab. Batubara | Sumatera Utara | 2022-06 | 457.2 | 41.5 | 4.4 | 5.4 | z |
+| 7105 | Kab. Minahasa Selatan | Sulawesi Utara | 2021-01 | 667.7 | 170.3 | 4.3 | 5.8 | z |
+| 6306 | Kab. Hulu Sungai Selatan | Kalimantan Selatan | 2021-11 | 572.4 | 54.4 | 4.3 | 5.2 | z |
+| 1108 | Kab. Aceh Besar | Aceh | 2020-05 | 997.1 | 539.9 | 4.3 | 4.8 | z dan harian |
+| 1312 | Kab. Pasaman Barat | Sumatera Barat | 2022-06 | 545.5 | 68.2 | 4.2 | 5.2 | z |
+| 1708 | Kab. Kepahiang | Bengkulu | 2022-06 | 510.0 | 223.7 | 4.2 | 5.8 | z |
+
+Enrekang Juli 2020 (2,228 mm, z +3.2) termasuk yang tertandai.

@@ -1,6 +1,6 @@
 # Status proyek (per 20 Nov 2026)
 
-Branch kerja: `phase-6-analysis`. Paket cuaca dikerjakan di `weather-package` (D-56) dan sudah di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
+Branch kerja: `phase-6-analysis` (di-push ke origin sampai `3cad150`). Paket cuaca dikerjakan di `weather-package` (D-56) dan sudah di-merge kembali ke `phase-6-analysis`. `phase-6-analysis` di-merge ke `main` setelah H1, H4, dan keputusan final H6. `main` berisi Fase 1-5 (sampai `02f8a56`).
 
 ## 0. Paket cuaca (selesai, menunggu tinjauan Fatan sebelum H1)
 
@@ -10,7 +10,7 @@ Branch kerja: `phase-6-analysis`. Paket cuaca dikerjakan di `weather-package` (D
 | 4.2 Audit | Selesai: 74/74 valid, 0 hari kosong, 0 nilai di luar batas fisik, 2 hari hujan > 300 mm (ditandai). Laporan `pipeline/audit/reports/weather_audit.md` | `b973e1f` |
 | 4.3 Transform dan integrasi | Selesai: `weather_features.py` (D-57); 6 kolom cuaca di `core_province_month` (`rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status`, `weather_n_points`); observed 3.074 sel (29 provinsi x komoditas), kosong 0; kolom lama tidak berubah | `bf9b7f9` |
 | 4.4 Validate | Selesai: 53/53 cek lulus (7 cek cuaca baru); spot-check cuaca 8/8 cocok (5 sel vs raw harian, 3 lokasi x bulan vs Open-Meteo live) | `fbc180b` |
-| Merge ke `phase-6-analysis` | Selesai (merge `--no-ff`, belum di-push) | merge commit "Merge weather-package" |
+| Merge ke `phase-6-analysis` | Selesai (merge `--no-ff`, di-push) | merge commit "Merge weather-package" |
 
 ## 1. Yang sudah selesai
 
@@ -27,7 +27,7 @@ Branch kerja: `phase-6-analysis`. Paket cuaca dikerjakan di `weather-package` (D
 | H3 disparitas | **Tidak didukung (dibantah)** | `272b843` |
 | H5 cobweb | **Tidak didukung** (rawit: arah positif, indikatif) | `272b843` |
 | H6 hari besar | **Sementara: tidak didukung untuk "menambah kenaikan"**; final menunggu H1 | `272b843` |
-| H1 cuaca | Belum; data cuaca sudah di core | - |
+| H1 cuaca | Berjalan: definisi anomali per lokasi dan flag ekstrem (D-58) selesai, 55/55 cek lulus; model menyusul | (commit ini) |
 | H4 early warning | Belum; data cuaca sudah di core | - |
 
 Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/05_h6_report.md`. Catatan untuk rekomendasi akhir ada di `analysis/notes_recommendations.md`.
@@ -40,9 +40,10 @@ Laporan hipotesis ada di `analysis/02_h2_report.md` sampai `analysis/05_h6_repor
 - **D-55**: sinyal H4 = harga pedagang besar, cuaca, ONI (plus `months_to_idulfitri`); harga produsen tidak dipakai.
 
 - **D-56**: empat hal terbuka di bagian 3 diputuskan.
-- **D-57**: definisi variabel cuaca (anomali terstandar terhadap normal 1991-2020, November 2026 `partial_month`).
+- **D-57**: definisi variabel cuaca (November 2026 `partial_month`; poin 2 diganti D-58).
+- **D-58**: ketentuan H1: anomali = rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (baseline 1991-2020), flag `rain_is_extreme`, sensitivity wajib (a)-(d), pola U hanya kalau bertahan di (a) dan (b).
 
-Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-57).
+Rincian lengkap ada di `docs/decision_log.md` (D-01 s/d D-58).
 
 ## 3. Yang belum diputuskan
 

@@ -5,9 +5,11 @@ Yang diperiksa:
 - kelengkapan harian 1991-01-01 sampai tanggal akhir file, per variabel (hari kosong);
 - nilai yang tidak masuk akal: hujan negatif, kelembapan di luar 0-100, hujan harian > 300 mm (ditandai, tidak diubah);
 - kelengkapan per provinsi x bulan (porsi lokasi-hari terisi) untuk 2018-2026, sebagai heatmap tabel;
-- file cuaca di raw yang tidak dipakai lagi (misalnya lokasi Sentul yang salah, D-51).
+- file cuaca di raw yang tidak dipakai lagi (misalnya lokasi Sentul yang salah, D-51);
+- bulan ekstrem per lokasi (D-58): |z akar hujan| >= 3 terhadap baseline 1991-2020 bulan kalender yang sama, atau ada hari
+  dengan hujan > 300 mm. Ditandai, nilai tidak diubah; flag yang sama masuk core sebagai rain_is_extreme.
 
-Output: pipeline/audit/reports/weather_audit.md dan weather_locations.csv.
+Output: pipeline/audit/reports/weather_audit.md, weather_locations.csv, dan weather_extreme_months.csv.
 """
 import json
 
@@ -18,6 +20,7 @@ from pipeline.audit.loaders import REPORTS, to_markdown, write_report
 from pipeline.extract.common import is_valid
 from pipeline.extract.open_meteo import weather_file_name
 from pipeline.readers import RAW, ROOT
+from pipeline.transform.weather_features import EXTREME_DAILY_MM as FLAG_DAILY_MM, EXTREME_Z, site_series
 
 DAILY = RAW / "open_meteo" / "daily"
 EXTREME_RAIN_MM = 300
@@ -97,6 +100,29 @@ def run():
              "## 3. Kelengkapan per provinsi x tahun (persen lokasi-hari terisi, 2018-2026)", "",
              "Provinsi tanpa titik sentra tidak muncul (cuaca `not_applicable`, D-25). Tahun 2026 di bawah 100% hanya karena November 2026 baru terisi sampai tanggal akhir file (bulan parsial).", "",
              to_markdown(year_table, index=True, floatfmt="{:.1f}"), ""]
+    sites = site_series(points)
+    recent = sites[(sites["month"] >= pd.Period("2018-01", "M")) & sites["is_extreme"]].copy()
+    recent["provinsi"] = recent["anchor_id"].map(anchors.set_index("anchor_id")["province_id"]).map(provinces)
+    recent["sebab"] = np.where(recent["rain_z"].abs() >= EXTREME_Z, np.where(recent["rain_daily_max"] > FLAG_DAILY_MM, "z dan harian", "z"), "harian")
+    extreme = recent[["anchor_id", "regency_name", "provinsi", "month", "rain", "rain_daily_max", "rain_z", "rain_z_plain", "sebab"]].rename(
+        columns={"regency_name": "kabupaten", "month": "bulan", "rain": "hujan_mm", "rain_daily_max": "hujan_harian_maks_mm", "rain_z": "z_akar", "rain_z_plain": "z_biasa"})
+    extreme = extreme.assign(bulan=extreme["bulan"].astype(str)).sort_values("z_akar", key=abs, ascending=False)
+    extreme.to_csv(REPORTS / "weather_extreme_months.csv", index=False)
+    base = sites[(sites["month"] >= pd.Period("1991-01", "M")) & (sites["month"] <= pd.Period("2020-12", "M"))]
+    n_recent = int((sites["month"] >= pd.Period("2018-01", "M")).sum())
+    lines += ["## 4. Bulan ekstrem per lokasi (D-58)", "",
+              f"Aturan: |z| >= {EXTREME_Z} untuk akar kuadrat hujan bulanan terhadap rata-rata dan simpangan baku bulan kalender 1991-2020 di lokasi itu, "
+              f"atau ada hari dengan hujan > {FLAG_DAILY_MM} mm. Di baseline, {base['is_extreme'].mean() * 100:.2f}% lokasi-bulan tertandai "
+              "(distribusi normal: 0,27% untuk |z| >= 3).", "",
+              f"- 2018-2026: {len(extreme)} dari {n_recent:,} lokasi-bulan ({int((extreme['z_akar'] >= EXTREME_Z).sum())} basah, "
+              f"{int((extreme['z_akar'] <= -EXTREME_Z).sum())} kering, {int((extreme['sebab'] == 'harian').sum())} hanya karena hujan harian).",
+              "- Nilai tidak diubah. Bulan provinsi x komoditas yang memuat lokasi tertandai diberi `rain_is_extreme = TRUE` di core; sensitivity (b) H1 mengeluarkannya.",
+              "- Daftar lengkap di `weather_extreme_months.csv`. Lima belas terbesar menurut |z|:", "",
+              to_markdown(extreme.head(15), floatfmt="{:,.1f}"), ""]
+    enrekang = extreme[(extreme["kabupaten"] == "Kab. Enrekang") & (extreme["bulan"] == "2020-07")]
+    if len(enrekang):
+        row = enrekang.iloc[0]
+        lines += [f"Enrekang Juli 2020 ({row['hujan_mm']:,.0f} mm, z {row['z_akar']:+.1f}) termasuk yang tertandai.", ""]
     write_report("weather_audit.md", "\n".join(lines))
     print(f"lokasi valid {valid_count}/{len(anchors)}; file tidak dipakai: {unused}")
     return locations

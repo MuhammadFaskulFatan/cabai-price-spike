@@ -147,7 +147,7 @@ def run_checks():
     expected_observed = [(p, g) in has_points for p, g in zip(core["province_id"], core["commodity_group"])]
     check(results, "cuaca observed tepat di provinsi x komoditas bertitik sentra (kecuali Nov 2026)",
           bool(((status != "not_applicable") == pd.Series(expected_observed, index=core.index)).all()), f"{len(has_points)} provinsi x komoditas bertitik")
-    weather_columns = ["rain_total_mm", "rain_anomaly_mm", "rain_anomaly", "rel_humidity_mean"]
+    weather_columns = ["rain_total_mm", "rain_anomaly_mm", "rain_anomaly", "rain_anomaly_plain_z", "rain_is_extreme", "rel_humidity_mean"]
     check(results, "not_applicable dan partial_month: semua nilai cuaca kosong", bool(core.loc[status != "observed", weather_columns].isna().all().all()), "")
     check(results, "observed: tidak ada nilai cuaca kosong", bool(core.loc[status == "observed", weather_columns].notna().all().all()), f"{int((status == 'observed').sum())} baris")
     check(results, "partial_month hanya November 2026", set(core.loc[status == "partial_month", "month_start"].unique()) <= {"2026-11-01"}, "")
@@ -156,9 +156,19 @@ def run_checks():
           f"hujan maks {observed['rain_total_mm'].max():,.0f} mm/bulan")
     full = pd.read_parquet(ROOT / "data" / "interim" / "weather_monthly_full.parquet")
     base = full[(full["month"] >= "1991-01") & (full["month"] <= "2020-12")]
-    moments = base.groupby(["province_id", "commodity_group", base["month"].str[5:7]])["rain_anomaly"].agg(["mean", "std"])
-    check(results, "rain_anomaly terstandar: rata-rata 0 dan SD 1 per bulan kalender di 1991-2020",
-          bool((moments["mean"].abs() < 1e-9).all() and ((moments["std"] - 1).abs() < 1e-9).all()), f"{len(moments)} seri x bulan kalender")
+    moments = base.groupby(["province_id", "commodity_group", base["month"].str[5:7]])[["rain_anomaly", "rain_anomaly_plain_z"]].mean()
+    check(results, "rain_anomaly (rata-rata berbobot z per lokasi, D-58): rata-rata 0 per bulan kalender di 1991-2020",
+          bool((moments.abs() < 1e-9).all().all()), f"{len(moments)} seri x bulan kalender")
+    sites = pd.read_parquet(ROOT / "data" / "interim" / "weather_site_monthly.parquet")
+    site_base = sites[(sites["month"] >= "1991-01") & (sites["month"] <= "2020-12")]
+    site_sd = site_base.groupby(["anchor_id", site_base["month"].str[5:7]])["rain_z"].std()
+    check(results, "z per lokasi (akar hujan): SD 1 per lokasi x bulan kalender di 1991-2020", bool(((site_sd - 1).abs() < 1e-9).all()), f"{len(site_sd)} lokasi x bulan kalender")
+    flagged = sites[sites["is_extreme"]].merge(points[["anchor_id", "province_id", "commodity_group"]], on="anchor_id")
+    flagged_keys = set(zip(flagged["province_id"], flagged["commodity_group"], flagged["month"] + "-01"))
+    core_flag = {(p, g, m) for p, g, m in zip(observed["province_id"], observed["commodity_group"], observed["month_start"]) if (p, g, m) in flagged_keys}
+    check(results, "rain_is_extreme = TRUE tepat di bulan yang memuat lokasi tertandai audit",
+          set(observed.loc[observed["rain_is_extreme"] == True, ["province_id", "commodity_group", "month_start"]].itertuples(index=False, name=None)) == core_flag,
+          f"{len(core_flag)} bulan provinsi x komoditas")
 
     # --- core_province_year ---
     check(results, "core_province_year: key unik dan lengkap 34 x 8 tahun x 2 grup", len(year) == 34 * 8 * 2 and not year.duplicated(["province_id", "year", "commodity_group"]).any(), f"{len(year)} baris")

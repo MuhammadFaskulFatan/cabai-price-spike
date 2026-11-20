@@ -134,6 +134,8 @@ erDiagram
         float rain_total_mm
         float rain_anomaly_mm
         float rain_anomaly
+        float rain_anomaly_plain_z
+        bool rain_is_extreme
         float rel_humidity_mean
         int n_points
         string weather_status
@@ -162,7 +164,7 @@ erDiagram
 - **Produksi 2026.** Angka tahunan 2026 belum terbit, jadi `production_annual_ton` kosong untuk 2026. Tidak di-extrapolate.
 - **Periode.** `DIM_MONTH` memuat Januari 2018 sampai November 2026. `in_core_period` bernilai `TRUE` mulai Januari 2019; baris 2018 hanya untuk lagged variables.
 - **Bulan parsial dan periode model.** Data diambil 19 November 2026, jadi November 2026 belum penuh (`is_partial_month = TRUE`). Model dan uji hipotesis hanya memakai bulan dengan `in_model_period = TRUE` (Januari 2019 sampai Oktober 2026); November 2026 hanya untuk deskriptif (D-16).
-- **Cuaca.** `rain_anomaly` dihitung terhadap normal bulan kalender periode 1991-2020 (D-19), dalam satuan simpangan baku; `rain_anomaly_mm` menyimpan selisih dalam mm. November 2026 berstatus `partial_month` dengan nilai `NULL` (D-57).
+- **Cuaca.** `rain_anomaly` dihitung terhadap normal bulan kalender periode 1991-2020 (D-19), sebagai rata-rata berbobot z-score per lokasi dari akar kuadrat hujan (D-58); `rain_anomaly_mm` menyimpan selisih dalam mm; `rain_is_extreme` menandai bulan ekstrem dari audit. November 2026 berstatus `partial_month` dengan nilai `NULL` (D-57).
 - **ONI.** Tabel ONI nasional (sama untuk semua provinsi), tanpa key provinsi. Karena ONI baru tersedia sampai ASO 2026 (dipetakan ke September), Oktober dan November 2026 kosong dan tidak di-impute.
 
 ## 3. Tabel akhir: `core_province_month`
@@ -174,7 +176,7 @@ Pipeline mengubah tabel fakta menjadi satu tabel lebar di `data/final/`, satu ba
 | Key | `province_id`, `month_start`, `commodity_group` |
 | Harga | `price_retail`, `price_wholesale`, `price_producer` |
 | Produksi | `production_annual_ton`, `production_annual_preliminary` |
-| Cuaca | `rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rel_humidity_mean`, `weather_status`, `weather_n_points` |
+| Cuaca | `rain_total_mm`, `rain_anomaly_mm`, `rain_anomaly`, `rain_anomaly_plain_z`, `rain_is_extreme`, `rel_humidity_mean`, `weather_status`, `weather_n_points` |
 | ENSO | `oni_anomaly`, `enso_phase` |
 | Kalender | `n_weekdays`, `n_holiday_days`, `n_holiday_weekdays`, `n_cuti_bersama_days`, `cuti_bersama_verified`, `months_to_idulfitri` |
 | Flag | untuk tiap harga: `<variabel>_is_imputed`, `<variabel>_impute_method`, `<variabel>_tier`, `<variabel>_n_days`; periode: `in_core_period`, `in_model_period`, `is_partial_month`, `in_producer_price_analysis` |

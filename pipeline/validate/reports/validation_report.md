@@ -1,6 +1,6 @@
 # Laporan Fase 5 (Validate)
 
-Core dataset termasuk cuaca (`data/final/`). Cek struktur: 53 dari 53 lulus. Reconciliation tahunan: cocok. Cross-check PIHPS bulanan: 21,186 sel dibandingkan. Spot-check: harga 30/30 cocok dengan raw, 10/10 cocok dengan PIHPS live; produksi 10/10 cocok dengan BDSP live; ONI 5/5; cuaca 8/8.
+Core dataset termasuk cuaca (`data/final/`). Cek struktur: 55 dari 55 lulus. Reconciliation tahunan: cocok. Cross-check PIHPS bulanan: 21,186 sel dibandingkan. Spot-check: harga 30/30 cocok dengan raw, 10/10 cocok dengan PIHPS live; produksi 10/10 cocok dengan BDSP live; ONI 5/5; cuaca 8/8.
 
 ## 1. Cek struktur dan aturan core dataset
 
@@ -53,7 +53,9 @@ Core dataset termasuk cuaca (`data/final/`). Cek struktur: 53 dari 53 lulus. Rec
 | observed: tidak ada nilai cuaca kosong | True | 3074 baris |
 | partial_month hanya November 2026 | True |  |
 | hujan >= 0 dan kelembapan 0-100 | True | hujan maks 2,228 mm/bulan |
-| rain_anomaly terstandar: rata-rata 0 dan SD 1 per bulan kalender di 1991-2020 | True | 348 seri x bulan kalender |
+| rain_anomaly (rata-rata berbobot z per lokasi, D-58): rata-rata 0 per bulan kalender di 1991-2020 | True | 348 seri x bulan kalender |
+| z per lokasi (akar hujan): SD 1 per lokasi x bulan kalender di 1991-2020 | True | 888 lokasi x bulan kalender |
+| rain_is_extreme = TRUE tepat di bulan yang memuat lokasi tertandai audit | True | 118 bulan provinsi x komoditas |
 | core_province_year: key unik dan lengkap 34 x 8 tahun x 2 grup | True | 544 baris |
 | core_province_year: producer_price_n_months di 0-12 | True |  |
 | core_province_year: is_preliminary hanya 2025 | True |  |
